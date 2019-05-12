@@ -106,6 +106,7 @@ button{
     width: 1500px;
     margin: 0 auto;
     margin-top: -75px;
+    z-index: 2;
 }
 
 .shipping{
@@ -152,7 +153,6 @@ button{
     font-size: 12px;
     margin-top: 20px;
     font-weight: bold;
-    margin-bottom: 60px;
 }
 
 .offer{
@@ -236,4 +236,81 @@ button{
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: -2px;
+    margin-bottom: 15px;
 }
+
+.items__price{
+    font-family: 'Montserrat';
+    font-size: 13px;
+    color: #3753da;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.items__discount{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #818181;
+    font-weight: 600;
+}
+
+.ancor{
+    height: 80px;
+}
+
+.ancor__text{
+    font-family: 'Montserrat';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: #3753da;
+    padding-top: 35px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__image{
+    width: 100%;
+    height: auto;
+    max-width: 375px;
+    transition: 0.5s;
+}
+
+.gallery__image:hover{
+   transform: scale(1.2);
+   transition: 0.5s;
+}
+
+.brands{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brands__item{
+    display: block;
+    margin: 0 auto;
+    margin-top: 25%;
+}
+
+.brands__wrapper{
+    width: 250px;
+    height: 250px;
+    border-right: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    background: #fff;
+}
+
+.brands__wrapper:nth-child(7,8,9,10,11,12){
+    border-bottom: none;
+}
+
+footer{
+    height: 777px;
+    background-image: url(img/Footer%20BG.png);
+    z-index: 1;
+    margin-top: -90px;
+   }
