@@ -21,15 +21,14 @@ a{
     height: 75px;
     opacity: 0.9;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     position: fixed;
     width: 1800px;
    }
 
 .top__menubutton{
     width: 75px;
-    border-right: 1px solid #4c515a;
-    padding-top: 28px;
+    padding-top: 10px;
 }
 
 .top__menuitem{
@@ -44,6 +43,7 @@ a{
 .navigatioin__menu{
     list-style: none;
     display: flex;
+    text-transform: uppercase;
 }
 
 .top__logo{
@@ -51,38 +51,68 @@ a{
     font-size: 33px;
     color: #fff;
     font-weight: 900;
-    padding: 0 27px 0 20px;
+    padding: 21px 27px 0 20px;
     border-right: 1px solid #4c515a;
+    border-left: 1px solid #4c515a;
+    height: 74px;
 }
 
 .navigation__item{
     font-size: 13px;
-    padding-right: 35px;
+    margin-right: 35px;
 }
 
-navigation__item--first{
-    margin-left: 35px;
+.navigation__item--first{
+    margin-left: 40px;
 }
 
 .navigation__link{
     color: #fff;
 }
 
+.top__socials{
+    display: flex;
+    border-right: 1px solid #4c515a;
+    border-left: 1px solid #4c515a;
+}
+
+i{
+    color: white;
+    font-size: 20px;
+    margin-right: 35px;
+}
+
 .site-top{
     height: 901px;
-    background: url(img/Layer%208.jpg)
+    background: url(img/Layer%208.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.site-top__text-wrapper{
+    text-align: center;
+    padding-top: 236px;
+    margin-right: 750px;
 }
 
 .site-top__header{
     font-family: 'Poppins';
     font-size: 203px;
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
-    vertical-align: -75px;
     line-height: 147px;
     text-transform: uppercase;
-    padding: 236px 0 285px 250px;
     margin: 0;
+}
+
+.site-top__underheader{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    letter-spacing: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin: 30px 0 60px 0;
 }
 
 button{
@@ -91,7 +121,6 @@ button{
     border-radius: 20px;
     font-family: 'Montserrat';
     font-size: 17px;
-    vertical-align: 60px;
     font-weight: 500;
     color: #fff;
     border: none;
@@ -194,14 +223,33 @@ button{
     color: #8a8a8a;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 40px;
 }
 
 .offer__price{
-    
+    font-family: 'Montserrat';
+    font-size: 52px;
+    color: #3753da;
+    font-weight: bold;
 }
 
 .offer__discount{
-    
+    font-family: 'Montserrat';
+    font-size: 32px;
+    color: #121212; 
+}
+
+.offer__wrapper-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.offer__timer{
+    height: 105px;
+    width: 90px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 55px 12px 40px 0;
 }
 
 .offer__button{
@@ -311,6 +359,8 @@ button{
 footer{
     height: 777px;
     background-image: url(img/Footer%20BG.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     z-index: 1;
     margin-top: -90px;
    }
