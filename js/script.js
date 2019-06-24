@@ -48,11 +48,11 @@ const scene = new Scene({
     "[data-typing='css']:before": { 7.5: typing("CSS", 0.7) },
     "[data-typing='design']:before": { 9: typing("design") },
     "[data-typing='animation']:before": { 10.5: typing("Animation") },
-    "[data-typing='vue']:before": { 12: typing("vue") },
+    "[data-typing='vue.js']:before": { 12: typing("vue.js") },
   });
   
   scene.setPlaySpeed(1);
   scene.setEasing("ease-in-out");
-  scene.setIterationCount("infinite");
+  scene.setIterationCount("1");
   scene.playCSS();
   
