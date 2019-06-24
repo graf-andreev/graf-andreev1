@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Montserrat', 'BebasNeueBold', sans-serif; 
+}
+
+body{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.top{
+    background-color: #19202d;
+    border-bottom: 1px solid #3a628d;
+    height: 75px;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 1800px;
+   }
+
+.top__menubutton{
+    width: 75px;
+    padding-top: 10px;
+}
+
+.top__menuitem{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+
+.navigatioin__menu{
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.top__logo{
+    font-family: 'Poppins';
+    font-size: 33px;
+    color: #fff;
+    font-weight: 900;
+    padding: 21px 27px 0 20px;
+    border-right: 1px solid #4c515a;
+    border-left: 1px solid #4c515a;
+    height: 74px;
+}
+
+.navigation__item{
+    font-size: 13px;
+    margin-right: 35px;
+}
+
+.navigation__item--first{
+    margin-left: 40px;
+}
+
+.navigation__link{
+    color: #fff;
+}
+
+.top__socials{
+    display: flex;
+    border-right: 1px solid #4c515a;
+    border-left: 1px solid #4c515a;
+}
+
+i{
+    color: white;
+    font-size: 20px;
+    margin-right: 35px;
+}
+
+.site-top{
+    height: 901px;
+    background: url(img/Layer%208.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.site-top__text-wrapper{
+    text-align: center;
+    padding-top: 236px;
+    margin-right: 750px;
+}
+
+.site-top__header{
+    font-family: 'Poppins';
+    font-size: 203px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 147px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.site-top__underheader{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    letter-spacing: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin: 30px 0 60px 0;
+}
+
+button{
+    width: 159px;
+    height: 48px;
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button--top{
+    background-color: #3954d9;
+}
+
+.main-wrapper{
+    width: 1500px;
+    margin: 0 auto;
+    margin-top: -75px;
+    z-index: 2;
+}
+
+.shipping{
+    width: 375px;
+    padding: 80px 80px 65px 80px;
+    border-right: 1px solid #c7c7c7;
+    text-align: center;
+}
+
+.shipping:last-child{
+    border-right: none;
+}
+
+.free-shipping{
+    display: flex;
+    background-color: #fff;
+}
+
+.shipping__img{
+    text-align: center;
+    margin-bottom: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.shipping__header{
+    font-family: sans-serif;
+    color: #0d2e57;
+    font-size: 27px;
+    vertical-align: -25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
+    }
+
+.shipping__text{
+    color: #8a8a8a;
+    font-size: 12px;
+}
+
+.shipping__link{
+    display: block;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.offer{
+    background-color: #f2f0f0;
+    display: flex;
+}
+
+.offer__wrapper{
+    width: 50%;
+    padding: 125px 125px 80px 126px;
+    text-align: center;
+}
+
+.offer__picture{
+    height: 753px;
+    width: 50%;
+}
+
+.offer__upheader{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 20px;
+    vertical-align: 50px;
+    color: #616161;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.offer__header{
+    font-family: sans-serif;
+    color: #0d2e57;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-bottom: 50px;
+}
+
+.offer__text{
+    color: #8a8a8a;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.offer__price{
+    font-family: 'Montserrat';
+    font-size: 52px;
+    color: #3753da;
+    font-weight: bold;
+}
+
+.offer__discount{
+    font-family: 'Montserrat';
+    font-size: 32px;
+    color: #121212; 
+}
+
+.offer__wrapper-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.offer__timer{
+    height: 105px;
+    width: 90px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 55px 12px 40px 0;
+}
+
+.offer__button{
+    background-color: #3954d9;
+}
+
+.items{
+    display: flex;
+}
+
+.items__container{
+    width: 374px;
+    height: 374px;
+    border-right: 1px solid #c7c7c7;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 50px;
+}
+
+.items__container:last-child{
+    border-right: none;
+}
+
+.items__img{
+    height: 165px;
+    margin-bottom: 70px;
+}
+
+.items__header{
+    font-family: sans-serif;
+    color: #0d2e57;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+
+.items__price{
+    font-family: 'Montserrat';
+    font-size: 13px;
+    color: #3753da;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.items__discount{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #818181;
+    font-weight: 600;
+}
+
+.ancor{
+    height: 80px;
+}
+
+.ancor__text{
+    font-family: 'Montserrat';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: #3753da;
+    padding-top: 35px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__image{
+    width: 100%;
+    height: auto;
+    max-width: 375px;
+    transition: 0.5s;
+}
+
+.gallery__image:hover{
+   transform: scale(1.2);
+   transition: 0.5s;
+}
+
+.brands{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brands__item{
+    display: block;
+    margin: 0 auto;
+    margin-top: 25%;
+}
+
+.brands__wrapper{
+    width: 250px;
+    height: 250px;
+    border-right: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    background: #fff;
+}
+
+.brands__wrapper:nth-child(7,8,9,10,11,12){
+    border-bottom: none;
+}
+
+footer{
+    height: 777px;
+    background-image: url(img/Footer%20BG.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin-top: -90px;
+   }
