@@ -30,7 +30,7 @@ html, body {
   width: 300px;
   height: 300px;
 }
-[data-typing] {
+.data-typing {
   position: absolute;
   top: 0;
   /*   border: 1px solid #f55; */
@@ -42,29 +42,29 @@ html, body {
   line-height: 1;
   color: #333;
 }
-[data-typing]:before {
+.data-typing:before {
   content: "";
 }
-[data-typing="i"] {
+.i {
   top: 0;
   left: 50px;
   font-size: 90px;
   height: 70px;
   line-height: 70px;
 }
-[data-typing="frontend"] {
+.frontend {
   top: 3px;
   left: 80px;
   font-size: 27px;
   letter-spacing: 1px;
 }
-[data-typing="developer"] {
+.developer {
   top: 30px;
   left: 80px;     
   font-size: 40px;
   letter-spacing: 1px;
 }
-[data-typing="with"] {
+.with {
   top: 74px;
   left: 265px;
   font-size: 36px;
@@ -73,33 +73,32 @@ html, body {
   color: #fff;
   padding: 0px 4px;
 }
-[data-typing="javascript"] {
+.javascript {
   top: 74px;
   left: 229px;
   transform: rotate(90deg);
   font-size: 35px;
 }
-[data-typing="html"] {
-  top: 72px;
+.html {  top: 72px;
   right: 110px;
   font-size: 25px;
 }
-[data-typing="css"] {
+.css {
   top: 97px;
   right: 110px;
   font-size: 40px;
 }
-[data-typing="design"] {
+.design {
   top: 134px;
   right: 110px;
   font-size: 35px;
 }
-[data-typing="animation"] {
+animation {
   top: 167px;
   right: 110px;
   font-size: 35px;
 }
-[data-typing="vue.js"] {
+.vue.js {
   top: 200px;
   right: 110px;
   font-size: 35px;
