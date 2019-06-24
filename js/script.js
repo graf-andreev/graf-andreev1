@@ -48,7 +48,7 @@ const scene = new Scene({
     "[data-typing='css']:before": { 7.5: typing("CSS", 0.7) },
     "[data-typing='design']:before": { 9: typing("design") },
     "[data-typing='animation']:before": { 10.5: typing("Animation") },
-    "[data-typing='react']:before": { 12: typing("react") },
+    "[data-typing='vue']:before": { 12: typing("vue") },
   });
   
   scene.setPlaySpeed(1);
