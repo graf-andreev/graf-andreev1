@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.ico" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
@@ -35,8 +36,8 @@
                 <a href="#"><div class="socials-item"><i class="fab fa-google-plus-g"></i></div></a>
                 <a href="#"><div class="socials-item"><i class="fab fa-instagram"></i></div></a>
             </div>
-            <div class="top__cart"><i class="fas fa-shopping-bag"></i></div>
-            <div class="top__search"><i class="fas fa-search"></i></div>
+            <a href="#"><div class="top__cart"><i class="fas fa-shopping-bag"></i></div></a>
+            <a href="#"><div class="top__search"><i class="fas fa-search"></i></div></a>
         </div>
         <section class="site-top">
            <div class="site-top__text-wrapper">
@@ -85,10 +86,10 @@
                 <time class="offer__time">09<br>...<br>hours</time>
                 </div>
                 <div class="offer__timer">
-                <time class="offer__time">09<br>...<br>hours</time>
+                <time class="offer__time">56<br>...<br>minutes</time>
                 </div>
                 <div class="offer__timer">
-                <time class="offer__time">09<br>...<br>hours</time>
+                <time class="offer__time">25<br>...<br>seconds</time>
                 </div>
             </div>
             <button class="offer__button button">SHOP NOW</button>
@@ -194,6 +195,7 @@
     </main>
     <footer>
         <section class="footer__menu">
+            <div class="footer__wrapper">
             <div class="footer__item">
                     <h5 class="footer__header">Shops</h5>
                     <a class="footer__text" href="#">New In</a>
@@ -229,13 +231,21 @@
                  </div>
         <div class="footer__socials">
             <h5 class="footer__header">Stay connected</h5>
+            <div class="footer__wrapper">
+                    <a href="#"><div class="socials-item"><i class="fab fa-facebook-f"></i></div></a>
+                    <a href="#"><div class="socials-item"><i class="fab fa-twitter"></i></div></a>
+                    <a href="#"><div class="socials-item"><i class="fab fa-google-plus-g"></i></div></a>
+                    <a href="#"><div class="socials-item"><i class="fab fa-instagram"></i></div></a>
+                </div>
+            <div class="footer__newsletter">
+                    <h5 class="footer__header">Newsletter sign up</h5>
+                    <form id="subscribe">
+                    <input class="footer__input" type="email" placeholder="Enter your e-mail"></form>
+                    <button class="footer__button" type="submit" form="subscribe">Subscribe</button>
+            </div>
         </div>
-        <div class="footer__newsletter">
-                <h5 class="footer__header">Newsletter sign up</h5>
-                <form id="subscribe">
-                <input type="email"  placeholder="Enter your e-mail">
-                <button class="footer__button" type="submit" form="subscribe">Subscribe</button>
-        </div>
+    </div>
+       
     </section>
     </footer>
 </body>

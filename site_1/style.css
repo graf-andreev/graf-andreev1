@@ -23,7 +23,8 @@ a{
     display: flex;
     align-items: center;
     position: fixed;
-    width: 1800px;
+    width: 100%;
+    max-width: 1800px;
    }
 
 .top__menubutton{
@@ -74,7 +75,7 @@ a{
     display: flex;
     border-right: 1px solid #4c515a;
     border-left: 1px solid #4c515a;
-    margin-left: 560px;
+    margin-left: 30%;
     height: 75px;
     padding: 27px 7px 0 40px;
 }
@@ -94,6 +95,12 @@ i{
     color: white;
     font-size: 20px;
     margin-right: 35px;
+    transition: 0.5s;
+}
+
+i:hover{
+    color: #344dc2;
+    transition: 0.5s;
 }
 
 .site-top{
@@ -139,6 +146,7 @@ button{
     color: #fff;
     border: none;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .button--top{
@@ -244,7 +252,6 @@ button{
 
 .advantages__button{
     background-color: #3954d9;
-    text-transform: uppercase;
 }
 
 .advantages__blockheader{
@@ -325,6 +332,8 @@ button{
     background-color: #fff;
     border-radius: 20px;
     margin: 55px 12px 40px 0;
+    font-size: 20px;
+    font-weight: 200;
 }
 
 .offer__button{
@@ -432,19 +441,62 @@ button{
 }
 
 footer{
-    height: 777px;
+    height: 585px;
     background-image: url(img/Footer%20BG.png);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 1;
     margin-top: -90px;
+    padding: 190px 200px 100px 190px;
    }
 
-.footer__menu{
+.footer__wrapper{
     display: flex;
     justify-content: flex-start;
 }
 
 .footer__item{
-    display: block;
+    width: 280px;
 }
+
+.footer__text{
+    display: block;
+    color: #fff;
+    line-height: 31px;
+}
+
+.footer__header{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: #344dc2;
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 35px;
+}
+
+.footer__input{
+    width: 100%;
+    max-width: 300px;
+    background-color: #2f2f2f;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.footer__socials{
+    margin-left: 180px;
+}
+
+.footer__wrapper{
+    display: flex;
+    margin-bottom: 30px;;
+}
+
+.footer__button{
+    background-color: #3753da;
+    margin-top: 30px;
+}
+
+/*Adaptive*/
+
