@@ -1,8 +1,5 @@
-const scene = new Scene({
-    ".container": {}
-  }, {
-    selector: true,
-  });
+const scene = document.querySelector('.container')
+
   
   const item = scene.getItem(".container");
   
