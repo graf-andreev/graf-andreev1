@@ -10,5 +10,13 @@ var tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000));
 var dayTomorrow = tomorrow.getDate(); 
 var monthTomorrow = tomorrow.getMonth() + 1;
 var yearTomorrow = tomorrow.getFullYear(); 
+var dataAdd = document.getElementById('data');
 
-    document.getElementById('data').value='2019-07-15';
+if (dayTomorrow <= 9) {
+ Number(dayTomorrow = '0' + dayTomorrow);
+}
+if (monthTomorrow <= 9) {
+ Number(monthTomorrow = '0' + monthTomorrow);
+}
+
+dataAdd.value=`${yearTomorrow}-${monthTomorrow}-${dayTomorrow}`;
