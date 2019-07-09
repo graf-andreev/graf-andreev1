@@ -1,13 +1,12 @@
 $(".phone_mask").mask("+7(999)999-99-99");
 
-
-  $(document).ready(function(){   
-    $(".email").inputmask("email")
-  });
+$(document).ready(function() {   
+  $(".email").inputmask("email");
+});
 
 var today = new Date();
 var tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000));
-var dayTomorrow = tomorrow.getDate(); 
+var dayTomorrow = tomorrow.getDate();
 var monthTomorrow = tomorrow.getMonth() + 1;
 var yearTomorrow = tomorrow.getFullYear(); 
 var dataAdd = document.getElementById('data');
@@ -21,18 +20,30 @@ if (monthTomorrow <= 9) {
 
 dataAdd.value=`${yearTomorrow}-${monthTomorrow}-${dayTomorrow}`;
 
-$(document).ready(function () {
-  $("#submitform").click(function (e) {
-      var MyForm = JSON.stringify($("#myform").serializeJSON());
-       $.ajax(
-          {
-              url: "<your url>",
-              type: "POST",
-              data: MyForm,
-          });
-      e.preventDefault(); 
-      });
+$(document).ready(function() {
+  $("#form").submit(function(e) {
+      e.preventDefault();
+            
+      var innValue = String($('#inn').val());
+      if (innValue.length !== 10 || innValue.length !== 12) {
+        console.log("Inn value is invalid");
+        var innInput = document.getElementById('inn');
+        innInput.validity = false;
+        return;
+      }
+      var form = e.target;
+      var formData = {
+        name: form.name.value,
+        INN: form.INN.value,
+        email: form.email.value,
+        telephone: form.telephone.value,
+        date_order: form.date_order.value
+      };
+
+      formData = JSON.stringify(formData);
+      console.log(JSON.stringify(formData));
+  });
 });
 
-var inn = document.getElementById('inn')
-inn.addEventListener(click)
+
+

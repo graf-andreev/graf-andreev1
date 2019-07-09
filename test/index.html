@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +8,20 @@
     <title>Test</title>
 </head>
 <body>
-    <form id="myform">
-<fieldset>
-<textarea name="name" id="name" required maxlength="200" placeholder="Введите имя"></textarea>
-<input name="INN" id="inn" type="number" placeholder="Введите ИНН 10 или 12 цифр" min="10" max="12">
-<input name="email" id="mail" type="text" required placeholder="Введите e-mail" maxlength="50" class="email">
-<input name="telephone" id="telephone" type="phone" required placeholder="Введите телефон" class="phone_mask">
-<input name="date_order" id="data" type="date" required placeholder="Выберите дату">
-<button type="reset">Очистить</button>
-<button id="submitform" type="submit" name="submit">Отправить</button>
-</fieldset>
+    <form id="form">
+        <fieldset>
+            <textarea name="name" id="name" required maxlength="200" placeholder="Введите имя"></textarea>
+            <input name="INN" id="inn" type="number" placeholder="Введите ИНН 10 или 12 цифр">
+            <input name="email" id="mail" type="text" required placeholder="Введите e-mail" maxlength="50" class="email">
+            <input name="telephone" id="telephone" type="phone" required placeholder="Введите телефон" class="phone_mask">
+            <input name="date_order" id="data" type="date" required placeholder="Выберите дату">
+            <button type="reset">Очистить</button>
+            <button id="submitform" type="submit" name="submit">Отправить</button>
+        </fieldset>
     </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/test/inputmask.js"></script>
+    <script src="/test/jquery.maskedinput.min.js"></script>
+    <script src="/test/script.js"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/test/inputmask.js"></script>
-<script src="/test/jquery.maskedinput.min.js"></script>
-<script src="/test/script.js"></script>
 </html>
