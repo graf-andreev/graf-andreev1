@@ -26,7 +26,7 @@ $(document).ready(function() {
             
       var innValue = String($('#inn').val());
       if (innValue.length !== 10 || innValue.length !== 12) {
-        console.log("Inn value is invalid");
+        alert("Inn value is invalid");
         var innInput = document.getElementById('inn');
         innInput.validity = false;
         return;
