@@ -48,6 +48,6 @@ $(document).ready(function() {
       };
 
       formData = JSON.stringify(formData);
-      alert(JSON.stringify(formData));
+      console.log(JSON.stringify(formData));
   });
 });
