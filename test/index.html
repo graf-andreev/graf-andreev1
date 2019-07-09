@@ -8,15 +8,15 @@
     <title>Test</title>
 </head>
 <body>
-    <form id="myform" name="user">
+    <form id="myform">
 <fieldset>
-<textarea id="name" required maxlength="200" placeholder="Введите имя"></textarea>
-<input id="inn" type="number" placeholder="Введите ИНН 10 или 12 цифр" min="0">
-<input id="mail" type="text" required placeholder="Введите e-mail" maxlength="50" class="email">
-<input id="telephone" type="phone" required placeholder="Введите телефон" class="phone_mask">
-<input id="data" type="date" required placeholder="Выберите дату">
+<textarea name="name" id="name" required maxlength="200" placeholder="Введите имя"></textarea>
+<input name="INN" id="inn" type="number" placeholder="Введите ИНН 10 или 12 цифр" min="0">
+<input name="email" id="mail" type="text" required placeholder="Введите e-mail" maxlength="50" class="email">
+<input name="telephone" id="telephone" type="phone" required placeholder="Введите телефон" class="phone_mask">
+<input name="date_order" id="data" type="date" required placeholder="Выберите дату">
 <button type="reset">Очистить</button>
-<button type="submit" name="submit">Отправить</button>
+<button id="submitform" type="submit" name="submit">Отправить</button>
 </fieldset>
     </form>
 </body>

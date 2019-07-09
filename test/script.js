@@ -20,3 +20,19 @@ if (monthTomorrow <= 9) {
 }
 
 dataAdd.value=`${yearTomorrow}-${monthTomorrow}-${dayTomorrow}`;
+
+$(document).ready(function () {
+  $("#submitform").click(function (e) {
+      var MyForm = JSON.stringify($("#myform").serializeJSON());
+       $.ajax(
+          {
+              url: "<your url>",
+              type: "POST",
+              data: MyForm,
+          });
+      e.preventDefault(); 
+      });
+});
+
+var inn = document.getElementById('inn')
+inn.addEventListener(click)
