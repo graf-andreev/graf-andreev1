@@ -81,9 +81,10 @@ a{
 
 .top__socials{
     display: flex;
+    justify-content: flex-end;
     border-right: 1px solid #4c515a;
     border-left: 1px solid #4c515a;
-    margin-left: 35%;
+    width: 100%;
     height: 75px;
     padding: 27px 7px 0 40px;
 }
@@ -114,7 +115,7 @@ i:hover{
 .site-top{
     height: 901px;
     background: url(img/Layer%208.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -217,6 +218,8 @@ button{
 
 .advantages{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .advantages__container{
@@ -287,9 +290,9 @@ button{
 }
 
 .offer__picture{
-    height: 753px;
+    height: auto;
     width: 50%;
-}
+    }
 
 .offer__upheader{
     font-family: 'Poppins';
@@ -368,7 +371,8 @@ button{
 }
 
 .items__img{
-    height: 155px;
+    width: 100%;
+    height: auto;
     margin-bottom: 70px;
 }
 
@@ -455,7 +459,7 @@ button{
 footer{
     height: 585px;
     background-image: url(img/Footer%20BG.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
     margin-top: -90px;
@@ -524,25 +528,71 @@ footer{
     }
     .shipping,
     .items__container,
-    .brands__wrapper{
+    .brands__wrapper,
+    .advantages__container{
         border: none;
     }
     .items__img{
         width: 100%;
         height: auto;
     }
+    .offer__picture{
+        display: none;
+    }
+    .offer__wrapper{
+        width: 100%;
+    }
+    .site-top{
+        background-size: 100%;
+        height: 700px;
+        }
+    .site-top__header{
+        font-size: 100px;
+        line-height: 85px;
+    }
+    .site-top__text-wrapper{
+        padding-top: 100px;
+        margin-right: 63%;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .site-top{
+        background-size: cover;
+    }
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
     .footer__socials--mobile{
         display: block;
         position: fixed;
-        top: 50%;
-        left: 50%;
-        background: #121212;
+        top: 95%;
+        left: 26%;
+        margin: 0;
+        text-align: center;
+       }
+    .footer__socials--mobile > h5{
+        display: none;
+    }
+    i{
+        color: #0dee58;
     }
     .top__menubutton{
         display: block;
+    }
+    .top__socials,
+    .footer__item,
+    .footer__header{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .site-top__header{
+        font-size: 50px;
+    }
+    .advantages__block{
+        display: none;
     }
 }
