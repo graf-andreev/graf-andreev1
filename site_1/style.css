@@ -231,7 +231,8 @@ button{
     }
 
 .advantages__item{
-    width: 374px;
+    width: 100%;
+    max-width: 374px;
     height: 374px;
     border-right: 1px solid #c7c7c7;
     padding: 70px 60px 60px 50px;
