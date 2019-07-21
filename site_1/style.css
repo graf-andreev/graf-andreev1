@@ -632,4 +632,7 @@ footer{
         font-size: 25px;
         border: none;
     }
+    .advantages__header{
+        font-size: 30px;
+    }
 }
