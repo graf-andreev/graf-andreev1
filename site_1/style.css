@@ -9,6 +9,7 @@ body{
     width: 100%;
     max-width: 1800px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 a{
@@ -358,7 +359,7 @@ button{
 
 .items__container{
     width: 25%;
-    min-width: 300px;;
+    min-width: 285px;
     height: 374px;
     border-right: 1px solid #c7c7c7;
     border-top: 1px solid #c7c7c7;
@@ -520,6 +521,15 @@ footer{
 
 /*Adaptive*/
 
+@media screen and (max-width: 1245px){
+ footer{
+     padding:  150px 10px 150px 10px;
+ }
+ .footer__socials{
+     margin-left: 0px;
+ }
+}
+
 @media screen and (max-width: 1142px){
     .free-shipping,
     .items{
@@ -554,11 +564,18 @@ footer{
         padding-top: 100px;
         margin-right: 63%;
     }
+    .top__cart,
+    .top__search{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1010px){
     .site-top{
         background-size: cover;
+    }
+    .top__socials{
+        display: none;
     }
 }
 
@@ -568,7 +585,7 @@ footer{
         display: block;
         position: fixed;
         top: 95%;
-        left: 26%;
+        left: 31%;
         margin: 0;
         text-align: center;
        }
@@ -580,11 +597,26 @@ footer{
     }
     .top__menubutton{
         display: block;
+        cursor: pointer;
     }
-    .top__socials,
-    .footer__item,
-    .footer__header{
+    .footer__menu{
         display: none;
+    }
+    footer{
+        height: 0px;
+        background-image: none;
+    }
+    .top{
+        height: auto;
+    }
+    .navigatioin__menu{
+        display: none;
+    }
+    .navigation__item--first{
+        margin-left: 0px;
+    }
+    .navigation__item{
+        font-size: 20px;
     }
 }
 
@@ -594,5 +626,9 @@ footer{
     }
     .advantages__block{
         display: none;
+    }
+    .top__logo{
+        font-size: 25px;
+        border: none;
     }
 }
