@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Poppins','Montserrat', 'BebasNeueBold', sans-serif; 
 }
 
@@ -21,8 +22,12 @@ a{
     border-bottom: 1px solid #3a628d;
     height: 75px;
     opacity: 0.9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed;
     width: 100%;
     max-width: 1800px;
@@ -45,6 +50,8 @@ a{
 
 .navigatioin__menu{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-transform: uppercase;
 }
@@ -72,17 +79,25 @@ a{
 
 .navigation__link{
     color: #fff;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
 .navigation__link:hover{
     color: #3753da;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
 .top__socials{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     border-right: 1px solid #4c515a;
     border-left: 1px solid #4c515a;
     width: 100%;
@@ -105,11 +120,15 @@ i{
     color: white;
     font-size: 20px;
     margin-right: 35px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 i:hover{
     color: #344dc2;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -183,6 +202,8 @@ button{
 }
 
 .free-shipping{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #fff;
 }
@@ -218,9 +239,14 @@ button{
 }
 
 .advantages{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .advantages__container{
@@ -282,6 +308,8 @@ button{
 
 .offer{
     background-color: #f2f0f0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -336,8 +364,12 @@ button{
 }
 
 .offer__wrapper-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .offer__timer{
@@ -355,6 +387,8 @@ button{
 }
 
 .items{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -417,27 +451,43 @@ button{
 }
 
 .gallery{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .gallery__image{
     width: 100%;
     height: auto;
     max-width: 375px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .gallery__image:hover{
-   transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+       -ms-transform: scale(1.2);
+           transform: scale(1.2);
+   -webkit-transition: 0.5s;
+   -o-transition: 0.5s;
    transition: 0.5s;
 }
 
 .brands{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .brands__item{
@@ -469,8 +519,12 @@ footer{
    }
 
 .footer__wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .footer__item{
@@ -507,6 +561,8 @@ footer{
 }
 
 .footer__wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 30px;;
 }
@@ -534,8 +590,11 @@ footer{
 @media screen and (max-width: 1142px){
     .free-shipping,
     .items{
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .shipping,
     .items__container,
