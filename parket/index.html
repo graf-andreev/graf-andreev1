@@ -514,23 +514,40 @@
 	<div class="calculator">
 		<div class="calc-header">
 			<div class="upakovka text-header">Рассчитать количество упаковок</div>
-			<div class="comnata text-header">Рассчитать по площади комнаты</div>
+			<div class="comnata text-header1">Рассчитать по площади комнаты</div>
 		</div>
+		<div class="calc-wrapper">
 		<div class="prices flex">
 			<p class="calc-text">Цена за уп: 1.596 м2 — 1115 руб </p>
 			<p class="calc-discount">% скидки от обьема </p>
 		</div>
 		<div class="input-s flex">
-			<label>Площадь:<input class="input-meter" type="number">м2</label>
+			<label class="calc-label">Площадь:<input class="input-meter" type="number">м2</label>
 			<p class="calc-summary">Итого:</p>
 		</div>
 		<div class="inpit-many flex">
-			<label>Кол-во:<input class="input-pack" type="text">уп</label>
+			<label class="calc-label">Кол-во:<input class="input-pack" type="text">уп</label>
 			<p class="calc-price">5556 руб.</p>
 		</div>
-	</div>
-
-
+	
+	<a href="javascript:void(0)" class="button btn-buy" data-quantity="1" onclick="return addToCart(this, 'detail', 'В корзине', 'cart', '/basket/', '17104');">
+		<span>В корзину</span>
+	</a>
+</div>
+<div style="display: none;" class="calc-wrapper-1">
+		<div class="prices flex">
+				<p class="calc-text">Цена за уп: 1.596 м2 — 1115 руб </p>
+				<p class="calc-discount">% скидки от обьема </p>
+			</div>
+			<div class="inpit-many flex">
+					<label class="calc-label">Кол-во:<input class="input-pack" type="text">уп</label>
+					<p class="calc-price">5556 руб.</p>
+				</div>
+<a href="javascript:void(0)" class="button btn-buy" data-quantity="1" onclick="return addToCart(this, 'detail', 'В корзине', 'cart', '/basket/', '17104');">
+	<span>В корзину</span>
+</a>
+</div>
+</div>
 
 </div>                    <div class="clear"></div>
                 </div>
@@ -545,4 +562,24 @@
 
 
     
-    <div class="shadow-item_info"><img border="0" src="https://m-parketa.ru/bitrix/templates/ishop/images/xshadow-item_info_revert.png.pagespeed.ic.nkkxo2tpdd.webp" alt="" data-pagespeed-url-hash="3075935120" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></div>
+	<div class="shadow-item_info"><img border="0" src="https://m-parketa.ru/bitrix/templates/ishop/images/xshadow-item_info_revert.png.pagespeed.ic.nkkxo2tpdd.webp" alt="" data-pagespeed-url-hash="3075935120" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></div>
+	
+	<script>
+		var a = document.querySelector('.calc-wrapper')
+		var b = document.querySelector('.calc-wrapper-1')
+		var text = document.querySelector('.text-header')
+		var text1 = document.querySelector('.text-header1')
+		document.querySelector('.upakovka ').onclick = function() {
+					a.style.display='block';
+					b.style.display='none';
+					text.style.fontWeight='800';
+					text1.style.fontWeight='500';
+				};
+				
+		document.querySelector('.comnata ').onclick = function() {
+					b.style.display='block';
+					a.style.display='none';
+					text1.style.fontWeight='800';
+					text.style.fontWeight='500';
+				};
+	</script>

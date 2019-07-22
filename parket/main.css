@@ -35,7 +35,7 @@ div.price_block > div > div > div > span.old{
 
 .calculator{
     width: 99.5%;
-    height: 210px;
+    height: 220px;
     border: 1px solid #cff0f9;
 }
 
@@ -43,7 +43,8 @@ div.price_block > div > div > div > span.old{
     display: flex;
 }
 
-.text-header{
+.text-header,
+.text-header1{
     font-size: 11px;
     color: #333333;
     padding: 14px 0px 14px 25px;
@@ -51,6 +52,7 @@ div.price_block > div > div > div > span.old{
     width: 100%;
     cursor: pointer;
     margin-bottom: 35px;
+    font-weight: 500;
 }
 
 .upakovka{
@@ -59,36 +61,67 @@ div.price_block > div > div > div > span.old{
 
 .flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .calc-text{
     font-size: 11px;
     color: #333333;
+    margin-left: 25px;
 }
 
 .calc-discount{
     font-size: 11px;
     color: #468d1f;
+    margin-left: 60px;
 }
 
 .input-meter{
     width: 76px;
     border: 1px solid #cff0f9;
+    margin-left: 9px;
+    margin-right: 5px;
 }
 
 .input-pack{
     width: 76px;
     border: 1px solid #cff0f9;
+    margin-left: 22px;
+    margin-right: 5px;
 }
 
 .calc-summary{
     font-size: 19px;
     color: #333333;
+    margin-left: 62px;
 }
 
 .calc-price{
     font-size: 31px;
     color: #333333;
     font-weight: bold;
+    margin-left: 64px;
+}
+
+.calc-label{
+    margin-left: 25px;
+}
+
+.btn-buy{
+    display: block;
+    margin-bottom: 5px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.calc-wrapper{
+    position: relative;
+}
+
+.content-1{
+    z-index: 8;
+}
+
+.calc-active{
+    display: block;
 }
