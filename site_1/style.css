@@ -661,7 +661,7 @@ footer{
         display: none;
     }
     i{
-        color: #0dee58;
+        color: #840dee;
     }
     .top__menubutton{
         display: block;
@@ -686,6 +686,10 @@ footer{
     .navigation__item{
         font-size: 20px;
     }
+    .top__logo{
+        margin: 0 auto;
+        border: 0;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -701,5 +705,20 @@ footer{
     }
     .advantages__header{
         font-size: 30px;
+    }
+    footer{
+        margin-top: -300px;;
+    }
+    .offer__wrapper{
+        padding: 50px 5px 10px 5px;
+    }
+    .offer__header{
+        text-align: center;
+    }
+    .advantages__container{
+        display: none;
+    }
+    .gallery__image{
+        margin-bottom: 5px;
     }
 }
