@@ -576,6 +576,11 @@ footer{
     display: none;
 }
 
+.items__discount,
+.offer__discount{
+    text-decoration: line-through;
+}
+
 /*Adaptive*/
 
 @media screen and (max-width: 1245px){
@@ -636,6 +641,9 @@ footer{
     }
     .top__socials{
         display: none;
+    }
+    .site-top__text-wrapper{
+        margin: 0 auto;
     }
 }
 
