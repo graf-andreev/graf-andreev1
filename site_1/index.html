@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="top">
-            <div class="top__menubutton">
+            <div onclick="burger()" class="top__menubutton">
                 <div class="top__menuitem"></div>
                 <div class="top__menuitem"></div>
                 <div class="top__menuitem"></div>
@@ -256,10 +256,14 @@
     </footer>
 </body>
 <script>
-var button = document.querySelector('.top__menubutton');
-var  menu = document.querySelector('.navigatioin__menu');
-button.onclick = function(){
-    menu.style.display = 'block'
+function burger() {
+   var menu = document.querySelector('.navigatioin__menu');
+   menu.classList.toggle("show");
 }
-</script> 
+</script>
+<style>
+    .show{
+        display: block;
+    }
+</style>
 </html>
