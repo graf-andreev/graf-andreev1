@@ -721,4 +721,9 @@ footer{
     .gallery__image{
         margin-bottom: 5px;
     }
+    .gallery__image:hover{
+        -webkit-transform: scale(1);
+       -ms-transform: scale(1);
+           transform: scale(1)
+    }
 }
