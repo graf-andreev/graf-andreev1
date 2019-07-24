@@ -125,3 +125,9 @@ div.price_block > div > div > div > span.old{
 .calc-active{
     display: block;
 }
+
+.calc-discount__2{
+    font-size: 19px;
+    color: #333333;
+    margin-left: 70px;
+}
