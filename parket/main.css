@@ -33,6 +33,10 @@ div.price_block > div > div > div > span.old{
     justify-content: space-between;
 }
 
+div.middle_info > table > tbody > tr > td > div.price_block > div > div > div > div.wrapper1 > span.new{
+    color: #333333 !important;
+}
+
 .calculator{
     width: 99.5%;
     height: auto;
