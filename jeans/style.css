@@ -1,3 +1,8 @@
+@font-face {
+    font-family: MyriadPro-Regular; 
+    src: url(fonts/8143.otf); 
+   }
+
 *{
     margin: 0;
     padding: 0;
@@ -16,12 +21,23 @@ header{
     width: 100%;
     max-width: 1076px;
     margin: 0 auto;
-    padding: 20px 0 17px 0;
+    padding: 16px 0 17px 0;
+    display: flex;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1076px;
+    margin: 0 auto;
     display: flex;
 }
 
 .logo{
     margin-right: 80px;
+}
+
+.text-logo{
+    margin-bottom: 25px;
 }
 
 nav{
@@ -31,77 +47,120 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 20;
+    margin-top: -8px;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
+.phone{
+    color: #ffffff;
+    font-size: 39px;
+    font-weight: bold;
+    line-height: 0px;
+    font-family: 'MyriadPro-Regular';
+    letter-spacing: 1px;
+}
 
-header nav.sub{
-    top: -20px;
-    margin: -0px 0 0 0;
-    background: none;
-    z-index: 10;
-    height: 1px;
+.phone-1{
+    margin-right: 39px;
 }
-header nav.sub.brends{
-    top: 0;
+
+.form-wrapper{
+    margin-left: 65px;
 }
-header nav.sub .in_body{
-    position: relative;
-}
-header nav ul{
+
+.button1 {
     display: block;
-    padding: 20px 0 0 0;
-}
-header nav.sub ul{
-    position: absolute;
-    padding: 0;
-    top: 0px;
-
-}
-header nav ul li{
-    display: block;
-    position: relative;
-    float: left;
-    width: 213px;
-    height: 75px;
-
+    width: 170px;
+    height: 43px;
+    background: transparent url(/img/button-login.png);
+    background-size: 100% 54px;
+    color: #331600;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 47px;
     text-align: center;
+    font-family: 'Conv_MyriadPro-Bold';
+    font-weight: bold;
+    }
 
+.loginDescription{
+    color: #d1d3d4;
+    text-shadow: 0px 1px 1px #ffffff, 0px 1px 2px #000000;
+    font-family: 'Conv_MyriadPro-Bold';
+    font-size: 13px;
+    text-align: center;
+    height: 1em;
+    display: block;
+    width: 142px;
+    line-height: 13px;
+    margin-bottom: 3px;
 }
-header nav.sub ul li{
 
+.cart-inhead{
+    overflow: hidden;
+    padding: 3px 45px 0px 13px;
+    line-height: 22px;
+    height: 25px;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    background: transparent url(/img/cart.png) 0 0 no-repeat;
+    background-size: 100% 99%;
+}
 
+.cart_icon{
+    display: block;
+    position: absolute;
+    background: transparent url(/img/cart-b.png) 0 0 no-repeat;
+    width: 26px;
+    height: 26px;
+    top: -2px;
+    right: 0;
+    background-size: cover;
 }
-header nav ul li.item1{
-    width: 215px;
-}
-header nav ul li.item1 a{
-    background-position: -215px 0;
-    width: 215px;
-    height: 75px;
-}
-header nav ul li.item2{
 
-    width: 215px;
+.top-menu{
+    display: flex;
 }
-header nav ul li.item2 a{
-    background-position: -430px 0;
-    width: 215px;
+
+.top-menu__item{
+    list-style: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    }
+
+.top-menu__item a{
+    color: #000000;
+    text-decoration: none;
+    background-image: url(/img/button-login.png);
+    background-size: cover;
+    display: block;
+    width: 160px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'MyriadPro-Regular';
+    text-align: center;
+    padding-top: 10px;
+    }
+
+    .top-menu__item a:hover{
+        color: #ffffff;
+    }
+
+.search_hd{
+    width: 47px;
+    height: 47px;
+    background-image: url(/img/serach-b.png)
 }
-header nav.sub ul li.item2 a{
-    background-position: -430px 0;
-    width: 212px;
-}
-header nav ul li.item3{
-    width: 215px;
-}
-header nav ul li.item3 a{
-    background-position: -645px 0;
-    width: 215px;
-}
-header nav ul li.item4{
-    width: 222px;
-}
-header nav ul li.item4 a{
-    background-position: -860px 0;
-    width: 222px;
+
+.popup_search{
+    width: 332px;
+    height: 148px;
+    background-image: url(/img/popup.png);
+    position: absolute;
+    z-index: 20;
+    top: 20%;
+    right: 16%;
 }
