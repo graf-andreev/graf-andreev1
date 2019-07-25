@@ -35,8 +35,9 @@ div.price_block > div > div > div > span.old{
 
 .calculator{
     width: 99.5%;
-    height: 220px;
+    height: auto;
     border: 1px solid #cff0f9;
+    padding-bottom: 5px;
 }
 
 .calc-header{
@@ -97,7 +98,7 @@ div.price_block > div > div > div > span.old{
 }
 
 .calc-price{
-    font-size: 31px;
+    font-size: 2em;
     color: #333333;
     font-weight: bold;
     margin-left: 64px;
@@ -129,5 +130,24 @@ div.price_block > div > div > div > span.old{
 .calc-discount__2{
     font-size: 19px;
     color: #333333;
-    margin-left: 70px;
+    margin-left: 73px;
+}
+
+@media (max-width: 800px) {
+    .calculator{
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .calc-summary{
+        font-size: 19px;
+    }
+    .calc-label,
+    .calc-text{
+        margin-left: 0px;
+    }
+    .calc-price{
+        margin-left: 10px;
+    }
 }
