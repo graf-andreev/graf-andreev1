@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    max-width: 1900px;
+    background-image: url(img/bgh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top__header{
+    width: 100%;
+    max-width: 1076px;
+    margin: 0 auto;
+    padding: 20px 0 17px 0;
+    display: flex;
+}
+
+.logo{
+    margin-right: 80px;
+}
+
+nav{
+    position: relative;
+    height: 95px;
+    background-image: url(img/menu-top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 20;
+}
+
+
+header nav.sub{
+    top: -20px;
+    margin: -0px 0 0 0;
+    background: none;
+    z-index: 10;
+    height: 1px;
+}
+header nav.sub.brends{
+    top: 0;
+}
+header nav.sub .in_body{
+    position: relative;
+}
+header nav ul{
+    display: block;
+    padding: 20px 0 0 0;
+}
+header nav.sub ul{
+    position: absolute;
+    padding: 0;
+    top: 0px;
+
+}
+header nav ul li{
+    display: block;
+    position: relative;
+    float: left;
+    width: 213px;
+    height: 75px;
+
+    text-align: center;
+
+}
+header nav.sub ul li{
+
+
+}
+header nav ul li.item1{
+    width: 215px;
+}
+header nav ul li.item1 a{
+    background-position: -215px 0;
+    width: 215px;
+    height: 75px;
+}
+header nav ul li.item2{
+
+    width: 215px;
+}
+header nav ul li.item2 a{
+    background-position: -430px 0;
+    width: 215px;
+}
+header nav.sub ul li.item2 a{
+    background-position: -430px 0;
+    width: 212px;
+}
+header nav ul li.item3{
+    width: 215px;
+}
+header nav ul li.item3 a{
+    background-position: -645px 0;
+    width: 215px;
+}
+header nav ul li.item4{
+    width: 222px;
+}
+header nav ul li.item4 a{
+    background-position: -860px 0;
+    width: 222px;
+}
