@@ -4,7 +4,6 @@ div.price_block > div > div > div > span.old{
 
 .new{
     font-size: 30px !important;
-    color: #333333 !important;
 }
 
 .price_block__left{
@@ -29,8 +28,12 @@ div.price_block > div > div > div > span.old{
 }
 
 .wrapper1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 div.middle_info > table > tbody > tr > td > div.price_block > div > div > div > div.wrapper1 > span.new{
@@ -45,6 +48,8 @@ div.middle_info > table > tbody > tr > td > div.price_block > div > div > div > 
 }
 
 .calc-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -65,8 +70,12 @@ div.middle_info > table > tbody > tr > td > div.price_block > div > div > div > 
 }
 
 .flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .calc-text{
@@ -139,7 +148,9 @@ div.middle_info > table > tbody > tr > td > div.price_block > div > div > div > 
 
 @media (max-width: 900px) {
     .flex{
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 }
 
