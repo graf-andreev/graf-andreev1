@@ -128,7 +128,7 @@ nav{
     margin-right: 10px;
     }
 
-.top-menu__item a{
+.top-menu__item > a{
     color: #000000;
     text-decoration: none;
     background-image: url(img/button-login.png);
@@ -210,4 +210,13 @@ body > div > div > input:nth-child(2){
     background-image: url(img/button-login.png);
     width: 108px;
     height: 30px;
+}
+
+.ins li{
+    color: #000000;
+    text-decoration: none;
+    background-image: url(img/menu-i-bg-b.png);
+    margin: 0 0 0 0;
+    padding: 0px 50px 0px 27px;
+    width: 184px;
 }
