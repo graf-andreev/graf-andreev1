@@ -47,8 +47,7 @@ nav{
     background-size: cover;
     z-index: 20;
     margin-top: -8px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 1.5rem;
 }
 
 .phone{
@@ -149,9 +148,9 @@ nav{
     }
 
 .search_hd{
-    width: 47px;
-    height: 47px;
-    background-image: url(img/serach-b.png)
+    width: 0px;
+    height: 0px;
+    border: 0;
 }
 
 .popup_search{
@@ -162,5 +161,53 @@ nav{
     z-index: 20;
     top: 20%;
     right: 16%;
-    padding: 30px 13px 20px 17px;
+    padding: 35px 13px 20px 17px;
+}
+
+.value{
+    color: #000000;
+    text-decoration: none;
+}
+
+.header-search{
+    width: 200px;
+    height: 28px;
+    border-radius: 4px;
+    box-shadow: inset 3px 2px 5px 1px #a1a1a1;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.header-search{
+    width: 200px;
+    height: 28px;
+}
+
+.header-search__short{
+    width: 143px;
+    margin-right: 12px;
+}
+
+body > div > div > input:nth-child(2){
+    margin-right: 0px;
+}
+
+.header-search__long::placeholder{
+    font-size: 15px;
+    color: #bbbbbb;
+}
+
+.form-bottom{
+    margin-top: 40px;
+}
+
+.header-search__short::placeholder{
+    font-size: 15px;
+    color: #32302d;
+}
+
+.search__submit{
+    background-image: url(img/button-login.png);
+    width: 108px;
+    height: 30px;
 }
