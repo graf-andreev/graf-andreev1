@@ -47,7 +47,7 @@ nav{
     background-size: cover;
     z-index: 20;
     margin-top: -8px;
-    padding-top: 1.5rem;
+    padding-top: 1.7rem;
 }
 
 .phone{
@@ -197,6 +197,7 @@ body > div > div > input:nth-child(2){
     color: #bbbbbb;
 }
 
+
 .form-bottom{
     margin-top: 40px;
 }
@@ -210,13 +211,4 @@ body > div > div > input:nth-child(2){
     background-image: url(img/button-login.png);
     width: 108px;
     height: 30px;
-}
-
-.ins li{
-    color: #000000;
-    text-decoration: none;
-    background-image: url(img/menu-i-bg-b.png);
-    margin: 0 0 0 0;
-    padding: 0px 50px 0px 27px;
-    width: 184px;
 }
