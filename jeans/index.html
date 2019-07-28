@@ -37,10 +37,10 @@
     <li class="top-menu__item"><a href="/akcii/">Акции</a></li>
     <li class="top-menu__item"><a href="/contacts/">Контакты</a></li>
     <div>
-    <button type="submit" class="search_hd"><img src="/img/serach-b.png" alt=""></button>
+    <button onclick="toggle()" type="submit" class="search_hd search_button"><img src="/img/serach-b.png" alt=""></button>
     <div class="popup_search">
         <input class="header-search header-search__long" type="search" placeholder="Что вы ищете?">
-        <button type="submit" class="search_hd"><img src="img/button-login.png" alt="" width="106" height="30">Поиск</button>
+        <button type="submit" class="search_hd">Поиск</button>
         <div class="form-bottom">
             <input class="header-search header-search__short" type="search" placeholder="Цена от"> 
             <input class="header-search header-search__short" type="search" placeholder="Цена до">
@@ -50,11 +50,18 @@
 </ul>
 </div>  
  </nav>
-
-
-                
-
 <body>
     
 </body>
+<script>
+    function toggle() {
+       var popup = document.querySelector('.popup_search');
+       popup.classList.toggle("show");
+    }
+    </script>
+    <style>
+        .show{
+            display: block;
+        }
+    </style>
 </html>
