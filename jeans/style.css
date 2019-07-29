@@ -6,7 +6,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 header{
@@ -14,6 +15,7 @@ header{
     background-image: url(img/bgh.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 1076px;
 }
 
 .top__header{
@@ -21,6 +23,8 @@ header{
     max-width: 1076px;
     margin: 0 auto;
     padding: 16px 0 17px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -28,6 +32,8 @@ header{
     width: 100%;
     max-width: 1076px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -41,13 +47,14 @@ header{
 
 nav{
     position: relative;
-    height: 95px;
+    height: 97px;
+    min-width: 1076px;
     background-image: url(img/menu-top.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 20;
     margin-top: -8px;
-    padding-top: 1.7rem;
+    padding-top: 1.6rem;
 }
 
 .phone{
@@ -120,6 +127,8 @@ nav{
 }
 
 .top-menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -158,11 +167,11 @@ nav{
     width: 332px;
     height: 148px;
     background-image: url(img/popup.png);
-    position: relative;
+    position: absolute;
     z-index: 20;
-    top: -3%;
-    right: 86%;
-    padding: 23px 13px 20px 17px;
+    top: 94%;
+    left: -285px;
+    padding: 35px 13px 20px 17px;
     display: none;
 }
 
@@ -175,14 +184,10 @@ nav{
     width: 200px;
     height: 28px;
     border-radius: 4px;
-    box-shadow: inset 3px 2px 5px 1px #a1a1a1;
+    -webkit-box-shadow: inset 3px 2px 5px 1px #a1a1a1;
+            box-shadow: inset 3px 2px 5px 1px #a1a1a1;
     padding-left: 10px;
     padding-top: 2px;
-}
-
-.header-search{
-    width: 200px;
-    height: 28px;
 }
 
 .header-search__short{
@@ -194,6 +199,26 @@ body > div > div > input:nth-child(2){
     margin-right: 0px;
 }
 
+.header-search__long::-webkit-input-placeholder{
+    font-size: 15px;
+    color: #bbbbbb;
+}
+
+.header-search__long::-moz-placeholder{
+    font-size: 15px;
+    color: #bbbbbb;
+}
+
+.header-search__long:-ms-input-placeholder{
+    font-size: 15px;
+    color: #bbbbbb;
+}
+
+.header-search__long::-ms-input-placeholder{
+    font-size: 15px;
+    color: #bbbbbb;
+}
+
 .header-search__long::placeholder{
     font-size: 15px;
     color: #bbbbbb;
@@ -201,7 +226,29 @@ body > div > div > input:nth-child(2){
 
 .form-bottom{
     margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+}
+
+.header-search__short::-webkit-input-placeholder{
+    font-size: 15px;
+    color: #32302d;
+}
+
+.header-search__short::-moz-placeholder{
+    font-size: 15px;
+    color: #32302d;
+}
+
+.header-search__short:-ms-input-placeholder{
+    font-size: 15px;
+    color: #32302d;
+}
+
+.header-search__short::-ms-input-placeholder{
+    font-size: 15px;
+    color: #32302d;
 }
 
 .header-search__short::placeholder{
@@ -215,3 +262,25 @@ body > div > div > input:nth-child(2){
     height: 30px;
 }
 
+.search_wrap{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.search__button{
+    display: block;
+    background-image: url(img/button-login.png);
+    width: 106px;
+    height: 30px;
+    background-size: cover;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #32302d;
+    padding-top: 6px;
+    position: relative;
+    right: 4px;
+}
