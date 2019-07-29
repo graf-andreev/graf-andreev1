@@ -135,7 +135,7 @@ nav{
 .top-menu__item{
     list-style: none;
     text-transform: uppercase;
-    margin-right: 10px;
+    margin-right: 11px;
     }
 
 .top-menu__item > a{
@@ -144,13 +144,13 @@ nav{
     background-image: url(img/button-login.png);
     background-size: cover;
     display: block;
-    width: 160px;
+    width: 162px;
     height: 45px;
     font-size: 18px;
     font-weight: bold;
     font-family: 'MyriadPro-Regular';
     text-align: center;
-    padding-top: 10px;
+    padding-top: 12px;
     }
 
     .top-menu__item a:hover{
