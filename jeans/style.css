@@ -6,8 +6,6 @@
 *{
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
 }
 
 header{
@@ -47,14 +45,15 @@ header{
 
 nav{
     position: relative;
-    height: 97px;
+    height: 93px;
     min-width: 1076px;
     background-image: url(img/menu-top.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 20;
+    display: flex;
     margin-top: -8px;
-    padding-top: 1.6rem;
+    align-items: center;
 }
 
 .phone{
@@ -74,7 +73,7 @@ nav{
     margin-left: 65px;
 }
 
-.button1 {
+.button2 {
     display: block;
     width: 170px;
     height: 43px;
@@ -121,7 +120,7 @@ nav{
     background: transparent url(img/cart-b.png) 0 0 no-repeat;
     width: 26px;
     height: 26px;
-    top: -2px;
+    top: 2px;
     right: 0;
     background-size: cover;
 }
@@ -146,7 +145,7 @@ nav{
     background-size: cover;
     display: block;
     width: 162px;
-    height: 45px;
+    height: 42px;
     font-size: 18px;
     font-weight: bold;
     font-family: 'MyriadPro-Regular';
@@ -165,8 +164,8 @@ nav{
 }
 
 .popup_search{
-    width: 332px;
-    height: 148px;
+    width: 302px;
+    height: 97px;
     background-image: url(img/popup.png);
     position: absolute;
     z-index: 20;
@@ -298,7 +297,7 @@ body > div > div > input:nth-child(2){
     padding: 0px 50px 0px 27px;
     background: transparent url(img/menu-i-bg-b.png);
     background-size: contain;
-    width: 239px;
+    width: 188px;
     display: none;
 }
 
