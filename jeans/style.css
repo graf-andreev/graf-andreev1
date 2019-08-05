@@ -43,7 +43,7 @@ header{
     margin-bottom: 25px;
 }
 
-nav{
+.header_nav{
     position: relative;
     height: 93px;
     min-width: 1076px;
