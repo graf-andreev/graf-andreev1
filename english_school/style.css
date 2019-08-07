@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "adineue PRO KZ Black";
+    src: url("/fonts/adineuePROKZ-Black.otf") format("otf"),
+   }
+
+@font-face {
+    font-family: "CenturyGothic-Bold";
+    src: url("/fonts/CenturyGothic-Bold.ttf") format("ttf"),
+   }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header,
+body,
+footer{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    height: 120px;
+    padding: 18px 0 18px 0;
+}
+
+.contacts{
+    margin-left: 160px;
+    margin-right: 110px;
+    text-align: center;
+}
+
+.contacts span{
+    font-family: "adineue PRO KZ Black";
+    font-size: 35px;
+    color: #565656;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.socials img{
+    margin-right: 10px;
+}
+
+.adress{
+    background-color: #edc22e;
+    width: 434px;
+}
