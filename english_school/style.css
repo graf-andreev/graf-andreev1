@@ -1,13 +1,20 @@
 @font-face {
-    font-family: "adineue PRO KZ";
-    src: local("/fonts/adineuePROKZ-Black.ttf") format("ttf");
+    font-family: "adineuePROKZ";
+    src: url("../fonts/adineuePROKZ-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+   }
+
+   @font-face {
+    font-family: "adineuePRO-kur-light";
+    src: url("../fonts/adineuePRO-kur-light.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "CenturyGothic-Bold";
-    src: local("/fonts/CenturyGothic-Bold.ttf") format("ttf");
+    src: url("../fonts/CenturyGothic-Bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
@@ -35,7 +42,7 @@ footer{
 
 .logo{
     padding: 18px 0 18px 0;
-    margin-left: 120px;
+    margin-left: 9%;
 }
 
 header{
@@ -51,7 +58,7 @@ header{
 }
 
 .contacts span{
-    font-family: "adineue PRO KZ";
+    font-family:"adineuePROKZ";
     font-size: 35px;
     color: #565656;
     font-weight: bold;
@@ -71,6 +78,7 @@ header{
     width: 434px;
     text-align: center;
     vertical-align: middle;
+    font-family:"adineuePROKZ";
 }
 
 .bg-orange__grad{
@@ -102,7 +110,7 @@ header{
 .nav-item a{
     text-decoration: none;
     color: #565656;
-    font-family: 'CenturyGothic';
+    font-family: 'CenturyGothic-Bold';
 
 }
 
@@ -111,7 +119,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-
 }
 
 h1{
@@ -120,10 +127,12 @@ h1{
     font-size: 90px;
     text-transform: uppercase;
     color: #ffffff;
+    font-family:"adineuePROKZ";
 }
 
 h1 span{
     color: #edc22e;
+    
 }
 
 button{
@@ -133,6 +142,8 @@ button{
     border: 0;
     border-radius: 40px;
     cursor: pointer;
+    font-family:"adineuePROKZ";
+    letter-spacing: 1px;
 }
 
 .main-button{
@@ -155,6 +166,7 @@ button{
 .card{
     width: 100%;
     max-width: 360px;
+    height: 846px;
     background-color: #ffffff;
     box-shadow: 7px 7px 29px 0px rgba(0, 0, 0, .18);
     border-radius: 7px;
@@ -166,12 +178,24 @@ button{
 }
 
 .card-header{
-    padding: 39px 95px 20px 30px;
+    padding: 32px 95px 20px 30px;
     border-radius: 7px;
+}
+
+.card-header p{
+    font-family:"adineuePROKZ";
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 30px;
 }
 
 .card-main{
     padding: 50px 60px 195px 20px;
+    font-family: "adineuePRO-kur-light";
+    font-size: 20px;
+    line-height: 30px;
+    color: #6e6e6e;
 }
 
 .levels-2{
@@ -215,4 +239,13 @@ button{
 .teacher-item{
     width: 100%;
     max-width: 379px;
+}
+
+.fwrap{
+    flex-wrap: wrap;
+}
+
+.button-more{
+    width: 265px;
+    height: 58px;
 }
