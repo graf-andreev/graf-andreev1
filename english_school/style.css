@@ -1,27 +1,27 @@
 @font-face {
     font-family: "adineuePROKZ";
-    src: url("../fonts/adineuePROKZ-Black.ttf") format("truetype");
+    src: url("fonts/adineuePROKZ-Black.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
 
    @font-face {
     font-family: "adineuePRO-kur-light";
-    src: url("../fonts/adineuePRO-kur-light.ttf") format("truetype");
+    src: url("fonts/adineuePRO-kur-light.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "CenturyGothic-Bold";
-    src: url("../fonts/CenturyGothic-Bold.ttf") format("truetype");
+    src: url("fonts/CenturyGothic-Bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "Helios-Cond";
-    src: url("../fonts/Helios-Cond.ttf") format("truetype");
+    src: url("fonts/Helios-Cond.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
