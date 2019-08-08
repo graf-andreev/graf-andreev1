@@ -1,11 +1,15 @@
 @font-face {
-    font-family: "adineue PRO KZ Black";
-    src: url("/fonts/adineuePROKZ-Black.otf") format("otf"),
+    font-family: "adineue PRO KZ";
+    src: local("/fonts/adineuePROKZ-Black.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
    }
 
 @font-face {
     font-family: "CenturyGothic-Bold";
-    src: url("/fonts/CenturyGothic-Bold.ttf") format("ttf"),
+    src: local("/fonts/CenturyGothic-Bold.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
    }
 
 *{
@@ -13,8 +17,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 
 header,
 body,
@@ -24,24 +26,40 @@ footer{
     margin: 0 auto;
 }
 
+.wrapper-content{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo{
+    padding: 18px 0 18px 0;
+    margin-left: 120px;
+}
+
 header{
     display: flex;
     height: 120px;
-    padding: 18px 0 18px 0;
 }
 
 .contacts{
     margin-left: 160px;
     margin-right: 110px;
     text-align: center;
+    padding: 18px 0 18px 0;
 }
 
 .contacts span{
-    font-family: "adineue PRO KZ Black";
+    font-family: "adineue PRO KZ";
     font-size: 35px;
     color: #565656;
     font-weight: bold;
     line-height: 40px;
+}
+
+.socials{
+    width: 380px;;
 }
 
 .socials img{
@@ -51,4 +69,150 @@ header{
 .adress{
     background-color: #edc22e;
     width: 434px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bg-orange__grad{
+    background: linear-gradient(to right, #edc22e, #ebebeb 75%);
+}
+
+.bg-orange{
+    background-color: #edc22e;
+}
+
+.bg-white{
+    background-color: #ebebeb;
+}
+
+.main-navigation{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+
+.nav-item{
+    width: 100%;
+    height: 46px;
+    vertical-align: middle;
+    padding-top: 13px
+    
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #565656;
+    font-family: 'CenturyGothic';
+
+}
+
+.main-banner{
+    background-image: url(img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+
+h1{
+    padding-top: 180px;
+    padding-bottom: 40px;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+h1 span{
+    color: #edc22e;
+}
+
+button{
+    background-color: #edc22e;
+    color: #ffffff;
+    font-size: 20px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.main-button{
+    margin-bottom: 245px;
+    width: 290px;
+    height: 65px;
+    text-transform: uppercase;
+    box-shadow: 4px 1px 131px 0px rgba(0, 0, 0, .53);
+}
+
+
+.levels{
+    border-top: 5px solid #e9bf2d;
+    border-bottom: 5px solid #e9bf2d;
+    width: 100%;
+    background-image: url(img/bg-repeat.JPG);
+    background-repeat: repeat;
+}
+
+.card{
+    width: 100%;
+    max-width: 360px;
+    background-color: #ffffff;
+    box-shadow: 7px 7px 29px 0px rgba(0, 0, 0, .18);
+    border-radius: 7px;
+    margin: 75px 0 85px 0;
+}
+
+.jc-flex{
+    justify-content: space-between;
+}
+
+.card-header{
+    padding: 39px 95px 20px 30px;
+    border-radius: 7px;
+}
+
+.card-main{
+    padding: 50px 60px 195px 20px;
+}
+
+.levels-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-next{
+    width: 100%;
+    max-width: 558px;
+}
+
+.test{
+    text-align: center;
+    padding-top: 70px;
+}
+
+.test h3{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.test p{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.test button{
+    width: 410px;
+    height: 84px;
+    background-color: #ffffff;
+    color: #636363;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.video iframe{
+    border-radius: 11px;
+}
+
+.teacher-item{
+    width: 100%;
+    max-width: 379px;
 }
