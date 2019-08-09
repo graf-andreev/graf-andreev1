@@ -21,7 +21,7 @@
 
 @font-face {
     font-family: "Helios-Cond";
-    src: url("fonts/Helios-Cond.ttf") format("truetype");
+    src: url("fonts/HeliosCondBlackC.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
    }
@@ -86,6 +86,14 @@ header{
     text-align: center;
     vertical-align: middle;
     font-family:"adineuePROKZ";
+    font-size: 30px;
+    color: #565656;
+    padding-top: 26px;
+}
+
+.adress span{
+    border-bottom: 3px solid #565656;
+    cursor: pointer;
 }
 
 .bg-orange__grad{
@@ -213,6 +221,7 @@ button{
 .card-next{
     width: 100%;
     max-width: 558px;
+    height: 420px;;
 }
 
 .test{
@@ -268,13 +277,18 @@ button{
 }
 
 .teachers h3{
+    color: #6e6e6e;
+   }
+
+h3{
+    margin-top: 87px;
+    margin-bottom: 93px;
     font-family: "Helios-Cond";
     font-size: 50px;
-    color: #6e6e6e;
     line-height: 65px;
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
-
 
 .teacher-name{
     font-family: "adineuePROKZ";
@@ -292,4 +306,38 @@ button{
     color: #8c8c8c;
     letter-spacing: 2px;
     margin-bottom: 60px;
+}
+
+footer{
+    display: flex;
+    height: 625px;
+}
+
+.map,
+.contacts-footer{
+    width: 50%;
+}
+
+.contacts-footer{
+    padding: 60px 0 210px 43px;
+}
+
+.contact-footer{
+    border-left: 5px solid #ffffff;
+}
+
+.contact-footer h4{
+    font-family: "Helios-Cond";
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 41px;
+    letter-spacing: 1px;
+}
+
+.contact-footer p{
+    font-family: "adineuePRO-kur-light";
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 41px;
 }
