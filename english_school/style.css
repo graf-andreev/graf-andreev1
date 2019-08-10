@@ -158,7 +158,8 @@ button{
     border-radius: 40px;
     cursor: pointer;
     font-family:"adineuePROKZ";
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    padding-top: 0.5%;
 }
 
 .main-button{
@@ -186,6 +187,7 @@ button{
     box-shadow: 7px 7px 29px 0px rgba(0, 0, 0, .18);
     border-radius: 7px;
     margin: 75px 0 85px 0;
+    position: relative;
 }
 
 .jc-flex{
@@ -193,7 +195,7 @@ button{
 }
 
 .card-header{
-    padding: 32px 95px 20px 30px;
+    padding: 21px 95px 20px 30px;
     border-radius: 7px;
 }
 
@@ -202,15 +204,61 @@ button{
     font-size: 30px;
     color: #ffffff;
     letter-spacing: 1px;
-    line-height: 30px;
+    line-height: 45px;
 }
 
 .card-main{
-    padding: 50px 60px 195px 20px;
+    padding: 50px 60px 0 20px;
     font-family: "adineuePRO-kur-light";
     font-size: 20px;
     line-height: 30px;
+}
+
+.why{
+    background: linear-gradient(to bottom, transparent, #ffffff 50%);
+    height: 514px;
+}
+
+.why p{
+    text-align: left;
+    padding-left: 24px;
+}
+
+.why img{
+    margin-bottom: 30px;
+    border-radius: 5px 5px 0 0;
+}
+
+.text{
+    font-family: "adineuePRO-kur-light";
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
     color: #6e6e6e;
+}
+
+.button-level{
+    position: absolute;
+    top: 88%;
+    left: 12%;
+}
+
+.button-level2{
+    position: absolute;
+    top: 78%;
+    left: 25%;
+}
+
+.bg-girafe1{
+    background-image: url(img/girafe1.png);
+    background-repeat: no-repeat;
+    background-position: 91% 73%;
+}
+
+.bg-girafe2{
+    background-image: url(img/girafe2.png);
+    background-repeat: no-repeat;
+    background-position: 95% 77%;
 }
 
 .levels-2{
@@ -229,7 +277,7 @@ button{
     padding-top: 70px;
 }
 
-.test h3{
+.test h4{
     color: #ffffff;
     font-size: 50px;
     font-family:"adineuePROKZ";
@@ -278,6 +326,8 @@ button{
 
 .teachers h3{
     color: #6e6e6e;
+    margin-top: 85px;
+    margin-bottom: 90px;
    }
 
 h3{
@@ -288,6 +338,9 @@ h3{
     line-height: 65px;
     letter-spacing: 4px;
     text-transform: uppercase;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .teacher-name{
@@ -306,6 +359,48 @@ h3{
     color: #8c8c8c;
     letter-spacing: 2px;
     margin-bottom: 60px;
+}
+
+.why-we,
+.advantages{
+    padding-top: 85px;
+}
+
+.why-we h3{
+    color: #ffffff;
+    margin-bottom: 90px;
+}
+
+.advantages{
+    height: 650px;
+}
+
+.advantages h3{
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.advantages-item{
+    width: 187px;
+}
+
+.advantages-item span{
+    font-family: "Helios-Cond";
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.advantages-item span::before{
+    content: '';
+    display: block;
+    width: 58px;
+    height: 4px;
+    background-color: #ffffff;
+    margin-top: 24px;
+    margin-bottom: 20px;
 }
 
 footer{
