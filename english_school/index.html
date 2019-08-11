@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">    
+    
     <title>Level Eleven</title>
 </head>
 <header>
@@ -211,11 +214,13 @@
 <section class="make-choise">
     <h3>Сделай свой выбор</h3>
     <div class="wrapper-content jc-flex">
+        <div class="owl-carousel">
     <div class="choise-item"><img src="img/kurs1.png" alt=""></div>
     <div class="choise-item"><img src="img/kurs2.png" alt=""></div>
     <div class="choise-item"><img src="img/kurs3.png" alt=""></div>
     <div class="choise-item"><img src="img/kurs4.png" alt=""></div>
     </div>
+</div>
 </section>
 <section class="advantages bg-orange">
 <h3>Наши преимущества</h3>
@@ -230,6 +235,7 @@
 <section class="feedback">
     <h3>Отзывы</h3>
     <div class="wrapper-content">
+        <div class="owl-carousel">
         <div class="feedback-item">
             <img src="img/why1.jpg" width="162" height="162" alt="">
             <div>
@@ -239,8 +245,10 @@
                   exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                    dolor in reprehenderit in voluptate velit esse </p>
             </div>
-        </div>
     </div>
+   
+</div>
+</div>
 </section>
 <section class="form wrapper-content">
     <h4>Пройдите бесплатный пробный урок</h4>
@@ -271,3 +279,25 @@
 </footer>
 </html>
 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="dist/owl.carousel.min.js"></script>
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    items:2,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+</script>
