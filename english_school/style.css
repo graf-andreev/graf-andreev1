@@ -5,7 +5,7 @@
     font-style: normal;
    }
 
-   @font-face {
+@font-face {
     font-family: "adineuePRO-kur-light";
     src: url("fonts/adineuePRO-kur-light.ttf") format("truetype");
     font-weight: normal;
@@ -173,9 +173,11 @@ button{
 
 .timer h4{
     font-family: "adineuePROKZ";
-    font-size: 45px;
+    font-size: 62px;
     color: #f6932e;
     line-height: 60px;
+    margin-right: 85px;
+    margin-top: 28px;
 }
 
 .timer h4 span{
@@ -187,12 +189,124 @@ button{
     width: 140px;
     height: 168px;
     border-radius: 8px;
-    font-family: "adineuePROKZ";
-    font-size: 80px;
-    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 63px;
+}
+
+.timer-container{
+    display: flex;
+    margin-right: -42px;
+}
+
+.days::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #edc22e;
+    position: relative;
+    left: 149px;
+    top: 6px;
+}
+
+.days::after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #edc22e;
+    position: relative;
+    left: 58px;
+    bottom: 20px;
+}
+
+.hours::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #edc22e;
+    position: relative;
+    left: 154px;
+    top: 6px;
+}
+
+.hours::after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #edc22e;
+    position: relative;
+    left: 45px;
+    bottom: 20px;
+}
+
+.minutes::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #edc22e;
+    position: relative;
+    left: 155px;
+    top: 6px;
+}
+
+.minutes::after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #edc22e;
+    position: relative;
+    left: 44px;
+    bottom: 20px;
+}
+
+.time span{
+    font-family: "adineuePROKZ";
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.under-time{
+    font-family: "adineuePROKZ";
+    padding-left: 20%;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #6e6e6e;
+}
+
+section.timer > div > div:nth-child(4) > p{
+    padding-left: 16px;
+}
+
+section.timer > div > div:nth-child(5) > p{
+    padding-left: 10px;
+}
+
+.button-timer{
+    width: 100%;
+    max-width: 623px;
+    height: 74px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.timer h5{
+    font-family: "adineuePROKZ";
+    padding-left: 55%;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: #6e6e6e;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .levels{
@@ -504,7 +618,8 @@ svg:hover .fil1{
 }
 
 .choise-button{
-    width: 208px;
+    width: 100%;
+    max-width: 208px;
     height: 46px;
     margin-left: 25px;
     margin-bottom: 58px;
@@ -677,6 +792,12 @@ footer{
     margin-bottom: 60px;
 }
 
+.logo-footer img{
+    width: 100%;
+    max-width: 374px;
+    height: auto;
+}
+
 .popup-adress{
     position: fixed;
     display: block;
@@ -718,6 +839,15 @@ footer{
     header{
         height: auto;
     }
+    .logo{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1116px){
+    .contacts{
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width: 1025px) {
@@ -730,13 +860,13 @@ footer{
     .adress{
     padding-left: 0px;
     }
-    .contacts{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-}
+   }
 
 @media screen and (max-width: 940px) {
+    .timer,
+    .timer-container{
+        flex-wrap: wrap;
+    }
     .wrapper-content{
         flex-wrap: wrap;
         justify-content: space-around;
@@ -754,6 +884,17 @@ footer{
        display: block;
        text-align: center; 
     }
+    header{
+        flex-wrap: wrap;
+    }
+    .adress{
+    width: 100%;
+    text-align: center;
+    }   
+}
+
+@media screen and (max-width: 708px) {
+
 }
 
 @media screen and (max-width: 450px) {

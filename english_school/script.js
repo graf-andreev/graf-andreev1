@@ -64,5 +64,5 @@ $('.slide-two').owlCarousel({
         $('.overlay_popup').show(); // Открываем блок заднего фона
     }) 
     $('.popup-adress').click(function() { // Обрабатываем клик по заднему фону
-        $('.overlay_popup, .adress-click').css('dispay', 'none'); // Скрываем затемнённый задний фон и основное всплывающее окно
+        $('.overlay_popup, .popup-adress').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
     })

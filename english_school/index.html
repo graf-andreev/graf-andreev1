@@ -53,19 +53,20 @@
         <button class="main-button">Узнать больше</button>
     </section>
     <section class="timer"><a id="actions"></a>
-            <div class="wrapper-content">
+        <h5>До конца акции</h5>    
+        <div class="wrapper-content">
 <h4>35% скидка <br><span>на обучение</span></h4>
-<h5>До конца акции</h5>
-<div class="time bg-orange">14</div>
-<span>Дни</span>
-<div class="time bg-orange">45</div>
-<span>Часы</span>
-<div class="time bg-orange">04</div>
-<span>Минуты</span>
-<div class="time bg-orange">56</div>
-<span>Секунды</span>
+<div class="timer-container">
+<div><div class="time bg-orange days"><span>14</span></div><p class="under-time">Дни</p></div>
+
+<div><div class="time bg-orange hours"><span>45</span></div><p class="under-time">Часы</p></div>
+
+<div><div class="time bg-orange minutes"><span>04</span></div><p class="under-time">Минуты</p></div>
+
+<div><div class="time bg-orange seconds"><span>56</span></div><p class="under-time">Секунды</p></div>
 </div>
-<button>Хочу узнать свой уровень</button>
+</div>
+<button class="button-timer">Хочу узнать свой уровень</button>
 </section>
 <section class="levels"><a id="uslugi"></a>
     <div class="wrapper-content jc-flex">
@@ -454,6 +455,25 @@ viewBox="0 0 8500 8500"
     </div>
 </div>
 </footer>
+<div class="overlay_popup"></div>
+<div class="popup-adress">
+    <div class="popup-header bg-orange">
+    <h4>Адреса</h4>
+    <img class="img-close" src="img/close.png" width="19" height="19" alt="">
+    </div>
+    <p>г. Новосибирск, 
+            ул. Фрунзе, 71/1, Дзержинский район
+            +7 (383) 235–94–45</p>
+    <p>г. Новосибирск, 
+            ул. Дуси Ковальчук, 250,  Заельцовский район
+            +7 (383) 235–94–45</p>
+    <p>г. Новосибирск, 
+            ул. Мясниковой, 22,  Калининский район
+            +7 (383) 235–94–45</p>
+    <p>г. Новосибирск, 
+            ул. Станиславского, 6   Ленинский район
+            +7 (383) 235–94–45</p>
+    </div>
 </html>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -462,23 +482,5 @@ viewBox="0 0 8500 8500"
 <script src="script.js"></script>
 
 
-<div class="popup-adress">
-<div class="popup-header bg-orange">
-<h4>Адреса</h4>
-<img class="img-close" src="img/close.png" width="19" height="19" alt="">
-</div>
-<p>г. Новосибирск, 
-        ул. Фрунзе, 71/1, Дзержинский район
-        +7 (383) 235–94–45</p>
-<p>г. Новосибирск, 
-        ул. Дуси Ковальчук, 250,  Заельцовский район
-        +7 (383) 235–94–45</p>
-<p>г. Новосибирск, 
-        ул. Мясниковой, 22,  Калининский район
-        +7 (383) 235–94–45</p>
-<p>г. Новосибирск, 
-        ул. Станиславского, 6   Ленинский район
-        +7 (383) 235–94–45</p>
-</div>
 
-<div class="overlay_popup"></div>
+
