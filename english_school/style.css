@@ -38,7 +38,7 @@ footer{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .wrapper-content{
@@ -127,7 +127,6 @@ header{
 .last-item{
     display: flex;
     background-color: #ebebeb;
-    width: 30%;
 }
 
 .first-item{
@@ -896,6 +895,9 @@ footer{
        display: block;
        text-align: center; 
     }
+    .first-item{
+        margin-left: 0px;
+    }
     header{
         flex-wrap: wrap;
     }
@@ -962,6 +964,9 @@ footer{
     }
     .card{
         margin: 0;
+    }
+    .timer-container{
+        margin-right: 0px;
     }
 }
 
