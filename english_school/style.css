@@ -601,6 +601,7 @@ svg:hover .fil1{
 
 .choise-item{
     margin-bottom: 155px;
+    height: 487px;
 }
 
 .choise-item span{
@@ -894,7 +895,51 @@ footer{
 }
 
 @media screen and (max-width: 708px) {
-
+    .logo,
+    .contacts{
+        margin: 0 auto;
+    }
+    .contacts span{
+        font-size: 30px;
+    }
+    .socials{
+        width: 65%;
+        margin: 0 auto;
+    }
+    .timer h5{
+        padding-left: 0px;
+    }
+    .time{
+        width: 100px;
+        height: 130px;
+        margin-right: 40px;
+    }
+    .time::before,
+    .time::after{
+        display: none;
+    }
+    .under-time{
+        padding-left: 0px;
+    }
+    .button-level2{
+        top: 85%;
+        left: 8%;
+    }
+    .test h4{
+        font-size: 40px;
+    }
+    .form{
+        padding: 0px;
+    }
+    .button-form{
+        background-color: #edc22e;
+    }
+    .contact-footer p{
+        font-size: 17px;
+    }
+    .contacts-footer{
+        padding: 0px;
+    }
 }
 
 @media screen and (max-width: 450px) {
