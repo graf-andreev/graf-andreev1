@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">    
-    
     <title>Level Eleven</title>
 </head>
 <header>
@@ -27,7 +26,7 @@
     <a href="#"><img src="img/linkedin.png" alt=""></a>
 </div>
 </div>
-<div class="adress"><span>Адреса</span>
+<div class="adress"><span class="adress-click">Адреса</span>
     <img src="img/address.png" width="43" height="43" alt="">
 </div>
 </header>
@@ -47,6 +46,7 @@
     </ul> 
 </div> 
 </nav>
+
 <body>
     <section class="main-banner">
         <h1>Your <span>new</span> level</h1>
@@ -377,6 +377,7 @@ viewBox="0 0 8500 8500"
 </svg>
 <p><b>Встречаемся отдохнувшие в день открытых дверей </b>  -  1 сентября!</p>
 </div>
+<div class="process-item"></div>
 </div>
 </section>
 <section class="make-choise"><a id="course"></a>
@@ -384,7 +385,7 @@ viewBox="0 0 8500 8500"
     <div class="next-slide"></div>
     <div class="prev-slide"></div>
         <div class="wrapper-content jc-flex">
-        <div class="owl-carousel">
+        <div class="owl-carousel slide-one">
     <div class="choise-item"><img src="img/kurs1.png" alt=""><span>Английский для начинающих</span><button class="choise-button">Подробнее</button></div>
     <div class="choise-item"><img src="img/kurs2.png" alt=""><span>Английский для путешествий</span><button class="choise-button">Подробнее</button></div>
     <div class="choise-item"><img src="img/kurs3.png" alt=""><span>Бизнес английский</span><button class="choise-button">Подробнее</button></div>
@@ -405,7 +406,7 @@ viewBox="0 0 8500 8500"
 <section class="feedback"><a id="otziv"></a>
     <h3>Отзывы</h3>
     <div class="wrapper-content">    
-        <div class="owl-carousel">            
+        <div class="owl-carousel slide-two">            
     <div class="feedback-item">
             <img src="img/why1.jpg" width="162" height="162" alt="">
             <div>
@@ -416,6 +417,13 @@ viewBox="0 0 8500 8500"
                    dolor in reprehenderit in voluptate velit esse </p>
             </div>
     </div>
+    <div class="feedback-item">
+            <img src="img/why1.jpg" width="162" height="162" alt="">
+            <div>
+            <h4 class="feedback-name">Иванов<br>Иван</h4>
+            <p class="text-feedback">Спасибо! научили говорить! </p>
+            </div>
+    </div>
 </div>
 </div>
 </section>
@@ -423,13 +431,13 @@ viewBox="0 0 8500 8500"
     <h4>Пройдите<br>бесплатный<br> пробный<br>урок</h4>
     <div>
     <input class="name-input" type="text" placeholder="Ваше Имя">
-    <input type="number">
-      <select class="" name="select"> 
-        <option value="" disabled selected style='display:none;'>выберите из списка</option>
-        <option selected value="value2">Никитина</option>
+    <input id="phone"placeholder="+7 (___) ___-____">
+      <select name="select"> 
+        <option value="" disabled selected>Адрес школы</option>
+        <option value="value2">Никитина</option>
         <option value="value3">Красный проспект</option>
       </select>
-    <button type="submit">Запсаться</button>
+    <button class="button-form" type="submit">Запсаться</button>
     </div>  
 </section>
 </body>
@@ -450,5 +458,27 @@ viewBox="0 0 8500 8500"
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="dist/owl.carousel.min.js"></script>
+<script src="dist/jquery.maskedinput.min.js"></script>
 <script src="script.js"></script>
 
+
+<div class="popup-adress">
+<div class="popup-header bg-orange">
+<h4>Адреса</h4>
+<img class="img-close" src="img/close.png" width="19" height="19" alt="">
+</div>
+<p>г. Новосибирск, 
+        ул. Фрунзе, 71/1, Дзержинский район
+        +7 (383) 235–94–45</p>
+<p>г. Новосибирск, 
+        ул. Дуси Ковальчук, 250,  Заельцовский район
+        +7 (383) 235–94–45</p>
+<p>г. Новосибирск, 
+        ул. Мясниковой, 22,  Калининский район
+        +7 (383) 235–94–45</p>
+<p>г. Новосибирск, 
+        ул. Станиславского, 6   Ленинский район
+        +7 (383) 235–94–45</p>
+</div>
+
+<div class="overlay_popup"></div>
