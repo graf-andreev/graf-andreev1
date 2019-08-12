@@ -484,6 +484,50 @@ svg:hover .fil1{
     color: #6e6e6e;
 }
 
+.choise-item{
+    margin-bottom: 155px;
+}
+
+.choise-item span{
+    font-family: "adineuePRO-kur-light";
+    font-size: 20px;
+    color: #6e6e6e;
+    text-align: center;
+    padding: 60px 50px 40px 50px;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.make-choise{
+    position: relative;
+}
+
+.choise-button{
+    width: 208px;
+    height: 46px;
+    margin-left: 25px;
+    margin-bottom: 58px;
+    box-shadow: 1px 3px 11px -3px rgba(197, 132, 35);
+}
+
+.prev-slide{
+    border: 60px solid transparent;	
+    border-right: 35px solid #e7be2d;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    right: 95%;
+}
+
+.next-slide{
+    border: 60px solid transparent;	
+    border-left: 35px solid #e7be2d;
+    cursor: pointer;
+    position: absolute;
+    left: 93%;
+    top: 35%;
+}
+
 .feedback{
     margin-bottom: 90px;
 }
@@ -598,7 +642,12 @@ footer{
     line-height: 41px;
 }
 
-
+@media screen and (max-width: 1300px){
+    .next-slide,
+    .prev-slide{
+        display:none;
+    }
+}
 
 @media screen and (max-width: 1025px) {
     .card-header p{
