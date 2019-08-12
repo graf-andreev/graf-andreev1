@@ -538,7 +538,7 @@ svg:hover .fil1{
     border: 1px solid #b8b8b8;
     border-radius: 4px;
     height: auto;
-    min-height: 297px;
+    max-height: 297px;
     margin: 0 auto;
     padding: 35px 60px 0 29px;
     display: flex;
@@ -573,6 +573,12 @@ svg:hover .fil1{
     letter-spacing: 1px;
 }
 
+.make-choise h3{
+    margin-top: 70px;
+    margin-bottom: 80px;
+    color: #6e6e6e;
+}
+
 .choise-item{
     width: 100%;
     max-width: 260px;
@@ -580,7 +586,10 @@ svg:hover .fil1{
 }
 
 .form{
-    background-image: url(img/figure.png)
+    background-image: url(img/figure.png);
+    height: auto;
+    min-height: 337px;
+    padding: 40px 100px 0 70px;
 }
 
 .form h4{
@@ -600,6 +609,7 @@ svg:hover .fil1{
     margin-bottom: 10px;
 }
 
+.form input,
 .name-input::placeholder{
     font-family: "adineuePRO-kur-light";
     font-size: 20px;
