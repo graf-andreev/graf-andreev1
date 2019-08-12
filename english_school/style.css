@@ -32,6 +32,10 @@
     box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 header,
 body,
 footer{
@@ -71,6 +75,10 @@ header{
     color: #565656;
     font-weight: bold;
     line-height: 55px;
+}
+
+.contacts a{
+    text-decoration: none;
 }
 
 .socials{
@@ -939,6 +947,15 @@ footer{
     }
     .contacts-footer{
         padding: 0px;
+    }
+    .timer-container{
+        justify-content: center;
+    }
+    .logo-footer img{
+        width: 85%;
+    }
+    .adress > img{
+        display: none;
     }
 }
 
