@@ -32,16 +32,13 @@
     box-sizing: border-box;
 }
 
-html{
-    overflow-x: hidden;
-}
-
 header,
 body,
 footer{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .wrapper-content{
@@ -956,6 +953,9 @@ footer{
     }
     .adress > img{
         display: none;
+    }
+    .card{
+        margin: 0;
     }
 }
 
