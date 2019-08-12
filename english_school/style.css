@@ -102,10 +102,6 @@ header{
     cursor: pointer;
 }
 
-.bg-orange__grad{
-    background: linear-gradient(to right, #edc22e, #ebebeb 75%);
-}
-
 .bg-orange{
     background-color: #edc22e;
 }
@@ -121,11 +117,21 @@ header{
 }
 
 .nav-item{
-    width: 100%;
+    margin-right: 32px;
     height: 46px;
     vertical-align: middle;
     padding-top: 13px
     
+}
+
+.last-item{
+    display: flex;
+    background-color: #ebebeb;
+    width: 30%;
+}
+
+.first-item{
+    margin-left: 120px;
 }
 
 .nav-item a{
@@ -202,7 +208,7 @@ button{
 
 .timer-container{
     display: flex;
-    margin-right: -42px;
+    margin-right: -45px;
 }
 
 .days::before {
@@ -760,7 +766,7 @@ select{
 
 footer{
     display: flex;
-    height: 625px;
+    height: 630px;
 }
 
 .map,
