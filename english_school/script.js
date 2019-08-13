@@ -48,15 +48,15 @@ $('.slide-two').owlCarousel({
     }
 })
     
-    // var owl=$(".slide-two");
-    //     owl.owlCarousel();
-    //     //$(".next") - находим нашу кнопку
-    //     $(".next-slide1").click(function(){
-    //         owl.trigger("next.owl.carousel");
-    //     });
-    //     $(".prev-slide1").click(function(){
-    //         owl.trigger("prev.owl.carousel");
-    //     });
+// var owl=$(".slide-two");
+// owl.owlCarousel();
+// //$(".next") - находим нашу кнопку
+// $(".next-slide").click(function(){
+//     owl.trigger("next.owl.carousel");
+// });
+// $(".prev-slide").click(function(){
+//     owl.trigger("prev.owl.carousel");
+// });
 
     $('.adress-click').click(function() { // Вызываем функцию по нажатию на кнопку 
         var popup_id = $('.popup-adress'); // Связываем rel и popup_id 

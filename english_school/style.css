@@ -636,7 +636,8 @@ svg:hover .fil1{
     letter-spacing: 1px;
 }
 
-.make-choise{
+.make-choise,
+.feedback{
     position: relative;
 }
 
@@ -828,7 +829,6 @@ footer{
     display: block;
     text-align: center;
     top: 22%;
-    left: 25%;
     width: 100%;
     max-width: 640px;
     height: auto;
@@ -944,6 +944,7 @@ footer{
     .logo,
     .contacts{
         margin: 0 auto;
+        text-align: center;
     }
     .contacts span{
         font-size: 30px;
@@ -985,6 +986,7 @@ footer{
     }
     .contacts-footer{
         padding: 0px;
+        border-left: none;
     }
     .timer-container{
         justify-content: center;
