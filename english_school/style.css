@@ -33,14 +33,14 @@
 }
 
 header,
-nav,
-footer{
+nav{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
-body{
+body,
+footer{
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
@@ -661,7 +661,7 @@ svg:hover .fil1{
     cursor: pointer;
     position: absolute;
     top: 35%;
-    right: 95%;
+    right: 83.5%;
 }
 
 .next-slide{
@@ -669,8 +669,23 @@ svg:hover .fil1{
     border-left: 35px solid #e7be2d;
     cursor: pointer;
     position: absolute;
-    left: 93%;
+    left: 82%;
     top: 35%;
+}
+
+.next-slide1{
+    cursor: pointer;
+    position: absolute;
+    left: 82%;
+    top: 47%;
+}
+
+.prev-slide1{
+    cursor: pointer;
+    position: absolute;
+    top: 47%;
+    right: 83.5%;
+    transform: scaleX(-1)
 }
 
 .feedback{
@@ -731,6 +746,16 @@ svg:hover .fil1{
     box-shadow: 7px 7px 29px 0px rgba(0, 0, 0, .18);
     margin-bottom: 155px;
     height: 487px;
+}
+
+.choise-item img{
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.choise-item img:hover{
+    filter: grayscale(0%);
+    transition: 0.5s;
 }
 
 .form{
@@ -861,9 +886,20 @@ footer{
     border-radius: 20px; 
 }
 
+@media screen and (max-width: 1850px){
+    .next-slide{
+        left: 93%;
+    }
+    .prev-slide{
+        right: 93%;
+    }
+}
+
 @media screen and (max-width: 1300px){
     .next-slide,
-    .prev-slide{
+    .prev-slide,
+    .next-slide1,
+    .prev-slide1{
         display:none;
     }
     header{
