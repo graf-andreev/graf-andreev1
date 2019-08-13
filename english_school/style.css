@@ -291,7 +291,7 @@ button{
     bottom: 20px;
 }
 
-.time:nth-child(4) > div{
+.timer > div.wrapper-content > div > div:nth-child(4) > div{
     margin-right: 0px;
 }
 
@@ -775,7 +775,7 @@ svg:hover .fil1{
     width: 174%;
 }
 
-.form input,
+input,
 select{
     width: 100%; 
     max-width: 340px;
@@ -854,19 +854,36 @@ footer{
     height: auto;
 }
 
-.popup-adress{
+.popup{
     position: fixed;
     display: block;
     text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: none;
+    z-index: 10;
+}
+
+.popup-adress{
     top: 22%;
     width: 100%;
     max-width: 640px;
     height: auto;
     min-height: 484px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    display: none;
-    z-index: 10;
+}
+
+.popup-info{
+    top: 22%;
+    width: 100%;
+    max-width: 444px;
+    min-height: 405px;
+}
+
+.popup-course{
+    top: 22%;
+    width: 100%;
+    max-width: 1008px;
+    min-height: 514;
 }
 
 .overlay_popup {
@@ -883,8 +900,62 @@ footer{
 
 .popup-header{
     display: flex;
-    border-radius: 20px; 
+    border-radius: 20px 20px 0 0;
 }
+
+.popup-header h4{
+    font-family: "adineuePROKZ";
+    font-size: 22.5px;
+    color: #565656;
+    padding: 18px 0 17px 45px;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info div{
+    height: 213px;
+    width: 50%;
+    font-family: "adineuePRO-kur-light";
+    font-size: 20px;
+    padding: 20px 50px 0px 26px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.popup-header button{
+    margin-left: 70%;
+}
+
+.popup-button{
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 380px;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.info #phone{
+    margin-top: 30px;
+}
+
+.popup-info .info{
+    justify-content: center;
+}
+
+.popup-info .popup-header button{
+    margin-left: 42%;
+}
+
+.info input{
+    border: 1px solid #b8b8b8;
+    width: 100%;
+    max-width: 380px;
+    margin-top: 40px;
+}
+
 
 @media screen and (max-width: 1850px){
     .next-slide{
@@ -916,6 +987,12 @@ footer{
 @media screen and (max-width: 1116px){
     .contacts{
         margin-left: 0px;
+    }
+    .last-item li:nth-child(1){
+        margin: 0px;
+    }
+    .last-item li:nth-child(2){
+        margin: 0px;
     }
 }
 
@@ -969,12 +1046,6 @@ footer{
     }   
     .nav-item {
         margin: 0;
-    }
-    .last-item li:nth-child(1){
-        margin: 0px;
-    }
-    .last-item li:nth-child(2){
-        margin: 0px;
     }
     .actions h5{
         display: none;
@@ -1044,6 +1115,12 @@ footer{
     .timer-container{
         margin-right: 0px;
     }
+    .info div{
+        font-size: 15px;
+    }
+    .popup-header button{
+        margin-left: 60%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1058,6 +1135,9 @@ footer{
     }
     .choise-item{
         width: 260px;
+    }
+    .popup-header button{
+        margin-left: 50%;
     }
 }
 

@@ -63,6 +63,25 @@ $('.slide-two').owlCarousel({
         $(popup_id).show(); // Открываем окно
         $('.overlay_popup').show(); // Открываем блок заднего фона
     }) 
-    $('.popup-adress').click(function() { // Обрабатываем клик по заднему фону
+    $('.img-close').click(function() { // Обрабатываем клик по заднему фону
         $('.overlay_popup, .popup-adress').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
+    })
+
+    $('.main-button').click(function() { 
+        var popup_id = $('.popup-info'); 
+        $(popup_id).show(); 
+        $('.overlay_popup').show(); 
+    }) 
+    $('.img-close').click(function() { 
+        $('.overlay_popup, .popup-info').hide();
+    })
+
+    
+    $('.choise-button').click(function() { 
+        var popup_id = $('.popup-course'); 
+        $(popup_id).show(); 
+        $('.overlay_popup').show(); 
+    }) 
+    $('.img-close').click(function() { 
+        $('.overlay_popup, .popup-course').hide();
     })
