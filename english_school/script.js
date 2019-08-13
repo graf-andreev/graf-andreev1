@@ -85,3 +85,8 @@ $('.slide-two').owlCarousel({
     $('.img-close').click(function() { 
         $('.overlay_popup, .popup-course').hide();
     })
+
+    function burger() {
+        var menu = document.querySelector('nav');
+        menu.classList.toggle("show");
+     }

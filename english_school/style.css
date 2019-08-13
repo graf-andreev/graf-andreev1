@@ -102,9 +102,28 @@ header{
     padding-top: 26px;
 }
 
+.menubutton{
+    width: 75px;
+    padding-top: 10px;
+    display: none;
+}
+
+.menuitem{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+
 .adress span{
     border-bottom: 3px solid #565656;
     cursor: pointer;
+}
+
+.adress img{
+    margin-left: 30px;
 }
 
 .bg-orange{
@@ -883,7 +902,20 @@ footer{
     top: 22%;
     width: 100%;
     max-width: 1008px;
-    min-height: 514;
+    max-height: 514px;
+}
+
+.popup-text{
+    width: 110%;
+    overflow-y: scroll;
+    height: 339px;
+    padding: 55px 60px 60px 40px;
+    text-align: left;
+    font-family: "adineuePRO-kur-light";
+    font-size: 18px;
+    color: #565656;
+    letter-spacing: 1.5px;
+    line-height: 27px; 
 }
 
 .overlay_popup {
@@ -929,6 +961,10 @@ footer{
     margin-left: 70%;
 }
 
+.popup-course .popup-header button{
+    margin-left: 60%;
+}
+
 .popup-button{
     text-transform: uppercase;
     width: 100%;
@@ -949,20 +985,36 @@ footer{
     margin-left: 42%;
 }
 
-.info input{
+.info input,
+.info select{
     border: 1px solid #b8b8b8;
     width: 100%;
     max-width: 380px;
     margin-top: 40px;
 }
 
+.info-course input,
+.info-course select{
+    border: 1px solid #b8b8b8;
+    width: 100%;
+    max-width: 380px;
+    margin-top: 20px;
+}
+
+.button-course{
+    margin-top: 20px;
+}
+
+.show{
+    display: block;
+}
 
 @media screen and (max-width: 1850px){
     .next-slide{
         left: 93%;
     }
     .prev-slide{
-        right: 93%;
+        right: 95%;
     }
 }
 
@@ -993,6 +1045,9 @@ footer{
     }
     .last-item li:nth-child(2){
         margin: 0px;
+    }
+    .nav-item a{
+        font-size: 13px;
     }
 }
 
@@ -1048,6 +1103,14 @@ footer{
         margin: 0;
     }
     .actions h5{
+        display: none;
+    }
+    .menubutton{
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    nav{
         display: none;
     }
 }
@@ -1118,7 +1181,7 @@ footer{
     .info div{
         font-size: 15px;
     }
-    .popup-header button{
+    .popup-adress button{
         margin-left: 60%;
     }
 }
@@ -1136,8 +1199,8 @@ footer{
     .choise-item{
         width: 260px;
     }
-    .popup-header button{
-        margin-left: 50%;
+    .popup-info .popup-header button {
+        margin-left: 4%;
     }
 }
 
