@@ -114,6 +114,7 @@ header{
     display: flex;
     list-style: none;
     width: 100%;
+    background: linear-gradient(to right , #edc22e 70%, #ebebeb 30%);
 }
 
 .nav-item{
@@ -127,6 +128,15 @@ header{
 .last-item{
     display: flex;
     background-color: #ebebeb;
+}
+
+.last-item li:nth-child(1){
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.last-item li:nth-child(2){
+    margin-right: 60px;
 }
 
 .first-item{
@@ -217,7 +227,7 @@ button{
     height: 15px;
     background-color: #edc22e;
     position: relative;
-    left: 149px;
+    left: 148px;
     top: 6px;
 }
 
@@ -239,7 +249,7 @@ button{
     height: 15px;
     background-color: #edc22e;
     position: relative;
-    left: 154px;
+    left: 155px;
     top: 6px;
 }
 
@@ -261,7 +271,7 @@ button{
     height: 15px;
     background-color: #edc22e;
     position: relative;
-    left: 155px;
+    left: 156px;
     top: 6px;
 }
 
@@ -274,6 +284,10 @@ button{
     position: relative;
     left: 44px;
     bottom: 20px;
+}
+
+.time:nth-child(4) > div{
+    margin-right: 0px;
 }
 
 .time span{
@@ -291,12 +305,10 @@ button{
     color: #6e6e6e;
 }
 
-section.timer > div > div:nth-child(4) > p{
-    padding-left: 16px;
-}
 
-section.timer > div > div:nth-child(5) > p{
-    padding-left: 10px;
+body > section.timer > div.wrapper-content > div > div:nth-child(3) > p,
+body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
+    padding-left: 8%;
 }
 
 .button-timer{
@@ -306,6 +318,11 @@ section.timer > div > div:nth-child(5) > p{
     margin-top: 50px;
     margin-bottom: 60px;
     text-align: center;
+}
+
+.center-button{
+    display: flex;
+    justify-content: center;
 }
 
 .timer h5{
@@ -609,11 +626,6 @@ svg:hover .fil1{
     color: #6e6e6e;
 }
 
-.choise-item{
-    margin-bottom: 155px;
-    height: 487px;
-}
-
 .choise-item span{
     font-family: "adineuePRO-kur-light";
     font-size: 20px;
@@ -711,6 +723,8 @@ svg:hover .fil1{
     width: 100%;
     max-width: 260px;
     box-shadow: 7px 7px 29px 0px rgba(0, 0, 0, .18);
+    margin-bottom: 155px;
+    height: 487px;
 }
 
 .form{
@@ -853,6 +867,9 @@ footer{
     .logo{
         margin-left: 0;
     }
+    .nav-item{
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 1116px){
@@ -871,7 +888,10 @@ footer{
     .adress{
     padding-left: 0px;
     }
-   }
+    .adress > img{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 940px) {
     .timer,
@@ -891,7 +911,8 @@ footer{
         width: 100%;
         text-align: center;
     }
-    .main-navigation{
+    .main-navigation,
+    .last-item{
        display: block;
        text-align: center; 
     }
@@ -905,6 +926,18 @@ footer{
     width: 100%;
     text-align: center;
     }   
+    .nav-item {
+        margin: 0;
+    }
+    .last-item li:nth-child(1){
+        margin: 0px;
+    }
+    .last-item li:nth-child(2){
+        margin: 0px;
+    }
+    .actions h5{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 708px) {
@@ -916,7 +949,7 @@ footer{
         font-size: 30px;
     }
     .socials{
-        width: 65%;
+        width: 52%;
         margin: 0 auto;
     }
     .timer h5{
@@ -979,6 +1012,9 @@ footer{
 
     .card-next{
         height: 550px;
+    }
+    .choise-item{
+        width: 260px;
     }
 }
 
