@@ -33,12 +33,17 @@
 }
 
 header,
-body,
+nav,
 footer{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    /* overflow-x: hidden; */
+}
+
+body{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .wrapper-content{
@@ -341,7 +346,6 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
     border-bottom: 5px solid #e9bf2d;
     width: 100%;
     background-image: url(img/bg-repeat.JPG);
-    background-repeat: repeat;
 }
 
 .card{
@@ -387,6 +391,7 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
 .why p{
     text-align: left;
     padding-left: 24px;
+    padding-right: 24px;
 }
 
 .why img{
