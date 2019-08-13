@@ -90,3 +90,21 @@ $('.slide-two').owlCarousel({
         var menu = document.querySelector('nav');
         menu.classList.toggle("show");
      }
+
+    $('.test > button').click(function() { 
+        var popup_id = $('.popup-test'); 
+        $(popup_id).show(); 
+        $('.overlay_popup').show(); 
+    }) 
+    $('.img-close').click(function() { 
+        $('.overlay_popup, .popup-test').hide();
+    })
+
+    $('.button-level').click(function() { 
+        var popup_id = $('.popup-group'); 
+        $(popup_id).show(); 
+        $('.overlay_popup').show(); 
+    }) 
+    $('.img-close').click(function() { 
+        $('.overlay_popup, .popup-group').hide();
+    })
