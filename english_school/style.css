@@ -1341,6 +1341,12 @@ footer{
     }
 }
 
+@media screen and (max-width: 1200px){
+    h3{
+        margin-left: 10px;
+    }
+}
+
 @media screen and (max-width: 1120px){
     .contacts{
         margin-left: 0px;
@@ -1493,7 +1499,7 @@ footer{
     }
     .header-wrapper{
         flex-wrap: wrap;
-        justify-content: center;
+        margin: 0 auto;
     }
 }
 
@@ -1510,7 +1516,6 @@ footer{
     .choise-item{
         width: 260px;
     }
-
     .progress-bar{
         margin-top: 15px;
         margin-bottom: 15px;
