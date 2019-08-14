@@ -98,7 +98,7 @@ header{
 
 .adress{
     background-color: #edc22e;
-    width: 434px;
+    width: 30%;
     padding-left: 90px;
     vertical-align: middle;
     font-family:"adineuePROKZ";
@@ -151,7 +151,7 @@ header{
 }
 
 .nav-item{
-    margin-right: 32px;
+    margin-right: 37px;
     height: 46px;
     vertical-align: middle;
     padding-top: 13px
@@ -182,7 +182,12 @@ header{
     text-decoration: none;
     color: #565656;
     font-family: 'CenturyGothic-Bold';
+    font-size: 15px;
+}
 
+.header-wrapper{
+    display: flex;
+    width: 70%;
 }
 
 .main-banner{
@@ -255,6 +260,7 @@ button{
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: 63px;
+    position: relative;
 }
 
 .timer-container{
@@ -270,9 +276,9 @@ button{
     width: 15px;
     height: 15px;
     background-color: #edc22e;
-    position: relative;
-    left: 148px;
-    top: 6px;
+    position: absolute;
+    left: 161px;
+    top: 60px;
 }
 
 .days::after{
@@ -281,9 +287,9 @@ button{
     width: 15px;
     height: 15px;
     background-color: #edc22e;
-    position: relative;
-    left: 58px;
-    bottom: 20px;
+    position: absolute;
+    left: 161px;
+    bottom: 66px;
 }
 
 .hours::before {
@@ -292,9 +298,9 @@ button{
     width: 15px;
     height: 15px;
     background-color: #edc22e;
-    position: relative;
-    left: 155px;
-    top: 6px;
+    position: absolute;
+    left: 161px;
+    top: 60px;
 }
 
 .hours::after{
@@ -303,9 +309,9 @@ button{
     width: 15px;
     height: 15px;
     background-color: #edc22e;
-    position: relative;
-    left: 45px;
-    bottom: 20px;
+    position: absolute;
+    left: 161px;
+    bottom: 66px;
 }
 
 .minutes::before {
@@ -314,9 +320,9 @@ button{
     width: 15px;
     height: 15px;
     background-color: #edc22e;
-    position: relative;
-    left: 156px;
-    top: 6px;
+    position: absolute;
+    left: 161px;
+    top: 60px;
 }
 
 .minutes::after{
@@ -325,9 +331,9 @@ button{
     width: 15px;
     height: 15px;
     background-color: #edc22e;
-    position: relative;
-    left: 44px;
-    bottom: 20px;
+    position: absolute;
+    left: 161px;
+    bottom: 66px;
 }
 
 .timer > div.wrapper-content > div > div:nth-child(4) > div{
@@ -722,6 +728,7 @@ svg:hover .fil1{
     position: absolute;
     top: 35%;
     right: 83.5%;
+    z-index: 5;
 }
 
 .next-slide{
@@ -731,6 +738,7 @@ svg:hover .fil1{
     position: absolute;
     left: 82%;
     top: 35%;
+    z-index: 5;
 }
 
 .next-slide1{
@@ -738,6 +746,7 @@ svg:hover .fil1{
     position: absolute;
     left: 82%;
     top: 47%;
+    z-index: 5;
 }
 
 .prev-slide1{
@@ -745,6 +754,7 @@ svg:hover .fil1{
     position: absolute;
     top: 47%;
     right: 83.5%;
+    z-index: 5;
     -webkit-transform: scaleX(-1);
         -ms-transform: scaleX(-1);
             transform: scaleX(-1)
@@ -819,6 +829,8 @@ svg:hover .fil1{
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    width: 100%;
+    height: auto;
 }
 
 .choise-item img:hover{
@@ -1000,6 +1012,12 @@ footer{
     max-width: 647px;
 }
 
+.popup-header button {
+    position: absolute; 
+    top: 20px; 
+    right: 25px; 
+}
+
 .popup-group p{
     padding: 40px 54px 56px 54px;
     text-align: left;
@@ -1014,18 +1032,6 @@ footer{
 .popup-result .info-course select{
     width: 100%;
     max-width: 585px;
-}
-
-.popup-result .popup-header button{
-    margin-left: 33%;
-}
-
-.popup-group .popup-header button{
-    margin-left: 40%;
-}
-
-.button-result{
-    margin-bottom: 50px;
 }
 
 .popup-result h5{
@@ -1080,6 +1086,7 @@ footer{
     display: -ms-flexbox;
     display: flex;
     border-radius: 20px 20px 0 0;
+    position: relative;
 }
 
 .popup-header h4{
@@ -1107,14 +1114,6 @@ footer{
     letter-spacing: 2px;
 }
 
-.popup-header button{
-    margin-left: 70%;
-}
-
-.popup-course .popup-header button{
-    margin-left: 60%;
-}
-
 .popup-button{
     text-transform: uppercase;
     width: 100%;
@@ -1131,14 +1130,6 @@ footer{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-}
-
-.popup-info .popup-header button{
-    margin-left: 42%;
-}
-
-.popup-test .popup-header button{
-    margin-left: 38%;
 }
 
 .info input,
@@ -1218,12 +1209,28 @@ footer{
     border-radius: 40px;
     background-color: #ffffff;
     margin-right: -70px;
-
+    padding: 1%;
 }
 
 .test-button-next{
     width: 200px;
     height: 47px;
+    background-color: #edc22e;
+    color: #ffffff;
+    font-size: 20px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family:"adineuePROKZ";
+    letter-spacing: 2px;
+    padding-top: 1.5%;
+    text-decoration: none;
+}
+
+.test-button-prev > img{
+    height: 33px;
+    width: 75px;
+    margin-left: 17px;
 }
 
 .test-wrap{
@@ -1309,6 +1316,7 @@ footer{
     }
 }
 
+
 @media screen and (max-width: 1300px){
     .next-slide,
     .prev-slide,
@@ -1323,22 +1331,20 @@ footer{
         margin-left: 0;
     }
     .nav-item{
-        margin-right: 10px;
+        margin-right: 2%;
+    }
+    .first-item{
+        margin-left: 15vw;
+    }
+    .nav-item a{
+        font-size: 1vw;
     }
 }
 
-@media screen and (max-width: 1116px){
+@media screen and (max-width: 1120px){
     .contacts{
         margin-left: 0px;
-    }
-    .last-item li:nth-child(1){
-        margin: 0px;
-    }
-    .last-item li:nth-child(2){
-        margin: 0px;
-    }
-    .nav-item a{
-        font-size: 13px;
+        margin-right: 0px;
     }
 }
 
@@ -1351,6 +1357,7 @@ footer{
     }
     .adress{
     padding-left: 0px;
+    text-align: center;
     }
     .adress > img{
         display: none;
@@ -1360,7 +1367,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 950px) {
     .timer,
     .timer-container{
         -ms-flex-wrap: wrap;
@@ -1484,8 +1491,9 @@ footer{
     .info div{
         font-size: 15px;
     }
-    .popup-adress button{
-        margin-left: 57%;
+    .header-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -1502,18 +1510,7 @@ footer{
     .choise-item{
         width: 260px;
     }
-    .popup-info .popup-header button {
-        margin-left: 37%;
-    }
-    .popup-group .popup-header button{
-        margin-left: 17%;
-    }
-    .popup-test .popup-header button{
-        margin-left: 8%;
-    }
-    .popup-course .popup-header button{
-        margin-left: 1%;
-    }
+
     .progress-bar{
         margin-top: 15px;
         margin-bottom: 15px;
