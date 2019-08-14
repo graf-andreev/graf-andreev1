@@ -1394,10 +1394,11 @@ footer{
         width: 100%;
         text-align: center;
     }
-    .main-navigation,
+    .main-navigation .header-wrapper,
     .last-item{
        display: block;
        text-align: center; 
+       width: 100%
     }
     .first-item{
         margin-left: 0px;
@@ -1426,6 +1427,13 @@ footer{
     }
     .timer h5{
         display: none;
+    }
+    .nav-item a{
+        font-size: 14px;
+    }
+    .last-item li:nth-child(1),
+    .last-item li:nth-child(2){
+        margin: 0;
     }
 }
 
