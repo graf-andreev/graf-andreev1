@@ -1341,12 +1341,6 @@ footer{
     }
 }
 
-@media screen and (max-width: 1200px){
-    h3{
-        margin-left: 10px;
-    }
-}
-
 @media screen and (max-width: 1120px){
     .contacts{
         margin-left: 0px;
@@ -1527,6 +1521,13 @@ footer{
     .progress-bar{
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+    }
+    .process-item p{
+        font-size: 13px;
     }
 }
 
