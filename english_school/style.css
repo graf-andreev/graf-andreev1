@@ -145,8 +145,8 @@ header{
     display: flex;
     list-style: none;
     width: 100%;
-    background: -webkit-gradient(linear , left top, right top , color-stop(70%, #edc22e), color-stop(30%, #ebebeb));
     background: -o-linear-gradient(left , #edc22e 70%, #ebebeb 30%);
+    background: -webkit-gradient(linear , left top, right top , color-stop(70%, #edc22e), color-stop(30%, #ebebeb));
     background: linear-gradient(to right , #edc22e 70%, #ebebeb 30%);
 }
 
@@ -186,6 +186,8 @@ header{
 }
 
 .header-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 70%;
 }
@@ -436,8 +438,8 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
 }
 
 .why{
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, #ffffff));
     background: -o-linear-gradient(top, transparent, #ffffff 50%);
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, #ffffff));
     background: linear-gradient(to bottom, transparent, #ffffff 50%);
     height: 514px;
 }
@@ -809,7 +811,7 @@ svg:hover .fil1{
 }
 
 .make-choise h3{
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 80px;
     color: #6e6e6e;
 }
@@ -1170,8 +1172,8 @@ footer{
     height: 7px;
     border: 1px solid #b8b8b8;
     border-radius: 3px;
-    background: -webkit-gradient(linear , left top, right top , color-stop(70%, #edc22e), color-stop(30%, #ebebeb));
     background: -o-linear-gradient(left , #edc22e 70%, #ebebeb 30%);
+    background: -webkit-gradient(linear , left top, right top , color-stop(70%, #edc22e), color-stop(30%, #ebebeb));
     background: linear-gradient(to right , #edc22e 70%, #ebebeb 30%);
     position: relative;
 }
@@ -1500,7 +1502,8 @@ footer{
         font-size: 15px;
     }
     .header-wrapper{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin: 0 auto;
     }
 }
@@ -1517,6 +1520,7 @@ footer{
     }
     .choise-item{
         width: 260px;
+        margin: 0 auto;
     }
     .progress-bar{
         margin-top: 15px;
@@ -1530,5 +1534,4 @@ footer{
         font-size: 13px;
     }
 }
-
 
