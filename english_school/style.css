@@ -149,7 +149,7 @@ header{
 }
 
 .socials{
-    width: 380px;;
+    width: 265px;
 }
 
 .socials img{
@@ -1458,6 +1458,12 @@ footer{
     }
 }
 
+@media screen and (max-width: 1044px){
+    .nav-item a{
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 1025px) {
     .card-header p{
         font-size: 25px;
@@ -1509,6 +1515,9 @@ footer{
     }
     .first-item{
         margin-left: 0px;
+    }
+    .header-wrapper{
+        width: 100%;
     }
     header{
         -ms-flex-wrap: wrap;
