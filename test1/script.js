@@ -5,7 +5,7 @@
     function myFunction() {
        var val = document.getElementById("frame-slider").value
         document.getElementById('output').innerHTML = Math.abs(val-15)
-        document.getElementByClassName('value').innerHTML = val
+        document.getElementsByClassName('value').innerHTML = val
     }
 
 
