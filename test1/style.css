@@ -39,6 +39,10 @@ body, p{
      border-radius: 5px;
 }
 
+.value{
+    margin: 0 auto;
+}
+
 .range-target{
     width: 50px;
     height: 40px;
