@@ -10465,6 +10465,13 @@ body > div.stage-visual-container.spacer-md > div > div.stage-content-carousel-w
   opacity: 0
 }
 
+.stage-content{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+
 .stage-visual-container .btn, .stage-visual-container .jvectormap-goback, .stage-visual-container .jvectormap-zoomin, .stage-visual-container .jvectormap-zoomout, .stage-visual-container .stage-text {
   font-family: Arial, sans-serif;
   font-size: 12px;
