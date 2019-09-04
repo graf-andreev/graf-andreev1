@@ -10406,7 +10406,7 @@ html.touchevents #routing .header-autocomplete-result-container {
 
 body > div.stage-visual-container.spacer-md > div > div.stage-content-carousel-wrapper.container.bg-primary{
   width: 100%;
-  max-width: 1920px;
+  max-width: 1200px;
 }
 
 .stage-visual-container .stage-image-carousel > a + a picture {
@@ -10463,13 +10463,6 @@ body > div.stage-visual-container.spacer-md > div > div.stage-content-carousel-w
   left: 0;
   top: 0;
   opacity: 0
-}
-
-.stage-content{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: block;
 }
 
 .stage-visual-container .btn, .stage-visual-container .jvectormap-goback, .stage-visual-container .jvectormap-zoomin, .stage-visual-container .jvectormap-zoomout, .stage-visual-container .stage-text {
