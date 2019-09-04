@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +11,56 @@
 </head>
 <header>
     <div class="header-wrapper">
-        <p class="text-logo">MAN Lkv Deutschland</p>
+        <p class="text-logo">MAN Центр Новосибирск</p>
         <div class="main-navigation1"> 
                 <div onclick="burger()" class="menubutton">
                         <div class="menuitem"></div>
                         <div class="menuitem"></div>
                         <div class="menuitem"></div>
                     </div>
-                    <div class="mobile-text"><p class="text-logo1">MAN Lkv Deutschland</p></div>
+                    <div class="mobile-text"><p class="text-logo1">MAN Центр Новосибирск</p></div>
         <ul class="main-navigation">
-            <li><a href="#">LKW</a></li>
-            <li><a href="#">Branchen</a></li>
-            <li><a href="#">Dienstleistungen</a></li>
-            <li><a href="#">DigitalServices</a></li>
-            <li><a href="#">MAN Welt</a></li>
-            <li><a href="#">Gebrauchtfahrzeuge</a></li>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Специальные предложения</a></li>
+            <li><a href="#">Модельный ряд</a></li>
+            <li><a href="#">Автобусы</a></li>
+            <li><a href="#">Сервис</a></li>
+            <li><a href="#">Запчасти</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">О компании</a></li>
+            <form id="mainsearch" class="form-inline form" method="post" action="/ru/do.search" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+				<div class="form-group">
+					<input class="form-control" placeholder="Поиск" name="query" itemprop="query-input" type="search">
+					<button class="btn btn-primary" type="submit"><img src="img/search1.png" width="15" height="15" alt=""></button>
+				</div>
+				<input type="hidden" name="wildcardSearch" value="contains" />
+				<input type="hidden" name="initialSize" value="10" />
+				<input type="hidden" name="pageSize" value="10" />
+				<input type="hidden" name="maxResults" value="500" />
+				<input type="hidden" name="orderBy" value="date" />
+				<input type="hidden" name="locale" value="ru" />
+				<input type="hidden" name="singleton" value="true" />
+				<input type="hidden" name="resultsURL" value="/ru/ru/technicalpages/search_result.jsp" />
+			</form>
         </ul>
             <div class="header-margin">
-            <button class="search-button"><img src="img/search.JPG" width="23" height="23" alt=""></button>
-            <select class="select">
-                <option>TRUCK</option>
-                <option>BUS</option>
-                <option>CAR</option>
-                <option>PANZER</option>
-              </select>
-              <img class="main-logo" width="145" height="82" src="img/logo.JPG" alt="">   
-    </div>
+            <button onclick="search()" class="search-button"><img src="img/search.png" width="15" height="15" alt=""></button>
+            <div class="form-group" id="search">
+                <input class="form-control" placeholder="Поиск" name="query" itemprop="query-input" type="search">
+                <button class="btn btn-primary" type="submit"><img src="img/search1.png" width="15" height="15" alt=""></button>
+            </div>
+            <input type="hidden" name="wildcardSearch" value="contains" />
+            <input type="hidden" name="initialSize" value="10" />
+            <input type="hidden" name="pageSize" value="10" />
+            <input type="hidden" name="maxResults" value="500" />
+            <input type="hidden" name="orderBy" value="date" />
+            <input type="hidden" name="locale" value="ru" />
+            <input type="hidden" name="singleton" value="true" />
+            <input type="hidden" name="resultsURL" value="/ru/ru/technicalpages/search_result.jsp" />
+        </form>
+        </div>  
+            <img class="main-logo" width="145" height="82" src="img/logo.JPG" alt="">    
 </div>
 </div>
 </header>
@@ -1112,8 +1136,12 @@
                 </html>
 
                 <script>
-                function burger() {
-        var menu = document.querySelector('.main-navigation');
-        menu.classList.toggle("show");
-     }
-                </script>
+                    function burger() {
+            var menu = document.querySelector('.main-navigation');
+            menu.classList.toggle("show");
+         }
+         function search() {
+            var search = document.querySelector('#search');
+            search.classList.toggle("show");
+         }
+                    </script>
