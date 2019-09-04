@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "Manglobalpro";
+    src: url("fonts/Manglobalpro.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+   }
+
+@font-face {
+    font-family: "TypeGlobalLight";
+    src: url("fonts/TypeGlobalLight.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+   }
+
+   *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+   header{
+       width: 100%;
+       max-width: 1920px;
+       margin: 0 auto;
+   }
+
+   .header-wrapper{
+       width: 100%;
+       max-width: 1120px;
+       margin: 0 auto;
+       margin-bottom: -20px;
+   }
+
+   .main-navigation,
+   .main-navigation1{
+       display: flex;
+       list-style: none;
+   }
+
+   .main-navigation1{
+       margin-left: 20px;
+       margin-right: 20px;
+   }
+
+   .main-navigation li a{
+        font-family: "Manglobalpro";
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #303c49;
+        font-size: 13px;
+        white-space: nowrap;
+   }
+
+   .text-logo{
+    font-family: "TypeGlobalLight";
+    font-weight: 100;
+    color: #a9aeb3;
+    margin-left: 20px;
+    display: block;
+   }
+
+   .text-logo1{
+    font-family: "TypeGlobalLight";
+    font-weight: 100;
+    color: #a9aeb3;
+    padding-top: 10px;
+    font-size: 13px;
+    white-space: nowrap;
+   }
+
+   .main-navigation li a:hover,
+   .main-navigation li a:active{
+       color: #e40045;
+   }
+
+   .main-navigation li{
+       margin-right: 23px;
+   }
+
+   .search-button{
+       width: 23px;
+       height: 23px;
+       border: 0;
+       cursor: pointer;
+       background: transparent;
+   }
+
+   body > header > div > div > div.header-margin > div{
+       display: flex;
+       z-index: 222;
+       position: absolute;
+       left: -169px;
+       top: 24px;
+       display: none;
+   }
+
+   body > header > div > div > div.header-margin > div > input{
+       width: 150px;
+       position: relative;
+   }
+
+   #search > button{
+    position: absolute;
+    top: 15px;
+    left: 161px;
+   }
+
+   .main-logo{
+       z-index: 22;
+       margin-top: -25px;
+   }
+
+.header-margin{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.menubutton{
+    width: 75px;
+    padding-top: 10px;
+    display: none;
+    margin-left: 20px;
+}
+
+.menuitem{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #303c49;
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+
+.mobile-text{
+    display: none;
+}
+
+#mainsearch{
+    display: none;
+}
+
+@media screen and (max-width: 1050px) and (min-width: 900px){
+    .main-logo{
+        opacity: 0;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .select{
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menubutton{
+        display: block;
+        cursor: pointer;
+    }
+    #mainsearch{
+        display: block;
+    }
+    #search{
+        display: none;
+    }
+    .main-navigation,
+    .search-button,
+    .select{
+        display: none;
+    }
+    .main-navigation li a{
+        padding: 15px 40px 15px 15px;
+    border-bottom: 1px solid #586f87;
+    height: auto;
+    line-height: 1.2;
+    display: block;
+    }
+    .text-logo{
+        display:none;
+    }
+    .mobile-text,
+    .text-logo1{
+        display: block;
+    }
+    .main-navigation1{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .main-navigation{
+        position: relative;
+        top: 30px;
+        margin-bottom: 72px;
+        width: 100%;
+        left: -181px;
+    }
+}
+@media screen and (max-width: 385px) {
+    .main-logo{
+        width: 30%;
+        height: 82px;
+        margin-top: 5px;
+    }
+    .mobile-text{
+        margin-left: 20px;
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+}

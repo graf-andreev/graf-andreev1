@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="header-wrapper">
+        <p class="text-logo">MAN Lkv Deutschland</p>
+        <div class="main-navigation1"> 
+                <div onclick="burger()" class="menubutton">
+                        <div class="menuitem"></div>
+                        <div class="menuitem"></div>
+                        <div class="menuitem"></div>
+                    </div>
+                    <div class="mobile-text"><p class="text-logo1">MAN Lkv Deutschland</p></div>
+        <ul class="main-navigation">
+            <li><a href="#">LKW</a></li>
+            <li><a href="#">Branchen</a></li>
+            <li><a href="#">Dienstleistungen</a></li>
+            <li><a href="#">DigitalServices</a></li>
+            <li><a href="#">MAN Welt</a></li>
+            <li><a href="#">Gebrauchtfahrzeuge</a></li>
+        </ul>
+            <div class="header-margin">
+            <button class="search-button"><img src="img/search.JPG" width="23" height="23" alt=""></button>
+            <select class="select">
+                <option>TRUCK</option>
+                <option>BUS</option>
+                <option>CAR</option>
+                <option>PANZER</option>
+              </select>
+              <img class="main-logo" width="145" height="82" src="img/logo.JPG" alt="">   
+    </div>
+</div>
+</div>
+</header>
+  
+
+    <section class="container">
+        
+            <nav id="page-breadcrumb" class="js_breadcrumb visible-md visible-lg">
+                
+    <div class="js_breadcrumb-item" aria-haspopup="true" aria-expanded="false">
+        <a href="/" title="Главная">
+            Главная
+        </a>
+    </div>
+
+    <div class="js_breadcrumb-item" aria-haspopup="true" aria-expanded="false">
+        <a href="/news/" title="Новости">
+            Новости
+        </a>
+    </div>    
+            </nav>
+            
+            <script id="js_tpl-breadcrumb-flyout" type="text/template">
+                <div class="flyout shadow js_submenu-container" aria-hidden="true">
+                    <h4>{{headline}}</h4>
+                    {{links}}
+                </div>
+            </script>
+
+            <header class="intro spacer-md">
+                <h1>Новости</h1>
+            </header>
+         
+    <nav class="content-navigation hidden-xs hidden-sm">
+        
+            
+                <span>Главная</span>
+            
+        
+    </nav>
+
+    <div class="row">
+        <main class="col-md-8 clearfix">
+            
+    <article class="editorial-content spacer-md press-detail" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <div class="supheadline">
+            <strong itemprop="datePublished" content="2019201920192019-ИюнИюн-ПнПн">
+                17 июня 2019
+            </strong>
+        </div>
+        <h1 itemprop="headline">ДЕНЬ ОТКРЫТЫХ ДВЕРЕЙ МАНЦЕНТРУФА</h1>
+        <picture class="pic">
+            <img src="/img/vykhodnoi_den_12iiunia_man.png" alt="ДЕНЬ ОТКРЫТЫХ ДВЕРЕЙ МАНЦЕНТРУФА">
+        </picture>
+
+        
+        <div itemprop="text">
+            <div class="clear">
+                <p>7 июня состоялся ДЕНЬ ОТКРЫТЫХ ДВЕРЕЙ МАНЦЕНТРУФА!</p><p>Это было одно из ключевых событий, планируемых компанией в этом году.</p><p>Помимо официальных частей мероприятия - экскурсия по станции сервисного обслуживания и презентации грузовых автомобилей, клиенты получили техническую консультацию нашей профессиональной&nbsp;команды, могли в непринужденной обстановке пообщаться со всем составом компании МАНЦЕНТРУФА и&nbsp;задать интересующие вопросы!</p><p>Мы верим и надеемся, что данное мероприятие было полезным и значимым для каждого из Вас!</p><p>Каждый клиент на мероприятии получил подарок-комплимент от компании!</p><p>Помимо индивидуальных подарков, был проведен розыгрыш!</p><p>Телевизор PHILIPS диагональю 32 дюйма</p><p>Аудиосистема (саундбар) с отдельностоящим сабвуфером</p><p>Робот - пылесос</p><p>3 мощные и влагоустойчивые портативные колонки!</p><p>От лица коMANды МАНЦЕНТРУФА хотим выразить признание и благодарность всем нашим клиентам!</p><p>Спасибо, что в этот день, Вы были с нами!</p><p>&nbsp;</p>
+            </div>
+        </div>
+    </article>
+
+        </main>
+        <aside class="col-md-4 clearfix">
+            
+                <div class="thumbnail spacer-md">
+    <div class="caption editorial-content">
+        <div class="h3">Запись на сервис</div>
+    </div>
+    
+
+    <form class="" action="/request/service/" method="post" data-ajax>
+        <input type='hidden' name='csrfmiddlewaretoken' value='F2UoPZt1M1Fm7vs3bxUi6fjsXflTVRKIvYXEzpYyzROVP8G930kyIToJA5tLUlP2' />
+        <input type="hidden" name="form_template" value="request/form/request_form.html"/>
+
+        <div class="success-show" style="display: none;padding: 15px;">Ваша заявка принята! В ближайшее время наши специалисты свяжутся с вами.</div>
+        <div class="form success-hide">
+
+                    <fieldset class="field  ">
+    <label class="label" for="id_field1">
+        Ваше имя <font color="red"><span class="form-required starrequired">*</span></font>
+    </label>
+
+    <input type="text" name="field1" id="id_field1" class="form-control"
+           placeholder=""
+            
+           required="required"
+           value=""/>
+    <span class="form-control-feedback" for="id_field1">
+    
+</span>
+    
+</fieldset>
+              
+                    <fieldset class="field  ">
+    
+    <label class="label" for="id_field2">
+        Ваш e-mail <font color="red"><span class="form-required starrequired">*</span></font>
+    </label>
+    <input type="text" name="field2" id="id_field2" class="form-control"
+           placeholder=""
+           required="required"
+           value=""/>
+    <span class="form-control-feedback" for="id_field2">
+    
+</span>
+    
+</fieldset>            
+                    <fieldset class="field  ">
+    
+    <label class="label" for="id_field3">
+        Ваш телефон <font color="red"><span class="form-required starrequired">*</span></font>
+    </label>
+
+    <input type="text" name="field3" id="id_field3" class="form-control"
+           placeholder=""
+            
+           required="required"
+           value=""/>
+    <span class="form-control-feedback" for="id_field3">
+</span>
+</fieldset>
+                
+                    <fieldset class="field  ">
+    
+    <label class="label" for="id_field4">
+        Сообщение 
+    </label>
+    <textarea name="field4" id="id_field4" class="form-control"
+              
+              placeholder=""></textarea>
+    <span class="form-control-feedback" for="id_field4">
+</span>
+</fieldset>
+            <fieldset>
+                Отправляя форму вы соглашаетесь с <a class="link icon-extern" href="/privacy/" target="_blank">политикой конфиденциальности</a>
+                сайта.
+            </fieldset>
+            <br/>
+
+            <fieldset>
+                <button class="btn btn-block btn-cta" title="Отправить" type="submit"
+                        >
+                    <span>Отправить</span>
+                </button>
+            </fieldset>
+        </div>
+    </form>
+</div><div class="contact--block vcard w1235 contact">
+    <div class="thumbnail spacer-md bg-gray">
+    <div class="caption editorial-content">
+        <div class='h3'>Контакты</div>
+        <br/>
+            <p class='fn org'>Отдел продаж ООО «МанЦентрУфа»</p>
+            <span class='geo'>
+                <span class='latitude'><span class='value-title' title='54,735147'></span></span>
+                <span class='longitude'><span class='value-title' title='55,958727'></span></span>
+            </span>
+        <table class='table'>
+            <tbody>
+                <tr>
+                    <td>
+                        Телефон:
+                    </td>
+                    <td>
+                            <a class='tel link' href='tel:8-800-500-88-02' title='8 800 500-88-02'>
+                                8 800 500-88-02
+                            </a>
+                            <br/>
+                        
+                            <a class='tel link' href='tel:+7-347-227-19-18' title='+7 (347) 227-19-18'>
+                                +7 (347) 227-19-18
+                            </a>
+                            <br/>
+                        
+                            <a class='tel link' href='tel:+7-927-950-950-7' title='+7-927-950-950-7'>
+                                +7-927-950-950-7
+                            </a>
+                            <br/>
+                        
+                            <a class='tel link' href='tel:+7-927-950-950-9' title='+7-927-950-950-9'>
+                                +7-927-950-950-9
+                            </a>
+                            <br/>
+                        
+                            <a class='tel link' href='tel:+7-986-96-95-0167' title='+7-986-96-95-0167'>
+                                +7-986-96-95-0167
+                            </a>
+                            <br/>
+                        
+                            <a class='tel link' href='tel:+7-917-460-06-03' title='+7-917-460-06-03'>
+                                +7-917-460-06-03
+                            </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        E-mail:
+                    </td>
+                    <td>
+                        
+                            <a class='email link icon-mail' href='mailto:info@man-ufa.ru'
+                               title='info@man-ufa.ru'>info@man-ufa.ru</a>
+                            
+                        
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+</div> 
+        </aside>
+    </div>
+    </section>
+    <footer id="page-footer" class="hidden-print">
+        <div class="container">
+            <div class="col-md-12 disclaimer">
+                <p>
+                    Транспортные средства и продукты, представленные на этом сайте, могут отличаться по форме, дизайну,
+                    цвету и объему поставки. На некоторых фотографиях показаны дополнительные элементы и аксессуары,
+                    которые подлежат дополнительной оплате, а также декоративные элементы. Технические характеристики и
+                    оснащение описанных транспортных средств служат только в качестве примеров, и в частности они могут
+                    варьироваться в зависимости от страны. Мы оставляем за собой право вносить изменения в любое
+                    время.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 footer-mandatory-container">
+                    <span>© МАН Центр Уфа 2019</span>
+                    <div class="footer-mandatory-links">
+                        <a href="/privacy/" class="link">Политика конфиденциальности</a>
+                        <a href="javascript:window.print();" class="link" rel="noindex, follow">Распечатать страницу</a>
+                        <a href="/sitemap/" class="link" rel="noindex, follow">Карта сайта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+<script>
+function burger() {
+var menu = document.querySelector('.main-navigation');
+menu.classList.toggle("show");
+}
+</script>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="header-wrapper">
+        <p class="text-logo">MAN Lkv Deutschland</p>
+        <div class="main-navigation1"> 
+                <div onclick="burger()" class="menubutton">
+                        <div class="menuitem"></div>
+                        <div class="menuitem"></div>
+                        <div class="menuitem"></div>
+                    </div>
+                    <div class="mobile-text"><p class="text-logo1">MAN Lkv Deutschland</p></div>
+        <ul class="main-navigation">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Специальные предложения</a></li>
+            <li><a href="#">Модельный ряд</a></li>
+            <li><a href="#">Автобусы</a></li>
+            <li><a href="#">Сервис</a></li>
+            <li><a href="#">Запчасти</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">О компании</a></li>
+            <form id="mainsearch" class="form-inline form" method="post" action="/ru/do.search" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+				<div class="form-group">
+					<input class="form-control" placeholder="Поиск" name="query" itemprop="query-input" type="search">
+					<button class="btn btn-primary" type="submit"><img src="img/search1.png" width="15" height="15" alt=""></button>
+				</div>
+				<input type="hidden" name="wildcardSearch" value="contains" />
+				<input type="hidden" name="initialSize" value="10" />
+				<input type="hidden" name="pageSize" value="10" />
+				<input type="hidden" name="maxResults" value="500" />
+				<input type="hidden" name="orderBy" value="date" />
+				<input type="hidden" name="locale" value="ru" />
+				<input type="hidden" name="singleton" value="true" />
+				<input type="hidden" name="resultsURL" value="/ru/ru/technicalpages/search_result.jsp" />
+				<meta itemprop="target" content="https://www.truck.man.eu/ru/ru/x_site_structure_masters/site_search_microdata.html?q={query}"/>
+			</form>
+        </ul>
+            <div class="header-margin">
+            <button onclick="search()" class="search-button"><img src="img/search.png" width="15" height="15" alt=""></button>
+            <div class="form-group" id="search">
+                <input class="form-control" placeholder="Поиск" name="query" itemprop="query-input" type="search">
+                <button class="btn btn-primary" type="submit"><img src="img/search1.png" width="15" height="15" alt=""></button>
+            </div>
+            <input type="hidden" name="wildcardSearch" value="contains" />
+            <input type="hidden" name="initialSize" value="10" />
+            <input type="hidden" name="pageSize" value="10" />
+            <input type="hidden" name="maxResults" value="500" />
+            <input type="hidden" name="orderBy" value="date" />
+            <input type="hidden" name="locale" value="ru" />
+            <input type="hidden" name="singleton" value="true" />
+            <input type="hidden" name="resultsURL" value="/ru/ru/technicalpages/search_result.jsp" />
+            <meta itemprop="target" content="https://www.truck.man.eu/ru/ru/x_site_structure_masters/site_search_microdata.html?q={query}"/>
+        </form>
+        </div>  
+            <img class="main-logo" width="145" height="82" src="img/logo.JPG" alt="">    
+</div>
+</div>
+</header>
+<body>
+        <div class="stage-visual-container spacer-md">
+
+                <div>
+                    <div class="stage-image-carousel-wrapper">
+                        <div class="js_stage-image-carousel stage-image-carousel">
+                            
+                                <a href="#">
+
+                                    <picture class="">
+                                        <!--[if IE 9]><video style="display:none;"><![endif]-->
+                                        <source srcset="img/sait_man.png__1200x434_q85_crop_subsampling-2_upscale.png,  2x" media="(min-width: 1200px)">
+                                        <source srcset="img/sait_man.png__1200x434_q85_crop_subsampling-2_upscale.png, /media/filer_public_thumbnails/filer_public/96/19/96197864-3f29-44b2-9b5f-7e210a5ed7a6/sait_man.png__2048x741_q85_crop_subsampling-2_upscale.png 2x" media="(min-width: 1012px)">
+                                        <source srcset="img/sait_man.png__1011x366_q85_crop_subsampling-2_upscale.png, /media/filer_public_thumbnails/filer_public/96/19/96197864-3f29-44b2-9b5f-7e210a5ed7a6/sait_man.png__1600x579_q85_crop_subsampling-2_upscale.png 2x" media="(min-width: 768px)">
+                                        <source srcset="img/sait_man.png__767x278_q85_crop_subsampling-2_upscale.png, /media/filer_public_thumbnails/filer_public/96/19/96197864-3f29-44b2-9b5f-7e210a5ed7a6/sait_man.png__1500x543_q85_crop_subsampling-2_upscale.png 2x" media="(min-width: 480px)">
+                                        <source srcset="img/sait_man.png__479x173_q85_crop_subsampling-2_upscale.png, /media/filer_public_thumbnails/filer_public/96/19/96197864-3f29-44b2-9b5f-7e210a5ed7a6/sait_man.png__958x347_q85_crop_subsampling-2_upscale.png 2x">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img src="img/1.jpg" alt="">
+                                    </picture>
+                                </a>
+                                <a href="#"></a>
+                        </div>
+                    </div>
+                
+                    <div class="stage-content-carousel-wrapper container bg-primary">
+                        <div class="js_stage-content-carousel stage-content-carousel">
+                            
+                                <div class="stage-content">
+                                    
+                                        <a href="#" class="h2"><p>СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ ПО ОРИГИНАЛЬНЫМ ЗАПАСНЫМ ЧАСТЯМ. ТОЛЬКО С 15.07&nbsp;ПО 15.12.2019.</p></a>
+                                        
+                                            <a href="#" class="btn btn-primary">Узнать больше</a>
+                                        
+                                    
+                                </div>
+                            
+                                <div class="stage-content">
+                                    
+                                        <a href="#" class="h2"><h1>MAN TRUCK AND BUS RUS НА ВЫСТАВКЕ COMTRANS 2019</h1></a>
+                                        
+                                            <a href="#" class="btn btn-primary">Узнать больше</a>
+                                        
+                                    
+                                </div>
+                            
+                                <div class="stage-content">
+                                    
+                                        <a href="#" class="h2"></a>
+                                        
+                                            <a href="#" class="btn btn-primary">Узнать подробнее</a>
+                                        
+                                    
+                                </div>
+                            
+                                <div class="stage-content">
+                                    
+                                        <a href="#" class="h2"><p>Оригинальное масло MAN: залог оптимальной работы Вашей техники.</p></a>
+                                        
+                                            <a href="#" class="btn btn-primary">К оригинальным маслам MAN</a>
+                                        
+                                    
+                                </div>
+                            
+                                <div class="stage-content">
+                                    
+                                        <a href="#" class="h2"><p>Ваш бизнес вновь на шаг впереди</p></a>
+                                        
+                                            <a href="#" class="btn btn-primary">Узнайте больше</a>
+                                        
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                        </div>
+                    
+                
+                    <section class="container">   
+                    <h1 style="text-align: center">Грузовики MAN и автобусы MAN, NEOPLAN — ремонт и&nbsp; продажа</h1>
+                
+                    <div class="row">
+                        <div class="col-md-4 clearfix">
+                            <div class="thumbnail spacer-md">
+                                <div class="caption editorial-content" style="height: 400px;">
+                                    <div class="h3">О компании</div><p>&nbsp;</p><p>ООО &laquo;МанЦентрУфа&raquo; является сервисным партнером ООО &laquo;МАН Трак энд Бас РУС&raquo; (MAN Truck &amp; Bus Russia)</p><p>&nbsp;</p><p>Мы специализируемся на продаже коммерческой и специальной техники MAN и пассажирской техники MAN и NEOPLAN, а так же их послепродажном обслуживании.</p><div class="btn-wrap"><a class="btn btn-default" href="/company/">Подробнее</a></div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-md-4 clearfix">
+                            <div class="thumbnail spacer-md">
+                                <div class="caption editorial-content" style="height: 400px;">
+                                    <div class="h3">Наши услуги</div><p>&nbsp;</p><p>Мы оказываем следующие услуги:</p><p>&nbsp;</p><ul class="manual-list"><li>Продажа грузовых автомобилей MAN и автобусов MAN, NEOPLAN</li><li>Гарантийный ремонт грузовых автомобилей и автобусов MAN</li><li>Послегарантийный ремонт грузовиков европейского производства</li><li>Продажа оригинальных запасных частей MAN</li></ul><div class="btn-wrap"><a class="btn btn-default" href="/service/">Подробнее</a></div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="aside marginal-column col-md-4 clearfix">
+                            <div class="contact--block_home vcard w1978 contact">
+                    <div class="thumbnail spacer-md bg-gray">
+                    <div class="caption editorial-content" style="height: 400px;">
+                        <div class='h3'>Контакты</div>
+                        <br/>
+                            <p class='fn org'>ООО «МанЦентрУфа»</p>
+                        
+                
+                        
+                            <span class='geo'>
+                                <span class='latitude'><span class='value-title' title='54,735147'></span></span>
+                                <span class='longitude'><span class='value-title' title='55,958727'></span></span>
+                            </span>
+                        <table class='table'>
+                            <tbody>
+                            
+                                <tr>
+                                    <td>
+                                        Адрес:
+                                    </td>
+                                    <td>
+                                        <div class='adr'>
+                                            <span class='street-address'>450024, Республика Башкортостан,  г. Уфа, ул. Центральная, д. 43</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Телефон:
+                                    </td>
+                                    <td>
+                                        
+                                            <a class='tel link' href='tel:+7-347-287-88-33' title='+7 (347) 287-88-33'>
+                                                +7 (347) 287-88-33
+                                            </a>
+                                            <br/>
+                                        
+                                            <a class='tel link' href='tel:+7-347-281-66-90' title='+7 (347) 281-66-90'>
+                                                +7 (347) 281-66-90
+                                            </a>
+                                            
+                                        
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>
+                                        E-mail:
+                                    </td>
+                                    <td>
+                                        
+                                            <a class='email link icon-mail' href='mailto:info@man-ufa.ru'
+                                               title='info@man-ufa.ru'>info@man-ufa.ru</a>
+                                            
+                                        
+                                    </td>
+                                </tr>
+                            
+                            
+                            </tbody>
+                        </table>
+                
+                    </div>
+                </div>
+                
+                </div>
+                
+                        </div>
+                    </div>
+                
+                    <hr class="functional-divider-header"/>
+                
+                    <h2>
+                  Наши услуги
+                </h2><div class="row spacer-sm responsive-clearfix">
+                    
+                        <div class="col-md-4 col-sm-6 col-xs-6 spacer-sm">
+                            <div class="thumbnail spacer-md">
+
+                                        <a href="/truck/">
+                                            <picture>
+                                                <img src="img/1.jpg" alt="Продажа грузовых автомобилей MAN"
+                                                     title="Продажа грузовых автомобилей MAN">
+                                            </picture>
+                                        </a>
+                                    
+                                    <div class="caption editorial-content" style="min-height: 200px;">
+                                        <a href="/truck/" class="h3">Продажа грузовых автомобилей MAN</a>
+                                        <p>Продажа новой и подержанной техники. Мы предоставляем Вам персонального менеджера для решения всех Ваших запросов и заказов по поставке.</p>
+                                        <a href="/truck/" class="link icon-intern">Подробнее</a>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4 col-sm-6 col-xs-6 spacer-sm">
+                            <div class="thumbnail spacer-md">
+                                        <a href="/bus/">
+                                            <picture>
+                                                <img src="img/2.jpg" alt="Продажа автобусов MAN, NEOPLAN"
+                                                     title="Продажа автобусов MAN, NEOPLAN">
+                                            </picture>
+                                        </a>
+                                    <div class="caption editorial-content" style="min-height: 200px;">
+                                        <a href="/bus/" class="h3">Продажа автобусов MAN, NEOPLAN</a>
+                                        <p>В компании MAN уделяется большое внимание не только техническому оснащению автобуса MAN, но и его внешнему виду.</p>
+                                        <a href="/bus/" class="link icon-intern">Подробнее</a>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4 col-sm-6 col-xs-6 spacer-sm">
+                            <div class="thumbnail spacer-md">
+                                        <a href="/service/">
+                                            <picture>
+                                                <img src="img/3.jpg" alt="Гарантийный ремонт грузовых автомобилей и автобусов MAN"
+                                                     title="Гарантийный ремонт грузовых автомобилей и автобусов MAN">
+                                            </picture>
+                                        </a>
+                                    
+                                    <div class="caption editorial-content" style="min-height: 200px;">
+                                        <a href="/service/" class="h3">Гарантийный ремонт грузовых автомобилей и автобусов MAN</a>
+                                        <p>Профессиональное, качественное сервисное обслуживание и ремонт вашего грузового автомобиля MAN.</p>
+                                        <a href="/service/" class="link icon-intern">Подробнее</a>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                </div><div class="row spacer-sm responsive-clearfix">
+                    
+                        <div class="col-md-4 col-sm-6 col-xs-6 spacer-sm">
+                            <div class="thumbnail spacer-md">
+                                        <a href="/service/">
+                                            <picture>
+                                                <img src="img/4.jpg" alt="Послегарантийный ремонт грузовиков европейского производства"
+                                                     title="Послегарантийный ремонт грузовиков европейского производства">
+                                            </picture>
+                                        </a>
+                                    <div class="caption editorial-content" style="min-height: 200px;">
+                                        <a href="/service/" class="h3">Послегарантийный ремонт грузовиков европейского производства</a>
+                                        <p>Ремонт грузовых автомобилей ведущих европейских марок после гарантийного срока.</p>
+                                        <a href="/service/" class="link icon-intern">Подробнее</a>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4 col-sm-6 col-xs-6 spacer-sm">
+                            <div class="thumbnail spacer-md">
+                                        <a href="/spare/">
+                                            <picture>
+                                                <img src="img/5.jpg" alt="Оригинальные запчасти MAN"
+                                                     title="Оригинальные запчасти MAN">
+                                            </picture>
+                                        </a>
+                                    <div class="caption editorial-content" style="min-height: 200px;">
+                                        <a href="/spare/" class="h3">Оригинальные запчасти MAN</a>
+                                        <p>Постоянно в наличии наиболее востребованные запасные части MAN. Доставка отсутствующих запчастей в течение недели.</p>
+                                        <a href="/spare/" class="link icon-intern">Подробнее</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6 spacer-sm">
+                            <div class="thumbnail spacer-md">
+                                        <a href="/service/">
+                                            <picture>
+                                                <img src="img/6.jpg" alt="Мойка и шиномонтаж"
+                                                     title="Мойка и шиномонтаж">
+                                            </picture>
+                                        </a>
+                                    <div class="caption editorial-content" style="min-height: 200px;">
+                                        <a href="/service/" class="h3">Мойка и шиномонтаж</a>
+                                        <p>Шиномонтаж и балансировка колес Мойка автопоездов, автовозов до 25 метров</p>
+                                        <a href="/service/" class="link icon-intern">Подробнее</a>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+                    </section>
+                    <footer id="page-footer" class="hidden-print">
+                        <div class="container">
+                            <div class="col-md-12 disclaimer">
+                                <p>
+                                    Транспортные средства и продукты, представленные на этом сайте, могут отличаться по форме, дизайну,
+                                    цвету и объему поставки. На некоторых фотографиях показаны дополнительные элементы и аксессуары,
+                                    которые подлежат дополнительной оплате, а также декоративные элементы. Технические характеристики и
+                                    оснащение описанных транспортных средств служат только в качестве примеров, и в частности они могут
+                                    варьироваться в зависимости от страны. Мы оставляем за собой право вносить изменения в любое
+                                    время.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 footer-mandatory-container">
+                                    <span>© МАН Центр Уфа 2019</span>
+                                    <div class="footer-mandatory-links">
+                                        <a href="/privacy/" class="link">Политика конфиденциальности</a>
+                                        <a href="javascript:window.print();" class="link" rel="noindex, follow">Распечатать страницу</a>
+                                        <a href="/sitemap/" class="link" rel="noindex, follow">Карта сайта</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <script type="text/javascript" src="script.js"></script>
+                </body>
+                </html>
+
+                <script>
+                function burger() {
+        var menu = document.querySelector('.main-navigation');
+        menu.classList.toggle("show");
+     }
+     function search() {
+        var search = document.querySelector('#search');
+        search.classList.toggle("show");
+     }
+                </script>
