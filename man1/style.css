@@ -6,8 +6,8 @@
    }
 
 @font-face {
-    font-family: "TypeGlobalLight";
-    src: url("fonts/TypeGlobalLight.ttf") format("truetype");
+    font-family: "maneurope-light";
+    src: url("fonts/maneurope-light.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
@@ -35,11 +35,12 @@
    .main-navigation1{
        display: flex;
        list-style: none;
+       margin-bottom: 5px;
    }
 
    .main-navigation1{
        margin-left: 20px;
-       margin-right: 20px;
+       margin-right: 10px;
    }
 
    .main-navigation li a{
@@ -52,15 +53,17 @@
    }
 
    .text-logo{
-    font-family: "TypeGlobalLight";
+    font-family: "maneurope-light";
     font-weight: 100;
     color: #a9aeb3;
     margin-left: 20px;
     display: block;
+    font-size: 13px;
+    margin-top: 10px;
    }
 
    .text-logo1{
-    font-family: "TypeGlobalLight";
+    font-family: "maneurope-light";
     font-weight: 100;
     color: #a9aeb3;
     padding-top: 10px;
