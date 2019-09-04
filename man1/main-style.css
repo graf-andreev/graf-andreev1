@@ -10399,9 +10399,14 @@ html.touchevents #routing .header-autocomplete-result-container {
 .stage-visual-container .stage-image-carousel {
   width: 100%;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1920px;
   overflow: hidden;
   position: relative
+}
+
+body > div.stage-visual-container.spacer-md > div > div.stage-content-carousel-wrapper.container.bg-primary{
+  width: 100%;
+  max-width: 1920px;
 }
 
 .stage-visual-container .stage-image-carousel > a + a picture {
