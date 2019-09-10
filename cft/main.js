@@ -122,7 +122,7 @@ function getCssNext() {
 window.onload = function(){
 	
 	//getCss();
-	var rows = 9;
+	var rows = 19;
 	var cols = 3;
 	var html = '<table border="1" style="width: 100%;">';
 	
