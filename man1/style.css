@@ -152,6 +152,7 @@
     position: absolute;
     top: calc(100% + 1px);
     width: 100%;
+    height: 295px;
     min-width: 1120px;
     left: -335px;
     right: 0;
@@ -184,11 +185,16 @@
 
 .sub-menu1{
     position: absolute;
-    top: -75px;
+    top: -73px;
     left: 282px;
     width: 200px;
     display: none;
     padding-left: 10px;
+    height: 100%;
+}
+
+.sub-menu1 li{
+    width: 100%;
 }
 
 .sub-menu h4{
@@ -196,20 +202,36 @@
     white-space: nowrap;
 }
 
+.sub-stroy{
+    top: -115px;
+}
+
+.sub-perevoz{
+    top: -157px;
+}
+
+.sub-technology{
+    top: -199px;
+}
+
+.sub-bus{
+    top: -31px;
+}
+
 .sub-menu li{
     display: block;
     padding: 10px 15px 10px 0;
     border-top: 1px solid;
     border-color: #d6d8db;
-    width: 25%;
+    width: 26%;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .sub-menu3{
     position: relative;
+    width: 40%;
 }
-
 .sub-menu3::after{
     content: "›";
     position: absolute;
@@ -218,6 +240,14 @@
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.sub-menu4{
+    display: none;
+}
+
+.sub-menu3:hover .sub-menu4{
+    display: block;
 }
 
 .sub-menu3:hover .sub-menu1{
