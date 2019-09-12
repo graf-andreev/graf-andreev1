@@ -43,6 +43,10 @@
        margin-right: 10px;
    }
 
+   .main-navigation li{
+       position: relative;
+   }
+
    .main-navigation li a{
         font-family: "Manglobalpro";
         text-transform: uppercase;
@@ -142,6 +146,82 @@
 
 #mainsearch{
     display: none;
+}
+
+.sub-menu-container{
+    position: absolute;
+    top: calc(100% + 1px);
+    width: 100%;
+    min-width: 1120px;
+    left: -335px;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, .2);
+    border-top: 1px solid #303c49;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.main-navigation li:hover .sub-menu-container{
+    display: block;
+}
+
+.bus-dropdown{
+    left: -453px;
+}
+
+.service-dropdown{
+    left: -535px;
+}
+
+.sub-menu{
+    list-style: none;
+    position: relative;
+}
+
+.sub-menu1{
+    position: absolute;
+    top: -75px;
+    left: 282px;
+    width: 200px;
+    display: none;
+    padding-left: 10px;
+}
+
+.sub-menu h4{
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.sub-menu li{
+    display: block;
+    padding: 10px 15px 10px 0;
+    border-top: 1px solid;
+    border-color: #d6d8db;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sub-menu3{
+    position: relative;
+}
+
+.sub-menu3::after{
+    content: "›";
+    position: absolute;
+    color:#303c49;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.sub-menu3:hover .sub-menu1{
+    display: block;
 }
 
 @media screen and (max-width: 1050px) and (min-width: 900px){
