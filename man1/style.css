@@ -310,12 +310,35 @@
         width: 100%;
         left: -181px;
     }
+    .sub-menu-container{
+        position: relative;
+        min-width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .sub-menu li{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-top: none;
+        white-space: nowrap;
+    }
+
+    .main-navigation li a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .sub-menu3::after{
+        display: none;
+    }
 }
 @media screen and (max-width: 385px) {
     .main-logo{
         width: 30%;
         height: 82px;
         margin-top: 5px;
+        display: none;
     }
     .mobile-text{
         margin-left: 20px;
