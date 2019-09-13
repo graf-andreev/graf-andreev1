@@ -327,6 +327,7 @@
     .main-navigation li a{
         padding-top: 10px;
         padding-bottom: 10px;
+        font-size: 10px;
     }
 
     .sub-menu3::after{
@@ -344,5 +345,8 @@
         margin-left: 20px;
         margin-right: 30px;
         margin-bottom: 40px;
+    }
+    header{
+        overflow: hidden;
     }
 }
