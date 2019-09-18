@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "exo2";
+    src: url("fonts/exo2.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+   }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    max-width: 1920px;
+}
+
+.wrapper-content{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.flex-between{
+    justify-content: space-between;
+}
+
+.production-item{
+    width: 384px;
+    transition: 0.5s;   
+}
+
+.production-item:hover{
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+}
+
+.item-long{
+    width: 580px;
+}
+
+.main-navigation{
+    list-style: none;
+}
+
+.main-navigation a li{
+    background-color: #00216b;
+    padding: 15px 30px 15px 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.main-navigation li:hover{
+    background-color: #ff0553;
+    transition: 0.5s;
+}
+
+.main-navigation a{
+    font-family: "exo2";
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+h3{
+    font-family: "exo2";
+    font-size: 40px;
+    color: #002476;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+h4{
+    color: #002476;
+}
+
+h5{
+    font-family: "exo2";
+    font-weight: bold;
+    font-size: 14px;
+    color: #002476;
+    text-transform: uppercase;
+    margin: 25px 0 23px 0;
+}
+
+p{
+    font-family: "exo2";
+    font-size: 16px;
+    color: #575a61; 
+    line-height: 22px;
+}
