@@ -193,8 +193,17 @@
     height: 100%;
 }
 
+.menu-sub{
+    width: 200px !important;
+}
+
+.menu-sub a{
+    padding-left: 30px;
+}
+
 .sub-menu1 li{
     width: 100%;
+    
 }
 
 .sub-menu h4{
