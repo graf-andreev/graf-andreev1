@@ -8,7 +8,7 @@
     <title>IT</title>
 </head>
 <header>
-    <div class="wrapper-content">
+    <!-- <div class="wrapper-content">
 <img src="img/logo.png" alt="">
 <nav>
     <ul class="main-navigation flex">
@@ -22,7 +22,7 @@
         <a href="#"><li>Контакты</li></a>
     </ul>
 </nav>
-</div>
+</div> -->
 </header>
 <body>
     <section class="main-slider">
@@ -31,42 +31,57 @@
     <section class="production">
     <div class="wrapper-content">
     <h3>Наша продукция</h3>
-    <p>Компания ИТ Синтез изготавливает резервуары горизонтальные стальные для нефтепродуктов и резервуары горизонтальные стальные для запаса воды. 
+    <p class="light">Компания ИТ Синтез изготавливает резервуары горизонтальные стальные для нефтепродуктов и резервуары горизонтальные стальные для запаса воды. 
             Емкость от 5 м³ до 100 м³.</p>
     <div class="flex wrap flex-between">
-    <div class='production-item'>
+    <a class="item-ancor" href="#"><div class='production-item'>
         <img src="img/6.png" alt="">
-        <h5>Резервуары для нефтепродуктов</h5>
-        <p>Резервуары горизонтальные стальные, 
+        <div class="go-icon">
+            <i class="icon-go"></i>
+        </div>
+        <h5 class="item-header">Резервуары для нефтепродуктов</h5>
+        <p class="item-text">Резервуары горизонтальные стальные, 
                 предназначены для хранения 
                 нефтепродуктов.</p>
-    </div>
-    <div class='production-item'>
+    </div></a>
+    <a class="item-ancor" href="#"><div class='production-item'>
         <img src="img/8.png" alt="">
-        <h5>Резервуары для агрессивных сред</h5>
-        <p>Резервуары горизонтальные стальные, 
+        <div class="go-icon">
+            <i class="icon-go"></i>
+        </div>
+        <h5 class="item-header">Резервуары для агрессивных сред</h5>
+        <p class="item-text">Резервуары горизонтальные стальные, 
                 предназначены для хранения химических 
                 продуктов.</p>
-    </div>
-    <div class='production-item'>
+    </div></a>
+    <a class="item-ancor" href="#"><div class='production-item'>
         <img src="img/9.png" alt="">
-        <h5>Для пищевой промышленности</h5>
-        <p>Резервуары горизонтальные стальные, 
+        <div class="go-icon">
+            <i class="icon-go"></i>
+        </div>
+        <h5 class="item-header">Для пищевой промышленности</h5>
+        <p class="item-text">Резервуары горизонтальные стальные, 
                 предназначены для хранения пищевых 
                 продуктов.</p>
-    </div>
-    <div class='production-item item-long'>
+    </div></a>
+    <a class="item-ancor" href="#"><div class='production-item item-long'>
         <img src="img/10.png" alt="">
-        <h5>Баки для водоснабжения</h5>
-        <p>Резервуары горизонтальные стальные, предназначены для хранения 
+        <div class="go-icon go-long">
+            <i class="icon-go"></i>
+        </div>
+        <h5 class="item-header">Баки для водоснабжения</h5>
+        <p class="item-text">Резервуары горизонтальные стальные, предназначены для хранения 
                 нефтепродуктов.</p>
-    </div>
-    <div class='production-item item-long'>
+    </div></a>
+    <a class="item-ancor" href="#"><div class='production-item item-long'>
         <img src="img/111.png" alt="">
-        <h5>Пожарные резервуары</h5>
-        <p>Резервуары горизонтальные стальные, предназначены для хранения 
+        <div class="go-icon go-long">
+            <i class="icon-go"></i>
+        </div>
+        <h5 class="item-header">Пожарные резервуары</h5>
+        <p class="item-text">Резервуары горизонтальные стальные, предназначены для хранения 
                 нефтепродуктов.</p>
-    </div>
+    </div></a>
     </div>
     </div>
     </section>
@@ -74,10 +89,79 @@
 
     </section>
     <section class="forms">
-
+    <div class="wrapper-content">
+        <h3>Наша продукция</h3>
+        <p class="light">Доставка емкостей и резервуаров осуществляется во все регионы России. Чтобы узнать стоимость доставки, заполните форму или опросный лист, затем 
+            мы свяжемся с вами, чтобы рассчитать цену. Для заказа доставки вам достаточно оформить заявку на нашем сайте, после мы свяжемся с вами, и в скором 
+            времени вы получите свой товар.</p>
+        <h4>Заказать резервуар / задать вопрос</h4>
+        <p class="light">Вы можете задать вопрос или заказать коммерческое предложение на изготовление резервуара, 
+            заполнив формы или опросный лист.</p>
+        <div class="flex wrap">
+                <div class="poly-style">
+                        <input id="NAME" value="" name="NAME" type="text" required >
+                         <label for="NAME"> Имя:<span>*</span></label>
+                     </div>
+                    
+                    <div class="poly-style">
+                        <input id="EMAIL" value=""name="EMAIL" type="email" required >
+                        <label for="EMAIL">E-mail:<span>*</span></label>
+                    </div>
+                    <div class="poly-style">
+                        <input id="PHONE" value=""name="PHONE" type="text"  required >
+                        <label for="PHONE">Контактный телефон:<span>(с указанием кода города)*</span>                                    </label>
+                     </div>
+                    <div class="poly-style">
+                        <input id="CITY" value="" name="CITY" type="text" required >
+                        <label for="CITY">Город:<span>*</span> </label>
+                    </div>
+                    
+            <button>123</button>
+            <input type="file">
+        </div>
+        <h4>Заполнить характеристики резервуара</h4>
+        <div class="poly-style">
+                <select class="color-default" name="LOAD_TYPE_HAR" id="LOAD_TYPE_HAR" onchange="this.className = this.value == 0 ? 'color-default' : 'color-blue';" >
+                    <option class="color-default" value="" selected disabled>Назначение резервуара</option>
+                    <option  class="color-blue" value="22">Отопление и ГВС</option>
+                    <option  class="color-blue" value="23">Отопление и вентиляция</option>
+                    <option  class="color-blue" value="24">Отопление</option>
+                </select>
+        <div class="poly-style">
+                <select class="color-default" name="LOAD_TYPE_HAR" id="LOAD_TYPE_HAR" onchange="this.className = this.value == 0 ? 'color-default' : 'color-blue';" >
+                    <option class="color-default" value="" selected disabled>Объем</option>
+                    <option  class="color-blue" value="25">1</option>
+                    <option  class="color-blue" value="26">2</option>
+                    <option  class="color-blue" value="27">3</option>
+                </select>
+        <input type="number" placeholder="Требуемое количество резервуаров">
+        <h4>Тип установки</h4>
+        <form action="#">
+        <p>
+            <input type="checkbox" id="test1" />
+            <label for="test1">Наземный</label>
+        </p>
+        <p><input type="checkbox" id="ch2">
+        <label for="test2">Подземный</label></p>
+        </form>
+        <h4>Условия доставки</h4>
+        <input type="checkbox" id="ch3">
+        <label for="test3">Самовывоз</label>
+        <input type="checkbox" id="ch4">
+        <label for="test4">Доставка</label>
+        <input type="checkbox" id="ch5">
+        <label for="test5">Автотранспорт</label>
+        <input type="checkbox" id="ch6">
+        <label for="test6">Железнодорожный транспорт</label>
+        <p><textarea name="comment"></textarea></p>
+    </div>
     </section>
 </body>
 <footer>
 
 </footer>
 </html>
+
+
+
+
