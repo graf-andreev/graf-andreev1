@@ -152,7 +152,7 @@
     position: absolute;
     top: calc(100% + 1px);
     width: 100%;
-    height: 295px;
+    height: 420px;
     min-width: 1120px;
     left: -335px;
     right: 0;
@@ -166,9 +166,9 @@
     display: none;
 }
 
-.main-navigation li:hover .sub-menu-container{
+/* .main-navigation li:hover .sub-menu-container{
     display: block;
-}
+} */
 
 .bus-dropdown{
     left: -453px;
@@ -186,7 +186,7 @@
 .sub-menu1{
     position: absolute;
     top: -73px;
-    left: 299px;
+    left: 280px;
     width: 200px;
     display: none;
     padding-left: 10px;
@@ -221,6 +221,11 @@
 
 .sub-technology{
     top: -199px;
+    height: 250px;
+}
+
+.sub-technology li{
+    width: 350px !important;
 }
 
 .sub-bus{
@@ -251,44 +256,48 @@
     transform: translateY(-50%);
 }
 .sub-menu-3{
-    left: 252px;
+    left: 200px;
     top: -30px;
     position: absolute;
     display: none;
+}
+
+.sub-menu-4{
+    left: 315px;
 }
 
 .sub-menu-31{
     top: -73px;
 }
 
-#menu-5:hover .sub-menu-3{
+.menu-sub h4,
+.sub-menu1 h4{
+    padding-left: 20px;
+}
+
+.sub-menu-3 h4{
+    padding-left: 60px;
+}
+
+.sub-menu3:hover .sub-menu1{
     display: block;
 }
 
-#menu-6:hover .sub-menu-3{
+.menu-sub:hover .sub-menu-3{
     display: block;
 }
 
-#menu-7:hover .sub-menu-3{
-    display: block;
+.sub-to-top1{
+    top: -34x;
 }
 
-#menu-8:hover .sub-menu-3{
-    display: block;
+.sub-to-top2{
+    top: -74px;
 }
 
-#menu-9:hover .sub-menu-3{
-    display: block;
+.sub-to-top3{
+    top: -114px;
 }
-
-#menu-10:hover .sub-menu-3{
-    display: block;
-}
-
-#menu-11:hover .sub-menu-3{
-    display: block;
-}
-
 
 
 @media screen and (max-width: 1050px) and (min-width: 900px){
