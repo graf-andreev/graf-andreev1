@@ -186,7 +186,7 @@
 .sub-menu1{
     position: absolute;
     top: -73px;
-    left: 282px;
+    left: 299px;
     width: 200px;
     display: none;
     padding-left: 10px;
@@ -250,18 +250,46 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
-.sub-menu4{
+.sub-menu-3{
+    left: 252px;
+    top: -30px;
+    position: absolute;
     display: none;
 }
 
-.sub-menu3:hover .sub-menu4{
+.sub-menu-31{
+    top: -73px;
+}
+
+#menu-5:hover .sub-menu-3{
     display: block;
 }
 
-.sub-menu3:hover .sub-menu1{
+#menu-6:hover .sub-menu-3{
     display: block;
 }
+
+#menu-7:hover .sub-menu-3{
+    display: block;
+}
+
+#menu-8:hover .sub-menu-3{
+    display: block;
+}
+
+#menu-9:hover .sub-menu-3{
+    display: block;
+}
+
+#menu-10:hover .sub-menu-3{
+    display: block;
+}
+
+#menu-11:hover .sub-menu-3{
+    display: block;
+}
+
+
 
 @media screen and (max-width: 1050px) and (min-width: 900px){
     .main-logo{
