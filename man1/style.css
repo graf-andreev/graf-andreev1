@@ -78,7 +78,6 @@
    .main-navigation li a:hover,
    .main-navigation li a:active{
        color: #e40045;
-       border-bottom: 4px solid #303c49;
    }
 
    .main-navigation li{
@@ -307,6 +306,10 @@
 
 .sub-to-top3{
     top: -146px;
+}
+
+.bus-to-top{
+    top: -85px;
 }
 
 

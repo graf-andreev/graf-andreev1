@@ -183,7 +183,7 @@
             </ul>
         </div>
             </li>
-            <li><a href="#">Автобусы</a>
+            <li id="bus"><a href="#">Автобусы</a>
                 <div class="sub-menu-container bus-dropdown">
                 <ul class="sub-menu">
                     <h4>Автобусы</h4>
@@ -197,7 +197,7 @@
                                     <li><a href="#">Пакет MAN EfficientLine</a></li>
                                     </ul></li>
                             <li class="sub-menu3"><a href="#">Междугородние – MAN Lion's Intercity</a>
-                                <ul class="sub-menu1">
+                                <ul class="sub-menu1 bus-to-top">
                                     <h4>Междугородние – MAN Lion's Intercity</h4>
                                     <li><a href="#">Обзор</a></li>
                                     <li><a href="#">Highlights</a></li>
@@ -206,7 +206,7 @@
                                     </ul></li>
                         </ul>
                     </div></li>
-            <li><a href="#">Сервис</a>
+            <li id="service-dropdown"><a href="#">Сервис</a>
                 <div class="sub-menu-container service-dropdown">
                     <ul class="sub-menu">
                         <h4>Сервис</h4>
@@ -269,6 +269,14 @@
      }
      $('#menu-1').click(function() {
 			var menu = $('#menu-11');
+			$(menu).toggle();
+        });
+    $('#bus').click(function() {
+			var menu = $('.bus-dropdown');
+			$(menu).toggle();
+        });
+    $('#service-dropdown').click(function() {
+			var menu = $('.service-dropdown');
 			$(menu).toggle();
         });
 
