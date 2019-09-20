@@ -15,7 +15,8 @@
    *{
        margin: 0;
        padding: 0;
-       box-sizing: border-box;
+       -webkit-box-sizing: border-box;
+               box-sizing: border-box;
    }
 
    header{
@@ -33,6 +34,8 @@
 
    .main-navigation,
    .main-navigation1{
+       display: -webkit-box;
+       display: -ms-flexbox;
        display: flex;
        list-style: none;
        margin-bottom: 5px;
@@ -93,6 +96,8 @@
    }
 
    body > header > div > div > div.header-margin > div{
+       display: -webkit-box;
+       display: -ms-flexbox;
        display: flex;
        z-index: 222;
        position: absolute;
@@ -118,6 +123,8 @@
    }
 
 .header-margin{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -149,6 +156,8 @@
 }
 
 .flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -163,7 +172,8 @@
     z-index: 1000;
     background: #fff;
     overflow: hidden;
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 6px 8px 0 rgba(0, 0, 0, .2);
+            box-shadow: 0 6px 8px 0 rgba(0, 0, 0, .2);
     border-top: 1px solid #303c49;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -262,7 +272,8 @@
     right: 0;
     top: 60%;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
 }
 .sub-menu-3{
     left: 200px;
@@ -312,6 +323,9 @@
     top: -85px;
 }
 
+.sub-bus:hover .sub-menu-3{
+    display: block;
+}
 
 @media screen and (max-width: 1050px) and (min-width: 900px){
     .main-logo{
