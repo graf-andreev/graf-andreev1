@@ -90,12 +90,12 @@
     </section>
     <section class="forms">
     <div class="wrapper-content">
-        <h3>Наша продукция</h3>
+        <h3>Доставка</h3>
         <p class="light">Доставка емкостей и резервуаров осуществляется во все регионы России. Чтобы узнать стоимость доставки, заполните форму или опросный лист, затем 
             мы свяжемся с вами, чтобы рассчитать цену. Для заказа доставки вам достаточно оформить заявку на нашем сайте, после мы свяжемся с вами, и в скором 
             времени вы получите свой товар.</p>
         <h4>Заказать резервуар / задать вопрос</h4>
-        <p class="light">Вы можете задать вопрос или заказать коммерческое предложение на изготовление резервуара, 
+        <p class="light">Вы можете задать вопрос или заказать коммерческое предложение на изготовление резервуара, <br>
             заполнив формы или опросный лист.</p>
         <div class="flex wrap">
                 <div class="poly-style">
@@ -107,20 +107,25 @@
                         <input id="EMAIL" value=""name="EMAIL" type="email" required >
                         <label for="EMAIL">E-mail:<span>*</span></label>
                     </div>
+                    <div><a class="button button-load" href="/upload/medialibrary/Opros_list_kotelnaya.doc">Скачать<br>опросный лист</a></div>
                     <div class="poly-style">
                         <input id="PHONE" value=""name="PHONE" type="text"  required >
-                        <label for="PHONE">Контактный телефон:<span>(с указанием кода города)*</span>                                    </label>
+                        <label for="PHONE">Контактный телефон:  <span>(с указанием кода города)*</span></label>
                      </div>
                     <div class="poly-style">
                         <input id="CITY" value="" name="CITY" type="text" required >
                         <label for="CITY">Город:<span>*</span> </label>
                     </div>
-                    
-            <button>123</button>
-            <input type="file">
+                    <div><label class="custom-file-upload">
+                        <input type="file"/>
+                         <div class="top-info__button">Загрузить<br>опросный лист</div>
+                    </label>
+                    </div>
+
         </div>
         <h4>Заполнить характеристики резервуара</h4>
         <div class="poly-style">
+        <div class="flex wrap">
                 <select class="color-default" name="LOAD_TYPE_HAR" id="LOAD_TYPE_HAR" onchange="this.className = this.value == 0 ? 'color-default' : 'color-blue';" >
                     <option class="color-default" value="" selected disabled>Назначение резервуара</option>
                     <option  class="color-blue" value="22">Отопление и ГВС</option>
@@ -135,26 +140,52 @@
                     <option  class="color-blue" value="27">3</option>
                 </select>
         <input type="number" placeholder="Требуемое количество резервуаров">
+    </div>
+</div>
+<div class="flex">
+    <div>
         <h4>Тип установки</h4>
         <form action="#">
         <p>
             <input type="checkbox" id="test1" />
             <label for="test1">Наземный</label>
         </p>
-        <p><input type="checkbox" id="ch2">
-        <label for="test2">Подземный</label></p>
+        <p>
+            <input type="checkbox" id="test2" />
+            <label for="test2">Подземный</label>
+        </p>
         </form>
-        <h4>Условия доставки</h4>
-        <input type="checkbox" id="ch3">
-        <label for="test3">Самовывоз</label>
-        <input type="checkbox" id="ch4">
-        <label for="test4">Доставка</label>
-        <input type="checkbox" id="ch5">
-        <label for="test5">Автотранспорт</label>
-        <input type="checkbox" id="ch6">
-        <label for="test6">Железнодорожный транспорт</label>
-        <p><textarea name="comment"></textarea></p>
     </div>
+    <div>
+        <h4>Условия доставки</h4>
+        <form action="#">
+            <p>
+                <input type="checkbox" id="test3" />
+                <label for="test3">Самовывоз</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test4" />
+                <label for="test4">Доставка</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test5" />
+                <label for="test5">Автотранспорт</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test6" />
+                <label for="test6">Железнодорожный транспорт</label>
+            </p>
+            </form>
+    </div>
+</div>
+    <textarea class="textarea-form" name="" id="" cols="30" rows="10" placeholder="Дополнительные сведения"></textarea>
+    <p>
+        <input type="checkbox" id="test7" />
+        <label for="test7">Я даю согласие на обработку и использование персональных данных и ознакомлен с Политикой 
+            конфиденциальности.</label>
+    </p>
+    <p>Звездочкой <span>*</span> отмечены поля, обязательные для заполнения.</p>
+    <button type="submit">Отправить</button>
     </section>
 </body>
 <footer>
