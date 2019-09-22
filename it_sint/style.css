@@ -28,6 +28,8 @@
 html{
     width: 100%;
     max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .wrapper-content{
@@ -67,6 +69,10 @@ html{
     list-style: none;
 }
 
+.mr280{
+    margin-right: 280px;
+}
+
 .main-navigation a li{
     background-color: #00216b;
     padding: 15px 30px 15px 30px;
@@ -99,7 +105,7 @@ h3{
 h4{
     font-family: "exo2";
     color: #002476;
-    font-size: 30px;
+    font-size: 26px;
     margin: 0px 0 15px 0;
 }
 
@@ -116,10 +122,11 @@ h4{
 .item-text{
     font-family: "exo2";
     font-size: 16px;
-    color: #575a61; 
+    color: #575a61;
     line-height: 22px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding-left: 25px;
+    padding-bottom: 25px;
 }
 
 .light{
@@ -170,9 +177,35 @@ input[type="file"] {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-  }
+}
 
-.button{
+.bottom-text{
+    color: #00216b !important;
+    font-size: 16px;
+    font-family: "exo-light";
+    font-weight: bold;
+}
+
+.bottom-text a{
+    color: #fb0e52;
+}
+
+.bottom-button{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    width: 220px;
+    height: 50px;
+    font-family: "exo-light";
+}
+
+.end-text{
+    font-family: 'exo2';
+    color: #9f9ea3;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.button1{
     border: 0px;
     text-align: center;
     outline: none;
@@ -233,6 +266,10 @@ input[type="file"] {
 
 .production-item:hover .go-icon{
     opacity: 1;
+}
+
+.label-correct{
+    top: -16px !important;
 }
 
 .icon-go{
@@ -309,6 +346,11 @@ input[type="file"] {
     background-image: url(img/down-mini_2.png);
     background-repeat: no-repeat;
     background-position: right 10px center;
+    font-size: 16px;
+}
+
+.ml-20px{
+    margin-left: -20px;
 }
 
 .textarea-form{
@@ -317,14 +359,38 @@ input[type="file"] {
     height: 178px;
     border: 2px solid #e8e8e8;
     border-radius: 2px;
+    margin-top: 23px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-top: 9px;
+    font-family: "exo-light";
+    font-size: 16px;
+    color: #959798;
+}
+
+.select-custom{
+    margin: 0px 20px 20px 0;
+}
+
+.textarea-form::placeholder{
+    font-family: "exo-light";
+    font-size: 16px;
+    color: #959798;
 }
 
 .color-default {
     color: #959595;
+    font-family: 'exo2';
 }
 
 .color-blue {
     color: #002476;
+    font-family: 'exo2';
+}
+
+.number-input{
+    font-family: 'exo2';
+    font-size: 16px;
 }
 
 /* Base for label styling */
@@ -400,4 +466,57 @@ label:hover:before {
   border: 1px solid #4778d9!important;
 }
 
+.mb50{
+    margin-bottom: 50px;
+}
 
+@media screen and (max-width: 1169px){
+    html{
+        padding: 0 21px 0 21px;
+    }
+    .production-item img,
+    .production-item{
+        width: 100%;
+        max-width: 384px;
+        margin-right: 10px;
+    }
+    .flex-between{
+        justify-content: center;
+    }
+    .form-adaptive{
+        order: -2;
+    }
+}
+
+@media screen and (max-width: 946px){
+    .number-input{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 722px){
+    .mobile-form{
+        order: -3;
+    }
+    .button1{
+    margin-right: 20px;
+    }   
+    .custom-file-upload{
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    .poly-style input,
+    .poly-style select{
+        width: 120%;
+    }
+    .select-custom{
+        margin-right: 0px;
+    }
+    .mr280{
+        margin-right: 0px;
+    }
+    .custom-file-upload{
+        margin-top: 20px;
+    }
+}

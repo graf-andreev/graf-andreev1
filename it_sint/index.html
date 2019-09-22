@@ -25,9 +25,10 @@
 </div> -->
 </header>
 <body>
-    <section class="main-slider">
-
-    </section>
+        <div class="wrapper-content">
+    <p class="light mb50">Комплексный подход к изготовлению резервуаров и резервуарного оборудования позволяет нам гарантировать качество изделий, начиная от стадии 
+            расчета и заканчивая монтажем оборудования у Вас на объекте.</p> 
+            </div>
     <section class="production">
     <div class="wrapper-content">
     <h3>Наша продукция</h3>
@@ -107,14 +108,14 @@
                         <input id="EMAIL" value=""name="EMAIL" type="email" required >
                         <label for="EMAIL">E-mail:<span>*</span></label>
                     </div>
-                    <div><a class="button button-load" href="/upload/medialibrary/Opros_list_kotelnaya.doc">Скачать<br>опросный лист</a></div>
-                    <div class="poly-style">
+                    <div><a class="button1 button-load" href="/upload/medialibrary/Opros_list_kotelnaya.doc">Скачать<br>опросный лист</a></div>
+                    <div class="poly-style form-adaptive">
                         <input id="PHONE" value=""name="PHONE" type="text"  required >
-                        <label for="PHONE">Контактный телефон:  <span>(с указанием кода города)*</span></label>
+                        <label class="label-correct" for="PHONE">Контактный телефон:  <span>(с указанием кода города)*</span></label>
                      </div>
-                    <div class="poly-style">
+                    <div class="poly-style mobile-form">
                         <input id="CITY" value="" name="CITY" type="text" required >
-                        <label for="CITY">Город:<span>*</span> </label>
+                        <label class="label-correct" for="CITY">Город:<span>*</span> </label>
                     </div>
                     <div><label class="custom-file-upload">
                         <input type="file"/>
@@ -126,31 +127,35 @@
         <h4>Заполнить характеристики резервуара</h4>
         <div class="poly-style">
         <div class="flex wrap">
-                <select class="color-default" name="LOAD_TYPE_HAR" id="LOAD_TYPE_HAR" onchange="this.className = this.value == 0 ? 'color-default' : 'color-blue';" >
+            <div>
+                <select class="color-default select-custom" name="LOAD_TYPE_HAR" id="LOAD_TYPE_HAR" onchange="this.className = this.value == 0 ? 'color-default' : 'color-blue';" >
                     <option class="color-default" value="" selected disabled>Назначение резервуара</option>
                     <option  class="color-blue" value="22">Отопление и ГВС</option>
                     <option  class="color-blue" value="23">Отопление и вентиляция</option>
                     <option  class="color-blue" value="24">Отопление</option>
                 </select>
+            </div>
         <div class="poly-style">
+            <div>
                 <select class="color-default" name="LOAD_TYPE_HAR" id="LOAD_TYPE_HAR" onchange="this.className = this.value == 0 ? 'color-default' : 'color-blue';" >
                     <option class="color-default" value="" selected disabled>Объем</option>
                     <option  class="color-blue" value="25">1</option>
                     <option  class="color-blue" value="26">2</option>
                     <option  class="color-blue" value="27">3</option>
                 </select>
-        <input type="number" placeholder="Требуемое количество резервуаров">
+            </div>
     </div>
+    <input class="number-input" type="number" placeholder="Требуемое количество резервуаров">
 </div>
-<div class="flex">
-    <div>
+<div class="flex wrap" >
+    <div class="mr280">
         <h4>Тип установки</h4>
         <form action="#">
-        <p>
+        <p class="ml-20px">
             <input type="checkbox" id="test1" />
             <label for="test1">Наземный</label>
         </p>
-        <p>
+        <p class="ml-20px">
             <input type="checkbox" id="test2" />
             <label for="test2">Подземный</label>
         </p>
@@ -159,19 +164,19 @@
     <div>
         <h4>Условия доставки</h4>
         <form action="#">
-            <p>
+            <p class="ml-20px"> 
                 <input type="checkbox" id="test3" />
                 <label for="test3">Самовывоз</label>
             </p>
-            <p>
+            <p class="ml-20px">
                 <input type="checkbox" id="test4" />
                 <label for="test4">Доставка</label>
             </p>
-            <p>
+            <p class="ml-20px">
                 <input type="checkbox" id="test5" />
                 <label for="test5">Автотранспорт</label>
             </p>
-            <p>
+            <p class="ml-20px"> 
                 <input type="checkbox" id="test6" />
                 <label for="test6">Железнодорожный транспорт</label>
             </p>
@@ -179,13 +184,13 @@
     </div>
 </div>
     <textarea class="textarea-form" name="" id="" cols="30" rows="10" placeholder="Дополнительные сведения"></textarea>
-    <p>
+    <p class="ml-20px">
         <input type="checkbox" id="test7" />
-        <label for="test7">Я даю согласие на обработку и использование персональных данных и ознакомлен с Политикой 
-            конфиденциальности.</label>
+        <label style="padding-top: 0px" for="test7"><span class="bottom-text">Я даю согласие на обработку и использование персональных данных и ознакомлен с <a href="">Политикой <br>
+            конфиденциальности.</a></span></label>
     </p>
-    <p>Звездочкой <span>*</span> отмечены поля, обязательные для заполнения.</p>
-    <button type="submit">Отправить</button>
+    <p class="end-text">Звездочкой <span>*</span> отмечены поля, обязательные для заполнения.</p>
+    <button class="button1 bottom-button" type="submit">Отправить</button>
     </section>
 </body>
 <footer>
