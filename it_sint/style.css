@@ -135,7 +135,7 @@ h4{
 
 .item-text{
     font-family: "exo2";
-    font-size: 16px;
+    font-size: 18px;
     color: #575a61;
     line-height: 22px;
     margin-bottom: 20px;
@@ -148,6 +148,7 @@ h4{
     margin-bottom: 30px;
     color: #575a61;
     line-height: 22px;
+    font-size: 18px;
 }
 
 .button-load{
@@ -665,6 +666,19 @@ label:hover:before {
     }
 }
 
-@media screen and (max-width: 479px){
-    
+
+@media screen and (max-width: 498px){
+    .label-correct{
+        top: -1px !important;
+    }
+
+   .load-desc,
+   .button-load{
+        width: 100%;
+    }
+    body > section.forms > div > div.flex.wrap > div:nth-child(6),
+    .top-info__button,
+    .custom-file-upload{
+        width: 100%;
+    }
 }
