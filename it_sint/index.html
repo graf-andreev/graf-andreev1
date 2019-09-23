@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 
     <title>IT</title>
 </head>
 <header>
@@ -85,9 +87,21 @@
     </div></a>
     </div>
     </div>
+    </div>  
     </section>
-    <section class="gallery">
-
+    <section class="gallery bg-gray">
+        <div class="wrapper-content">
+           <h3 class="al-cent">Галерея</h3>
+           <div class="swiper-container">
+           <div class="flex flex-between swiper-wrapper">
+           <div class="swiper-slide"><img src="img/71.jpeg" width="380" height="215" alt=""></div>
+           <div class="swiper-slide"><img src="img/72.jpeg" width="380" height="215" alt=""></div>
+           <div class="swiper-slide"><img src="img/73.jpeg" width="380" height="215" alt=""></div>
+           <div class="swiper-slide"><img src="img/71.jpeg" width="380" height="215" alt=""></div>
+        </div>
+        <div style="left: 500px" class="swiper-pagination style-pagination"></div>
+        </div>
+        </div>
     </section>
     <section class="forms">
     <div class="wrapper-content">
@@ -101,21 +115,21 @@
         <div class="flex wrap">
                 <div class="poly-style">
                         <input id="NAME" value="" name="NAME" type="text" required >
-                         <label for="NAME"> Имя:<span>*</span></label>
+                         <label id="NAME-L" for="NAME"> Имя:<span>*</span></label>
                      </div>
                     
                     <div class="poly-style">
                         <input id="EMAIL" value=""name="EMAIL" type="email" required >
-                        <label for="EMAIL">E-mail:<span>*</span></label>
+                        <label id="EMAIL-L" for="EMAIL">E-mail:<span>*</span></label>
                     </div>
                     <div><a class="button1 button-load" href="/upload/medialibrary/Opros_list_kotelnaya.doc">Скачать<br>опросный лист</a></div>
                     <div class="poly-style form-adaptive">
                         <input id="PHONE" value=""name="PHONE" type="text"  required >
-                        <label class="label-correct" for="PHONE">Контактный телефон:  <span>(с указанием кода города)*</span></label>
+                        <label id="PHONE-L" class="label-correct" for="PHONE">Контактный телефон:  <span>(с указанием кода города)*</span></label>
                      </div>
                     <div class="poly-style mobile-form">
                         <input id="CITY" value="" name="CITY" type="text" required >
-                        <label class="label-correct" for="CITY">Город:<span>*</span> </label>
+                        <label id="CITY-L" class="label-correct" for="CITY">Город:<span>*</span> </label>
                     </div>
                     <div><label class="custom-file-upload">
                         <input type="file"/>
@@ -197,7 +211,15 @@
 
 </footer>
 </html>
-
-
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="script.js"></script>
+<script>
+	
+</script>
 
 
