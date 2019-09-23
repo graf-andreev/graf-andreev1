@@ -531,7 +531,7 @@ label:hover:before {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center !important;
+    justify-content: space-around;
 }
 
 .swiper-pagination{
@@ -543,7 +543,7 @@ label:hover:before {
     transform: translate3d(0,0,0);
     z-index: 10;
     margin-top: 20px;
-    top: 218px;
+    top: 226px;
 }  
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -557,12 +557,14 @@ label:hover:before {
 
 .swiper-pagination-bullet-active{
     width: 12px !important;
-    height: 12px !important;
+    height: 12.5px !important;
+    opacity: 1 !important;
+    border-radius: 100%;
 }
 
 .swiper-container{
     width: 1179px;
-    height: 270px;
+    height: 278px;
 }
 
 .gallery{
