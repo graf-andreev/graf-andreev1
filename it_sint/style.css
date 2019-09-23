@@ -616,6 +616,14 @@ label:hover:before {
     .custom-file-upload{
         padding: 0px;
     }
+    .poly-style{
+        width: 100%;
+    }
+    .poly-style input,
+    .poly-style select,
+    .select-custom{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 500px){
     .poly-style input,

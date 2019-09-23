@@ -32,6 +32,7 @@ var mySwiper = new Swiper ('.swiper-container', {
 direction: 'horizontal',
 loop: true,
 slidesPerView: 3,
+infinity: true,
 
 // If we need pagination
 pagination: {
