@@ -437,7 +437,7 @@ input[type="file"] {
   content: '✔';
   position: absolute;
   top: 13px; 
-  left: 9px;
+  left: 10px;
   font-size: 23px;
   font-weight: bold;
   color: transparent;
