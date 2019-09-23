@@ -621,14 +621,21 @@ label:hover:before {
     }
     .poly-style input,
     .poly-style select,
-    .select-custom{
+    .select-custom,
+    .bottom-button{
+        width: 100%;
+    }
+    .number-input{
+        margin-right: 0px !important;
+    }
+    div:nth-child(1) > div:nth-child(1){
         width: 100%;
     }
 }
 @media screen and (max-width: 500px){
     .poly-style input,
     .poly-style select{
-        width: 110%;
+        width: 100%;
     }
     .select-custom{
         margin-right: 0px;
@@ -651,6 +658,9 @@ label:hover:before {
     }
 
     .poly-style{
-        width: 85%;
+        width: 100%;
+    }
+    .poly-style input + label{
+        font-size: 13px;
     }
 }
