@@ -32,7 +32,6 @@ var mySwiper = new Swiper ('.swiper-container', {
 direction: 'horizontal',
 loop: true,
 slidesPerView: 3,
-infinity: true,
 
 // If we need pagination
 pagination: {
@@ -44,18 +43,18 @@ pagination: {
 breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
-      spaceBetween: 20
+      slidesPerView: 1,
+      spaceBetween: 0
     },
     // when window width is >= 480px
     480: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 2000
     },
     // when window width is >= 640px
     640: {
       slidesPerView: 3,
-      spaceBetween: 40
+      spaceBetween: 200
     },
 
 // And if we need scrollbar
