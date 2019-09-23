@@ -29,7 +29,6 @@
 html{
     width: 100%;
     max-width: 1920px;
-    overflow-x: hidden;
     margin: 0 auto;
 }
 
@@ -621,7 +620,7 @@ label:hover:before {
 @media screen and (max-width: 500px){
     .poly-style input,
     .poly-style select{
-        width: 120%;
+        width: 110%;
     }
     .select-custom{
         margin-right: 0px;
