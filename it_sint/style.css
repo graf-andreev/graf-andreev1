@@ -695,7 +695,8 @@ label:hover:before {
     }
 
     .gallery{
-        padding: 0 10px 0 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 }
