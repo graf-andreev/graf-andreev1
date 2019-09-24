@@ -668,12 +668,7 @@ label:hover:before {
         width: 100%;
         max-width: 100%;
         height: auto;
-        /* margin-right: 20px; */
     }
-
-    /* .swiper-slide{
-        margin-right: 1.4%;
-    } */
 
     .poly-style{
         width: 100%;
@@ -699,8 +694,8 @@ label:hover:before {
         width: 100%;
     }
 
-    /* .swiper-slide img,
-    .swiper-slide{
-        width: 80vw
-    } */
+    .gallery{
+        padding: 0 10px 0 10px;
+    }
+
 }
