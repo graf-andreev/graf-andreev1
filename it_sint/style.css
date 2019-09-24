@@ -130,7 +130,7 @@ h4{
     color: #002476;
     text-transform: uppercase;
     margin: 25px 0 23px 0;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 
 .item-text{
@@ -139,7 +139,8 @@ h4{
     color: #575a61;
     line-height: 22px;
     margin-bottom: 20px;
-    padding-left: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 25px;
 }
 
@@ -243,6 +244,7 @@ input[type="file"] {
 
 .item-ancor{
     text-decoration: none;
+    /* width: 383px; */
 }
 
 .go-icon{
@@ -570,6 +572,12 @@ label:hover:before {
     padding-top: 60px;
     margin-bottom: 50px;
 }
+
+.poly-style input:focus {
+    border: 0px;
+    -webkit-box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.27);
+  }
 
 @media screen and (max-width: 1169px){
     html{
