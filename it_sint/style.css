@@ -663,12 +663,12 @@ label:hover:before {
     .custom-file-upload{
         margin-top: 20px;
     }
-    /* .swiper-slide img{
+    .swiper-slide img{
         width: 100%;
         max-width: 320px;
         height: auto;
         margin-right: 20px;
-    } */
+    }
 
     .swiper-slide{
         margin-right: 20px;
