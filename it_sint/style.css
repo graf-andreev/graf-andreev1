@@ -385,6 +385,14 @@ input[type="file"] {
     color: #959798;
 }
 
+.poly-style select:focus,
+.textarea-form:focus {
+    border: 0px;
+    -webkit-box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.27);
+  }
+  
+
 .select-custom{
     margin: 0px 20px 20px 0;
 }
@@ -655,12 +663,12 @@ label:hover:before {
     .custom-file-upload{
         margin-top: 20px;
     }
-    .swiper-slide img{
+    /* .swiper-slide img{
         width: 100%;
         max-width: 320px;
         height: auto;
         margin-right: 20px;
-    }
+    } */
 
     .swiper-slide{
         margin-right: 20px;
@@ -689,4 +697,5 @@ label:hover:before {
     .custom-file-upload{
         width: 100%;
     }
+
 }
