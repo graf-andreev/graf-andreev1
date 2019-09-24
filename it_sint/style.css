@@ -383,6 +383,7 @@ input[type="file"] {
     font-family: "exo-light";
     font-size: 16px;
     color: #959798;
+    outline: none;
 }
 
 .poly-style select:focus,
