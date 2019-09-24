@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="header-wrapper">
+        <p class="text-logo">MAN Центр Новосибирск</p>
+        <div class="main-navigation1">
+            <div onclick="burger()" class="menubutton">
+                <div class="menuitem"></div>
+                <div class="menuitem"></div>
+                <div class="menuitem"></div>
+            </div>
+            <div class="mobile-text"><p class="text-logo1">MAN Центр Новосибирск</p></div>
+            <ul class="main-navigation">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Специальные предложения</a></li>
+                <li id="menu-1" data-id="level1"><a href="#">Модельный ряд</a>
+                    <div id="menu-11" class="sub-menu-container">
+                        <ul class="sub-menu">
+                            <h4>Модельный ряд</h4>
+                            <li>Техника в наличии</li>
+                            <li class="sub-menu3" data-id="level2"><a href="#">Магистральные перевозки</a>
+                                <ul class="sub-menu1">
+                                    <h4>Магистральные перевозки</h4>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">TGX</a>
+                                        <ul class="sub-menu-3">
+                                            <h4>TGX</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">TGS</a>
+                                        <ul class="sub-menu-3 sub-menu-31">
+                                            <h4>TGS</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul></li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">MAN XLION</a>
+                                        <ul class="sub-menu-3 sub-menu-31 to-top2">
+                                            <h4>MAN XLION</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul></li>
+                                    <li class="menu-sub" data-id="level3"><a href="#">Сравнение моделей</a></li>
+                                    <li class="menu-sub" data-id="level3"><a href="#">Рейтинг TUV</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu3" data-id="level2"><a href="#">Строительство</a>
+                                <ul class="sub-menu1 sub-stroy">
+                                    <h4>Строительство</h4>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">TGX</a>
+                                        <ul class="sub-menu-3">
+                                            <h4>TGX</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Тяжеловесы</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">TGS</a>
+                                        <ul class="sub-menu-3 bus-to-top">
+                                            <h4>TGS</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">TGM</a>
+                                        <ul class="sub-menu-3 sub-to-top1 to-top2">
+                                            <h4>TGM</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">TGL</a>
+                                        <ul class="sub-menu-3 sub-to-top2 to-top2">
+                                            <h4>TGL</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">TGS WW</a>
+                                        <ul class="sub-menu-3 sub-to-top3 to-top2">
+                                            <h4>TGS WW</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            <li class="sub-menu3" data-id="level2"><a href="#">Разовые перевозки</a>
+                                <ul class="sub-menu1 sub-perevoz">
+                                    <h4>Разовые перевозки</h4>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">TGS</a>
+                                        <ul class="sub-menu-3 sub-to-top1">
+                                            <h4>TGS</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">TGM</a>
+                                        <ul class="sub-menu-3 sub-to-top1">
+                                            <h4>TGM</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">TGL</a>
+                                        <ul class="sub-menu-3 sub-to-top1">
+                                            <h4>TGL</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Сервис</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Финансирование</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub"><a href="#">Лесовозные</a></li>
+                                    <li class="menu-sub"><a href="#">Коммунальная техника MAN</a></li>
+                                </ul></li>
+                            <li class="sub-menu3" data-id="level2"><a href="#">Технологии и разработки</a>
+                                <ul class="sub-menu1 sub-technology">
+                                    <h4>Технологии и разработки</h4>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">Системы безопасности и помощи водителю</a>
+                                        <ul class="sub-menu-3 sub-to-top1 sub-menu-4">
+                                            <h4>Системы безопасности и помощи водителю</h4>
+                                            <li class="menu-sub"><a href="#">MAN BrakeMatic®</a></li>
+                                            <li class="menu-sub"><a href="#">Адаптивный круиз-контроль</a></li>
+                                            <li class="menu-sub"><a href="#">Электронная система курсовой устойчивости</a></li>
+                                            <li class="menu-sub"><a href="#">Система автоматического торможения</a></li>
+                                            <li class="menu-sub"><a href="#">Многофункциональное рулевое колесо</a></li>
+                                            <li class="menu-sub"><a href="#">Continuous Damping Control</a></li>
+                                            <li class="menu-sub"><a href="#">Система слежения за дорожной разметкой</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">Системы повышения эффективности</a>
+                                        <ul class="sub-menu-3 sub-to-top2 sub-menu-4">
+                                            <h4>Системы повышения эффективности</h4>
+                                            <li class="menu-sub"><a href="#">Темпомат с поддержкой GPS</a></li>
+                                            <li class="menu-sub"><a href="#">MAN TipMatic®</a></li>
+                                            <li class="menu-sub"><a href="#">MAN HydroDrive®</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">Кабины</a>
+                                        <ul class="sub-menu-3 sub-to-top3 sub-menu-4">
+                                            <h4>Кабины</h4>
+                                            <div class="flex">
+                                                <li style="width: 150px !important;" class="menu-sub"><a href="#">Обзор</a></li>
+                                                <li class="menu-sub"><a href="#">Кабина XLX</a></li>
+                                            </div>
+                                            <div class="flex">
+                                                <li style="width: 150px !important;" class="menu-sub"><a href="#">Кабина LX</a></li>
+                                                <li class="menu-sub"><a href="#">Кабина M</a></li>
+                                            </div>
+                                            <div class="flex">
+                                                <li style="width: 150px !important;" class="menu-sub"><a href="#">Кабина C</a></li>
+                                                <li class="menu-sub"><a href="#">Кабина XXL</a></li>
+                                            </div>
+                                            <div class="flex">
+                                                <li style="width: 150px !important;" class="menu-sub"><a href="#">Кабина XL</a></li>
+                                                <li class="menu-sub"><a href="#">Кабина L</a></li>
+                                            </div>
+                                            <li class="menu-sub"><a href="#">Кабина с двумя рядами сидений</a></li>
+                                        </ul>
+                                    </li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="bus" data-id="level1"><a href="#">Автобусы</a>
+                    <div class="sub-menu-container bus-dropdown">
+                        <ul class="sub-menu">
+                            <h4>Модельный ряд</h4>
+                            <li class="sub-menu3"  data-id="level2"><a href="#">Туристические</a>
+                                <ul class="sub-menu1">
+                                    <h4>Туристические</h4>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">Neoplan</a>
+                                        <ul class="sub-menu-3">
+                                            <h4>Neoplan</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Салон</a></li>
+                                            <li class="menu-sub"><a href="#">Место водителя</a></li>
+                                            <li class="menu-sub"><a href="#">Пакет MAN EfficientLine</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">MAN Lion's Coach</a>
+                                        <ul class="sub-menu-3 sub-menu-31">
+                                            <h4>MAN Lion's Coach</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Салон</a></li>
+                                            <li class="menu-sub"><a href="#">Место водителя</a></li>
+                                            <li class="menu-sub"><a href="#">Пакет MAN EfficientLine</a></li>
+                                        </ul></li>
+                                </ul></li>
+                            <li class="sub-menu3" data-id="level2"><a href="#">Междугородние</a>
+                                <ul class="sub-menu1 bus-to-top">
+                                    <h4>Междугородние</h4>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">Neoplan</a>
+                                        <ul class="sub-menu-3 1">
+                                            <h4>Neoplan</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Салон</a></li>
+                                            <li class="menu-sub"><a href="#">Место водителя</a></li>
+                                            <li class="menu-sub"><a href="#">Пакет MAN EfficientLine</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-sub sub-menu3" data-id="level3"><a href="#">Man Lion's Intercity</a>
+                                        <ul class="sub-menu-3 1">
+                                            <h4>Man Lion's Intercity</h4>
+                                            <li class="menu-sub"><a href="#">Обзор</a></li>
+                                            <li class="menu-sub"><a href="#">Технические разработки</a></li>
+                                            <li class="menu-sub"><a href="#">Салон</a></li>
+                                            <li class="menu-sub"><a href="#">Место водителя</a></li>
+                                            <li class="menu-sub"><a href="#">Пакет MAN EfficientLine</a></li>
+                                        </ul>
+                                    </li>
+                    </div></li>
+                <li data-id="level1" id="service-dropdown"><a href="#">Сервис</a>
+                    <div class="sub-menu-container service-dropdown">
+                        <ul class="sub-menu">
+                            <h4>Сервис</h4>
+                            <li><a href="#">Ремонт грузовиков MAN</a></li>
+                            <li><a href="#">Виды услуг</a></li>
+                            <li><a href="#">Кузовной ремонт</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="#">Запчасти</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О компании</a></li>
+                <form id="mainsearch" class="form-inline form" method="post" action="/ru/do.search" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Поиск" name="query" itemprop="query-input" type="search">
+                        <button class="btn btn-primary" type="submit"><img src="img/search1.png" width="15" height="15" alt=""></button>
+                    </div>
+                    <input type="hidden" name="wildcardSearch" value="contains" />
+                    <input type="hidden" name="initialSize" value="10" />
+                    <input type="hidden" name="pageSize" value="10" />
+                    <input type="hidden" name="maxResults" value="500" />
+                    <input type="hidden" name="orderBy" value="date" />
+                    <input type="hidden" name="locale" value="ru" />
+                    <input type="hidden" name="singleton" value="true" />
+                    <input type="hidden" name="resultsURL" value="/ru/ru/technicalpages/search_result.jsp" />
+                </form>
+            </ul>
+            <div class="header-margin">
+                <button onclick="search()" class="search-button"><img src="img/search.png" width="15" height="15" alt=""></button>
+                <div class="form-group" id="search">
+                    <input class="form-control" placeholder="Поиск" name="query" itemprop="query-input" type="search">
+                    <button class="btn btn-primary" type="submit"><img src="img/search1.png" width="15" height="15" alt=""></button>
+                </div>
+                <input type="hidden" name="wildcardSearch" value="contains" />
+                <input type="hidden" name="initialSize" value="10" />
+                <input type="hidden" name="pageSize" value="10" />
+                <input type="hidden" name="maxResults" value="500" />
+                <input type="hidden" name="orderBy" value="date" />
+                <input type="hidden" name="locale" value="ru" />
+                <input type="hidden" name="singleton" value="true" />
+                <input type="hidden" name="resultsURL" value="/ru/ru/technicalpages/search_result.jsp" />
+                </form>
+            </div>
+            <img class="main-logo" width="145" height="82" src="img/logo.JPG" alt="">
+        </div>
+    </div>
+</header>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+<script>
+    function burger() {
+        var menu = document.querySelector('.main-navigation');
+        menu.classList.toggle("show");
+    }
+    function search() {
+        var search = document.querySelector('#search');
+        search.classList.toggle("show");
+    }
+    /* $('#menu-1').click(function() {
+			var menu = $('#menu-11');
+			$(menu).toggle();
+        });
+    $('#bus').click(function() {
+			var menu = $('.bus-dropdown');
+			$(menu).toggle();
+        });
+    $('#service-dropdown').click(function() {
+			var menu = $('.service-dropdown');
+			$(menu).toggle();
+        });*/
+    $('ul li').click(function(e){
+        var th = $(this).attr('data-id');
+        // th.replace(' ', '.');
+        console.log(th);
+        $('[data-id='+th+']').children('div, ul').hide();
+        //  $(this).siblings('div, ul').css('display', 'none');
+        //  $($(this).attr('class')).children('div, ul').hide();
+        $(this).children('div, ul').slideDown();
+        e.stopPropagation();
+    });
+
+</script>
+
