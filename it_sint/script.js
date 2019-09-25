@@ -1,29 +1,29 @@
-$('#NAME').focus(function() {
+$('#YNAME').focus(function() {
     var form = $('#NAME-L');
     $(form).hide();
 });
-$('#NAME').focusout(function() {
+$('#YNAME').focusout(function() {
     $('#NAME-L').show();
 });
-$('#EMAIL').focus(function() {
+$('#MAIL').focus(function() {
     var form = $('#EMAIL-L');
     $(form).hide();
 });
-$('#EMAIL').focusout(function() {
+$('#MAIL').focusout(function() {
     $('#EMAIL-L').show();
 });
-$('#PHONE').focus(function() {
+$('#IPHONE').focus(function() {
     var form = $('#PHONE-L');
     $(form).hide();
 });
-$('#PHONE').focusout(function() {
+$('#IPHONE').focusout(function() {
     $('#PHONE-L').show();
 });
-$('#CITY').focus(function() {
+$('#TOWN').focus(function() {
     var form = $('#CITY-L');
     $(form).hide();
 });
-$('#CITY').focusout(function() {
+$('#TOWN').focusout(function() {
     $('#CITY-L').show();
 });
 

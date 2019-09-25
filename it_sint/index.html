@@ -10,30 +10,16 @@
     <title>IT</title>
 </head>
 <header>
-    <!-- <div class="wrapper-content">
-<img src="img/logo.png" alt="">
-<nav>
-    <ul class="main-navigation flex">
-        <a href="#"><li>О&nbsp;компании</li></a>
-        <a href="#"><li>Проектирование котельных</li></a>
-        <a href="#"><li>Строительство котельных</li></a>
-        <a href="#"><li>Изготовление резервуаров</li></a>
-        <a href="#"><li>формить запрос</li></a>
-        <a href="#"><li>Реализованные проекты</li></a>
-        <a href="#"><li>Стоимость котельных</li></a>
-        <a href="#"><li>Контакты</li></a>
-    </ul>
-</nav>
-</div> -->
+
 </header>
-<body>
+<body class="page-wrapper">
         <div class="wrapper-content">
     <p class="light mb50">Комплексный подход к изготовлению резервуаров и резервуарного оборудования позволяет нам гарантировать качество изделий, начиная от стадии 
             расчета и заканчивая монтажем оборудования у Вас на объекте.</p> 
             </div>
     <section class="production">
     <div class="wrapper-content">
-    <h3>Наша продукция</h3>
+    <h3 class="sub-header-h3">Наша продукция</h3>
     <p class="light">Компания ИТ Синтез изготавливает резервуары горизонтальные стальные для нефтепродуктов и резервуары горизонтальные стальные для запаса воды. 
             Емкость от 5 м³ до 100 м³.</p>
     <div class="flex wrap flex-between">
@@ -91,7 +77,7 @@
     </section>
     <section class="gallery bg-gray">
         <div class="wrapper-content">
-           <h3 class="al-cent">Галерея</h3>
+           <h3 class="sub-header-h3 al-cent">Галерея</h3>
            <div class="swiper-container">
            <div class="swiper-wrapper">
            <div class="swiper-slide"><img src="img/71.jpeg" width="380" height="215" alt=""></div>
@@ -99,37 +85,37 @@
            <div class="swiper-slide"><img src="img/73.jpeg" width="380" height="215" alt=""></div>
            <div class="swiper-slide"><img src="img/6.png" width="380" height="215" alt=""></div>
         </div>
-        <div style="left: 500px" class="swiper-pagination style-pagination"></div>
+        <div class="swiper-pagination style-pagination center-pagination"></div>
         </div>
         </div>
     </section>
     <section class="forms">
     <div class="wrapper-content">
-        <h3>Доставка</h3>
+        <h3 class="sub-header-h3">Доставка</h3>
         <p class="light">Доставка емкостей и резервуаров осуществляется во все регионы России. Чтобы узнать стоимость доставки, заполните форму или опросный лист, затем 
             мы свяжемся с вами, чтобы рассчитать цену. Для заказа доставки вам достаточно оформить заявку на нашем сайте, после мы свяжемся с вами, и в скором 
             времени вы получите свой товар.</p>
-        <h4>Заказать резервуар / задать вопрос</h4>
+        <h4 class="sub-header-h4">Заказать резервуар / задать вопрос</h4>
         <p class="light">Вы можете задать вопрос или заказать коммерческое предложение на изготовление резервуара, <br>
             заполнив формы или опросный лист.</p>
         <div class="flex wrap">
-                <div class="poly-style">
-                        <input id="NAME" value="" name="NAME" type="text" required >
-                         <label id="NAME-L" for="NAME"> Имя:<span>*</span></label>
+                <div class="custom-form">
+                        <input id="YNAME" value="" name="NAME" type="text" required >
+                         <label id="NAME-L" for="YNAME"> Имя:<span>*</span></label>
                      </div>
                     
-                    <div class="poly-style">
-                        <input id="EMAIL" value=""name="EMAIL" type="email" required >
-                        <label id="EMAIL-L" for="EMAIL">E-mail:<span>*</span></label>
+                    <div class="custom-form">
+                        <input id="MAIL" value=""name="EMAIL" type="email" required >
+                        <label id="EMAIL-L" for="MAIL">E-mail:<span>*</span></label>
                     </div>
                     <div class="load-desc"><a class="button1 button-load" href="/upload/medialibrary/Opros_list_kotelnaya.doc">Скачать<br>опросный лист</a></div>
-                    <div class="poly-style form-adaptive">
-                        <input id="PHONE" value=""name="PHONE" type="text"  required >
-                        <label id="PHONE-L" class="label-correct" for="PHONE">Контактный телефон:  <span>(с указанием кода города)*</span></label>
+                    <div class="custom-form form-adaptive">
+                        <input id="IPHONE" value=""name="PHONE" type="text"  required >
+                        <label id="PHONE-L" class="label-correct" for="IPHONE">Контактный телефон:  <span>(с указанием кода города)*</span></label>
                      </div>
-                    <div class="poly-style mobile-form">
-                        <input id="CITY" value="" name="CITY" type="text" required >
-                        <label id="CITY-L" class="label-correct" for="CITY">Город:<span>*</span> </label>
+                    <div class="custom-form mobile-form">
+                        <input id="TOWN" value="" name="CITY" type="text" required >
+                        <label id="CITY-L" class="label-correct" for="TOWN">Город:<span>*</span> </label>
                     </div>
                     <div><label class="custom-file-upload">
                         <input type="file"/>
@@ -139,8 +125,8 @@
                     </div>
 
         </div>
-        <h4>Заполнить характеристики резервуара</h4>
-        <div class="poly-style">
+        <h4 class="sub-header-h4">Заполнить характеристики резервуара</h4>
+        <div class="custom-form">
         <div class="flex wrap">
             <div>
                 <select class="color-default select-custom" name="LOAD_TYPE_HAR" id="LOAD_TYPE_HAR" onchange="this.className = this.value == 0 ? 'color-default' : 'color-blue';" >
@@ -150,7 +136,7 @@
                     <option  class="color-blue" value="24">Отопление</option>
                 </select>
             </div>
-        <div class="poly-style">
+        <div class="custom-form">
             <div>
                 <select class="color-default" name="LOAD_TYPE_HAR" id="LOAD_TYPE_HAR" onchange="this.className = this.value == 0 ? 'color-default' : 'color-blue';" >
                     <option class="color-default" value="" selected disabled>Объем</option>
@@ -164,7 +150,7 @@
 </div>
 <div class="flex wrap" >
     <div class="mr280">
-        <h4>Тип установки</h4>
+        <h4 class="sub-header-h4">Тип установки</h4>
         <form action="#">
         <p class="ml-20px">
             <input type="checkbox" id="test1" />
@@ -177,7 +163,7 @@
         </form>
     </div>
     <div>
-        <h4>Условия доставки</h4>
+        <h4 class="sub-header-h4">Условия доставки</h4>
         <form action="#">
             <p class="ml-20px"> 
                 <input type="checkbox" id="test3" />
