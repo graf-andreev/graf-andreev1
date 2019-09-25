@@ -258,6 +258,9 @@ li a span{
 
 .sub-menu-4{
     left: 300px;
+    top: 0px;
+    position: absolute;
+    display: none;
 }
 
 .sub-menu-5{
@@ -265,6 +268,26 @@ li a span{
     top: 15px;
     position: absolute;
     display: none; 
+}
+
+#main-navigation .close {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    padding: 0 !important;
+    border: none !important;
+    margin: auto !important;
+    z-index: 1;
+}
+
+.close:before {
+    content: '';
+    background: #303c49;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
 }
 
 @media screen and (max-width: 1050px) and (min-width: 900px){

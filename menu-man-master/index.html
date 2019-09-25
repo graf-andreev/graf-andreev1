@@ -25,6 +25,9 @@
                 <li><a href="#">Специальные предложения</a></li>
                 <li id="menu-1" data-id="level1"><a href="#">Модельный ряд</a>
                     <div id="menu-11" class="sub-menu-container">
+                            <button class="close js_close hidden-xs hidden-sm" aria-label="Закрыть" type="button">
+                                    <span aria-hidden="true">×</span>
+                                </button>
                         <ul class="sub-menu">
                             <h4>Модельный ряд</h4>
                             <li>Техника в наличии</li>
@@ -143,11 +146,12 @@
                                     <li class="menu-sub"><a href="#">Лесовозные</a></li>
                                     <li class="menu-sub"><a href="#">Коммунальная техника MAN</a></li>
                                 </ul></li>
+                                
                             <li style="position: static" class="menu-sub" data-id="level2"><a href="#">Технологии и разработки<span>›</span></a>
-                                <ul class="sub-menu-3">
+                                <ul class="sub-menu-5">
                                     <h4>Технологии и разработки</h4>
                                     <li style="position: static" class="sub-menu1" data-id="level3"><a href="#">Системы безопасности и помощи водителю<span>›</span></a>
-                                        <ul class="sub-menu-3 sub-menu-4">
+                                        <ul class="sub-menu-4">
                                             <h4>Системы безопасности</h4>
                                             <li class="menu-sub"><a href="#">MAN BrakeMatic®</a></li>
                                             <li class="menu-sub"><a href="#">Адаптивный круиз-контроль</a></li>
@@ -159,7 +163,7 @@
                                         </ul>
                                     </li>
                                     <li style="position: static" class="menu-sub1" data-id="level3"><a href="#">Системы повышения эффективности<span>›</span></a>
-                                        <ul class="sub-menu-3 sub-menu-4">
+                                        <ul class="sub-menu-4">
                                             <h4>Системы повышения эффективности</h4>
                                             <li class="menu-sub"><a href="#">Темпомат с поддержкой GPS</a></li>
                                             <li class="menu-sub"><a href="#">MAN TipMatic®</a></li>
@@ -167,22 +171,22 @@
                                         </ul>
                                     </li>
                                     <li style="position: static" class="menu-sub1" data-id="level3"><a href="#">Кабины<span>›</span></a>
-                                        <ul class="sub-menu-3 sub-menu-4">
+                                        <ul class="sub-menu-4">
                                             <h4>Кабины</h4>
                                             <div class="flex">
-                                                <li style="width: 150px;" class="menu-sub"><a href="#">Обзор</a></li>
+                                                <li class="menu-sub"><a href="#">Обзор</a></li>
                                                 <li class="menu-sub"><a href="#">Кабина XLX</a></li>
                                             </div>
                                             <div class="flex">
-                                                <li style="width: 150px;" class="menu-sub"><a href="#">Кабина LX</a></li>
+                                                <li class="menu-sub"><a href="#">Кабина LX</a></li>
                                                 <li class="menu-sub"><a href="#">Кабина M</a></li>
                                             </div>
                                             <div class="flex">
-                                                <li style="width: 150px;" class="menu-sub"><a href="#">Кабина C</a></li>
+                                                <li class="menu-sub"><a href="#">Кабина C</a></li>
                                                 <li class="menu-sub"><a href="#">Кабина XXL</a></li>
                                             </div>
                                             <div class="flex">
-                                                <li style="width: 150px;" class="menu-sub"><a href="#">Кабина XL</a></li>
+                                                <li class="menu-sub"><a href="#">Кабина XL</a></li>
                                                 <li class="menu-sub"><a href="#">Кабина L</a></li>
                                             </div>
                                             <li class="menu-sub"><a href="#">Кабина с двумя рядами сидений</a></li>
@@ -194,6 +198,9 @@
                 </li>
                 <li id="bus" data-id="level1"><a href="#">Автобусы</a>
                     <div class="sub-menu-container bus-dropdown">
+                            <button class="close js_close hidden-xs hidden-sm" aria-label="Закрыть" type="button">
+                                    <span aria-hidden="true">×</span>
+                                </button>
                         <ul class="sub-menu">
                             <h4>Модельный ряд</h4>
                             <li style="position: static" class="sub-menu3"  data-id="level2"><a href="#">Туристические<span>›</span></a>
@@ -245,6 +252,9 @@
                     </div></li>
                 <li data-id="level1" id="service-dropdown"><a href="#">Сервис</a>
                     <div class="sub-menu-container service-dropdown">
+                            <button class="close js_close hidden-xs hidden-sm" aria-label="Закрыть" type="button">
+                                    <span aria-hidden="true">×</span>
+                                </button>
                         <ul class="sub-menu">
                             <h4>Сервис</h4>
                             <li><a href="#">Ремонт грузовиков MAN</a></li>
@@ -304,18 +314,11 @@
         var search = document.querySelector('#search');
         search.classList.toggle("show");
     }
-    /* $('#menu-1').click(function() {
-			var menu = $('#menu-11');
-			$(menu).toggle();
+     $('.js_close').click(function() {
+			var close = $('.sub-menu-container');
+			$(close).hide();
         });
-    $('#bus').click(function() {
-			var menu = $('.bus-dropdown');
-			$(menu).toggle();
-        });
-    $('#service-dropdown').click(function() {
-			var menu = $('.service-dropdown');
-			$(menu).toggle();
-        });*/
+
     $('ul li').click(function(e){
         var th = $(this).attr('data-id');
         // th.replace(' ', '.');
