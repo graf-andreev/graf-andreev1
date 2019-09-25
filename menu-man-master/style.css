@@ -190,13 +190,12 @@
 
 .sub-menu{
     list-style: none;
-    position: relative;
 }
 
 .sub-menu1{
     position: absolute;
-    top: -35px;
-    left: 280px;
+    top: 50px;
+    left: 270px;
     width: 200px;
     display: none;
     padding-left: 10px;
@@ -217,36 +216,13 @@
 }
 
 .sub-menu h4{
-    margin-left: 10px;
+    margin-left: 45px;
     white-space: nowrap;
-}
-
-.sub-stroy{
-    top: -101px;
-}
-
-.sub-perevoz{
-    top: -157px;
-}
-
-.sub-technology{
-    top: -199px;
-    height: 250px;
-}
-
-.sub-technology li{
-    width: 350px !important;
-}
-
-.sub-bus{
-    top: -31px;
 }
 
 .sub-menu li{
     display: block;
     padding: 10px 15px 10px 0;
-    
-    
     width: 26%;
     padding-left: 10px;
     padding-right: 10px;
@@ -262,73 +238,33 @@
 }
 
 .sub-menu3{
-    position: relative;
     width: 40%;
 }
-.sub-menu3::after{
-    content: "›";
-    position: absolute;
-    color:#303c49;
-    right: 0;
-    top: 60%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+
+li a span{
+    margin-left: 10px;
 }
+
+.sub-menu3 a span{
+    margin-left: 10px;
+}
+
 .sub-menu-3{
-    left: 200px;
-    top: -30px;
+    left: 275px;
+    top: 0px;
     position: absolute;
     display: none;
 }
 
 .sub-menu-4{
-    left: 350px
+    left: 300px;
 }
 
-.sub-menu-31{
-    top: -86px;
-}
-
-.menu-sub h4,
-.sub-menu1 h4{
-    padding-left: 20px;
-}
-
-.sub-menu-3 h4{
-    padding-left: 60px;
-}
-/*
-.sub-menu3:hover .sub-menu1{
-    display: block;
-}*/
-/*
-.menu-sub:hover .sub-menu-3{
-    display: block;
-}*/
-
-.sub-to-top1{
-    top: -29px;
-}
-
-.sub-to-top2{
-    top: -88px;
-}
-
-.sub-to-top3{
-    top: -146px;
-}
-
-.bus-to-top{
-    top: -85px;
-}
-
-.to-top2{
-    top: -145px;
-}
-
-.sub-bus:hover .sub-menu-3{
-    display: block;
+.sub-menu-5{
+    left: 275px;
+    top: 15px;
+    position: absolute;
+    display: none; 
 }
 
 @media screen and (max-width: 1050px) and (min-width: 900px){
@@ -406,8 +342,23 @@
         padding-bottom: 10px;
         font-size: 10px;
     }
+    .sub-menu-3{
+        position: static;
+    }
 
-    .sub-menu3::after{
+    .sub-menu1{
+        position: static;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .sub-menu h4 {
+        padding-top: 10px;
+        font-size: 13px;
+    }
+
+    .main-logo{
         display: none;
     }
 }
