@@ -328,6 +328,7 @@ li a span{
         min-width: 100%;
         left: 0;
         right: 0;
+        height: auto;
     }
 
     .sub-menu li{
