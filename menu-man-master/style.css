@@ -272,12 +272,12 @@ li a span{
 
 #main-navigation .close {
     position: absolute;
-    right: 10px;
+    right: 20px !important;
     top: 6px;
     padding: 0 !important;
     border: none !important;
     margin: auto !important;
-    z-index: 1;
+    z-index: 5;
 }
 
 .close:before {
@@ -305,7 +305,7 @@ li a span{
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .menubutton{
         display: block;
         cursor: pointer;

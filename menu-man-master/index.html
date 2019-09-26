@@ -31,7 +31,7 @@
                         <ul class="sub-menu">
                             <h4>Модельный ряд</h4>
                             <li>Техника в наличии</li>
-                            <li style="position: static" class="sub-menu3" data-id="level2"><a href="#">Магистральные перевозки<span>›</span></a>
+                            <li style="position: static" class="menu-sub" data-id="level2"><a href="#">Магистральные перевозки<span>›</span></a>
                                 <ul class="sub-menu1">
                                     <h4>Магистральные перевозки</h4>
                                     <li style="position: static" class="menu-sub" data-id="level3"><a href="#">TGX<span>›</span></a>
@@ -113,7 +113,7 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            <li style="position: static" class="sub-menu1" data-id="level2"><a href="#">Разовые перевозки<span>›</span></a>
+                            <li style="position: static" class="menu-sub" data-id="level2"><a href="#">Разовые перевозки<span>›</span></a>
                                 <ul class="sub-menu1">
                                     <h4>Разовые перевозки</h4>
                                     <li style="position: static" class="menu-sub" data-id="level3"><a href="#">TGS<span>›</span></a>
@@ -150,7 +150,7 @@
                             <li style="position: static" class="menu-sub" data-id="level2"><a href="#">Технологии и разработки<span>›</span></a>
                                 <ul class="sub-menu-5">
                                     <h4>Технологии и разработки</h4>
-                                    <li style="position: static" class="sub-menu1" data-id="level3"><a href="#">Системы безопасности и помощи водителю<span>›</span></a>
+                                    <li style="position: static" class="menu-sub" data-id="level3"><a href="#">Системы безопасности и помощи водителю<span>›</span></a>
                                         <ul class="sub-menu-4">
                                             <h4>Системы безопасности</h4>
                                             <li class="menu-sub"><a href="#">MAN BrakeMatic®</a></li>
@@ -162,7 +162,7 @@
                                             <li class="menu-sub"><a href="#">Система слежения за дорожной разметкой</a></li>
                                         </ul>
                                     </li>
-                                    <li style="position: static" class="menu-sub1" data-id="level3"><a href="#">Системы повышения эффективности<span>›</span></a>
+                                    <li style="position: static" class="menu-sub" data-id="level3"><a href="#">Системы повышения эффективности<span>›</span></a>
                                         <ul class="sub-menu-4">
                                             <h4>Системы повышения эффективности</h4>
                                             <li class="menu-sub"><a href="#">Темпомат с поддержкой GPS</a></li>
@@ -170,7 +170,7 @@
                                             <li class="menu-sub"><a href="#">MAN HydroDrive®</a></li>
                                         </ul>
                                     </li>
-                                    <li style="position: static" class="menu-sub1" data-id="level3"><a href="#">Кабины<span>›</span></a>
+                                    <li style="position: static" class="menu-sub" data-id="level3"><a href="#">Кабины<span>›</span></a>
                                         <ul class="sub-menu-4">
                                             <h4>Кабины</h4>
                                             <div class="flex">
@@ -203,7 +203,7 @@
                                 </button>
                         <ul class="sub-menu">
                             <h4>Модельный ряд</h4>
-                            <li style="position: static" class="sub-menu3"  data-id="level2"><a href="#">Туристические<span>›</span></a>
+                            <li style="position: static" class="menu-sub"  data-id="level2"><a href="#">Туристические<span>›</span></a>
                                 <ul class="sub-menu-5">
                                     <h4>Туристические</h4>
                                     <li style="position: static" class="menu-sub" data-id="level3"><a href="#">Neoplan<span>›</span></a>
@@ -226,7 +226,7 @@
                                             <li class="menu-sub"><a href="#">Пакет MAN EfficientLine</a></li>
                                         </ul></li>
                                 </ul></li>
-                            <li style="position: static" class="sub-menu3" data-id="level2"><a href="#">Междугородние<span>›</span></a>
+                            <li style="position: static" class="menu-sub" data-id="level2"><a href="#">Междугородние<span>›</span></a>
                                 <ul class="sub-menu-5">
                                     <h4>Междугородние</h4>
                                     <li style="position: static" class="menu-sub" data-id="level3"><a href="#">Neoplan<span>›</span></a>
@@ -314,10 +314,6 @@
         var search = document.querySelector('#search');
         search.classList.toggle("show");
     }
-     $('.js_close').click(function() {
-			var close = $('.sub-menu-container');
-			$(close).hide();
-        });
 
     $('ul li').click(function(e){
         var th = $(this).attr('data-id');
@@ -329,6 +325,11 @@
         $(this).children('div, ul').slideDown();
         e.stopPropagation();
     });
+
+    $('.js_close').click(function() {
+			var close = $('.sub-menu-container');
+			$(close).hide();
+        });
 
 </script>
 
