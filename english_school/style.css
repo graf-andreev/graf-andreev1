@@ -33,6 +33,13 @@
             box-sizing: border-box;
 }
 
+html{
+    font-family: "adineuePRO-kur-light";
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #6e6e6e;
+}
+
 header,
 nav{
     width: 100%;
@@ -57,20 +64,16 @@ td{
 }
 
 .popup-list li{
-    font-family: "adineuePRO-kur-light";
     font-size: 18px;
     color: #565656;
     line-height: 25px;
-    letter-spacing: 1px;
     text-align: left;
 }
 
 .popup-group .group-text{
-    font-family: "adineuePRO-kur-light";
     font-size: 18px;
     color: #565656;
     line-height: 25px;
-    letter-spacing: 1px;
     text-align: left;
     padding-top: 0;
     padding-right: 40px;
@@ -111,9 +114,6 @@ footer{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 .logo{
@@ -122,9 +122,6 @@ footer{
 }
 
 header{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     height: 120px;
 }
 
@@ -200,9 +197,6 @@ header{
 }
 
 .main-navigation{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     list-style: none;
     width: 100%;
     background: -o-linear-gradient(left , #edc22e 70%, #ebebeb 30%);
@@ -219,9 +213,6 @@ header{
 }
 
 .last-item{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     background-color: #ebebeb;
 }
 
@@ -245,10 +236,13 @@ header{
     font-size: 15px;
 }
 
-.header-wrapper{
+.flex{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+
+.header-wrapper{
     width: 70%;
 }
 
@@ -276,7 +270,6 @@ h1 span{
 button{
     background-color: #edc22e;
     color: #ffffff;
-    font-size: 20px;
     border: 0;
     border-radius: 40px;
     cursor: pointer;
@@ -312,9 +305,6 @@ button{
     width: 140px;
     height: 168px;
     border-radius: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -326,9 +316,6 @@ button{
 }
 
 .timer-container{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-right: -45px;
 }
 
@@ -354,50 +341,6 @@ button{
     bottom: 66px;
 }
 
-.hours::before {
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #edc22e;
-    position: absolute;
-    left: 161px;
-    top: 60px;
-}
-
-.hours::after{
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #edc22e;
-    position: absolute;
-    left: 161px;
-    bottom: 66px;
-}
-
-.minutes::before {
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #edc22e;
-    position: absolute;
-    left: 161px;
-    top: 60px;
-}
-
-.minutes::after{
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #edc22e;
-    position: absolute;
-    left: 161px;
-    bottom: 66px;
-}
-
 .timer > div.wrapper-content > div > div:nth-child(4) > div{
     margin-right: 0px;
 }
@@ -413,8 +356,6 @@ button{
     padding-left: 20%;
     font-size: 25px;
     line-height: 40px;
-    letter-spacing: 1px;
-    color: #6e6e6e;
 }
 
 
@@ -433,9 +374,6 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
 }
 
 .center-button{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -447,7 +385,6 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
     font-size: 35px;
     line-height: 40px;
     letter-spacing: 2px;
-    color: #6e6e6e;
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -486,14 +423,11 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
     font-family:"adineuePROKZ";
     font-size: 30px;
     color: #ffffff;
-    letter-spacing: 1px;
     line-height: 45px;
 }
 
 .card-main{
     padding: 50px 60px 0 20px;
-    font-family: "adineuePRO-kur-light";
-    font-size: 20px;
     line-height: 30px;
 }
 
@@ -519,11 +453,8 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
 }
 
 .text{
-    font-family: "adineuePRO-kur-light";
-    font-size: 20px;
     line-height: 30px;
     letter-spacing: 1.5px;
-    color: #6e6e6e;
 }
 
 .text-teachers{
@@ -546,21 +477,16 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
 }
 
 .bg-girafe1{
-    /* background-image: url(img/girafe1.png); */
     background-repeat: no-repeat;
     background-position: 91% 73%;
 }
 
 .bg-girafe2{
-    /* background-image: url(img/girafe2.png); */
     background-repeat: no-repeat;
     background-position: 95% 77%;
 }
 
 .levels-2{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
 }
@@ -587,7 +513,6 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
 .test p{
     color: #ffffff;
     font-size: 50px;
-    font-family: "adineuePRO-kur-light";
     line-height: 60px;
     letter-spacing: 3px;
 }
@@ -630,7 +555,6 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
 }
 
 .teachers h3{
-    color: #6e6e6e;
     margin-top: 85px;
     margin-bottom: 90px;
    }
@@ -649,16 +573,12 @@ h3{
 
 .teacher-name{
     font-family: "adineuePROKZ";
-    font-size: 20px;
     line-height: 30px;
-    color: #6e6e6e;
     margin-bottom: 15px;
     margin-top: 15px;
-    letter-spacing: 1px;
 }
 
 .teachers > div > p{
-    font-family: "adineuePRO-kur-light";
     font-size: 18px;
     color: #8c8c8c;
     letter-spacing: 2px;
@@ -695,7 +615,6 @@ h3{
     color: #ffffff;
     font-size: 25px;
     line-height: 35px;
-    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -740,9 +659,6 @@ svg:hover .fil1{
 .process-item{
     width: 100%;
     max-width: 379px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -751,10 +667,8 @@ svg:hover .fil1{
 
 .process-item p{
     width: 50%;
-    font-family: "adineuePRO-kur-light";
     font-size: 15px;
     line-height: 22px;
-    letter-spacing: 1px;
     color: #888888;
     text-transform: uppercase;
 }
@@ -762,17 +676,12 @@ svg:hover .fil1{
 .process h3{
     margin-top: 70px;
     margin-bottom: 80px;
-    color: #6e6e6e;
 }
 
 .choise-item span{
-    font-family: "adineuePRO-kur-light";
-    font-size: 20px;
-    color: #6e6e6e;
     text-align: center;
     padding: 60px 50px 40px 50px;
     display: block;
-    letter-spacing: 1px;
 }
 
 .make-choise,
@@ -842,15 +751,11 @@ svg:hover .fil1{
     min-height: 297px;
     margin: 0 auto;
     padding: 35px 60px 0 29px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 .feedback h3{
     margin-top: 80px;
     margin-bottom: 70px;
-    color: #6e6e6e;
 }
 
 .feedback-item img{
@@ -864,23 +769,17 @@ svg:hover .fil1{
     font-size: 25px;
     line-height: 35px;
     text-transform: uppercase;
-    color: #6e6e6e;
-    letter-spacing: 1px;
     margin-bottom: 27px;
 }
 
 .text-feedback{
-    font-family: "adineuePRO-kur-light";
-    color: #6e6e6e;
     font-size: 18px;
     line-height: 25px;
-    letter-spacing: 1px;
 }
 
 .make-choise h3{
     margin-top: 30px;
     margin-bottom: 80px;
-    color: #6e6e6e;
 }
 
 .choise-item{
@@ -923,7 +822,6 @@ svg:hover .fil1{
     color: #ffffff;
     text-transform: uppercase;
     font-size: 50px;
-    letter-spacing: 1px;
     width: 174%;
 }
 
@@ -935,9 +833,6 @@ select{
     border-radius: 40px;
     border: 0;
     margin-bottom: 10px;
-    font-family: "adineuePRO-kur-light";
-    font-size: 20px;
-    letter-spacing: 1px;
     vertical-align: middle;
     padding-left: 30px;
 }
@@ -955,44 +850,26 @@ select{
 }
 
 .name-input::-webkit-input-placeholder{
-    font-family: "adineuePRO-kur-light";
-    font-size: 20px;
-    letter-spacing: 1px;
     vertical-align: middle;
 }
 
 .name-input::-moz-placeholder{
-    font-family: "adineuePRO-kur-light";
-    font-size: 20px;
-    letter-spacing: 1px;
     vertical-align: middle;
 }
 
 .name-input:-ms-input-placeholder{
-    font-family: "adineuePRO-kur-light";
-    font-size: 20px;
-    letter-spacing: 1px;
     vertical-align: middle;
 }
 
 .name-input::-ms-input-placeholder{
-    font-family: "adineuePRO-kur-light";
-    font-size: 20px;
-    letter-spacing: 1px;
     vertical-align: middle;
 }
 
 .name-input::placeholder{
-    font-family: "adineuePRO-kur-light";
-    font-size: 20px;
-    letter-spacing: 1px;
     vertical-align: middle;
 }
 
 footer{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     height: 630px;
 }
 
@@ -1014,12 +891,10 @@ footer{
     color: #ffffff;
     text-transform: uppercase;
     font-size: 41px;
-    letter-spacing: 1px;
     padding-left: 20px;
 }
 
 .contact-footer p{
-    font-family: "adineuePRO-kur-light";
     font-size: 30px;
     color: #ffffff;
     letter-spacing: 2px;
@@ -1107,11 +982,9 @@ footer{
 .popup-group p{
     padding: 40px 54px 56px 54px;
     text-align: left;
-    font-family: "adineuePRO-kur-light";
     font-size: 18px;
     color: #565656;
     line-height: 25px;
-    letter-spacing: 1px;
 }
 
 .popup-result .info-course input,
@@ -1121,9 +994,7 @@ footer{
 }
 
 .popup-result h5{
-    font-family: "adineuePRO-kur-light";
     font-size: 25px;
-    color: #6e6e6e;
     letter-spacing: 2px;
     line-height: 26px;
     font-weight: 100;
@@ -1140,7 +1011,6 @@ footer{
     height: 339px;
     padding: 55px 60px 60px 40px;
     text-align: left;
-    font-family: "adineuePRO-kur-light";
     font-size: 18px;
     color: #565656;
     letter-spacing: 1.5px;
@@ -1193,8 +1063,6 @@ footer{
 .info div{
     height: 213px;
     width: 50%;
-    font-family: "adineuePRO-kur-light";
-    font-size: 20px;
     padding: 20px 50px 0px 42px;
     text-align: left;
     letter-spacing: 2px;
@@ -1244,9 +1112,6 @@ footer{
 }
 
 .flex-form{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: center; 
@@ -1267,15 +1132,12 @@ footer{
 }
 
 .text-progress{
-    font-family: "adineuePRO-kur-light";
-    letter-spacing: 1px;
     position: absolute;
     top: -20px;
     right: 280px;
 }
 
 .test-question{
-    font-family: "adineuePRO-kur-light";
     color: #e9bf2d;
     font-size: 22.5px;
     padding-top: 20px;
@@ -1285,7 +1147,6 @@ footer{
 }
 
 .test-name{
-    font-family: "adineuePRO-kur-light";
     color: #b6b6b6;
     font-size: 22.5px;
     padding-top: 20px;
@@ -1310,7 +1171,6 @@ footer{
     height: 47px;
     background-color: #edc22e;
     color: #ffffff;
-    font-size: 20px;
     border: 0;
     border-radius: 40px;
     cursor: pointer;
@@ -1327,9 +1187,6 @@ footer{
 }
 
 .test-wrap{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
@@ -1353,7 +1210,6 @@ footer{
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
-    color: #6e6e6e;
     width: 339px;
     height: 59px;
     border: 1px solid #b8b8b8;
@@ -1399,6 +1255,41 @@ footer{
     -ms-transform: scale(1);
         transform: scale(1);
 }
+
+/* custom scrollbar */
+
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:6px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar-track {
+    background-color:#32312e;
+    box-shadow:0px 0px 3px #000 inset;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color:#ffcb17;
+    box-shadow:0px 1px 1px #fff inset;
+    background-image:url(img/59610063.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    }
+    
+    ::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:7px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar{
+    width: 11px;
+    }
 
 @media screen and (min-width: 1850px){
     .nav-item{

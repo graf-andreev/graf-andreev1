@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="theme-color" content="#edc22e">
+        <meta name="msapplication-navbutton-color" content="#edc22e">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#edc22e">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
@@ -18,8 +20,8 @@
     <script>
         new WOW().init();
     </script>
-    <header>
-    <div class="header-wrapper">
+    <header class="flex">
+    <div class="header-wrapper flex">
         <div class="logo"><img src="img/logo.png" width="280" height="85" alt=""></div>
         <div class="contacts">
             <a href="tel:+1234567890"><span>+7 (383) 000 00 00</span></a>
@@ -41,8 +43,8 @@
     </header>
     <nav class="bg-orange">
 
-        <ul class="main-navigation">
-        <div class="header-wrapper">
+        <ul class="main-navigation flex">
+        <div class="header-wrapper flex">
             <li class="nav-item bg-orange first-item"><a href="#actions">Акции</a></li>
             <li class="nav-item bg-orange"><a href="#uslugi">Услуги</a></li>
             <li class="nav-item bg-orange"><a href="#test">Тест</a></li>
@@ -52,7 +54,7 @@
             <li class="nav-item bg-orange"><a href="#preim">Преимущества</a></li>
             
             </div>
-            <div class="last-item">
+            <div class="last-item flex">
                 <li class="nav-item bg-white"><a href="#otziv">Отзывы</a></li>
                 <li class="nav-item bg-white"><a href="#course">Курсы</a></li>
                 <li class="nav-item bg-white"><a href="#contacts">Контакты</a></li>
@@ -67,32 +69,32 @@
     </section>
     <section class="timer"><a id="actions"></a>
         <h5>До конца акции</h5>
-        <div class="wrapper-content" style="flex-wrap: wrap; justify-content: center">
+        <div class="wrapper-content flex">
             <h4>35% скидка <br><span>на обучение</span></h4>
-            <div class="timer-container" data-finish="<?=$weekEnd?> 00:00:00">
+            <div class="timer-container flex">
                 <div>
-                    <div class="time bg-orange days">
+                    <div class="time flex bg-orange days">
                         <span class="days_1">0</span>
                         <span class="days_2">0</span>
                     </div>
                     <p class="under-time">Дни</p>
                 </div>
                 <div>
-                    <div class="time bg-orange hours">
+                    <div class="time flex bg-orange days">
                         <span class="hours_1">0</span>
                         <span class="hours_2">0</span>
                     </div>
                     <p class="under-time">Часы</p>
                 </div>
                 <div>
-                    <div class="time bg-orange minutes">
+                    <div class="time flex bg-orange days">
                         <span class="minutes_1">0</span>
                         <span class="minutes_2">0</span>
                     </div>
                     <p class="under-time">Минуты</p>
                 </div>
                 <div>
-                    <div class="time bg-orange seconds">
+                    <div class="time flex bg-orange">
                         <span class="seconds_1">0</span>
                         <span class="seconds_2">0</span>
                     </div>
@@ -100,10 +102,10 @@
                 </div>
             </div>
         </div>
-        <div class="center-button"><a style="width: 100%; max-width: 623px;" href="#test-level"><button class="button-timer">Хочу узнать свой уровень</button></a></div>
+        <div class="center-button flex"><a style="width: 100%; max-width: 623px;" href="#test-level"><button class="button-timer">Хочу узнать свой уровень</button></a></div>
     </section>
     <section class="levels"><a id="uslugi"></a>
-        <div class="wrapper-content jc-flex">
+        <div class="wrapper-content flex flex jc-flex">
             <div class="card bg-girafe1">
                 <div class="card-header bg-orange">
                     <p>Pre -schoolers <br>(3-6 лет)</p>
@@ -145,8 +147,8 @@
             </div>
         </div>
     </section>
-    <section class="levels-2">
-        <div class="wrapper-content jc-flex">
+    <section class="levels-2 flex">
+        <div class="wrapper-content flex jc-flex">
             <div class="card-next card">
                 <div class="card-header bg-orange">
                     <p>Teens (13-17 лет)</p>
@@ -177,7 +179,7 @@
     </section>
     <section class="teachers"><a id="prepods"></a>
         <h3>Наши преподаватели</h3>
-        <div class="wrapper-content jc-flex fwrap">
+        <div class="wrapper-content flex jc-flex fwrap">
             <div class="teacher-item">
                 <div class="video"><iframe width="378" height="275" src="img/video.png" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 <div class="teacher-name" data-name="Alyona_Kozlova">Alyona Kozlova</div>
@@ -227,7 +229,7 @@
     </section>
     <section class="why-we bg-orange"><a id="whywe"></a>
         <h3>Почему мы</h3>
-        <div class="wrapper-content jc-flex fwrap">
+        <div class="wrapper-content flex jc-flex fwrap">
             <div class="why teacher-item">
                 <img src="img/why1.jpg" width="379" height="249" alt="">
                 <p class="text">Наши центры соответствуют требованиям Министрества образования,
@@ -260,8 +262,8 @@
     </section>
     <section class="process"><a id="etaps"></a>
         <h3>Этапы процесса обучения</h3>
-        <div class="wrapper-content jc-flex fwrap">
-            <div class="process-item">
+        <div class="wrapper-content flex jc-flex fwrap">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -276,7 +278,7 @@
 </svg>
                 <p><b>первое обращение</b> звонок, директ, посещение и тп)</p>
             </div>
-            <div class="process-item">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -291,7 +293,7 @@
     </svg>
                 <p>приглашаем в удобное время для знакомства со школой, на собеседование (для выяснения целей), а так же <b>вводное тестирование для определения уровня</b></p>
             </div>
-            <div class="process-item">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -306,7 +308,7 @@
     </svg>
                 <p><b>приглашаем на бесплатный демо урок</b> в соответствующую по уровню и возрасту группу</p>
             </div>
-            <div class="process-item">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -321,7 +323,7 @@
     </svg>
                 <p><b>подбираем удобное расписание</b></p>
             </div>
-            <div class="process-item">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -336,7 +338,7 @@
     </svg>
                 <p><b>оформляем договор + аванс</b> (за 1 месяц обучения минИМУМ.)</p>
             </div>
-            <div class="process-item">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -351,7 +353,7 @@
 </svg>
                 <p>осваиваем выбранную программу и параллельно <b>готовимся к кембриджскому экзамену</b></p>
             </div>
-            <div class="process-item">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -366,7 +368,7 @@
 </svg>
                 <p>отслеживаем прогресс через <b>промежуточное и итоговое тестирование,</b> в том числе кембриджский экзамен</p>
             </div>
-            <div class="process-item">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -381,7 +383,7 @@
 </svg>
                 <p><b>вручаем сертификат центра,</b> а так же международный кембриджский сертификат на выпускном</p>
             </div>
-            <div class="process-item">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -396,7 +398,7 @@
 </svg>
                 <p><b>бронируем место</b>в своей группе на следующий уровень (АДЕМИЧЕСКИЙ год) новым договором</p>
             </div>
-            <div class="process-item">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -411,7 +413,7 @@
     </svg>
                 <p><b>уходим на каникулы</b> или на летние программы</p>
             </div>
-            <div class="process-item">
+            <div class="process-item flex">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="85mm" height="85mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                      viewBox="0 0 8500 8500"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -426,14 +428,14 @@
 </svg>
                 <p><b>Встречаемся отдохнувшие в день открытых дверей </b>  -  1 сентября!</p>
             </div>
-            <div class="process-item"></div>
+            <div class="process-item flex"></div>
         </div>
     </section>
     <section class="make-choise"><a id="course"></a>
         <h3>Сделай свой выбор</h3>
         <div class="next-slide"></div>
         <div class="prev-slide"></div>
-        <div class="wrapper-content jc-flex">
+        <div class="wrapper-content flex jc-flex">
             <div class="owl-carousel slide-one">
                 <div class="choise-item"><img src="img/kurs1.png" alt=""><span class="name-choice">Английский для начинающих</span><button class="choise-button">Подробнее</button></div>
                 <div class="choise-item"><img src="img/kurs2.png" alt=""><span class="name-choice">Английский для путешествий</span><button class="choise-button">Подробнее</button></div>
@@ -444,7 +446,7 @@
     </section>
     <section class="advantages bg-orange"><a id="preim"></a>
         <h3>Наши преимущества</h3>
-        <div class="wrapper-content jc-flex">
+        <div class="wrapper-content flex jc-flex">
             <div class="advantages-item"><img src="img/420216.png" height="115" alt=""><span>Обучение с любого уровня</span></div>
             <div class="advantages-item"><img src="img/appointment.png" alt=""><span>Уроки по будням и выходным</span></div>
             <div class="advantages-item"><img src="img/cap.png" alt=""><span>Удобное расположение</span></div>
@@ -454,9 +456,9 @@
     </section>
     <section class="feedback"><a id="otziv"></a>
         <h3>Отзывы</h3>
-        <div class="wrapper-content">
+        <div class="wrapper-content flex">
             <div class="owl-carousel slide-two">
-                <div class="feedback-item">
+                <div class="feedback-item flex">
                     <img src="img/why1.jpg" width="162" height="162" alt="">
                     <div>
                         <h4 class="feedback-name">Имя<br>Фамилия</h4>
@@ -466,7 +468,7 @@
                             dolor in reprehenderit in voluptate velit esse </p>
                     </div>
                 </div>
-                <div class="feedback-item">
+                <div class="feedback-item flex">
                     <img src="img/why1.jpg" width="162" height="162" alt="">
                     <div>
                         <h4 class="feedback-name">Иванов<br>Иван</h4>
@@ -478,7 +480,7 @@
         <div class="next-slide1"><img src="img/right-arrow (1).png" alt=""></div>
         <div class="prev-slide1"><img src="img/right-arrow (1).png" alt=""></div>
     </section>
-    <section class="form wrapper-content">
+    <section class="form wrapper-content flex">
         <h4>Пройдите<br>бесплатный<br> пробный<br>урок</h4>
         <div>
             <form class="flex-form" id="ajax_form" action="">
@@ -496,7 +498,7 @@
         </div>
     </section>
     </body>
-    <footer><a id="contacts"></a>
+    <footer class="flex"><a id="contacts"></a>
         <div class="map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaa8a65f14c3b2976f056cc3f2b9f8bc56d5deba6482c83cc0d99b5f7259b8e24&amp;source=constructor" width="100%" height="625" frameborder="0"></iframe></div>
         <div class="contacts-footer bg-orange">
             <div class="logo-footer"><img src="img/logo-footer.png" width="375px" height="111" alt=""></div>
@@ -514,9 +516,9 @@
         </div>
     </footer>
     <div class="overlay_popup"></div>
-    <div class="center-button">
+    <div class="center-button flex">
         <div class="popup popup-adress">
-            <div class="popup-header bg-orange">
+            <div class="popup-header flex bg-orange">
                 <h4>Адреса</h4>
                 <button><img class="img-close" src="img/close.png" width="19" height="19" alt=""></button>
             </div>
@@ -536,7 +538,7 @@
             </div>
         </div>
     </div>
-    <div class="center-button">
+    <div class="center-button flex">
         <div class="popup popup-info">
             <div class="popup-header bg-orange">
                 <h4>Узнать больше</h4>
@@ -551,13 +553,13 @@
             </div>
         </div>
     </div>
-    <div class="center-button">
+    <div class="center-button flex">
         <div class="popup popup-course">
             <div class="popup-header bg-orange">
                 <h4>Английский для начинающих</h4>
                 <button><img class="img-close" src="img/close.png" width="19" height="19" alt=""></button>
             </div>
-            <div class="center-button">
+            <div class="center-button flex">
                 <div class="popup-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium rspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totamrspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totamdoloremque laudantium, totam
                 </div>
@@ -578,7 +580,7 @@
                 </div>
             </div>
         </div>
-        <div class="center-button">
+        <div class="center-button flex">
             <div class="popup popup-result">
                 <div class="popup-header bg-orange">
                     <h4>КАКОЙ КУРС ПОДОЙДЕТ ИМЕННО ВАМ?</h4>
@@ -605,7 +607,7 @@
                 </div>
             </div>
         </div>
-        <div class="center-button">
+        <div class="center-button flex">
             <div class="popup popup-group popup-level1">
                 <div class="popup-header bg-orange">
                     <h4>Pre -schoolers (3-6 лет) </h4>
@@ -626,7 +628,7 @@
             </div>
         </div>
     </div>
-    <div class="center-button">
+    <div class="center-button flex">
             <div class="popup popup-group popup-level2">
                 <div class="popup-header bg-orange">
                     <h4>Primary (7-9 лет )</h4>
@@ -643,7 +645,7 @@
             </div>
         </div>
     </div>
-    <div class="center-button">
+    <div class="center-button flex">
             <div class="popup popup-group popup-level3">
                 <div class="popup-header bg-orange">
                     <h4>Secondary (10-12 лет) </h4>
@@ -681,7 +683,7 @@
             </div>
         </div>
     </div>
-    <div class="center-button">
+    <div class="center-button flex">
             <div class="popup popup-group popup-level4">
                 <div class="popup-header bg-orange">
                     <h4>Teens (13-17 лет) </h4>
@@ -699,7 +701,7 @@
             </div>
         </div>
     </div>
-    <div class="center-button">
+    <div class="center-button flex">
             <div class="popup popup-group popup-level5">
                 <div class="popup-header bg-orange">
                     <h4>Adults (18 +)</h4>
@@ -719,7 +721,7 @@
             </div>
         </div>
     </div>
-    <div class="center-button">
+    <div class="center-button flex">
     <div class="popup popup-complete">
    <div class="popup-header bg-orange">
    <h4>Форма отправлена</h4>
@@ -729,7 +731,7 @@
 Наши специалисты свяжутся с вами в ближайшее время!
    </p>
         </div>
-        <div class="center-button">
+        <div class="center-button flex">
     <div class="popup popup-teachers">
    <div class="popup-header bg-orange">
    <h4>Наш специалист</h4>
@@ -739,9 +741,6 @@
 
    </p>
         </div>
-    <style>
-
-    </style>
 
 
         <div style="display: none">
@@ -985,14 +984,14 @@
                 </table>
             </div>
         </div>
-    <div class="center-button">
+    <div class="center-button flex">
         <div class="popup popup-test">
             <div class="popup-header bg-orange">
                 <h4>КАКОЙ КУРС ПОДОЙДЕТ ИМЕННО ВАМ?</h4>
                 <button><img class="img-close" src="img/close.png" width="19" height="19" alt=""></button>
             </div>
             <div class="owl-carousel slide-three">
-                <div><div class="flex-form">
+                <div><div class="flex-form flex">
                         <div class="test-description">
                             <span class="test-question">Не знаешь уровень своего английского?</span><br>
                             <span style="text-align: center" class="test-name">Пройди тест из 11 вопросов!</span><br>
@@ -1000,7 +999,7 @@
                         </div>
                     </div>
                     <input type="hidden" value="" id="test-on">
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides" id="test-start">Начать</a>
                     </div>
                 </div>
@@ -1009,7 +1008,7 @@
                         <span class="test-question">Click on the best synonym for ATTORNEY </span>
                         <span class="test-name">Level: Medium 10</span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test1" value="1" name="radio-group">
                             <label for="test1">Accountant</label>
@@ -1027,7 +1026,7 @@
                             <label for="test4">Mechanic</label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar" style="background: linear-gradient(to right , #edc22e 0%, #ebebeb 9%);"><span class="text-progress">0%</span></div>
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides">Далее</a>
                     </div>
@@ -1037,7 +1036,7 @@
                         <span class="test-question">Click on the best synonym for ENHANCE ? </span>
                         <span class="test-name">Level: Medium 10</span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test5" value="1" name="radio-group1">
                             <label for="test5">Enclose</label>
@@ -1055,7 +1054,7 @@
                             <label for="test8">Go back</label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar"  style="background: linear-gradient(to right , #edc22e 9%, #ebebeb 9%);"><span class="text-progress">9%</span></div>
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides">Далее</a>
                     </div>
@@ -1065,7 +1064,7 @@
                         <span class="test-question">Click on the best meaning of the idiom “LET YOUR FREAK FLAG FLY” ? </span>
                         <span class="test-name">Level: high 15</span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test9" value="1" name="radio-group2">
                             <label for="test9">to let others see your uniqueness</label>
@@ -1083,7 +1082,7 @@
                             <label style="font-size: 12px;" for="test12">To continue to do what you have been doing</label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar"  style="background: linear-gradient(to right , #edc22e 18%, #ebebeb 9%);"><span class="text-progress">18%</span></div>
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides">Далее</a>
                     </div>
@@ -1093,7 +1092,7 @@
                         <span class="test-question">Click on the best synonym for “CALL OFF” ? </span>
                         <span class="test-name">Level: Medium 10</span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test13" value="1" name="radio-group3">
                             <label for="test13">give up</label>
@@ -1111,7 +1110,7 @@
                             <label for="test16">Quit</label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar" style="background: linear-gradient(to right , #edc22e 27%, #ebebeb 9%);"><span class="text-progress">27%</span></div>
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides">Далее</a>
                     </div>
@@ -1121,7 +1120,7 @@
                         <span class="test-question">Click the best synonym for SUITABLE: </span>
                         <span class="test-name">Level: Medium 10</span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test17" value="1" name="radio-group4">
                             <label for="test17">Comfortable</label>
@@ -1139,7 +1138,7 @@
                             <label for="test20">Appropriate</label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar" style="background: linear-gradient(to right , #edc22e 34%, #ebebeb 9%);"><span class="text-progress">34%</span></div>
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides">Далее</a>
                     </div>
@@ -1149,7 +1148,7 @@
                         <span class="test-question">Click on the best meaning of the phrasal verb “PUT ON” ? </span>
                         <span class="test-name">Level: Easy 5</span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test21" value="1" name="radio-group5">
                             <label for="test21">Put clothing on the body</label>
@@ -1167,7 +1166,7 @@
                             <label for="test24">To make progress while doing something.</label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar" style="background: linear-gradient(to right , #edc22e 45%, #ebebeb 9%);"><span class="text-progress">45%</span></div>
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides">Далее</a>
                     </div>
@@ -1177,7 +1176,7 @@
                         <span class="test-question">Click on the best meaning of the phrasal verb “Look after” ? </span>
                         <span class="test-name">Level: Easy 5</span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test25" value="1" name="radio-group6">
                             <label for="test25">To take care of (someone or something).</label>
@@ -1195,7 +1194,7 @@
                             <label for="test28">To read a book</label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar" style="background: linear-gradient(to right , #edc22e 54%, #ebebeb 9%);"><span class="text-progress">54%</span></div>
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides">Далее</a>
                     </div>
@@ -1205,7 +1204,7 @@
                         <span class="test-question">Click on the best meaning of the idiom BEAT AROUND THE BUSH </span>
                         <span class="test-name">Level: Difficult 15 </span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test29" value="1" name="radio-group7">
                             <label for="test29">To deal with the situation as it is</label>
@@ -1223,7 +1222,7 @@
                             <label for="test32">To fall asleep </label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar" style="background: linear-gradient(to right , #edc22e 63%, #ebebeb 9%);"><span class="text-progress">63%</span></div>
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides">Далее</a>
                     </div>
@@ -1233,7 +1232,7 @@
                         <span class="test-question">Click on the best meaning of the phrasal verb  “take down” </span>
                         <span class="test-name">Level: Medium 10</span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test33" value="1" name="radio-group8">
                             <label for="test33">To disagree</label>
@@ -1251,7 +1250,7 @@
                             <label for="test36">To say “NO”</label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar" style="background: linear-gradient(to right , #edc22e 72%, #ebebeb 9%);"><span class="text-progress">72%</span></div>
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides">Далее</a>
                     </div>
@@ -1261,7 +1260,7 @@
                         <span class="test-question">Click on the best meaning of the idiom “In the nick of time” </span>
                         <span class="test-name">Level: Difficult 15 </span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test37" value="1" name="radio-group9">
                             <label for="test37">Very early</label>
@@ -1279,7 +1278,7 @@
                             <label for="test40">Almost too late.</label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar" style="background: linear-gradient(to right , #edc22e 81%, #ebebeb 9%);"><span class="text-progress">81%</span></div>
                         <a href="#nextItem" class="slider-nextmix test-button-next next-slides">Далее</a>
                     </div>
@@ -1289,7 +1288,7 @@
                         <span class="test-question">Click the best synonym for POWERFUL: </span>
                         <span class="test-name">Level: Easy 5</span>
                     </div>
-                    <div class="flex-form">
+                    <div class="flex-form flex">
                         <div>
                             <input type="radio" id="test41" value="1" name="radio-group10">
                             <label for="test41">Strong</label>
@@ -1307,7 +1306,7 @@
                             <label for="test44">attractive</label>
                         </div>
                     </div>
-                    <div class="test-wrap">
+                    <div class="test-wrap flex">
                         <div class="progress-bar" style="background: linear-gradient(to right , #edc22e 100%, #ebebeb 9%);"><span class="text-progress">100%</span></div>
                         <a href="#nextItem" class="test-button-next test-result">Результат</a>
                     </div>
