@@ -4,26 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <title>Test</title>
+    <title>Colibri</title>
 </head>
-<body>
-   <div class="range-item">
-       <div class="range-header"><p>Target indicator demo</p></div>
-       <div class="wrapper">
-       <div class="range-main">
-           <div class="flex">
-           <span>Reached:</span>
-           <input type="range" min="0" max="15" value="14" step="1" id="frame-slider">
-           <div class="range-target"><p>Target $15</p></div>
-        </div>
-        <div><span id="output1">1</span></div>
-        <div class="flex">
-            <img src="http://s1.iconbird.com/ico/0912/NX11Unfinished/w256h2561348757719Info.png" width="15" height="15" alt=""><p>You need $<span id="output">1</span>&nbsp;more to reach your target.</p>
-        </div> 
-    </div>
-   </div>
+<header>
+<div class="header-wrapper flex jc-sa">
+<div class="dropdown-menu">
+    <div class="container-menu flex" onclick="this.classList.toggle('active')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 200 200">
+              <g stroke-width="6.5" stroke-linecap="round">
+                <path
+                  d="M72 82.286h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="#000"
+                />
+                <path
+                  d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                  fill="none"
+                  stroke="#000"
+                />
+                <path
+                  d="M72 125.143h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="#000"
+                />
+                <path
+                  d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                  fill="none"
+                  stroke="#000"
+                />
+                <path
+                  d="M100.75 82.286h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="#000"
+                />
+                <path
+                  d="M100.75 125.143h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="#000"
+                />
+              </g>
+            </svg>
+      </div>
+    <img src="img/logo.png" alt="">
 </div>
+<div class="header-contacts">
+    <p class="phone">8-383-388-47-18</p>
+    <p class="header-text">Отдел по работе с клиентами</p>
+</div>
+<div class="header-contacts">
+    <p class="phone">8-800-500-47-18</p>
+    <p class="header-text">Звонки по России бесплатные</p>
+</div>
+<button class="button-header">Заказать звонок</button>
+</div>
+</header>
+<body>
+<section class="top-form clip">
+    <h1>Таможенное оформление</h1>
+    <p>на любом посту РФ</p>
+    <p>Расчет таможенных платежей</p>
+    <span class="text">Импорт</span><span>Экспорт</span>
+    <div class="flex wrap jc-sa">
+    <input type="text" placeholder="Товар">
+    <input type="number" placeholder="Стоимость">
+    <input type="text" placeholder="Страна происхождения">
+    <input type="text" placeholder="Имя">
+    <input type="tel" placeholder="Телефон">
+    <input type="mail" placeholder="Email">
+  </div>
+  <input type="checkbox" id="test1" />
+  <label for="test1">Я знаю код ТНВЭД</label>
+  <input class="tnved" type="text" placeholder="ТНВЭД"><span>Рассчитать</span>
+</section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="offer flex wrap">
+        <!-- <h2>Что мы предлагаем</h2> -->
+        <div class="offer-item">
+            <img src="img/111.png" width="382" height="237" alt="">
+            <h5 class="offer-header">Оптимизация
+                    таможенных платежей</h5>
+            <p class="offer-text">Проверяем наличие всех возможных вариантов снижения таможенных платежей, не противоречащих законодательству РФ и Таможенного Союза. </p>
+        </div>
+        <div class="offer-item">
+            <img src="img/222.png" width="382" height="237" alt="">
+            <h5 class="offer-header">Персональный менеджер</h5>
+            <p class="offer-text">За Вашей компанией будет закреплен персональный специалист.</p>
+        </div>
+        <div class="offer-item">
+            <img src="img/333.png" width="382" height="237" alt="">
+            <h5 class="offer-header">Персональный архив</h5>
+            <p class="offer-text">Предоставим копию любых документов, за весь период сотрудничества.   </p>
+        </div>
+        <div class="offer-item">
+            <img src="img/444.png" width="382" height="237" alt="">
+            <h5 class="offer-header">Бесплатная консультативная поддержка на всём протяжении сотрудничества </h5>
+            <p class="offer-text">Вы не платите за то, что мы отвечаем на Ваши вопросы, сколько бы их не было.</p>
+        </div>
+        <div class="offer-item">
+            <img src="img/555.png" width="382" height="237" alt="">
+            <h5 class="offer-header">Быстрая сертификация</h5>
+             <p class="offer-text">Взаимодействие с ведущими сертификационными органами и лабораториями, позволяет в кратчайшие сроки оформить любую разрешительную </p>
+        </div>
+        <div class="offer-item">
+            <img src="img/454.png" width="382" height="237" alt="">
+            <h5 class="offer-header">Минимум рисков</h5>
+            <p class="offer-text">Колоссальный опыт наших специалистов по таможенному оформлению полностью исключает возможности ошибки при подаче ДТ.</p>
+        </div>
+    </section>
 </body>
+<footer>
+<img src="/img/logo_2.png" width="327" alt="">
+<div class="footer-contact flex">
+    <p>Адрес:  630132, Россия, 
+            г. Москва, ул. Ленинградски 
+            проспект 37/3, офис  77</p>
+    <p>Телефон: 
+            +7 (499) 560- 90-90</p>
+    <p>Email: 
+            colibri@gmail. com</p>
+    <p>Время работы: 
+            ПН-ПТ. 9.00-18.00</p>
+</div>
+</footer>
 <script src="script.js"></script>
 </html>
