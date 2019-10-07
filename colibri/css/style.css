@@ -364,9 +364,12 @@ input[type='number'] {
     padding-right: 90px;
 }
 
+.tabs-fura{
+    text-align: left;
+}
+
 .arrow{
     background: transparent;
-
 }
 
 .arrow-2{
@@ -1073,7 +1076,17 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     }
     .header-wrapper{
         flex-wrap: wrap;
-        padding-left: 30%;
+        padding-left: 33%;
+    }
+    .main-nav li{
+        height: 40px;
+    }
+    .main-nav li a{
+        font-size: 12px;
+    }
+    .tabs-fura{
+        text-align: center;
+        width: 100%;
     }
 }
 
