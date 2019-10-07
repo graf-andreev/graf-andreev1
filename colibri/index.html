@@ -19,24 +19,6 @@
     <body>
         <header>
             <div class="header-wrapper flex jc-sa">
-                <div class="dropdown-menu">
-                   <button id="menu"><img src="img/menu (3).png" alt=""></button> 
-                   <ul class="main-nav">
-                       <li><a href="#preim">Преимущества</a></li>
-                       <li><a href="#why">Почему Colibri</a></li>
-                       <li><a href="#scheme">Схема работы</a></li>
-                       <li class="pad-zero"><a href="#last">Последняя выпущенная декларация</a></li>
-                       <li class="pad-zero"><a href="#we-work">Таможенные посты с которыми мы работаем</a></li>
-                       <li class="pad-zero"><a href="#get">Получить консультацию бесплатно</a></li>
-                       <li class="pad-zero"><a href="#group">Группы товаров, с которыми мы работаем</a></li>
-                       <li><a href="#so-what">Что мы предлагаем</a></li>
-                       <li><a href="#cifri">В цифрах</a></li>
-                       <li><a href="#feedback">Отзывы</a></li>
-                       <li><a href="#actions">Акции</a></li>
-                       <li><a href="#contact">Контакты</a></li>
-                   </ul>
-                    <img src="/img/logo.png" alt="">
-                </div>
                 <div class="header-contacts">
                     <p class="phone"><a href="tel:83833884718">8-383-388-47-18</a></p>
                     <p class="header-text">Отдел по работе с клиентами</p>
@@ -47,8 +29,27 @@
                 </div>
                 <button class="button-header popup">Заказать звонок</button>
             </div>
+            <div class="dropdown-menu">
+                <button id="menu"><img src="img/menu (3).png" alt=""></button> 
+                <ul class="main-nav">
+                    <li><a href="#preim">Преимущества</a></li>
+                    <li><a href="#why">Почему Colibri</a></li>
+                    <li><a href="#scheme">Схема работы</a></li>
+                    <li class="pad-zero"><a href="#last">Последняя выпущенная декларация</a></li>
+                    <li class="pad-zero"><a href="#we-work">Таможенные посты с которыми мы работаем</a></li>
+                    <li class="pad-zero"><a href="#get">Получить консультацию бесплатно</a></li>
+                    <li class="pad-zero"><a href="#group">Группы товаров, с которыми мы работаем</a></li>
+                    <li><a href="#so-what">Что мы предлагаем</a></li>
+                    <li><a href="#cifri">В цифрах</a></li>
+                    <li><a href="#feedback">Отзывы</a></li>
+                    <li><a href="#actions">Акции</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                 <img src="img/logo.png" alt="">
+             </div>
         </header>
         <section class="top-form clip">
+            <div class="content-wrapper">
             <h1>Таможенное оформление</h1>
             <p>на любом посту РФ</p>
             <p>Расчет таможенных платежей</p>
@@ -75,7 +76,7 @@
                     <input value="" name="fields[Email]" type="mail" placeholder="Email" />
                 </div>
             </div>
-            <input type="checkbox" id="test1" value="да"/>
+            <input class="check" type="checkbox" id="test1" value="да"/>
             <label for="test1">Я знаю код ТНВЭД</label>
             <input class="tnved" type="text" placeholder="ТНВЭД">
             <div class="check_robot_fields">
@@ -83,8 +84,10 @@
                 <input type="text" name="system_field_2" value="" autocomplete="off" />
             </div>
             <button class="text-button js__send_active_tab">Рассчитать</button>
+        </div>
         </section>
-        <section class="cards flex wrap jc-sa"> <a name="preim"></a>
+        <section class="cards"> <a name="preim"></a>
+            <div class="content-wrapper flex wrap jc-sa">
             <div class="header-card">
                 <img src="img/1_2.png" alt="">
                 <p>Таможенное оформление</p>
@@ -100,18 +103,19 @@
                 <p>Сертификация</p>
                 <span>Прямое сотрудничество с ведущими сертификационными органами и лабораториями позволяет быстро и качественно оформить для Вас любую разрешительную документацию. Доверьте сертификацию Вашего товара специалистам Колибри и спокойно занимайтесь развитием своего бизнеса.</span>
             </div>
+        </div>
         </section>
         <section class="why clip clip-top"><a name="why"></a>
+            <div class="content-wrapper">
             <h3>Почему Colibri</h3>
-            <div class="owl-carousel slide-three owl-theme">
             <div class="why-content flex wrap jc-sb">
-                <div>
+                <div style="text-align: left">
                 <div class="why-item flex">
                     <img src="img/01.png" alt="">
                     <p>Ответственный подход<br><span>к процедуре таможенного оформления</span></p>
                 </div>
                 <div class="why-item flex">
-                    <img src="img/01.png" alt="">
+                    <img src="img/02.png" alt="">
                     <p>Комфорт взаимодействия<br><span>на всех этапах сотрудничества</span></p>
                 </div>
                 <div class="why-item flex">
@@ -126,8 +130,9 @@
                     <img src="img/05.png" alt="">
                     <p>Оформление разрешительной докумемнтации<br><span>необходимой для таможенного оформления товара</span></p>
                 </div>
+                <button class="arrow"><img src="img/right-arrow.png" alt=""></button><button class="arrow arrow-2"><img src="img/right-arrow.png" alt=""></button>
             </div>
-
+            <div>
             <div class="why-scroll">
                 <p>Если вы не уверенны, какие именно сертификаты требуется при оформлении Вашего товара, либо у Вас не полный пакет документов, мы проконсультируем, либо самостоятельно оформим:<br>
                         - сертификаты (декларации) в системе ГОСТ Р;<br>
@@ -138,11 +143,15 @@
                         -отказные письма;</p>
 
             </div>
+            <p class="quote">«Не нужно в последний момент геройски хвататься за невозможное. Достаточно вовремя сделать то, что нужно»
+                    <br><br>
+                    - УИНСТОН ЧЕРЧИЛЬ -</p>
             </div>
-            <p>123</p>
+            </div>
             </div>
         </section>
         <section class="scheme"><a name="scheme"></a>
+            <div class="content-wrapper">
             <h3>Схема работы</h3>
             <div class="flex wrap jc-sa">
         <div class="item item-long flex">
@@ -170,8 +179,10 @@
             <p class="item-text"><span>6 шаг</span><br>Предоставление закрывающих документов</p>
         </div>
         </div>
+        </div>
         </section>
         <section class="gallery clip clip-top"><a name="last"></a>
+            <div class="content-wrapper">
             <h3>Последняя выпущенная декларация</h3>
 
             <div class="owl-carousel slide-one owl-theme">
@@ -216,13 +227,13 @@
                 </ul>
             </div>
         </div>
-
+        </div>
         </section>
 
         <section class="map"> <a name="we-work"></a>
             <h3>Таможенные посты <br><span>с которыми мы работаем</span></h3>
             <div class="clip clip-top">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b7bcde6eaeb7f51213cb61daab5f2c65c5e38a954550cf277cd0f5076a18383&amp;source=constructor" width="100%" height="420" frameborder="0"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b7bcde6eaeb7f51213cb61daab5f2c65c5e38a954550cf277cd0f5076a18383&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
             </div>
         </section>
         <section class="consult clip clip-top"><a name="get"></a>
@@ -230,6 +241,7 @@
             <button class="popup">Консультация</button>
         </section>
 <section class="items-group"><a name="group"></a>
+    <div class="content-wrapper">
     <h3>Группы товаров<br><span>с которыми работаем</span></h3>
 <div class="flex wrap jc-sa">
 <div class="item flex">
@@ -353,8 +365,10 @@
     <p class="item-text">Товары народного потребления</p>
 </div>
 </div>
+</div>
 </section>
         <section class="offer clip clip-top"><a name="so-what"></a>
+            <div class="content-wrapper">
              <h3>Что мы предлагаем</h3>
              <div class="flex wrap jc-sa">
             <div class="offer-item">
@@ -388,8 +402,10 @@
                 Колоссальный опыт наших специалистов по таможенному оформлению полностью исключает возможности ошибки при подаче ДТ.</p>
             </div>
         </div>
+        </div>
         </section>
         <section class="skew"><a name="cifri"></a>
+            <div class="content-wrapper">
             <div class="skew-normal">
                 <h3>В цифрах</h3>
                 <div class="flex wrap">
@@ -399,8 +415,10 @@
                 <p class="skew-text">Каждый день в<br> работе <br>находится не<br> менее<br> <span>10</span><br>деклараций</p>
                 </div>
             </div>
+            </div>
         </section>
         <section class="questions clip clip-top">
+            <div class="content-wrapper">
             <h6>Если у вас остались вопросы, <span>заполните форму обратной связи и наш специалист свяжется с вами</span></h6>
             <div class="flex wrap jc-sa">
                 <input type="text" value="" name="fields[Имя]" placeholder="Ваше имя" required="required">
@@ -412,8 +430,10 @@
                 </div>
             </div>
             <button class="js__send_question">Отправить</button>
+            </div>
         </section>
         <section class="feedback"><a name="feedback"></a>
+            <div class="content-wrapper">
             <h3>Отзывы</h3>
             <div class="owl-carousel slide-two owl-theme">
             <div class="feedback-item flex wrap">
@@ -452,6 +472,7 @@
 
 </div>
     </div>
+        </div>
         </section>
         <section class="actions clip clip-top"><a name="actions"></a>
             <h3>Акция</h3><br>
@@ -461,6 +482,7 @@
             <button class="popup">Заказать услугу</button>
         </section>
         <section class="timer">
+            <div class="content-wrapper">
             <h3>До конца акции осталось:</h3>
             <div class="timer-1 flex wrap jc-sa" data-finish="2019-10-31 00:00:00">
             <div>
@@ -508,14 +530,17 @@
             <p class="timer-name">Секунды</p>
             </div>
             </div>
+            </div>
         </section>
         <footer class="clip-top"><a name="contact"></a>
+            <div class="content-wrapper">
             <img src="img/logo_2.png" alt="">
             <div class="footer-contact flex wrap jc-sa">
                 <p><b>Адрес:</b> 630132, Россия, г. Москва, ул. Ленинградский проспект 37/3, офис 77</p>
                 <p><b>Телефон:</b><br> <a href="tel:+74995609090">+7 (499) 560- 90-90</a></p>
                 <p><b>Email:</b><br> <a href="mailto:colibri@gmail.com">colibri@gmail.com</a></p>
                 <p><b>Время работы:</b><br> ПН-ПТ. 9.00-18.00</p>
+            </div>
             </div>
         </footer>
 

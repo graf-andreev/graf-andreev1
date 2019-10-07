@@ -31,25 +31,36 @@
 html{
     font-family: "adineuePRO-bold";
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;
     letter-spacing: 3px;
     color: #ffffff;
 }
 
+.content-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 header{
     width: 100%;
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .header-wrapper{
     height: 75px;
-    background-color: #c9c5c3;
+    background-color: #ffffff;
+    opacity: 0.8;
     padding: 0 30px 0 30px;
     position: fixed;
     top: 0;
     width: 1440px;
     max-width: 100%;
     z-index: 5;
+    padding-left: 16%;
 }
 
 button{
@@ -123,6 +134,10 @@ a[name]{
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     text-align: center;
     padding: 25px 0 25px 0;
+    opacity: 1;
+    position: fixed;
+    z-index: 22;
+    left: 8%;
 }
 
 .active-menu{
@@ -198,6 +213,7 @@ a[name]{
     background-repeat: no-repeat;
     padding: 170px 170px 290px 170px;;
     text-align: center;
+    margin-top: 0px;
 }
 
 section{
@@ -215,7 +231,7 @@ section{
     left: 0;
     height: 0;
     border-bottom: 90px solid white;
-    border-left: 1440px solid transparent;
+    border-left: 1920px solid transparent;
 }
 
 .clip-top::before{
@@ -226,7 +242,7 @@ section{
     right: 0;
     height: 0;
     border-top: 90px solid white;
-    border-right: 1440px solid transparent;
+    border-right: 1920px solid transparent;
 }
 
 h1{
@@ -274,10 +290,14 @@ input[type='number'] {
     width: 260px !important;
 }
 
-.top-form > input.tnved{
+.top-form.clip > div > input.tnved{
     width: 167px;
     height: 31px;
     border-radius: 5px;
+}
+
+.tnved{
+    display: none;
 }
 
 .cards{
@@ -325,7 +345,7 @@ input[type='number'] {
 .why-scroll{
     width: 600px;
     max-width: 100%;
-    height: 245px;
+    height: 255px;
     font-family: "adineuePRO-light";
     text-align: left;
     overflow-y: scroll;
@@ -333,27 +353,25 @@ input[type='number'] {
     padding-right: 90px;
 }
 
-body > section.why.clip.clip-top > div > div.owl-nav > button.owl-prev{
-    background-image: url(../img/right-arrow.png);
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 25px;
-    outline: none;
-    color: transparent;
+.arrow{
+    background: transparent;
+
 }
 
-body > section.why.clip.clip-top > div > div.owl-nav > button.owl-next{
-    background-image: url(../img/right-arrow.png);
+.arrow-2{
     transform: rotate(180deg);
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 25px;
-    outline: none;
-    color: transparent;
+    margin-left: 50px;
+    padding-top: 4px;
+
 }
 
-body > section.why.clip.clip-top > div > div.owl-nav{
-    text-align: left;
+.quote{
+    width: 600px;
+    max-width: 100%;
+    text-align: right;
+    line-height: 20px;
+    margin-top: 50px;
+    letter-spacing: 1px;
 }
 
 .why h3{
@@ -517,11 +535,13 @@ h3{
     margin-bottom: 25px;
 }
 
-body > section.gallery.clip.clip-top > div > div.owl-nav.disabled{
+body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled{
     display: block;
+    position: absolute;
+    top: 150px;
 }
 
-body > section.gallery.clip.clip-top > div > div.owl-nav.disabled > button.owl-prev{
+body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button.owl-prev{
     background-image: url(../img/next.png);
     transform: rotate(180deg);
     background-repeat: no-repeat;
@@ -529,15 +549,19 @@ body > section.gallery.clip.clip-top > div > div.owl-nav.disabled > button.owl-p
     height: 100px;
     outline: none;
     color: transparent;
+    left: -55px;
+    position: absolute;
 }
 
-body > section.gallery.clip.clip-top > div > div.owl-nav.disabled > button.owl-next{
+body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button.owl-next{
     background-image: url(../img/next.png);
     background-repeat: no-repeat;
     width: 30px;
     height: 100px;
     outline: none;
     color: transparent;
+    position: absolute;
+    left: 1170px;
 }
 
 .questions{
@@ -950,6 +974,17 @@ footer img{
 input.error{border: 1px solid rgb(255,50,50); }
 input.error::-webkit-input-placeholder{color: rgb(255,50,50); }
 input.error:-moz-placeholder{color: rgb(255,50,50); }
+
+@media screen and (max-width: 1300px){
+    body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled,
+    body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button.owl-prev,
+    body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button.owl-next{
+        display: none !important;
+    }
+    .why-content{
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 883px){
     .form-short{
