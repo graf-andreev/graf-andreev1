@@ -99,6 +99,12 @@ a[name]{
     width: 220px;
     font-size: 30px;
     outline: none;
+    transition: 0.5s;
+}
+
+.tabs-buttons .text-button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .overlay {
@@ -432,6 +438,10 @@ input[type='number'] {
     cursor: pointer;
 }
 
+.why-item:hover .why-text{
+    text-decoration: underline;
+}
+
 .why-item img{
     margin-right: 10px;
 }
@@ -515,6 +525,22 @@ input[type='number'] {
     max-width: 335px;
     height: 65px;
     font-size: 25px;
+    transition: 0.5s;
+}
+
+.consult button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.questions button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.actions button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .consult h3{
@@ -662,6 +688,7 @@ body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button
     max-width: 320px;
     height: 60px;
     margin-top: 30px;
+    transition: 0.5s;
 }
 
 .questions h6{
@@ -850,9 +877,11 @@ body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button
 .skew-text{
     color: #616161;
     font-family: "adineuePRO-light";
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     position: relative;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .skew-text::before{
@@ -982,7 +1011,7 @@ footer img{
 .popup-callback, .popup_result{
     display: none;
     position: fixed;
-    top: 150px;
+    top: 70px;
     width: 100%;
     max-width: 570px;
     background-color: #ffffff;
@@ -1078,11 +1107,6 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     }
     .header-wrapper{
         padding-right: 27%;
-    }
-    .skew-normal div{
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
     }
 }
 

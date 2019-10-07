@@ -179,6 +179,8 @@ $(".slide-two").owlCarousel({
         margin:10,
         items:2,
         nav:true,
+        autoplay:true,
+        autoplayTimeout:6000,
         responsiveClass:true,
         responsive:{
             800:{
@@ -282,3 +284,4 @@ $('.tabs-fura').on('click', 'div', function () {
         .addClass('active').siblings().removeClass('active')
         .closest('.why-content').find('div.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
 });
+
