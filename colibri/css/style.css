@@ -1070,7 +1070,6 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     .why-scroll{
         width: 100%;
         padding-right: 0px;
-        overflow-y: visible
     }
     body > section.why.clip.clip-top > div > div > div.tabs-content.active{
         width: 100%;
