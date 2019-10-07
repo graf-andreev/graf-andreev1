@@ -1021,9 +1021,6 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     .header-wrapper{
         padding-right: 0%;
     }
-    .arrow{
-        display: none;
-    }
 }
 
 @media screen and (max-width: 650px){
