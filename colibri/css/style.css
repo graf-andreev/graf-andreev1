@@ -1074,6 +1074,10 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     body > section.why.clip.clip-top > div > div > div.tabs-content.active{
         width: 100%;
     }
+    .header-wrapper{
+        flex-wrap: wrap;
+        padding-left: 30%;
+    }
 }
 
 @media screen and (max-width: 500px){
