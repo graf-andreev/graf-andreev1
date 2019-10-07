@@ -1076,7 +1076,7 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     }
     .header-wrapper{
         flex-wrap: wrap;
-        padding-left: 33%;
+        padding-left: 40%;
     }
     .main-nav li{
         height: 40px;
@@ -1087,6 +1087,9 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     .tabs-fura{
         text-align: center;
         width: 100%;
+    }
+    .why-item p{
+        white-space: pre-wrap;
     }
 }
 
