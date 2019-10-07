@@ -1100,4 +1100,7 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
         margin-left: 0px;
         left: 0;
     }
+    .owl-nav{
+        display: none;
+    }
 }
