@@ -162,10 +162,12 @@ $(document).ready(function(){
           items:4,
           responsive:{ 
               0:{
-                  items:1
+                  items:1,
+                  nav:false
               },
               800:{
-                  items:3
+                  items:3,
+                  nav:false
               },
               1000:{
                   items:4,

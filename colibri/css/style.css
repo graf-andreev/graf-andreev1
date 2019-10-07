@@ -613,8 +613,8 @@ h3{
 
 body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled{
     display: block;
-    position: absolute;
-    top: 150px;
+    position: relative;
+    margin-top: -290px;
 }
 
 body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button.owl-prev{
@@ -639,7 +639,7 @@ body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button
     outline: none;
     color: transparent;
     position: absolute;
-    left: 1170px;
+    right: -15px;
 }
 
 .questions{
@@ -1086,6 +1086,12 @@ footer img{
 input.error{border: 1px solid rgb(255,50,50); }
 input.error::-webkit-input-placeholder{color: rgb(255,50,50); }
 input.error:-moz-placeholder{color: rgb(255,50,50); }
+
+@media screen and (max-width: 1450px){
+    body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button.owl-next{
+        right: -55px;
+    }
+}
 
 @media screen and (max-width: 1300px){
     body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled,
