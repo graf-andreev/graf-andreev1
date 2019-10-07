@@ -276,3 +276,9 @@ $('.check').click(function(){
 		$('.tnved').hide(500);
 	}
 });    
+
+$('.tabs-fura').on('click', 'div', function () {
+    $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('.why-content').find('div.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
+});
