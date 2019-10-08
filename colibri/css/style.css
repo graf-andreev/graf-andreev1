@@ -1036,6 +1036,11 @@ footer img{
     margin: 0 auto;
     left: 50%;
     margin-left: -240px;
+    background: #fff;
+}
+
+.little-logo{
+    opacity: 0;
 }
 
 .not_me_remove .popup-form{
@@ -1070,7 +1075,6 @@ footer img{
     top: 5%;
 }
 
-
 .loading{
     position: relative;
     opacity: 0.4;
@@ -1103,6 +1107,12 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     transition-delay: 2s;
     opacity: 0;
     z-index: 222;
+}
+
+.animate1{
+    transition: 4s;
+    transition-delay: 4s;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1450px){

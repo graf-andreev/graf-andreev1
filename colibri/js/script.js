@@ -288,6 +288,11 @@ $('.tabs-fura').on('click', 'div', function () {
 });
 
 $('.main-logo').ready(function() {
-    var popup_id = $('.main-logo');
-    $(popup_id).addClass('animate')(200);
+    var logo = $('.main-logo');
+    $(logo).addClass('animate')(200);
+});
+
+$('.little-logo').ready(function() {
+    var litt_logo = $('.little-logo');
+    $(litt_logo).addClass('animate1')(200);
 });
