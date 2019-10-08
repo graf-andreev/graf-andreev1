@@ -1028,6 +1028,16 @@ footer img{
     margin-left: -240px;
 }
 
+.main-logo{
+    position: fixed;
+    top: 150px;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -240px;
+}
+
 .not_me_remove .popup-form{
     width: 100%;
     max-width: 500px;
@@ -1086,6 +1096,14 @@ footer img{
 input.error{border: 1px solid rgb(255,50,50); }
 input.error::-webkit-input-placeholder{color: rgb(255,50,50); }
 input.error:-moz-placeholder{color: rgb(255,50,50); }
+
+.animate{
+    transform: translate(-577px, -146px) scale(0.3);
+    transition: 4s;
+    transition-delay: 2s;
+    opacity: 0;
+    z-index: 222;
+}
 
 @media screen and (max-width: 1450px){
     body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button.owl-next{

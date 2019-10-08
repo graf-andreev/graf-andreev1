@@ -287,3 +287,7 @@ $('.tabs-fura').on('click', 'div', function () {
         .closest('.why-content').find('div.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
 });
 
+$('.main-logo').ready(function() {
+    var popup_id = $('.main-logo');
+    $(popup_id).addClass('animate')(200);
+});
