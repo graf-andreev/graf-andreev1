@@ -1057,7 +1057,7 @@ footer img{
 }
 
 .little-logo{
-    opacity: 0;
+    opacity: 1;
 }
 
 .not_me_remove .popup-form{
@@ -1119,7 +1119,7 @@ input.error::-webkit-input-placeholder{color: rgb(255,50,50); }
 input.error:-moz-placeholder{color: rgb(255,50,50); }
 
 .animate{
-    transform: translate(-700px, -200px) scale(0.3);
+    transform: translate(-700px, -240px) scale(0.5);
     transition: 4s;
     transition-delay: 2s;
     opacity: 0;
