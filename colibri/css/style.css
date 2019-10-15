@@ -107,7 +107,7 @@ a[name]{
     transition: 0.5s;
 }
 
-.overlay {
+.overlay{
     display:none;
     position:fixed;
     z-index: 20;
@@ -117,6 +117,18 @@ a[name]{
     bottom:0;
     background:#000; 
     opacity:0.5;
+}
+
+.overlay-start{
+    display:none;
+    position:fixed;
+    z-index: 20;
+    top:0;
+    right:0; 
+    left:0;
+    bottom:0;
+    background: gray; 
+    opacity: 0.8;
 }
   
 .flex{
@@ -736,7 +748,7 @@ body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button
 }
 
 .item:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.5s;
 }
 
@@ -1042,7 +1054,6 @@ footer img{
     margin: 0 auto;
     left: 50%;
     margin-left: -240px;
-    background: #fff;
 }
 
 .little-logo{
@@ -1108,7 +1119,7 @@ input.error::-webkit-input-placeholder{color: rgb(255,50,50); }
 input.error:-moz-placeholder{color: rgb(255,50,50); }
 
 .animate{
-    transform: translate(-577px, -146px) scale(0.3);
+    transform: translate(-700px, -200px) scale(0.3);
     transition: 4s;
     transition-delay: 2s;
     opacity: 0;

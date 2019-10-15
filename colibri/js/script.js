@@ -292,6 +292,12 @@ $('.main-logo').ready(function() {
     $(logo).addClass('animate')(200);
 });
 
+$('.overlay-start').ready(function(){
+    var overlay = $('.overlay-start');
+    $(overlay).show();
+    $(overlay).delay(4200).fadeOut(1000);
+}); 
+
 $('.little-logo').ready(function() {
     var litt_logo = $('.little-logo');
     $(litt_logo).addClass('animate1')(200);
