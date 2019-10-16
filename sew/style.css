@@ -1,0 +1,9 @@
+.items{
+    width: 80%;
+    overflow-x: auto;
+    display: flex;
+}
+
+.catalog-item{
+    min-width: 310px;
+}
