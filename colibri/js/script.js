@@ -289,16 +289,18 @@ $('.tabs-fura').on('click', 'div', function () {
 
 $('.main-logo').ready(function() {
     var logo = $('.main-logo');
-    $(logo).addClass('animate')(200);
+    $(logo).addClass('animate')();
 });
-
-$('.overlay-start').ready(function(){
-    var overlay = $('.overlay-start');
-    $(overlay).show();
-    $(overlay).delay(4200).fadeOut(1000);
-}); 
 
 $('.little-logo').ready(function() {
     var litt_logo = $('.little-logo');
     $(litt_logo).addClass('animate1')(200);
 });
+
+
+$(function(){
+    if ( $(window).width() > 1300 ) {
+        $('.overlay-start').show();
+        $('.overlay-start').delay(4200).fadeOut(1000);
+    }
+  });
