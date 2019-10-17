@@ -42,9 +42,46 @@
     height: 11px;
 }
 
+.compare-delete{
+    margin-top: -26px;
+    font-size: 10px;
+    background-color: #BA3330;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.compare-delete a{
+    color: #ffffff;
+}
+
+.tabs__content {
+    display: none; 
+}
+
+.tabs__content.active {
+    display: flex; 
+}
+
+.tabs__caption{
+    list-style: none;
+    display: flex;
+}
+
+.tabs__caption li{
+    cursor: pointer;
+    margin-left: 20px;
+    border-bottom: 1px dotted;
+}
+
+@media (max-width: 1300px){
+    .catalog-item{
+        min-width: 278px;
+    }
+}
+
 @media (max-width: 767px){
     .items{
-        height: 880px;
+        height: 950px;
         padding-top: 25px;
     }
 }
