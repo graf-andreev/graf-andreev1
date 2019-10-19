@@ -85,10 +85,23 @@ a[name]{
     width:230px;
     height: 45px;
     margin-top: 14px;
-    position: absolute;
     right: 5%;
     opacity: 1;
     z-index: 5;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+}
+
+.button-header:hover{
+    background-position: right center;
 }
 
 .text-button{
@@ -127,7 +140,7 @@ a[name]{
     right:0; 
     left:0;
     bottom:0;
-    background: gray; 
+    background: #ffffff; 
     opacity: 0.8;
 }
   
@@ -178,6 +191,10 @@ a[name]{
     position: absolute;
     z-index: 22;
     left: 8%;
+}
+
+#menu:hover .main-nav{
+    display: block;
 }
 
 .active-menu{
@@ -1121,7 +1138,7 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
 .animate{
     transform: translate(-700px, -240px) scale(0.5);
     transition: 4s;
-    transition-delay: 2s;
+    transition-delay: 4s;
     opacity: 0;
     z-index: 222;
 }
