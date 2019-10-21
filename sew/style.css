@@ -85,8 +85,14 @@
 }
 
 @media (max-width: 767px){
-    .items{
+    .items_compare{
         height: 950px;
         padding-top: 25px;
+    }
+    .catalog-item_compare{
+        min-width: 210px;
+    }
+    .item-info_compare > div > table > tbody > tr > td{
+        padding: 8px !important;
     }
 }

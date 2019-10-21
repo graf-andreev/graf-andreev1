@@ -9,10 +9,10 @@ $(document).ready(function($) {
             .closest('div.tabs').find('div.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
-    // $('#menu').click(function(){
-    //     $('.dropdown-menu').toggleClass('active-menu');
-    //     $('.main-nav').toggleClass('active-nav');
-    // });
+    $('#menu').click(function(){
+        $('.dropdown-menu').toggleClass('active-menu');
+        $('.main-nav').toggleClass('active-nav');
+    });
 
     $('.popup').click(function () {
         $('.popup-callback, .overlay').show();
@@ -290,8 +290,9 @@ $('.tabs-fura').on('click', 'div', function () {
 $('.main-logo').ready(function() {
     var logo = $('.main-logo');
     $(logo).addClass('animate')();
-    $(logo).delay(5000).hide();
 });
+
+$('.main-logo').delay(8000).hide(400);
 
 $('.little-logo').ready(function() {
     var litt_logo = $('.little-logo');

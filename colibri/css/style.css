@@ -426,7 +426,7 @@ input[type='number'] {
     height: 255px;
     font-family: "adineuePRO-light";
     text-align: left;
-    overflow-y: scroll;
+    overflow-y: auto;
     line-height: 20px;
     padding-right: 90px;
 }
