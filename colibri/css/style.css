@@ -135,13 +135,13 @@ a[name]{
 .overlay-start{
     display:none;
     position:fixed;
-    z-index: 20;
+    z-index: 200;
     top:0;
     right:0; 
     left:0;
     bottom:0;
     background: #ffffff; 
-    opacity: 0.8;
+    opacity: 0.9;
 }
   
 .flex{
