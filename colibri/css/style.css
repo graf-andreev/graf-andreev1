@@ -141,7 +141,7 @@ a[name]{
     left:0;
     bottom:0;
     background: #ffffff; 
-    opacity: 0.9;
+    opacity: 1;
 }
   
 .flex{
@@ -467,7 +467,7 @@ input[type='number'] {
     cursor: pointer;
 }
 
-.why-item:hover .why-text{
+.why-text{
     text-decoration: underline;
 }
 
