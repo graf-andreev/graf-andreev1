@@ -75,6 +75,7 @@ button{
     cursor: pointer;
     border-radius: 40px;
     color: #ffffff;
+    outline: none;
 }
 
 a[name]{
@@ -191,6 +192,7 @@ a[name]{
     position: absolute;
     z-index: 22;
     left: 8%;
+    
 }
 
 #menu:hover .main-nav{
@@ -202,6 +204,21 @@ a[name]{
     height: 810px;
     text-align: left;
     padding-left: 25px;
+}
+
+.dropdown-menu:hover{
+    width: 269px;
+    height: 810px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.dropdown-menu:hover .active-menu{
+    display: block;
+}
+
+.dropdown-menu:hover .main-nav{
+    display: block;
 }
 
 .main-nav{
@@ -367,13 +384,15 @@ input[type='number'] {
     width: 260px !important;
 }
 
-.top-form.clip > div > input.tnved{
-    width: 167px;
-    height: 31px;
-    border-radius: 5px;
+.top-form.clip > div > input.tnved,
+.tnved2{
+    width: 167px !important;
+    height: 31px !important;
+    border-radius: 5px !important;
 }
 
-.tnved{
+.tnved,
+.tnved2{
     display: none;
 }
 
@@ -425,6 +444,7 @@ input[type='number'] {
     max-width: 100%;
     height: 255px;
     font-family: "adineuePRO-light";
+    font-size: 18px;
     text-align: left;
     overflow-y: auto;
     line-height: 20px;
@@ -467,7 +487,11 @@ input[type='number'] {
     cursor: pointer;
 }
 
-.why-text{
+.why-text-js{
+    text-decoration: underline;
+}
+
+.why-text:hover{
     text-decoration: underline;
 }
 
@@ -477,7 +501,7 @@ input[type='number'] {
 
 .why-item p{
     text-align: left;
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     line-height: 20px;
     white-space: nowrap;
@@ -929,7 +953,7 @@ body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button
     left: 50px;
 }
 
-.skew-text span{
+.spin-number{
     font-family: "adineuePRO-black";
     font-size: 50px;
     color: #5276b4;
