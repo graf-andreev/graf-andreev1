@@ -189,7 +189,7 @@ $(".slide-two").owlCarousel({
         autoplayTimeout:6000,
         responsiveClass:true,
         responsive:{
-            800:{
+            100:{
                 items:1,
             },
             1000:{

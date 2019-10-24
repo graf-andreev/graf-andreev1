@@ -508,9 +508,9 @@ input[type='number'] {
     letter-spacing: 1.5px;
 }
 
-.why-item:nth-child(5) > p{
+/* .why-item:nth-child(5) > p{
     font-size: 13px;
-}
+} */
 
 .why-item p span{
     font-family: "adineuePRO-light";
@@ -971,6 +971,7 @@ body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button
     border-radius: 5px;
     padding: 25px 50px 50px 25px;
     color: #5d5d5d;
+    min-height: 585px;
 }
 
 .feedback-item img{
@@ -978,6 +979,7 @@ body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button
     margin-right: 35px;
     margin-bottom: 35px;
     width: 85px;
+    height: 85px;
 }
 
 .feedback-name{
@@ -1046,9 +1048,8 @@ footer{
 footer img{
     display: block;
     margin: 0 auto;
-    margin-bottom: 115px;
     width: 100%;
-    max-width: 327px;
+    max-width: 230px;
     height: auto;
 }
 
