@@ -1214,7 +1214,7 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     .form-short{
         width: 350px !important;
     }
-    .body > div.sticky > header > button{
+    .button-no-mobile{
         display: none;
     }
     .header-wrapper{

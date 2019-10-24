@@ -14,13 +14,18 @@ $(document).ready(function($) {
     //     $('.main-nav').toggleClass('active-nav');
     // });
 
-    $('.popup-us').click(function () {
+    $('#zakazat').click(function () {
         $('.popup-usluga, .overlay').show();
     });
 
-    $('.popup').click(function () {
-        $('.popup-callback, .overlay').show();
+    $('#zvonok').click(function () {
+        $('#zvonok-popup, .overlay').show();
     });
+
+    $('#zvonok1').click(function () {
+        $('#zvonok-popup, .overlay').show();
+    });
+
 
     $('.img-close').click(function () {
         $('.overlay, .popup-callback').hide();
