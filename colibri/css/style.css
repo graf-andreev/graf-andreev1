@@ -996,6 +996,12 @@ body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button
     text-align: left;
 }
 
+.text-feedback b{
+    font-weight: 800;
+    font-family: "adineuePRO-black";
+    color: #000
+}
+
 .timer{
     padding-left: 15%;
     padding-right: 15%;

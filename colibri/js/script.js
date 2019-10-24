@@ -190,8 +190,7 @@ $(".slide-two").owlCarousel({
         margin:10,
         items:2,
         nav:true,
-        autoplay:true,
-        autoplayTimeout:6000,
+        autoplay:false,
         responsiveClass:true,
         responsive:{
             100:{
@@ -319,7 +318,7 @@ $('.little-logo').ready(function() {
 $(function(){
     if ( $(window).width() > 1300 ) {
         $('.overlay-start').show();
-        $('.overlay-start').delay(5200).fadeOut(1000);
+        $('.overlay-start').delay(4000).fadeOut(1000);
     }
 });
 
