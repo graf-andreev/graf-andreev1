@@ -1184,6 +1184,11 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button.owl-next{
         right: -55px;
     }
+    .why-content{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
 }
 
 @media screen and (max-width: 1300px){
@@ -1192,10 +1197,8 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button.owl-next{
         display: none !important;
     }
-    .why-content{
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+    .why-scroll{
+        height: 180px;
     }
     .little-logo{
         opacity: 1;
