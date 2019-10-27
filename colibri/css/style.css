@@ -499,12 +499,11 @@ input[type='number'] {
     margin-right: 10px;
 }
 
-.why-item p{
+.why-text{
     text-align: left;
     font-size: 18px;
     text-transform: uppercase;
     line-height: 20px;
-    white-space: nowrap;
     letter-spacing: 1.5px;
 }
 
@@ -1180,6 +1179,11 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     opacity: 1;
 }
 
+.mobile-why,
+.mobile-content{
+    display: none;
+}
+
 @media screen and (max-width: 1450px){
     body > section.gallery.clip.clip-top > div > div > div.owl-nav.disabled > button.owl-next{
         right: -55px;
@@ -1188,6 +1192,16 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1405px){
+    .why-content{
+        display: none;
+    }
+    .mobile-why{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -1209,7 +1223,7 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     }
 }
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1056px){
     .phone,
     .header-text{
         font-size: 1.5vh;
@@ -1293,9 +1307,6 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     .tabs-fura{
         text-align: center;
         width: 100%;
-    }
-    .why-item p{
-        white-space: pre-wrap;
     }
 }
 
