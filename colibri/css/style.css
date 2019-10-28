@@ -1179,9 +1179,17 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     opacity: 1;
 }
 
+.accordion{
+    margin-bottom: 25px;
+}
+
 .mobile-why,
 .mobile-content{
     display: none;
+}
+
+.active_block{
+    display: block;
 }
 
 @media screen and (max-width: 1450px){
@@ -1195,13 +1203,23 @@ input.error:-moz-placeholder{color: rgb(255,50,50); }
     }
 }
 
-@media screen and (max-width: 1405px){
+@media screen and (max-width: 1423px){
     .why-content{
         display: none;
     }
     .mobile-why{
-        display: flex;
+        display: block;
         justify-content: center;
+    }
+    .quote{
+        margin-top: 10px;
+    }
+    .why-scroll{
+        display: block;
+        margin-top: 10px;
+    }
+    .accordion label{
+        cursor: pointer;
     }
 }
 

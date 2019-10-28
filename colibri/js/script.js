@@ -340,21 +340,65 @@ $(window).scroll(function() {
 });
 
 
-var acc = document.querySelectorAll("#why-mob");
-var i;
+// var acc = document.querySelectorAll("#why-mob");
+// var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     /* Toggle between adding and removing the "active" class,
+//     to highlight the button that controls the panel */
+//     this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = document.getElementsByClassName("mobile-content")
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
+//     /* Toggle between hiding and showing the active panel */
+//     var panel = document.querySelectorAll(".mobile-content")
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+//   });
+// }
+
+// ! function(i) {
+//     var o, n;
+//     i("#why-mob").on("click", function() {
+//       o = i(this).parents(".accordeon-item"), n = o.find(".mobile-content"),
+//         o.hasClass("active_block") ? (o.removeClass("active_block"),
+//           n.slideUp()) : (o.addClass("active_block"), n.stop(!0, !0).slideDown(),
+//           o.siblings(".active_block").removeClass("active_block").children(
+//             ".mobile-content").stop(!0, !0).slideUp())
+//     })
+//   }(jQuery);
+
+
+
+// после загрузки страницы
+$(document).ready(function(){
+    // запускаем отображение аккордеона
+    makeAccordion();    
+    // при клике по заголовку
+    $('.accordion label').click(function(){
+        // снимаем со всех div`ов класс active
+        $('.accordion').each(function(){
+            $(this).removeClass('active');
+        });
+        // задаем родительскому div`у класс active
+        $(this).parent().addClass('active');
+        // запускаем отображение аккордеона
+        makeAccordion();
+    });
+});
+// функция для отображения аккордеона. Сворачивает и разворачивает
+function makeAccordion(){
+    var speed = 300; // скорость анимации
+    // перебираем все блоки аккордеона
+    $('.accordion').each(function(){
+        if($(this).hasClass('active')){
+            // если находим активный, то разворачиваем его
+            $(this).find('.content').slideDown(speed);
+        }else{
+            // не активный сворачиваем
+            $(this).find('.content').slideUp(speed);
+        }
+    });
 }
