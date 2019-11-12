@@ -21,12 +21,19 @@ body{
     min-height: 500px;
     border-radius: 3px;
     background-color: #ffffff;
-    overflow: hidden;
     display: none;
     position: relative;
-    display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.18);
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 800px;
+    min-height: 500px;
+    overflow: hidden;
+    position: absolute;
 }
 
 .bg-text{
@@ -47,7 +54,7 @@ body{
     text-align: center;
     z-index: 2;
     position: relative;
-    margin-top: -28px;
+    margin-top: 0px;
 }
 
 .button, input {
@@ -57,7 +64,7 @@ body{
     padding: 0;
     border-width: 0;
     border-radius: 7px;
-    }
+}
 
 input{
     padding-left: 18px;
@@ -65,15 +72,19 @@ input{
     box-sizing: border-box;
     font-size: 22px;
     font-weight: 700;
-    letter-spacing: -2px;
+    letter-spacing: 0px;
     background: transparent;
+    border: 1px solid #e5e5e5;
+    outline: none;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
-input[type="mail"] {
+input[type="email"] {
     margin-bottom: 18px;
+    position: relative;
 }
     
-    input[type="password"] {
+input[type="password"] {
     margin-bottom: 9px;
 }
 
@@ -81,35 +92,86 @@ input::placeholder{
     font-weight: 600;
     color: #646464;
     font-size: 20px;
-    padding-left: 22px;
+    letter-spacing: 0px;
 }
 
-.button {
-    cursor: pointer;
+.input-wrapper:before{
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #ff3462;
+    position: absolute;
+    left: 76.5%;
+    top: 20px;
+    box-shadow: 0px 0px 27px 1px #ff3462;
+    display: none;
+}
+
+.input-wrapper:after{
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #00c919;
+    position: absolute;
+    left: 76.5%;
+    top: 20px;
+    box-shadow: 0px 0px 27px 1px #00c919;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+input:focus{
+    background: #ffffff;
+}
+
+input:invalid{
+    border: 1px solid #ff3462;
+}
+
+.button{
     margin-top: 32px;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
-    }
+    color: #ffffff;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1) inset;
+    outline: none;
+}
 
-.close {
+.button:focus{
+    border: 1px solid #999999;
+    background-color: #ff811f;
+}
+
+.button-active{
+    cursor: pointer;
+    background-color: #ff811f;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px -3px 0px 0px #e5741c inset;
+    text-shadow: 0px 3px 7px #d16a19 inset;
+}
+
+.close{
     position: absolute;
-    right: 32px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
-}
-
-.close:hover {
+    right: -87px;
+    top: -5px;
+    width: 50px;
+    height: 50px;
     opacity: 1;
+    cursor: pointer;
 }
 
-.close:before, .close:after {
+.close:before, 
+.close:after {
+    content: ' ';
     position: absolute;
     left: 15px;
-    content: ' ';
-    height: 33px;
+    height: 55px;
     width: 2px;
     background-color: #ffffff;
 }
@@ -120,4 +182,27 @@ input::placeholder{
 
 .close:after {
     transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 990px){
+    .close{
+        right: -10px;
+    }
+    .close:before,
+    .close:after{
+        background: #000000;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .popup{
+        width: 90%;
+    }
+    input{
+        font-size: 15px;
+    }
+    input::placeholder{
+        font-size: 15px;
+    }
 }

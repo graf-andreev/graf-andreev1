@@ -10,18 +10,23 @@
 </head>
 <body>
     <div class="popup">
+        <div class="wrapper">
         <span class="bg-text">SIGN UP</span>
+        </div>
         <div class="forms">
-        <input type="mail" placeholder="Login or email address">
-        <input type="password" placeholder="Password">
-        <input type="password" placeholder="Repeat password">
-        <button class="button">SIGN UP</button>
+        <form id="form1" action="">
+        <div class="input-wrapper"><input onkeyup='checkParams()' class="email" type="email" placeholder="Login or email address"></div>
+        <input onkeyup='checkParams()' class="pass" type="password" placeholder="Password" >
+        <input onkeyup='checkParams()' class="pass" type="password" placeholder="Repeat password" >
+        <button type="submit" form="form1" class="button">SIGN UP</button>
+        </form>
         </div>
         <div class="close"></div>
     </div>
+    
 </body>
 </html>
-
+<script src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
 <script>
 window.onload=function(){
 var popup = document.querySelector('.popup');
@@ -30,6 +35,30 @@ function show(){
 }
 setTimeout(show, 2000)
 }
-
-document.querySelector
 </script>
+<script>
+$('.close').click(function() { 
+        $('.popup').hide();
+    });
+
+</script>
+<script>
+function checkParams() {
+    var email = $('.email').val();
+    var password = $('.pass').val();
+    
+    if(email.length != 0 && password.length != 0) {
+        $('.button').addClass('button-active');
+    } else {
+        $('.button').attr('disabled', 'disabled');
+    }
+}
+</script>
+<!-- <script>
+function validate() {
+    var email = $('.email').val();
+    if(email.length > 3){
+        $(".ok").show()
+    }
+}
+</script> -->
