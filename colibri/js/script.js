@@ -308,7 +308,7 @@ $('.main-logo').ready(function() {
     $(logo).addClass('animate')();
 });
 
-$('.main-logo').delay(8000).hide(400);
+$('.main-logo').delay(7000).hide(400);
 
 $('.little-logo').ready(function() {
     var litt_logo = $('.little-logo');
