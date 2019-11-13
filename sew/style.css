@@ -8,6 +8,14 @@
     min-width: 430px;
 }
 
+.flex{
+    display: flex;
+}
+
+.jc-sb{
+    justify-content: space-between;
+}
+
 .items_compare::-webkit-scrollbar-button {
     background-image:url('');
     background-repeat:no-repeat;
@@ -85,14 +93,8 @@
 }
 
 @media (max-width: 767px){
-    .items_compare{
+    .items{
         height: 950px;
         padding-top: 25px;
-    }
-    .catalog-item_compare{
-        min-width: 210px;
-    }
-    .item-info_compare > div > table > tbody > tr > td{
-        padding: 8px !important;
     }
 }
