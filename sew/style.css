@@ -31,6 +31,8 @@
     top: 3px;
     font-size: 13px;
     width: auto;
+    font-size: 23px;
+    font-weight: bold;
 }
 
 .items_compare{
@@ -100,6 +102,7 @@
     background-color: #BA3330;
     border-radius: 20px;
     padding: 5px;
+    margin-right: 30px;
 }
 
 .btn-compare{
@@ -148,10 +151,23 @@
 
 .item-name-wrapper_compare{
     margin-bottom: 4px;
-    height: 62px;
+    height: 80px;
     overflow: hidden;
     box-sizing: border-box;
     font-family: 'helveticaneuecyrroman';
+}
+
+.stars_compare{
+    padding-left: 15px;
+    margin-top: 6px;
+    margin-left: -2px;
+}
+
+.star_compare{
+    width: 16px;
+    height: 16px;
+    background: url(https://sew-club.ru/img/star-o.svg) no-repeat center / contain;
+    display: inline-block;
 }
 
 .item-info_compare{
