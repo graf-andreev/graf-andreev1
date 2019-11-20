@@ -44,7 +44,6 @@
 }
 
 .catalog-item_compare{
-    min-width: 430px;
     position: relative;
     float: left;
     width: 33.33%;
@@ -52,6 +51,7 @@
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
     background: #fff;
+    max-width: 310px;
 }
 
 .flex{
