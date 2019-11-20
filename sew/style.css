@@ -149,6 +149,10 @@
     border-bottom: 1px dotted;
 }
 
+.flex > .text_compare:nth-child(1){
+    font-weight: bold;
+}
+
 .item-name-wrapper_compare{
     margin-bottom: 4px;
     height: 80px;
