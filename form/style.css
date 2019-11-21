@@ -1,0 +1,119 @@
+
+.button-submit {
+    background: -moz-linear-gradient(top, #ad332a, #942A22);
+    background: -webkit-linear-gradient(top, #ad332a, #942A22);
+    background: -ms-linear-gradient(top, #ad332a, #942A22);
+    background: linear-gradient(top, #ad332a, #942A22);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ad332a, endColorstr=#942A22);
+    box-shadow: 0 6px 13px 0 rgba(0, 0, 0, .23);
+    font-family: 'Roboto', Arial !important;
+    font-size: 15px;
+    outline: none;
+    text-shadow: none !important;
+    font-weight: 400 !important;
+}
+
+.button-submit:hover {
+    background: #9f3f38 !important;
+    outline: none;
+}
+
+.button-submit:active {
+    background: #76221b !important;
+    outline: none;
+}
+
+.button-submit span {
+    padding: 0 2px;
+    outline: none;
+    color: #fff;
+    letter-spacing: 0px !important;
+}
+
+.container{
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card-content{
+    display: table;
+    width: 100%;
+    background-color: rgba(255,255,255,0.87);
+    padding: 0;
+    position: relative;
+}
+
+.form-request{
+    height: 539px;
+    min-height: 471px;
+    max-height: 864px;
+    float: right;
+    width: 390px;
+    padding: 0 50px 0 48px;
+    position: relative;
+    z-index: 1;
+    border-left: 2px solid;
+    border-image: linear-gradient(to right, #999999 1px,#f2f2f2 1px) 2;   
+}
+
+.navbar-delete{
+    float: right;
+    margin-top: 15px;
+}
+
+.form-request .form-title{
+    font-size: 21px;
+    line-height: 24px;
+    color: #2c2c2c;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    font-weight: 500;
+    max-width: 100%;
+}
+
+.form-request .form-anons{
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "PT Sans",Arial;
+    color: #2c2c2c;
+    text-align: center;
+    margin-bottom: 18px;
+    max-width: 100%;
+}
+
+.form-request .form-group{
+    position: relative;
+    margin: 6px 0;
+}
+
+.form-request .form-group.icon-user:before{
+    background-position: 17px 16px;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 50px;
+    background: url(.//images/icon-input.png) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.input-text{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #999;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    -moz-box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,0.1);
+    box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,0.1);
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "PT Sans",Arial;
+    color: #212121;
+    padding: 14px 15px 15px 47px;
+}
