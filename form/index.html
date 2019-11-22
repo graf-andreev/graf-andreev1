@@ -10,57 +10,47 @@
 </head>
 
 <body>
+    <button id="button-show" class="button-submit"><span> Получить прайс</span></button>
     <div class="container">
-        <div class="card-content js-height">
-            <div class="form-request" style="height: 539px;min-height:471px; max-height:864px;">
-                <div class="navbar-delete toggler"
-                    style="display: inline;position:absolute; left:calc(100% - 40px); top: 0%;"><span></span></div>
-                
-                <div class="form-head" style="">
-                    <div class="form-head_title">Икра «СМАК» со складов в Новосибирске и в Москве.</div>
-                    <div class="form-head_anons">Оптовые поставки икры во все регионы РФ и в страны ТС.</div>
-                </div>
-                <div class="form-body" style="">
-                    <div class="form-title" style="max-width: 100%;">Запросить оптовый прайс</div>
-                    <div class="form-anons" style="max-width: 100%;">В сообщении укажите Вашу компанию.</div>
+        <div class="card-content">
+            <div class="form-request">
+                <div class="navbar-delete"><span></span></div>
+                <div class="form-body">
+                    <div class="form-title">Запросить оптовый прайс</div>
+                    <div class="form-anons">В сообщении укажите Вашу компанию.</div>
                     <form id="form-contacts-anchor">
                         <div class=" form-group icon-user">
-                            <input name="client_name" id="client_name" class="input-text " placeholder="Имя*">
+                            <input class="input-text " placeholder="Имя*">
                         </div>
                         <div class=" form-group icon-tel">
-                            <input name="client_phone" id="client_phone" class="input-text " type="tel"
-                                placeholder="Телефон*">
-                        </div>
-                        <div class=" form-group icon-mail"><input name="client_email" id="client_email"
-                                class="input-text " placeholder="E-mail*"></div>
-                        <div class="form-submit"><button type="submit"
-                                class="button button-block button-submit"><span>Отправить</span></button></div>
-                        <div class="form-service"><span> Отправляя личные данные, вы соглашаетесь с <a
-                                    href="//admin.maxgenpromo.ru:443/terms/ikra-obkomcom">Политикой
-                                    конфиденциальности</a></span></div>
+                            <input class="input-text " type="tel" placeholder="Телефон*"> </div>
+                        <div class="form-group icon-mail"><input class="input-text " placeholder="E-mail*"></div>
+                        <div class="form-submit"><button type="submit"class="button-submit"><span>Отправить</span></button></div>
+                        <div class="form-service"><span> Отправляя личные данные, вы соглашаетесь с <a href="#">Политикой конфиденциальности</a></span></div>
                     </form>
                 </div>
             </div>
             <div class="services-border"></div>
-            <div class="services-all services" style="">
-                <div class="form-head" style="margin-bottom: 15px;">
+            <div class="services-all services">
+                <div class="form-head">
                     <div class="services-title">Икра «СМАК» со складов в Новосибирске и в Москве.</div>
                     <div class="services-anons">Оптовые поставки икры во все регионы РФ и в страны ТС.</div>
                 </div>
-                <div style="width:100%; display:inline; overflow: hidden;">
-                    <div style="width: 100%; text-align:center; display:inline-block;float: left; overflow: hidden;">
-                        <img src="//admin.maxgenpromo.ru:443/storage/0f1a25w8mc235/custom_image_custom_image_shutterstock_266701997.jpg580-1.png875.png"
-                            style="max-width:100%; height:auto;max-height
-          :460.8px;"></div>
-                    <div class="services-anons" id="customCode"
-                        style="width: 0%; opacity:0; font-size:14px; min-height: 100px; max-height:365px; display:inline-block; padding:  0px 14px 0px 14px;word-break:break-word;overflow-y:auto; display: none; text-align:left;">
-                    </div>
+                <div>
+                    <div class="services-anons"><img src="https://laukar.com/data/161008/2240108706786128.jpg" alt="">                 </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+    $('#button-show').click(function() {
+        var popup_id = $('.card-content'); 
+        $(popup_id).css('display','table'); 
+    });
+    $('.navbar-delete').click(function() { 
+        $('.card-content').hide(); 
+    });
+</script>
 </html>
-
-http://www.obkomovskaya.ru/
