@@ -1,34 +1,34 @@
 @font-face {
     font-family: "adineuePRO-bold";
-    src: url("/fonts/adineuePRO-bold.ttf") format("truetype");
+    src: url("fonts/adineuePRO-bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "adineuePRO-kur-light";
-    src: url("/fonts/adineuePROCyr-LightWeb.woff") format("woff");
+    src: url("fonts/adineuePROCyr-LightWeb.woff") format("woff");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "pt-sand";
-    src: url("/fonts/pt-sans.ttf") format("truetype");
+    src: url("fonts/pt-sans.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "pt-sans-bold";
-    src: url("/fonts/pt-sans-bold.ttf") format("truetype");
+    src: url("fonts/pt-sans-bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "century-gothic";
-    src: url("/fonts/century-gothic.ttf") format("truetype");
+    src: url("fonts/century-gothic.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
