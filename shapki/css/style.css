@@ -1,34 +1,34 @@
 @font-face {
     font-family: "adineuePRO-bold";
-    src: url("fonts/adineuePRO-bold.ttf") format("truetype");
+    src: url("/fonts/adineuePRO-bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "adineuePRO-kur-light";
-    src: url("fonts/adineuePROCyr-LightWeb.woff") format("woff");
+    src: url("/fonts/adineuePROCyr-LightWeb.woff") format("woff");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "pt-sand";
-    src: url("fonts/pt-sans.ttf") format("truetype");
+    src: url("/fonts/pt-sans.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "pt-sans-bold";
-    src: url("fonts/pt-sans-bold.ttf") format("truetype");
+    src: url("/fonts/pt-sans-bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
 
 @font-face {
     font-family: "century-gothic";
-    src: url("fonts/century-gothic.ttf") format("truetype");
+    src: url("/fonts/century-gothic.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
    }
@@ -140,12 +140,29 @@ a{
     display: none;
     position: absolute;
     width: 200px;
-    height: 160px;
     border: 1px solid #d9d9d9;
     z-index: 5;
     background-color: #ffffff;
     top: 35px;
     left: -15px;
+    padding: 15px 5px 15px 5px;
+}
+
+.info-container .flex{
+    border-bottom: 1px solid #d0d0d0;
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.info-container .flex:nth-last-child(1){
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.info-container .flex img{
+    height: 25px;
+    max-width: 80px;
+    margin-left: auto;
 }
 
 .proizv-button{
@@ -234,6 +251,10 @@ button{
     outline: 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 .about-item{
     width: 100%;
     max-width: 435px;
@@ -302,6 +323,43 @@ button{
     line-height: 20px;
 }
 
+.toggle-button{
+    width: 390px;
+    height: 70px;
+    text-align: center;
+    color: #626262;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 20px;
+    margin-top: 45px;
+}
+
+.gallery-container{
+    width: 100%;
+    height: 415px;
+    background: rgb(235,253,223);
+    background: linear-gradient(180deg, rgba(235,253,223,1) 0%, rgba(255,255,255,1) 51%);
+}
+
+.green-button{
+    background-color: #ebfddf;
+}
+
+.yellow-button{
+    background-color: #ffffba;
+}
+
+.red-button{
+    background-color: #ffcac5;
+}
+
+.sale{
+    width: 100%;
+    height: 162px;
+    background-color: #752a7e;
+}
+
 .logo{
     margin-right: 25px;
 }
@@ -333,4 +391,6 @@ footer{
     color: #898989;
     letter-spacing: 1px;
 }
+
+
 
