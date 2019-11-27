@@ -1,31 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2018 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="200mm" height="200mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 20000 20000"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .str1 {stroke:dimgray;stroke-width:500;stroke-miterlimit:22.9256}
-    .str0 {stroke:#7B7B7B;stroke-width:500;stroke-miterlimit:22.9256}
-    .fil0 {fill:none}
-   ]]>
-  </style>
- </defs>
- <g id="Слой_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <polygon class="fil0 str0" points="18959.98,5814.52 5413.31,5814.52 6704.48,12037.52 17287.82,12037.52 "/>
-  <path class="fil0 str0" d="M4698.8 2473.98l2442.06 11640.62m-1132.36 1639.69l-2680.24 -12514.05"/>
-  <polyline class="fil0 str0" points="3599.41,3359.16 756.58,3359.16 756.58,1623.5 4707.74,1623.5 4707.74,2565.42 "/>
-  <path class="fil0 str0" d="M7079.73 13886.57l9234.37 0c477.29,0 867.82,390.52 867.82,867.83l0 0c0,477.31 -390.58,867.83 -867.82,867.83l-10567.51 0"/>
-  <rect class="fil0 str0" x="8900.31" y="5814.52" width="6074.84" height="6223"/>
-  <path class="fil0 str1" d="M18041.21 9233.74l-4770.01 0m-825.51 0l-719.65 0m-878.44 0l-4836.57 0"/>
-  <path class="fil0 str0" d="M18041.21 9233.74l-4859.97 -5.29m-735.55 5.29l-719.65 0m-809.65 0l-4905.36 0"/>
-  <path class="fil0 str0" d="M12050.3 12016.76l-9.16 -1721.71m-0.95 -908.54l-4.14 -361.88m-9.18 -1211.03l-9.67 -2020.64"/>
-  <ellipse class="fil0 str0" cx="8910.03" cy="17040.33" rx="1434.84" ry="1417.23"/>
-  <ellipse class="fil0 str0" cx="14962.68" cy="17060.46" rx="1434.84" ry="1417.23"/>
-  <ellipse class="fil0 str0" cx="8910.03" cy="17040.33" rx="428.62" ry="423.33"/>
-  <ellipse class="fil0 str0" cx="14962.68" cy="17060.46" rx="428.62" ry="423.33"/>
- </g>
-</svg>
+

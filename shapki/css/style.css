@@ -70,6 +70,10 @@ html{
     justify-content: space-between;
 }
 
+.align-cent{
+    align-items: center;
+}
+
 ul{
     list-style: none;
 }
@@ -92,8 +96,9 @@ a{
 
 .menubutton{
     width: 75px;
-    padding-top: 10px;
+    padding-top: 12px;
     background-color: #843f8a;
+    cursor: pointer;
 }
 
 .menuitem{
@@ -102,7 +107,8 @@ a{
     height: 4px;
     background-color: #ffffff;
     margin: 0 auto;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    border-radius: 5px;
 }
 
 .button-header{
@@ -114,6 +120,32 @@ a{
     color: #843f8a;
     font-weight: bold;
     cursor: pointer;
+}
+
+.factory{
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.factory ul li{
+    cursor: pointer;
+    position: relative;
+}
+
+.letter:hover .info-container{
+    display: block;
+}
+
+.info-container{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 160px;
+    border: 1px solid #d9d9d9;
+    z-index: 5;
+    background-color: #ffffff;
+    top: 35px;
+    left: -15px;
 }
 
 .proizv-button{
@@ -138,13 +170,68 @@ a{
     letter-spacing: 0.5px;
 }
 
+.enter{
+    margin-left: auto;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.search-wrapper{
+    position: relative;
+}
+
+.search-submit{
+    position: absolute;
+    left: 85%;
+    height: 25px;
+    background-color: #84408a;
+    width: 45px;
+    border-radius: 0 5px 5px 0;
+    border: 0;
+}
+
+.main-nav{
+    
+    background-position: 100px 0;
+    background-size: 200px;
+}
+
+.first-menu-item{
+    background-color: #84408a;
+}
+
+.first-menu-item a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .main-text{
     font-size: 20px;
     color: #4e4e4e;
     text-align: center;
     width: 100%;
     max-width: 445px;
-    margin-top: 10px;
+    margin: 10px 60px 0 80px;
+}
+
+.main-text > p:nth-child(2){
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.search{
+    width: 100%;
+    min-width: 305px;
+    border: 1px solid #84408a;
+    border-radius: 5px;
+    height: 26px;
+    padding-left: 5px;
+}
+
+input,
+button{
+    outline: 0;
 }
 
 .about-item{
@@ -213,6 +300,10 @@ a{
 
 .about-text{
     line-height: 20px;
+}
+
+.logo{
+    margin-right: 25px;
 }
 
 .logo-footer{
