@@ -14,3 +14,15 @@ $(document).ready(function(){
         dots: true
     });
   });
+
+  (function($) {
+    $(function() {
+     
+      $('div.tabs_caption').on('click', 'div:not(.active)', function() {
+        $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest('section.tabs').find('div.tabs_content').removeClass('active').eq($(this).index()).addClass('active');
+      });
+     
+    });
+    })(jQuery);

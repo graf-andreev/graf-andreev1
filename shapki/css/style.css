@@ -13,7 +13,7 @@
    }
 
 @font-face {
-    font-family: "pt-sand";
+    font-family: "pt-sans";
     src: url("/fonts/pt-sans.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -280,7 +280,7 @@ button{
 }
 
 .aside a{
-    font-family: "pt-sand";
+    font-family: "pt-sans";
     display: block;
     font-size: 18px;
     padding-left: 30px;
@@ -338,12 +338,80 @@ button{
 .gallery-container{
     width: 100%;
     height: 415px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.container-green{
     background: rgb(235,253,223);
     background: linear-gradient(180deg, rgba(235,253,223,1) 0%, rgba(255,255,255,1) 51%);
+    border: 5px solid #52bb6a;
+}
+
+.container-yellow{
+    background: rgb(255,255,190);
+    background: linear-gradient(180deg, rgba(255,255,190,1) 0%, rgba(255,255,255,1) 51%);
+    border: 5px solid #ffde00;
+}
+
+.container-red{
+    background: rgb(255,204,199);
+    background: linear-gradient(180deg, rgba(255,204,199,1) 0%, rgba(255,255,255,1) 51%);
+    border: 5px solid #ef5647;
+}
+
+.show-all{
+    width: 440px;
+    height: 55px;
+    margin: 0 auto;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    position: relative;
+    top: 35px;
+    font-weight: bold;
+}
+
+.show-all_green{
+    background-color: #52bb6a;
+}
+
+.show-all_yellow{
+    background-color: #ffde00;
+}
+
+.show-all_red{
+    background-color: #ef5647;
+}
+
+.gallery-item{
+    margin-top: 40px;
+}
+
+.gallery-item p{
+    font-family: "pt-sans";
+    font-size: 18px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.green{
+    background-color: #ecfde0;
+}
+
+.yellow{
+    background-color: #ffffba;
+}
+
+.red{
+    background-color: #ffcac5;
 }
 
 .green-button{
     background-color: #ebfddf;
+    border: 5px solid #52bb6a;
+    border-bottom: none;
 }
 
 .yellow-button{
@@ -352,6 +420,65 @@ button{
 
 .red-button{
     background-color: #ffcac5;
+}
+
+.tabs_content{
+    display: none; 
+}
+
+.tabs_content.active {
+    display: block;
+}
+
+.seasons{
+    margin-right: 10px;
+}
+
+.seasons-button{
+    width: 290px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #626262;
+    text-align: center;
+    padding-top: 25px;
+    cursor: pointer;
+}
+
+.seasons-block{
+    position: relative;
+}
+
+.square{
+    width: 118px;
+    height: 118px;
+    background-color: #ffffff;
+    color: #7f45e7;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 26px;
+    left: 160px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.season-item{
+    width: 440px;
+    height: 170px;
+    margin-bottom: 25px;
+}
+
+.purple{
+    background-color: #f5ecfe;
+}
+
+.pink{
+    background-color: #f9d5e1;
+}
+
+.blue{
+    background-color: #d3f6f8;
 }
 
 .sale{
