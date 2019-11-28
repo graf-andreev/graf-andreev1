@@ -658,7 +658,8 @@ footer{
 
 .footer-content > div:nth-child(1){
     border-right: 2px solid #b8b8b8;
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
     padding-right: 120px;
 }
 
