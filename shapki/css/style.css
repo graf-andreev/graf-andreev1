@@ -48,6 +48,10 @@ html{
     color: #626262;
 }
 
+body{
+    position: relative;
+}
+
 .content-wrapper{
     width: 100%;
     max-width: 1200px;
@@ -89,6 +93,70 @@ a{
     padding-bottom: 15px;
 }
 
+.aside-fixed{
+    background-color: #fffaab;
+    width: 45px;
+    height: 256px;
+    position: absolute;
+    right: 0px;
+    z-index: 10;
+    top: 11%;
+    cursor: pointer;
+    box-shadow: 0px 2px 15px 10px rgba(50, 50, 50, 0.14);
+}
+
+.fixed-item{
+    width: 300px;
+    height: 80px;
+    background-color: #ffffff;
+    padding: 13px;
+    position: relative;
+    left: -300px;
+    top: -24px;
+    margin-bottom: 8px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0px 2px 150px 10px rgba(50, 50, 50, 0.14);
+    transition: 1s;
+}
+
+/* .fixed-item:hover{
+    left: -300px;
+    transition: 1s;
+} */
+
+.fixed-item img{
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+}
+
+.aside-fixed p{
+    font-family: "adineuePRO-bold";
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: #843f8a;
+    padding-left: 55px;
+}
+
+.owl-theme .owl-dots{
+    position: relative;
+    bottom: 65px;
+    
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    box-shadow: inset 0px 1px 1px 1px rgba(50, 50, 50, 0.75);
+}
+
+.first{
+    width: 500px;
+    justify-content: flex-end;
+    background-color: #843f8a;
+    height: 50px;
+    padding-right: 15px;
+    margin-right: 18px;
+}
+
 .border{
     border-bottom: 1px solid #999999;
     margin-bottom: 15px;
@@ -96,7 +164,7 @@ a{
 
 .menubutton{
     width: 75px;
-    padding-top: 12px;
+    padding-top: 6px;
     background-color: #843f8a;
     cursor: pointer;
 }
@@ -208,9 +276,12 @@ a{
 }
 
 .main-nav{
-    
     background-position: 100px 0;
     background-size: 200px;
+}
+
+.start{
+    width: 100%;
 }
 
 .first-menu-item{
@@ -246,6 +317,22 @@ a{
     padding-left: 5px;
 }
 
+.sale{
+    background-color: #752a7e;
+    height: 165px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    box-shadow: 0px 2px 150px 10px rgba(50, 50, 50, 0.14);
+    color: #ffffff;
+    font-size: 74px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sale span{
+    font-weight: bold;
+}
+
 input,
 button{
     outline: 0;
@@ -277,6 +364,7 @@ button{
     width: 100%;
     max-width: 295px;
     border: 1px solid #d4d4d4;
+    margin-left: 10px;
 }
 
 .aside a{
@@ -299,6 +387,33 @@ button{
     border-bottom: 1px solid #d4d4d4;
 }
 
+p span{
+    font-weight: bold;
+}
+
+.cart{
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.cart img{
+    margin-right: 11px;
+}
+
+.cart p{
+   font-size: 12px;
+}
+
+.cart p:nth-child(2){
+    padding-right: 30px;
+    border-right: 1px solid #4e4e4e;
+}
+
+.cart img:nth-child(3){
+    margin-left: 20px;
+}
+
 .about-info{
     font-size: 20px;
     margin-bottom: 40px;
@@ -317,6 +432,19 @@ button{
     height: 50px;
     border-top: 1px solid #d0d0d0;
     border-bottom: 1px solid #d0d0d0;
+}
+
+.borders .flex{
+    height: 50px;
+}
+
+.socials{
+    width: 260px;
+}
+
+.socials p{
+    font-family: "pt-sans-bold";
+    font-size: 20px;
 }
 
 .about-text{
@@ -431,7 +559,17 @@ button{
 }
 
 .seasons{
-    margin-right: 10px;
+    width: 900px;
+    margin-left: auto;
+}
+
+.seasons-content{
+    display: none;
+    padding-top: 50px; 
+}
+
+.seasons-content.active {
+    display: flex;
 }
 
 .seasons-button{
@@ -482,9 +620,22 @@ button{
 }
 
 .sale{
-    width: 100%;
+    width: 1220px;
     height: 162px;
+    padding-top: 40px;
+    text-align: right;
+    padding-right: 75px;
     background-color: #752a7e;
+    margin-left: auto;
+}
+
+.main-content{
+    margin-left: -300px;
+}
+
+.about-company{
+    width: 900px;
+    margin-left: auto;
 }
 
 .logo{
@@ -504,13 +655,31 @@ footer{
     margin-top: 75px;
 }
 
+
+.footer-content > div:nth-child(1){
+    border-right: 2px solid #b8b8b8;
+    width: 550px;
+    padding-right: 120px;
+}
+
+.footer-content > div:nth-child(2){
+    margin-left: 50px; 
+    padding-right: 57px; 
+    border-right: 2px solid #b8b8b8;
+}
+
+.footer-content > div:nth-child(2){
+    margin-right: 60px;
+}
+
 .footer-item p{
     font-family: "pt-sans-bold";
     font-size: 25px;
     margin-bottom: 25px;
 }
 
-.footer-item a{
+.footer-item a,
+.footer-item span{
     font-family: "pt-sans-bold";
     display: block;
     line-height: 30px;
