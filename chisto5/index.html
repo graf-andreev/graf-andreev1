@@ -13,13 +13,30 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-</head>
-<header>
-
-</header>
-
-<body>
-    <section class="working">
+    </head>
+    <header>
+        <div class="content-wrapper flex wrap jc-between align-cent">
+            <img src="img/logo.png" width="200" height="92" alt="">
+            <div class="phone flex align-cent">
+                <img src="img/phone.png" width="37" height="37" alt="">
+                <a href="tel:89130000000"> 8 913 <span>000 00 00</span></a>
+            </div>
+            <div class="phone flex align-cent">
+                <img src="img/phone-w.png" width="37" height="37" alt="">
+                <a href="tel:83830000000"> 8 383 <span>000 00 00<span></a>
+            </div>
+       
+        <button class="header-button">Задать вопрос</button>
+        <div class="flex burger jc-center align-cent">
+            <div class="burger-item"></div>
+            <div class="burger-item"></div>
+            <div class="burger-item"></div>
+        </div>
+    </div>
+    </header>
+    
+    <body>
+        <section class="working">
         <div class="section-header bg-color-orange">
             <h3 class="content-wrapper">Как мы работаем</h3>
         </div>
@@ -127,7 +144,7 @@
                     </p>
                 </form>
             </div>
-            <button class="price">Узнать стоимость</button>
+            <button class="price popup-on">Узнать стоимость</button>
         </div>
     </section>
     <section class="prices">
@@ -143,7 +160,7 @@
 
                 </div>
                 <p class="prices-info">Подробности узнавайте у наших операторов</p>
-                <button class="order">Заказать</button>
+                <button class="order popup-on">Заказать</button>
             </div>
             <img src="img/pig.png" width="574" height="431" alt="">
         </div>
@@ -222,5 +239,31 @@
 <script src="js/jq-min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-
+<div class="overlay"></div>
+<div class="popup">
+    <div class="close">X</div>
+   <p><span>ОСТАВЬТЕ&nbsp;</span>СВОЮ ЗАЯВКУ</p>
+   <p>Детали уточним по телефону</p>
+   <input class="input-popup" type="text" placeholder="Ваше Имя">
+   <input class="input-popup" type="phone" placeholder="Ваш телефон">
+   <button class="popup-button">Заказать</button>
+</div>
+<div class="content-wrapper">
+<div class="aside-menu">
+        <div class="flex burger jc-center align-cent">
+                <div class="burger-item"></div>
+                <div class="burger-item"></div>
+                <div class="burger-item"></div>
+            </div>
+            <ul>
+                <li><a href="#">Как мы работаем</a></li>
+                <li><a href="#">Наши преимущества</a></li>
+                <li><a href="#">Где планируете делать уборку</a></li>
+                <li><a href="#">Наши цены</a></li>
+                <li><a href="#">Скидки</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Оставить заявку</a></li>
+            </ul>
+</div>
+</div>
 </html>
