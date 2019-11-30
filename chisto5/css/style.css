@@ -212,11 +212,23 @@ header{
 
 .cleaning{
     background-image: url(/img/backround.png);
-    height: 480px;
+}
+
+.cleaning .bg-color-orange{
+    margin-bottom: 80px;
+}
+
+form p{
+    margin-bottom: 40px;
+}
+
+form > p:nth-child(2) > label{
+    margin-right: 35px;
 }
 
 button{
     font-family: "FiraSans-Black";
+    display: block;
     box-shadow:  0px 6px 10px 0px rgba(50, 50, 50, 0.4);
     letter-spacing: 1.5px;
     border: 0;
@@ -225,13 +237,57 @@ button{
     font-size: 20px;
 }
 
+.discounts{
+    background: rgb(254, 217, 89);
+    background: -webkit-linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
+    background: -o-linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
+    background: -ms-linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
+    background: linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
+    height: 508px;
+}
+
+.discounts-item p{
+    font-family: "GothamPro-Bold";
+    font-size: 98px;;
+}
+
+.discounts-item p span{
+    font-size: 30px;
+}
+
+.discounts-info{
+    font-family: "GothamPro-Light" !important;
+    font-size: 20px !important;
+}
+
+.discounts-info span{
+    font-family: "GothamPro-Bold";
+    font-size: 20px !important;
+}
+
+.status{
+    height: 49px;
+    width: 100%;
+    max-width: 380px;
+}
+
+.golden{
+    background-image: url(../img/gold.png);
+}
+
+.silver{
+    background-image: url(../img/silver.png);
+}
+
 .price{
     width: 100%;
     max-width: 333px;
     height: 65px;
     border-radius: 4px;
+    margin: 0 auto;
     color: #0d6700;
     box-shadow: inset 0px -2px 7px 0px rgba(254, 224, 88, 0.4);
+    margin-top: 40px;
 }
 
 .prices{
@@ -306,12 +362,6 @@ button{
     color: #ffffff;
     font-size: 24px;
     margin-top: 50px;
-}
-
-.discont{
-    height: 300px;
-    background: rgb(186, 142, 199);
-    background: -webkit-linear-gradient(116deg, rgb(186, 142, 199) 29%, rgb(215, 238, 255) 2%), 29%, rgb(215, 238, 255) 2%;
 }
 
 /* custom checkbox */
@@ -448,15 +498,102 @@ input{
 
 footer{
     background: rgb(181, 239, 110);
-    background: linear-gradient(110deg, rgb(181, 239, 110) 52%, rgb(255, 240, 136) 2%);
+    background: linear-gradient(110deg, rgb(181, 239, 110) 51%, rgb(255, 240, 136) 2%);
+}
+
+.footer-item:nth-child(1){
+    margin-right: 5%;
 }
 
 .footer-logo{
-    margin-right: 60px;
+    margin-right: 73px;
     margin-top: 30px;
     margin-bottom: 90px;
 }
 
-.phone{
+.phone img{
     margin-right: 8px;
+}
+
+.phone{
+    margin-top: 33px;
+    margin-bottom: 35px;
+}
+
+.phone a{
+    font-family: "FiraSans";
+    font-size: 25px;
+}
+
+.phone a span{
+    font-family: "FiraSans-Bold";
+}
+
+.footer-item p{
+    font-size: 18px;
+    color: #3b3b3b;
+    line-height: 26px;
+}
+
+footer > div > div:nth-child(3) > p{
+    font-size: 14px;
+}
+
+.footer-item p span{
+    font-family: "GothamPro-Bold";
+}
+
+@media screen and (max-width: 950px) {
+    section.working > div.content-wrapper.flex,
+    footer > div,
+    div.forms-info > p.flex.align-cent{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bg-work-1,
+    .bg-work-2{
+        background: transparent;
+    }
+    h3{
+        font-size: 25px;
+        padding-left: 5%;
+    }
+    .advantage-wrapper,
+    section.prices > div.content-wrapper.flex{
+        justify-content: center;
+    }
+    .advantage-item{
+        padding-right: 10px;
+    }
+    .advantage-item span,
+    .advantage-item p{
+        font-size: 14px;
+    }
+    body{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .cleaning{
+        background-size: cover;
+    }
+    form{
+        padding: 3%;
+    }
+    section.prices > div.content-wrapper.flex > img{
+        display: none;
+    }
+    .scew-block{
+        width: 100%;
+    }
+    .scew-block::before,
+    .scew-block::after{
+        display: none;
+    }
+    .normal-text p{
+        font-size: 2em;
+    }
+    .work-skew,
+    .work-normal{
+        transform: skew(0deg);
+    }
 }
