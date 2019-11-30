@@ -427,8 +427,8 @@ button{
   transition: all .2s;
   color: #fdc913;
   background: #fdc913;
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
 }
 /* checked mark aspect changes */
 [type="checkbox"]:not(:checked) + label:after {
