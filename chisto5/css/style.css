@@ -168,6 +168,7 @@ header{
 
 .bg-color-forrest{
     background-color: #447c00;
+    margin-bottom: 40px;
 }
 
 .working{
@@ -201,6 +202,7 @@ header{
 
 .work-skew{
     transform: skew(-20deg);
+    overflow: hidden;
 }
 
 .work-normal{
@@ -267,12 +269,17 @@ button{
     background: -o-linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
     background: -ms-linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
     background: linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
-    height: 508px;
+}
+
+.discounts-item{
+    margin-bottom: 90px;
+    padding-right: 40px;
 }
 
 .discounts-item p{
     font-family: "GothamPro-Bold";
-    font-size: 98px;;
+    font-size: 98px;
+    margin-top: 60px;
 }
 
 .discounts-item p span{
@@ -290,13 +297,26 @@ button{
 }
 
 .status{
+    font-family: "GothamPro";
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
     height: 49px;
-    width: 100%;
-    max-width: 380px;
+    width: 105%;
+}
+
+section.discounts > div.content-wrapper.flex > div.work-skew.working > div,
+section.discounts > div.content-wrapper.flex > div:nth-child(3){
+    margin-left: 45px;
+}
+
+section.discounts > div.content-wrapper.flex > div:nth-child(3){
+    width: 800px;
 }
 
 .golden{
     background-image: url(../img/gold.png);
+
 }
 
 .silver{
@@ -386,6 +406,24 @@ button{
     color: #ffffff;
     font-size: 24px;
     margin-top: 50px;
+}
+
+.feedback{
+    height: 670px;
+    background-image: url(../img/s90RVvloRRAx.png);
+}
+
+.feedback-text{
+    width: 295px;
+    height: 513px;
+    padding: 40px 20px 0 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.feedback .flex{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* custom checkbox */
@@ -691,12 +729,19 @@ footer > div > div:nth-child(3) > p{
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1150px) {
     section.working > div.content-wrapper.flex,
     footer > div,
-    div.forms-info > p.flex.align-cent{
+    div.forms-info > p.flex.align-cent,
+    section.discounts > div.content-wrapper.flex{
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .discounts{
+        background: linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(254, 217, 89) 0%);
+    }
+    .discounts-item p{
+        font-size: 50px;
     }
     .bg-work-1,
     .bg-work-2{
