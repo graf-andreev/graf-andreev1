@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#fee058" />
-    <meta name="msapplication-navbutton-color" content="#fee058" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#fee058" />
+    <meta name="theme-color" content="#19b203" />
+    <meta name="msapplication-navbutton-color" content="#19b203" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#19b203" />
     <title>Чисто 5</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -26,13 +26,21 @@
                 <a href="tel:83830000000"> 8 383 <span>000 00 00<span></a>
             </div>
        
-        <button class="header-button">Задать вопрос</button>
+        <button class="header-button popup-on">Задать вопрос</button>
         <div id="menu-open" class="flex burger jc-center align-cent">
             <div class="burger-item"></div>
             <div class="burger-item"></div>
             <div class="burger-item"></div>
         </div>
     </div>
+    <div class="content-wrapper">
+    <div class="top-text">
+        <p>Скидка 50% <br>всем новым клиентам<br><span>на первую уборку*</span></p>
+    </div>
+    <div class="bottom-text flex">
+        <p>Порадуйте себя и своих близких! Звоните</p><button class="top-bottom popup-on">Заказать оборатный звонок</button>
+    </div>
+</div>
     </header>
     
     <body>
@@ -195,18 +203,21 @@
         <div class="section-header bg-color-forrest">
             <h3 class="content-wrapper">Отзывы</h3>
         </div>
-        <div class="content-wrapper flex">
+        <div class="content-wrapper owl-carousel slide-one owl-theme">
+            <div class="flex jc-between feedback-wrapper">
             <div class="feedback-text">
-                <p class="feedback-name"></p>
-                <p class="feedback-parameters"></p>
-                <p class="feedback-parameters"></p>
-                <p></p>
+                <p class="feedback-name">Иван Иванов</p>
+                <p class="feedback-parameters"><span>Тариф уборки:</span> Генеральня уборка</p>
+                <p class="feedback-parameters"><span>Обьект:</span> Загородный дом 206 м2</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
             </div>
-            <img src="../img/cleaning-girl.png" alt="">
-            <div class="video-feedback">
+            <img class="cleaning-girl" src="../img/cleaning-girl.png" alt="">
+            <div class="video-feedback flex">
                 <p>Видеоотзыв</p>
                 <iframe width="495" height="295" src="https://www.youtube.com/embed/_gMKG6oqJ90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="../img/hand.png" alt="">
             </div>
+        </div>
         </div>
     </section>
     <section class="forms">

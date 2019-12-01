@@ -1,3 +1,4 @@
+
 $('.popup-on').click(function() { 
   var popup_id = $('.popup'); 
   $(popup_id).show(); 
@@ -17,3 +18,23 @@ $('#menu-close').click(function () {
   $(menu).css('left', '100%');
 });
 });
+
+$(document).ready(function(){
+  $(".slide-one").owlCarousel({
+        loop:true, 
+        margin:10, 
+        nav:true,
+        dots:false,
+        items:1,
+        responsive:{ 
+            0:{
+                items:1,
+                nav:true
+            },
+            800:{
+                items:1,
+                nav:true
+            }
+        }
+    });
+  });
