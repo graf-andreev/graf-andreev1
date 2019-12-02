@@ -180,6 +180,10 @@ header{
     height: 5px;
     background-color: #bf2602;
     margin-bottom: 5px;
+    -webkit-box-shadow: inset 0px -1px 3px 0px rgba(95, 19, 1, 1),
+                inset 0px 1px 3px 0px rgba(222, 144, 125, 1);
+            box-shadow: inset 0px -1px 3px 0px rgba(95, 19, 1, 1),
+                inset 0px 1px 3px 0px rgba(222, 144, 125, 1)
 }
 
 .bg-work-1{
@@ -840,8 +844,6 @@ footer > div > div:nth-child(3) > p{
     background: -o-linear-gradient(345deg, rgb(140, 201, 46) 53%, rgb(25, 178, 3) 0%);
     background: linear-gradient(105deg, rgb(140, 201, 46) 53%, rgb(25, 178, 3) 0%);
     height: 515px;
-    left: 45%;
-    margin-left: -75px;
     padding-left: 65px;
 }
 
@@ -1101,5 +1103,8 @@ footer > div > div:nth-child(3) > p{
     }
     header > div.content-wrapper.flex.wrap.jc-between.align-cent > div:nth-child(3){
         margin-left: auto;
+    }
+    .popup{
+        padding-left: 1%;
     }
 }
