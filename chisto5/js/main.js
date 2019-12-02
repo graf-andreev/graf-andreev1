@@ -29,7 +29,7 @@ $(document).ready(function(){
         responsive:{ 
             0:{
                 items:1,
-                nav:true
+                nav:false
             },
             800:{
                 items:1,
