@@ -1073,7 +1073,8 @@ footer > div > div:nth-child(3) > p{
         display: none !important;
     }
     .aside-menu ul li{
-        font-size: 13px;
+        font-size: 11px;
+        width: 80px;
     }
     .owl-next,
     .owl-prev{
@@ -1091,9 +1092,6 @@ footer > div > div:nth-child(3) > p{
     }
     .feedback{
         padding-bottom: 20px;
-    }
-    .aside-menu ul li{
-        font-size: 6px;
     }
 }
 
