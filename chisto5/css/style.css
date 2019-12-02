@@ -121,8 +121,12 @@ a{
 
 header{
     background-image: url(../img/background.png);
-    background-size: 100% 100%;
-    height: 705px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-top{
+    max-width: 200px;
 }
 
 .header-button{
@@ -130,6 +134,9 @@ header{
     height: 50px;
     color: #bf2602;
     background-color: #fee058;
+    box-shadow: inset 0px -3px 3px 0px rgba(251, 180, 45, 1),
+                inset 0px 3px 3px 0px rgba(254, 239, 168, 1),
+                0px 6px 10px 0px rgba(50, 50, 50, 0.4);
 }
 
 .burger{
@@ -137,8 +144,10 @@ header{
     height: 50px;
     background-color: #fee058;
     flex-direction: column;
-    box-shadow:  0px 6px 10px 0px rgba(50, 50, 50, 0.4);
     cursor: pointer;
+    box-shadow:  0px 6px 10px 0px rgba(50, 50, 50, 0.4),
+                inset 0px -3px 3px 0px rgba(251, 180, 45, 1),
+                inset 0px 3px 3px 0px rgba(254, 239, 168, 1);   
 }
 
 .burger-item{
@@ -184,14 +193,22 @@ header{
     width: 357px;
     height: 65px;
     color: #0d6700;
+    margin-bottom: 90px;
+    box-shadow: inset 0px -2px 3px 0px rgba(255, 223, 127, 1),
+                inset 0px 3px 3px 0px rgba(255, 248, 220, 1),
+                0px 6px 10px 0px rgba(50, 50, 50, 0.4);
 }
 
 .bottom-text{
     font-family: "GothamPro-Bold";
     color: #ffffff;
     font-size: 20px;
-    width: 50%;
+    width: 65%;
     margin-top: 180px;
+}
+
+.bottom-text p{
+    width: 260px;
 }
 
 .top-text p span{
@@ -265,6 +282,8 @@ header{
 
 .cleaning{
     background-image: url(../img/backround.png);
+    padding-bottom: 70px;
+    background-size: 100% 100%;
 }
 
 .cleaning .bg-color-orange{
@@ -282,12 +301,13 @@ form > p:nth-child(2) > label{
 button{
     font-family: "FiraSans-Black";
     display: block;
-    box-shadow:  0px 6px 10px 0px rgba(50, 50, 50, 0.4);
     letter-spacing: 1.5px;
     border: 0;
     text-transform: uppercase;
     cursor: pointer;
     font-size: 20px;
+    padding-top: 6px;
+    outline: none;
 }
 
 .discounts{
@@ -296,6 +316,7 @@ button{
     background: -o-linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
     background: -ms-linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
     background: linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
+    overflow: hidden;
 }
 
 .discounts-item{
@@ -318,6 +339,15 @@ button{
     font-size: 20px !important;
 }
 
+.red{
+    color: #cf1d35;
+}
+
+.black{
+    color: #000000;
+    margin-left: -20px;
+}
+
 .discounts-info span{
     font-family: "GothamPro-Bold";
     font-size: 20px !important;
@@ -329,16 +359,23 @@ button{
     text-align: center;
     font-weight: bold;
     height: 49px;
-    width: 105%;
+    width: 118%;
+    padding-top: 10px;
+}
+
+.gift{
+    background-image: url(../img/gift.png);
+    background-repeat: no-repeat;
+    background-position: 100% 150%;
 }
 
 section.discounts > div.content-wrapper.flex > div.work-skew.working > div,
 section.discounts > div.content-wrapper.flex > div:nth-child(3){
-    margin-left: 45px;
+    margin-left: 50px;
 }
 
 section.discounts > div.content-wrapper.flex > div:nth-child(3){
-    width: 800px;
+    width: 881px;
 }
 
 .golden{
@@ -357,8 +394,10 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
     border-radius: 4px;
     margin: 0 auto;
     color: #0d6700;
-    box-shadow: inset 0px -2px 7px 0px rgba(254, 224, 88, 0.4);
     margin-top: 40px;
+    box-shadow: inset 0px -2px 3px 0px rgba(255, 223, 127, 1),
+                inset 0px 3px 3px 0px rgba(255, 248, 220, 1),
+                0px 6px 10px 0px rgba(50, 50, 50, 0.4);
 }
 
 .prices{
@@ -423,6 +462,7 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
     font-size: 24px;
     color: #3b3b3b;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .order{
@@ -432,11 +472,16 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
     background-color: #d50000;
     color: #ffffff;
     font-size: 24px;
-    margin-top: 50px;
+    margin: 0 auto;
+    box-shadow: inset 0px -2px 3px 0px rgba(160, 0, 0, 1),
+                inset 0px 3px 3px 0px rgba(229, 99, 99, 1),
+                0px 6px 10px 0px rgba(50, 50, 50, 0.4);
 }
 
 .feedback{
     background-image: url(../img/s90RVvloRRAx.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .feedback-text{
@@ -501,7 +546,7 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
 div.content-wrapper.owl-carousel.slide-one.owl-theme.owl-loaded.owl-drag > div.owl-nav.disabled{
     display: block;
     position: relative;
-    bottom: 270px;
+    bottom: 300px;
 }
 
 div.owl-nav.disabled > button.owl-prev{
@@ -656,6 +701,9 @@ label{
     color: #ffffff;
     font-size: 20px;
     margin-bottom: 70px;
+    box-shadow: inset 0px -2px 3px 0px rgba(25, 143, 1, 1),
+                inset 0px 3px 3px 0px rgba(40, 216, 129, 1),
+                0px 6px 10px 0px rgba(50, 50, 50, 0.4);
 }
 
 input{
@@ -795,6 +843,9 @@ footer > div > div:nth-child(3) > p{
     background-color: #fee058;
     color: #0c5c01;
     border-radius: 4px;
+    box-shadow: inset 0px -3px 3px 0px rgba(251, 180, 45, 1),
+                inset 0px 3px 3px 0px rgba(254, 239, 168, 1),
+                0px 6px 10px 0px rgba(50, 50, 50, 0.4);
 }
 
 .aside-menu{
@@ -855,8 +906,17 @@ footer > div > div:nth-child(3) > p{
     .discounts{
         background: linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(254, 217, 89) 0%);
     }
+    .top-text,
+    .bottom-text{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
     .discounts-item p{
         font-size: 50px;
+    }
+    .top-bottom{
+        margin-top: 15px;
     }
     .bg-work-1,
     .bg-work-2{
@@ -874,12 +934,13 @@ footer > div > div:nth-child(3) > p{
     .advantage-item p{
         font-size: 14px;
     }
-    body{
-        padding-left: 1%;
-        padding-right: 1%;
-    }
     .cleaning{
         background-size: cover;
+    }
+    header,
+    footer{
+        padding-left: 1%;
+        padding-right: 1%;
     }
     form{
         padding: 3%;
@@ -914,6 +975,19 @@ footer > div > div:nth-child(3) > p{
     }
     .aside-menu ul li{
         font-size: 13px;
+    }
+    .owl-nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .feedback-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .feedback{
+        padding-bottom: 20px;
     }
 }
 
