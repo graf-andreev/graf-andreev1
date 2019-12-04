@@ -461,6 +461,8 @@ p span{
     cursor: pointer;
     padding-top: 20px;
     margin-top: 45px;
+    position: relative;
+    top: 5px;
 }
 
 .gallery-container{
@@ -538,16 +540,39 @@ p span{
 
 .green-button{
     background-color: #ebfddf;
+}
+
+.green-button.active{
+    position: relative;
+    bottom: -5px;
+    height: 75px;
     border: 5px solid #52bb6a;
     border-bottom: none;
 }
 
 .yellow-button{
     background-color: #ffffba;
+
+}
+
+.yellow-button.active{
+    position: relative;
+    bottom: -5px;
+    height: 75px;
+    border: 5px solid #ffde00;
+    border-bottom: none;
 }
 
 .red-button{
     background-color: #ffcac5;
+}
+
+.red-button.active{
+    position: relative;
+    bottom: -5px;
+    height: 75px;
+    border: 5px solid #ef5647;
+    border-bottom: none;
 }
 
 .tabs_content{
@@ -565,11 +590,41 @@ p span{
 
 .seasons-content{
     display: none;
-    padding-top: 50px; 
 }
 
 .seasons-content.active {
-    display: flex;
+    display: block;
+}
+
+.seasons-content .flex{
+    padding-top: 50px;
+}
+
+.seasons-button.purple.active{
+    border: 5px solid #9470de;
+    border-bottom: none;
+}
+
+.seasons-button.pink.active{
+    border: 5px solid #f26fa0;
+    border-bottom: none;
+}
+
+.seasons-button.blue.active{
+    border: 5px solid #2db5bd;
+    border-bottom: none;
+}
+
+.seasons-content .purple{
+    border-top: 5px solid #9470de;
+}
+
+.seasons-content .pink{
+    border-top: 5px solid #f26fa0;
+}
+
+.seasons-content .blue{
+    border-top: 5px solid #2db5bd;
 }
 
 .seasons-button{
@@ -585,6 +640,10 @@ p span{
 
 .seasons-block{
     position: relative;
+}
+
+.season-img-wrapper{
+    margin-left: -5px;
 }
 
 .square{
