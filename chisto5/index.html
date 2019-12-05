@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#19b203" />
     <meta name="msapplication-navbutton-color" content="#19b203" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#19b203" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Чисто 5</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,7 +17,7 @@
     </head>
     <header>
         <div class="content-wrapper flex wrap jc-between align-cent">
-            <img src="img/logo.png" width="200" height="92" alt="">
+            <img class="logo-top" src="img/logo.png" width="200" height="92" alt="">
             <div class="phone flex align-cent">
                 <img src="img/phone.png" width="37" height="37" alt="">
                 <a href="tel:89130000000"> 8 913 <span>000 00 01</span></a>
@@ -25,7 +26,6 @@
                 <img src="img/phone-w.png" width="37" height="37" alt="">
                 <a href="tel:83830000000"> 8 383 <span>000 00 00<span></a>
             </div>
-       
         <button class="header-button popup-on">Задать вопрос</button>
         <div id="menu-open" class="flex burger jc-center align-cent">
             <div class="burger-item"></div>
@@ -37,8 +37,8 @@
     <div class="top-text">
         <p>Скидка 50% <br>всем новым клиентам<br><span>на первую уборку*</span></p>
     </div>
-    <div class="bottom-text flex">
-        <p>Порадуйте себя и своих близких! Звоните</p><button class="top-bottom popup-on">Заказать оборатный звонок</button>
+    <div class="bottom-text flex jc-between wrap">
+        <p>Порадуйте себя и своих близких! Звоните</p><button class="top-bottom popup-on">Заказать обратный звонок</button>
     </div>
 </div>
     </header>
@@ -50,14 +50,14 @@
         </div>
         <div class="content-wrapper flex">
             <div class="work-item">
-                <img src="/img/icon1.png" alt="">
+                <img src="img/icon1.png" alt="">
                 <p>Прозрачное ценообразование!</p>
                 <span>Почасовая оплата от 550 рублей (минимальное время - 2 часа). Вы платите за реальную работу в четко
                     обозначенное время.Никаких скрытых платежей и плавающих цен за разовые процедуры. </span>
             </div>
             <div class="work-skew bg-work-1">
                 <div class="work-item work-normal">
-                    <img src="/img/icon2.png" alt="">
+                    <img src="img/icon2.png" alt="">
                     <p>Выбираете вы!</p>
                     <span>Вы сами решаете, что нужно чистить: окна, мебель и санузел или только бытовую технику. Навести
                         порядок в одной комнате или заплатить за комплексную уборку всего дома. Только вы определяете,
@@ -66,14 +66,14 @@
             </div>
             <div class="work-skew bg-work-2">
                 <div class="work-item work-normal ">
-                    <img src="/img/icon3.png" alt="">
+                    <img src="img/icon3.png" alt="">
                     <p>Двойной контроль</p>
                     <span>Вы контролируете свои расходы, мы - работу бригады. Гарантия качества уборки и отсутствия
                         переплат – контроль и учет! </span>
                 </div>
             </div>
             <div class="work-item">
-                <img src="/img/icon4.png" alt="">
+                <img src="img/icon4.png" alt="">
                 <p>Поможем всем</p>
                 <span>Работаем с самыми разными объектами. Офисы, квартиры, коттеджи. Повседневная и генеральная уборка.
                     Клининговые услуги в помещениях после ремонта. </span>
@@ -177,7 +177,7 @@
         <div class="section-header bg-color-orange">
             <h3 class="content-wrapper">Скидки</h3>
         </div>
-        <div class="content-wrapper flex">
+        <div class="content-wrapper flex gift">
             <div class="discounts-item">
                 <p>5% <span>скидка</span></p>
                 <div class="status silver">Серебрянный статус</div>
@@ -194,8 +194,8 @@
                 </div>
             </div>
             <div class="discounts-item">
-                <p>20% <span>скидка</span></p>
-                <p class="discounts-info">На день рождения</p>
+                <p class="red">20% <span class="black">скидка</span></p>
+                <div class="status">На День Рождения!***</div>
             </div>
         </div>
     </section>
@@ -211,11 +211,25 @@
                 <p class="feedback-parameters"><span>Обьект:</span> Загородный дом 206 м2</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
             </div>
-            <img class="cleaning-girl" src="../img/cleaning-girl.png" alt="">
+            <img class="cleaning-girl" src="img/cleaning-girl.png" alt="">
             <div class="video-feedback flex">
                 <p>Видеоотзыв</p>
                 <iframe width="495" height="295" src="https://www.youtube.com/embed/_gMKG6oqJ90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <img src="../img/hand.png" alt="">
+                <img src="img/hand.png" alt="">
+            </div>
+        </div>
+        <div class="flex jc-between feedback-wrapper">
+            <div class="feedback-text">
+                <p class="feedback-name">Иван Иванов</p>
+                <p class="feedback-parameters"><span>Тариф уборки:</span> Генеральня уборка</p>
+                <p class="feedback-parameters"><span>Обьект:</span> Загородный дом 206 м2</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+            </div>
+            <img class="cleaning-girl" src="img/cleaning-girl.png" alt="">
+            <div class="video-feedback flex">
+                <p>Видеоотзыв</p>
+                <iframe width="495" height="295" src="https://www.youtube.com/embed/_gMKG6oqJ90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="img/hand.png" alt="">
             </div>
         </div>
         </div>
@@ -263,6 +277,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 <div class="overlay"></div>
+<div class="flex jc-center">
 <div class="popup">
     <div class="close">X</div>
    <p><span>ОСТАВЬТЕ&nbsp;</span>СВОЮ ЗАЯВКУ</p>
@@ -271,9 +286,10 @@
    <input class="input-popup" type="phone" placeholder="Ваш телефон">
    <button class="popup-button">Заказать</button>
 </div>
+</div>
 <div class="content-wrapper">
 <div class="aside-menu">
-        <div id="menu-close" class="flex burger jc-center align-cent">
+        <div id="menu-close" class="flex burger burger-active jc-center align-cent">
                 <div class="burger-item"></div>
                 <div class="burger-item"></div>
                 <div class="burger-item"></div>
