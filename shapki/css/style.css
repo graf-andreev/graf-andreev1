@@ -543,8 +543,6 @@ p span{
 }
 
 .green-button.active{
-    position: relative;
-    bottom: -5px;
     height: 75px;
     border: 5px solid #52bb6a;
     border-bottom: none;
@@ -552,12 +550,9 @@ p span{
 
 .yellow-button{
     background-color: #ffffba;
-
 }
 
 .yellow-button.active{
-    position: relative;
-    bottom: -5px;
     height: 75px;
     border: 5px solid #ffde00;
     border-bottom: none;
@@ -568,8 +563,6 @@ p span{
 }
 
 .red-button.active{
-    position: relative;
-    bottom: -5px;
     height: 75px;
     border: 5px solid #ef5647;
     border-bottom: none;
@@ -603,16 +596,19 @@ p span{
 .seasons-button.purple.active{
     border: 5px solid #9470de;
     border-bottom: none;
+    height: 85px;
 }
 
 .seasons-button.pink.active{
     border: 5px solid #f26fa0;
     border-bottom: none;
+    height: 85px;
 }
 
 .seasons-button.blue.active{
     border: 5px solid #2db5bd;
     border-bottom: none;
+    height: 85px;
 }
 
 .seasons-content .purple{
@@ -636,6 +632,8 @@ p span{
     text-align: center;
     padding-top: 25px;
     cursor: pointer;
+    position: relative;
+    top: 5px;
 }
 
 .seasons-block{
