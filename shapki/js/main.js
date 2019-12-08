@@ -4,25 +4,66 @@ $(document).ready(function(){
         margin:10,
         nav:true,
         items: 1,
-        dots: true
-    });
+        dots: true,
+        responsive:{
+          0:{
+            nav: false,
+            dots: false
+          },
+          950:{
+            nav: true,
+            dots: true
+          }
+        }
+        });
     $(".slide-two").owlCarousel({
         loop:true,
         margin:10,
         nav:true,
         items: 4,
-        dots: false
+        dots: false,
+        responsive:{
+          0:{
+            items: 1
+          },
+          950:{
+            items: 4
+          }
+        }
     });
+    $(".slide-three").owlCarousel({
+      loop:false,
+      nav:true,
+      dots: false,
+      items: 8,
+      mouseDrag: false,
+      responsive:{
+        0:{
+          items: 8,
+          nav: true,
+          mouseDrag: true,
+          loop: true
+        },
+        950:{
+          items: 27,
+          nav: false,
+          mouseDrag: false
+        }
+      }
+      });
   });
 
 
+  $(window).resize(function() {
+    if(document.documentElement.clientWidth > 850) {
 $(function () {
-
   $('div.tabs_caption').on('click', 'div:not(.active)', function () {
     $(this)
       .addClass('active').siblings().removeClass('active')
       .closest('section.tabs').find('div.tabs_content').removeClass('active').eq($(this).index()).addClass('active');
   });
+});
+    }
 });
 
 $(function () {

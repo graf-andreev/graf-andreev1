@@ -258,6 +258,8 @@ a{
     font-weight: 700;
     border: 1px solid #c4c4c4;
     color: #757575;
+    margin-right: 20px;
+    padding: 12px 25px;
 }
 
 .phone{
@@ -330,21 +332,6 @@ a{
     border-radius: 5px;
     height: 26px;
     padding-left: 5px;
-}
-
-.sale{
-    background-color: #752a7e;
-    margin-top: 65px;
-    margin-bottom: 65px;
-    box-shadow: 0px 2px 150px 10px rgba(50, 50, 50, 0.14);
-    color: #ffffff;
-    font-size: 74px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.sale span{
-    font-weight: 700;
 }
 
 input,
@@ -721,6 +708,17 @@ p span{
     padding-right: 75px;
     background-color: #752a7e;
     margin-left: auto;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    box-shadow: 0px 2px 150px 10px rgba(50, 50, 50, 0.14);
+    color: #ffffff;
+    font-size: 74px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sale span{
+    font-weight: 700;
 }
 
 .main-content{
@@ -785,5 +783,57 @@ footer{
     letter-spacing: 1px;
 }
 
-
+@media screen and (max-width: 950px){
+    .aside-wrapper{
+        display: none;
+    }
+    .factory ul{
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+    .proizv-button{
+        width: 100%;
+    }
+    .slide-three{
+        margin-top: 20px;
+    }
+    .main-content{
+        margin-left: 0px;
+    }
+    .aside{
+        display: none;
+    }
+    .main-content,
+    .seasons,
+    .about-company{
+        width: 100%;
+    }
+    .sale{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 35px;
+        text-align: center;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding: 30px 0;
+    }
+    .sale span{
+        font-size: 110px;
+    }
+    .about-item{
+        border: 1px solid #939393;
+        border-radius: 5px;
+    }
+    .about-company div{
+        justify-content: center;
+    }
+    .about-company{
+        padding: 0 15px;
+    }
+    .about-item img{
+        box-shadow: none;
+    }
+}
 
