@@ -355,6 +355,14 @@ button{
     margin-right: 20px;
 }
 
+.toggle-text{
+    cursor: pointer;
+}
+
+.rotate-text{
+    transform: rotate(180deg);
+}
+
 .about-header{
     font-size: 18px;
     font-weight: 700;
@@ -538,7 +546,13 @@ p span{
 }
 
 .gallery-item{
-    margin-top: 40px;
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+}
+
+.slide-two{
+    padding-top: 40px;
 }
 
 .gallery-item p{
@@ -597,6 +611,10 @@ p span{
 
 .tabs_content.active {
     display: block;
+}
+
+.active{
+    display: block !important;
 }
 
 .seasons{
@@ -749,7 +767,6 @@ footer{
     margin-top: 75px;
 }
 
-
 .footer-content > div:nth-child(1){
     border-right: 2px solid #b8b8b8;
     width: 100%;
@@ -781,6 +798,12 @@ footer{
     font-size: 18px;
     color: #898989;
     letter-spacing: 1px;
+}
+
+@media screen and (min-width: 950px){
+    .toggle-text{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 950px){
@@ -827,13 +850,21 @@ footer{
         border-radius: 5px;
     }
     .about-company div{
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
     }
     .about-company{
         padding: 0 15px;
     }
     .about-item img{
         box-shadow: none;
+        border-radius: 5px;
+    }
+    .gallery-item{
+        max-width: 235px;
+    }
+    .about-text{
+        display: none;
     }
 }
 
