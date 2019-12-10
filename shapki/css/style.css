@@ -327,7 +327,7 @@ a{
 
 .search{
     width: 100%;
-    min-width: 305px;
+    max-width: 305px;
     border: 1px solid #84408a;
     border-radius: 5px;
     height: 26px;
@@ -484,20 +484,23 @@ p span{
     margin-bottom: 70px;
 }
 
+.gallery-container div div.owl-nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 .container-green{
-    background: rgb(235,253,223);
     background: linear-gradient(180deg, rgba(235,253,223,1) 0%, rgba(255,255,255,1) 51%);
     border: 5px solid #52bb6a;
 }
 
 .container-yellow{
-    background: rgb(255,255,190);
     background: linear-gradient(180deg, rgba(255,255,190,1) 0%, rgba(255,255,255,1) 51%);
     border: 5px solid #ffde00;
 }
 
 .container-red{
-    background: rgb(255,204,199);
     background: linear-gradient(180deg, rgba(255,204,199,1) 0%, rgba(255,255,255,1) 51%);
     border: 5px solid #ef5647;
 }
@@ -549,6 +552,10 @@ p span{
     width: 100%;
     max-width: 290px;
     margin: 0 auto;
+}
+
+.slide-one{
+    margin-bottom: 20px;
 }
 
 .slide-two{
@@ -605,16 +612,26 @@ p span{
     border-bottom: none;
 }
 
+.mobile-button{
+    height: 45px;
+    cursor: pointer;
+    padding-left: 45px;
+    margin: 0 14px;
+}
+
+.mobile-button p{
+    font-size: 25px;
+    font-weight: 900;
+    color: #626262;
+    padding-top: 7px;
+}
+
 .tabs_content{
     display: none; 
 }
 
 .tabs_content.active {
     display: block;
-}
-
-.active{
-    display: block !important;
 }
 
 .seasons{
@@ -804,9 +821,30 @@ footer{
     .toggle-text{
         display: none;
     }
+    .mobile-button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .main-text{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 950px){
+    .header-middle {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: 0 14px;
+    }
+    .logo{
+        margin-right: 5px;
+        margin-bottom: 0px;
+        width: 99px;
+        height: 110px;
+    }
     .aside-wrapper{
         display: none;
     }
@@ -865,6 +903,25 @@ footer{
     }
     .about-text{
         display: none;
+    }
+    .gallery .flex{
+        display: none;
+    }
+    .tabs_content{
+        display: block;
+    }
+    .container-green,
+    .container-yellow,
+    .container-red{
+        background: #ffffff;
+        border: none;
+    }
+    .gallery-item{
+        border: 1px solid #b8b8b8;
+    }
+    .show-all{
+        width: 100%;
+        max-width: 290px;
     }
 }
 
