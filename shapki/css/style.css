@@ -799,12 +799,9 @@ footer{
 
 .footer-content > div:nth-child(2){
     margin-left: 50px; 
+    margin-right: 60px;
     padding-right: 57px; 
     border-right: 2px solid #b8b8b8;
-}
-
-.footer-content > div:nth-child(2){
-    margin-right: 60px;
 }
 
 .footer-item p{
@@ -813,8 +810,8 @@ footer{
     margin-bottom: 25px;
 }
 
-.footer-item a,
-.footer-item span{
+.footer-item div a,
+.footer-item div span{
     font-family: "pt-sans-bold";
     display: block;
     line-height: 30px;
@@ -953,6 +950,7 @@ footer{
     }
     .seasons-content div{
         justify-content: center;
+        margin-bottom: 1%;
     }
     .seasons-content .pink,
     .seasons-content .purple,
@@ -962,6 +960,40 @@ footer{
     }
     .seasons-content{
         display: block;
+    }
+    .slide-three .owl-nav{
+        position: absolute;
+        top: -80%;
+        left: 50%;
+    }
+    footer .footer-content .footer-item{
+        border: 2px solid #b8b8b8;
+        border-radius: 35px;
+        padding: 15px;
+        width: 100%;
+        min-width: 290px;
+        max-width: 700px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    .footer-item div{
+        display: none;
+    }
+    .footer-item p{
+        margin-bottom: 0px;
+    }
+    .footer-content{
+        justify-content: center;
+    }
+    .footer-content > div:nth-child(2){
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    footer{
+        padding: 0 14px 50px;
+    }
+    footer .borders{
+        margin-bottom: 50px;
     }
 }
 
