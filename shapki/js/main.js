@@ -27,7 +27,8 @@ $(document).ready(function(){
             items: 1
           },
           950:{
-            items: 4
+            items: 4,
+            nav:true
           }
         }
     });
