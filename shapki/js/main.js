@@ -81,3 +81,8 @@ $(document).ready(function () {
   });
 
 });
+
+
+$('.menubutton').click(function (){
+  $('.menu').toggleClass('active');
+});

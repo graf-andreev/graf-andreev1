@@ -232,7 +232,6 @@ a{
 
 .menu{
     width: 55%;
-    font-size: 10px;
 }
 
 .info-container .flex{
@@ -303,6 +302,7 @@ a{
 
 .start{
     width: 100%;
+    position: relative;
 }
 
 .first-menu-item{
@@ -882,6 +882,15 @@ footer{
     .slide-three .owl-stage-outer{
     overflow: visible;
     }
+    .menubutton{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .menu{
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 1050px){
@@ -1066,8 +1075,33 @@ footer{
         left: 63%;
     }
     .menu{
-        display: block;
         font-size: 13px;
+        position: absolute;
+        left: 14px;
+        top: 43px;
+        z-index: 100;
+        background-color: #843f8a;
+        padding: 10px;
+        display: none;
+    }
+    .menu li a{
+        color: #ffffff;
+        font-size: 15px;
+    }
+    .borders{
+        background-color: #843f8a;
+        border-top: none;
+        border-bottom: none;
+    }
+    .first{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .borders .flex{
+        height: auto;
+    }
+    .active{
+        display: block;
     }
 }
 
