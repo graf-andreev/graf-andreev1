@@ -1260,4 +1260,8 @@ footer{
     .slider-item{
         height: 20vh;
     }
+    .season-item{
+        width: auto;
+        min-width: 85px;
+    }
 }
