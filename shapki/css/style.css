@@ -183,6 +183,18 @@ a{
     cursor: pointer;
 }
 
+.menubutton_header{
+    position: absolute;
+    background-color: transparent;
+    top: 10px;
+    right: 0px;
+}
+
+.menubutton_header div{
+    background-color: #757575;
+    width: 30px;
+}
+
 .menuitem{
     display: block;
     width: 35px;
@@ -247,8 +259,25 @@ a{
 
 .info-container .flex img{
     height: 25px;
-    max-width: 80px;
+    max-width: 50px;
     margin-left: auto;
+}
+
+.str1 {
+    stroke: #ffffff;
+    stroke-width: 1000;
+    stroke-miterlimit: 22.9256
+}
+
+.str0 {
+    stroke: #ffffff;
+    stroke-width: 1000;
+    stroke-linecap: round;
+    stroke-miterlimit: 22.9256
+}
+
+.fil0 {
+    fill: none
 }
 
 .proizv-button{
@@ -882,7 +911,8 @@ footer{
     .slide-three .owl-stage-outer{
     overflow: visible;
     }
-    .menubutton{
+    .menubutton,
+    .menubutton_header{
         display: none;
     }
 }
@@ -895,7 +925,7 @@ footer{
 
 @media screen and (max-width: 1050px){
     .main-text{
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
@@ -1102,6 +1132,26 @@ footer{
     }
     .active{
         display: block;
+    }
+    .header-top{
+        flex-wrap: wrap;
+        padding: 0 14px;
+        justify-content: center;
+        position: relative;
+    }
+    .header-top ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .enter{
+        margin-left: 0px;
+    }
+    .aside{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #ffffff;
+        z-index: 5;
     }
 }
 

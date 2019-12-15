@@ -83,6 +83,10 @@ $(document).ready(function () {
 });
 
 
-$('.menubutton').click(function (){
+$('.menubutton_main').click(function (){
   $('.menu').toggleClass('active');
+});
+
+$('.menubutton_header').click(function (){
+  $('.aside').toggleClass('active');
 });
