@@ -937,7 +937,8 @@ footer{
     overflow: visible;
     }
     .menubutton,
-    .menubutton_header{
+    .menubutton_header,
+    .footer-arrow{
         display: none;
     }
 }
@@ -1107,12 +1108,22 @@ footer{
         max-width: 700px;
         cursor: pointer;
         margin-top: 15px;
+        position: relative;
     }
     .footer-item div{
         display: none;
     }
     .footer-item p{
         margin-bottom: 0px;
+    }
+    .footer-arrow{
+        position: absolute;
+        right: 14px;
+        top: 20px;
+        transform: rotate(270deg);
+    }
+    .footer-header.active ~ .footer-arrow{
+        transform: rotate(90deg);
     }
     .footer-content{
         justify-content: center;
