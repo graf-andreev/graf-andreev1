@@ -88,7 +88,7 @@ a{
 }
 
 .header-top ul li{
-    margin-right: 20px;
+    margin-right: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -168,7 +168,7 @@ header{
     height: 400px;
     max-height: 430px;
     background-image: url(../img/main-banner.png);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
