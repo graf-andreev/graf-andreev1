@@ -48,7 +48,7 @@ $(document).ready(function(){
         950:{
           items: 27,
           nav: false,
-          mouseDrag: false
+          mouseDrag: true
         }
       }
       });
@@ -82,12 +82,10 @@ $('.menubutton_header').click(function (){
 });
 
 const items = document.querySelectorAll(".mobile-button");
-const arrow = document.querySelectorAll(".show-all");
 
 function toggleAccordion(){
   this.classList.toggle('active');
   this.nextElementSibling.classList.toggle('active');
-  arrow.classList.toggle('active');
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
@@ -101,8 +99,11 @@ function toggleAccordion(){
 
 items_text.forEach(item => item.addEventListener('click', toggleAccordion));
 
-$('.mobile-button').click(function (){
-  if($(".content-wrapper").hasClass('active')){
-    $(".show-all").toggleClass('active');
-  }
-});
+const footer = document.querySelectorAll(".footer-header");
+
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+
+footer.forEach(item => item.addEventListener('click', toggleAccordion));

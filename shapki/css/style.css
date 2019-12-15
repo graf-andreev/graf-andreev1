@@ -93,6 +93,11 @@ a{
     padding-bottom: 15px;
 }
 
+header{
+    width: 100%;
+    overflow: hidden;
+}
+
 .aside-wrapper{
     width: 345px;
     overflow: hidden;
@@ -219,6 +224,8 @@ a{
 .factory{
     margin-top: 17px;
     margin-bottom: 17px;
+    position: relative;
+    z-index: 9;
 }
 
 .factory ul li{
@@ -302,6 +309,7 @@ a{
     margin-top: 10px;
     margin-bottom: 10px;
     letter-spacing: 0.5px;
+    display: block;
 }
 
 .enter{
@@ -452,6 +460,7 @@ p span{
 .cart p:nth-child(2){
     padding-right: 30px;
     border-right: 1px solid #4e4e4e;
+    white-space: nowrap;
 }
 
 .cart img:nth-child(3){
@@ -517,12 +526,18 @@ p span{
     margin-bottom: 70px;
 }
 
-.slide-two .owl-nav,
 .slide-one .owl-nav{
     position: absolute;
     top: 40%;
     margin-top: 0px;
     width: 100%;
+}
+
+.slide-two .owl-nav{
+    position: absolute;
+    top: 40%;
+    margin-top: 0px;
+    left: 50%;
 }
 
 .slide-one .owl-nav .owl-prev{
@@ -639,6 +654,7 @@ p span{
 
 .slide-two{
     padding-top: 40px;
+    position: relative;
 }
 
 .gallery-item p{
@@ -890,7 +906,7 @@ footer{
     border-right: 2px solid #b8b8b8;
 }
 
-.footer-item p{
+.footer-header{
     font-family: "pt-sans-bold";
     font-size: 25px;
     margin-bottom: 25px;
@@ -906,7 +922,9 @@ footer{
     letter-spacing: 1px;
 }
 
-
+.content-footer.active div{
+    display: block;
+}
 
 @media screen and (min-width: 950px){
     .toggle-text{
@@ -924,15 +942,18 @@ footer{
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     .menu{
         font-size: 10px;
     }
 }
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1100px){
     .main-text{
         font-size: 13px;
+    }
+    .aside{
+        display: none;
     }
 }
 
@@ -1028,7 +1049,6 @@ footer{
         width: 100%;
         max-width: 290px;
         margin-bottom: 30px;
-        display: none;
     }
     .square{
         font-size: 10px;
@@ -1108,11 +1128,11 @@ footer{
         margin-bottom: 50px;
     }
     .slide-two .owl-nav .owl-prev{
-        right: 63%;
+        right: 80px;
     } 
     
     .slide-two .owl-nav .owl-next{
-        left: 63%;
+        left: 80px;
     }
     .menu{
         font-size: 13px;
@@ -1155,13 +1175,17 @@ footer{
     }
     .enter{
         margin-left: 0px;
+        margin-right: 35px;
+    }
+    .header-top ul li{
+        margin-right: 25px;
     }
     .aside{
         position: fixed;
         top: 0;
         right: 0;
         background: #ffffff;
-        z-index: 5;
+        z-index: 9;
         overflow: auto;
         height: 100%;
     }
@@ -1196,6 +1220,8 @@ footer{
     }
     .about-header{
         cursor: pointer;
+        padding-right: 30px;
+        font-size: 16px;
     }
     .mobile-button.active .arrow{
         transform: rotate(180deg);
