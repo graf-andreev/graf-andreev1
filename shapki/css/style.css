@@ -696,6 +696,7 @@ p span{
     cursor: pointer;
     padding-left: 45px;
     margin: 0 14px;
+    position: relative;
 }
 
 .mobile-button p{
@@ -703,6 +704,12 @@ p span{
     font-weight: 900;
     color: #626262;
     padding-top: 7px;
+}
+
+.arrow{
+    position: absolute;
+    right: 14px;
+    top: 15px;;
 }
 
 .tabs_content{
@@ -984,9 +991,10 @@ footer{
         border: 1px solid #939393;
         border-radius: 5px;
     }
-    .about-company div{
-        justify-content: space-around;
+    .about-item{
+        justify-content: flex-start;
         align-items: center;
+        position: relative;
     }
     .about-company{
         padding: 0 15px;
@@ -1019,6 +1027,8 @@ footer{
     .show-all{
         width: 100%;
         max-width: 290px;
+        margin-bottom: 30px;
+        display: none;
     }
     .square{
         font-size: 10px;
@@ -1043,7 +1053,7 @@ footer{
         display: none;
     }
     .seasons-content div{
-        justify-content: center;
+        margin: 0 auto;
         margin-bottom: 1%;
     }
     .seasons-content .pink,
@@ -1118,7 +1128,7 @@ footer{
         color: #ffffff;
         font-size: 15px;
     }
-    .borders{
+    .main-nav{
         background-color: #843f8a;
         border-top: none;
         border-bottom: none;
@@ -1127,11 +1137,11 @@ footer{
         width: 100%;
         justify-content: flex-start;
     }
-    .borders .flex{
+    .main-nav .flex{
         height: auto;
     }
     .active{
-        display: block;
+        display: block !important;
     }
     .header-top{
         flex-wrap: wrap;
@@ -1152,6 +1162,53 @@ footer{
         right: 0;
         background: #ffffff;
         z-index: 5;
+        overflow: auto;
+        height: 100%;
+    }
+    .header-about{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .mobile-button.purple{
+        background-color: #f5ecfe;
+    }
+    .mobile-button.pink{
+        background-color: #f9d5e1;
+    }
+    .mobile-button.blue{
+        background-color: #d3f6f8;
+    }
+    .mobile-button + div{
+        display: none;
+    }
+    .gallery-container .mobile-button + div{
+        display: none;
+    }
+    .red-button.active,
+    .yellow-button.active,
+    .green-button.active{
+        height: 45px;
+        border: none;
+    }
+    .gallery-container{
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .about-header{
+        cursor: pointer;
+    }
+    .mobile-button.active .arrow{
+        transform: rotate(180deg);
+    }
+    .toggle-text{
+        position: absolute;
+        top: 30px;
+        right: -11px;
+    }
+    .about-text.active + .toggle-text{
+        transform: rotate(180deg);
+    }
+    .slide-one{
+        margin-bottom: 20px;
     }
 }
-
