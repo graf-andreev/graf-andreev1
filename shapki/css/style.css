@@ -1296,4 +1296,7 @@ footer{
         font-size: 20px;
         letter-spacing: 0px;
     }
+    .content-footer.active + .footer-arrow{
+        transform: rotate(360deg);
+    }
 }
