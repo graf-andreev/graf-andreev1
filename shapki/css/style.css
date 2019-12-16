@@ -839,6 +839,8 @@ p span{
 .season-img-wrapper{
     margin-left: -5px;
     position: relative;
+    overflow: hidden;
+    height: 186px;
 }
 
 .square{
