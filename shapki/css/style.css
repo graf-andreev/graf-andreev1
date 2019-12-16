@@ -1220,8 +1220,8 @@ footer{
         justify-content: center;
     }
     .enter{
-        margin-left: 0px;
-        margin-right: 35px;
+        margin: 0px 35px 10px 0px;
+
     }
     .header-top ul li{
         margin-right: 37px;
