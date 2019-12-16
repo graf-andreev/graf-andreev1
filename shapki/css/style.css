@@ -230,6 +230,28 @@ header{
     cursor: pointer;
 }
 
+.slider-wrapper{
+    position: relative;
+}
+
+.slider-button{
+    font-family: "pt-sans";
+    position: absolute;
+    width: 100%;
+    max-width: 350px;
+    height: 70px;
+    border: 2px solid #ffffff;
+    border-radius: 60px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 35px;
+    z-index: 20;
+    top: 43%;
+    left: 23%;
+    outline: none;
+    letter-spacing: -2px;
+}
+
 .factory{
     margin-top: 17px;
     margin-bottom: 17px;
@@ -546,7 +568,7 @@ p span{
     position: absolute;
     top: 40%;
     margin-top: 0px;
-    left: 50%;
+    width: 100%;
 }
 
 .slide-one .owl-nav .owl-prev{
@@ -1154,6 +1176,10 @@ footer{
     .slide-two .owl-nav .owl-next{
         left: 80px;
     }
+    .slide-two .owl-nav{
+        left: 50%;
+        width: auto;
+    }
     .menu{
         font-size: 13px;
         position: absolute;
@@ -1198,7 +1224,7 @@ footer{
         margin-right: 35px;
     }
     .header-top ul li{
-        margin-right: 25px;
+        margin-right: 30px;
     }
     .aside{
         position: fixed;
@@ -1263,5 +1289,11 @@ footer{
     .season-item{
         width: auto;
         min-width: 85px;
+    }
+    .slider-button{
+        max-width: 200px;
+        height: 40px;
+        font-size: 20px;
+        letter-spacing: 0px;
     }
 }
