@@ -73,13 +73,24 @@ $(function () {
   });
 });
 
-// $('.mobile-factory').click(function (){
-//   $('.aside').toggleClass('active');
-// });
+$('.mobile-factory').click(function (){
+  $('.aside').addClass('active');
+});
 
-// $('.menubutton_header').click(function (){
-//   $('.menu').toggleClass('active');
-// });
+$('.aside-viev').click(function (){
+  $('.aside').removeClass('active');
+});
+
+$('.menubutton').click(function (){
+  $('.menu').toggleClass('active');
+  $('.overlay').toggleClass('active');
+  $('body').toggleClass('overflow')
+});
+
+$('.overlay').click(function (){
+  $('.aside').removeClass('active');
+  $('.menu').removeClass('active');
+});
 
 const items = document.querySelectorAll(".mobile-button");
 

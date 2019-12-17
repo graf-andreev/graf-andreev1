@@ -53,6 +53,10 @@ body{
     position: relative;
 }
 
+.overflow{
+    overflow: hidden;
+}
+
 .content-wrapper{
     width: 100%;
     max-width: 1200px;
@@ -1010,6 +1014,18 @@ footer{
     display: block;
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: 0.7;
+}
+
 @media screen and (min-width: 950px){
     .slide-three .owl-stage-outer{
     overflow: visible;
@@ -1049,7 +1065,6 @@ footer{
             -ms-flex-pack: center;
                 justify-content: center;
         margin-bottom: 20px;
-        padding: 0 14px;
     }
     .mobile-main{
         background-color: #843f8a;
@@ -1076,6 +1091,7 @@ footer{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         padding: 0 30px;
+        margin-top: -70px;
     }
     .proizv-button{
         width: 100%;
@@ -1214,7 +1230,8 @@ footer{
         margin-top: 15px;
         position: relative;
     }
-    .footer-item div{
+    .footer-item div,
+    .header-about{
         display: none;
     }
     .footer-item p{
@@ -1298,11 +1315,13 @@ footer{
         top: 24px;
         transform: rotate(-90deg);
     }
-    .main-nav{
-        background-color: #843f8a;
+    .main-nav,
+    .first,
+    .first-menu-item,
+    .first .menubutton{
+        background-color: transparent;
         border-top: none;
         border-bottom: none;
-        padding: 0 -20px;
     }
     .menubutton_main{
         position: absolute;
@@ -1316,7 +1335,14 @@ footer{
                 justify-content: flex-start;
     }
     .main-nav .flex{
-        height: auto;
+        height: 100vh;
+    }
+    .main-text{
+        border-top: 1px solid #939393;
+        border-bottom: 1px solid #939393;
+        max-width: 100%;
+        margin: 0px;
+        padding: 15px 0 20px 0;
     }
     .active{
         display: block !important;
@@ -1351,6 +1377,30 @@ footer{
         z-index: 51;
         overflow: auto;
         height: 100%;
+        max-width: 80%;
+    }
+    .aside-content a,
+    .aside-content p{
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+    .aside-content p{
+        font-weight: 900;
+    }
+    .aside-content:nth-child(even){
+        background-color: #f7f7f7;
+    }
+    .aside-viev{
+        list-style: none;
+        padding-left: 20px;
+    }
+    .aside-viev::before{
+        content: '←';
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 900;
+        position: absolute;
+        top: 15px;
     }
     .menu{
         width: 80%;
@@ -1425,5 +1475,9 @@ footer{
         -webkit-transform: rotate(360deg);
             -ms-transform: rotate(360deg);
                 transform: rotate(360deg);
+    }
+    .header-top .flex,
+    .logo{
+        display: none;;
     }
 }
