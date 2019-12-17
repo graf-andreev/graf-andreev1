@@ -73,13 +73,13 @@ $(function () {
   });
 });
 
-$('.menubutton_main').click(function (){
-  $('.menu').toggleClass('active');
-});
+// $('.mobile-factory').click(function (){
+//   $('.aside').toggleClass('active');
+// });
 
-$('.menubutton_header').click(function (){
-  $('.aside').toggleClass('active');
-});
+// $('.menubutton_header').click(function (){
+//   $('.menu').toggleClass('active');
+// });
 
 const items = document.querySelectorAll(".mobile-button");
 

@@ -206,12 +206,12 @@ header{
 
 .menubutton_header div{
     background-color: #757575;
-    width: 30px;
+    width: 38px;
 }
 
 .menuitem{
     display: block;
-    width: 35px;
+    width: 38px;
     height: 4px;
     background-color: #ffffff;
     margin: 0 auto;
@@ -348,7 +348,6 @@ header{
 
 .start{
     width: 100%;
-    position: relative;
 }
 
 .first-menu-item{
@@ -936,18 +935,17 @@ footer{
 }
 
 @media screen and (min-width: 950px){
-    .toggle-text{
-        display: none;
-    }
-    .mobile-button{
-        display: none;
-    }
     .slide-three .owl-stage-outer{
     overflow: visible;
     }
     .menubutton,
     .menubutton_header,
-    .footer-arrow{
+    .footer-arrow,
+    .mobile-button,
+    .toggle-text{
+        display: none;
+    }
+    .mobile-viev{
         display: none;
     }
 }
@@ -973,6 +971,18 @@ footer{
         justify-content: center;
         margin-bottom: 20px;
         padding: 0 14px;
+    }
+    .mobile-main{
+        background-color: #843f8a;
+        height: 65px;
+        position: static;
+    }
+    .mobile-main a{
+        font-size: 20px;
+        font-weight: 900;
+        color: #ffffff;
+        padding-top: 18px;
+        display: block;
     }
     .logo{
         margin-right: 5px;
@@ -1155,23 +1165,54 @@ footer{
         left: 80px;
     }
     .menu{
-        font-size: 13px;
+        font-size: 18px;
         position: absolute;
-        left: 14px;
-        top: 43px;
-        z-index: 100;
-        background-color: #843f8a;
-        padding: 10px;
+        right: 0;
+        top: 0px;
+        z-index: 50;
+        background-color: #ffffff;
         display: none;
     }
-    .menu li a{
-        color: #ffffff;
-        font-size: 15px;
+    .menu li{
+        margin-bottom: 25px;
+        padding: 0 20px;
+        position: relative;
+    }
+    .menu li:not(.mobile-main)::before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 14px;
+        background-size: contain;
+        background-image: url(../img/keyboard-right-arrow-button1.png);
+        right: 20px;
+        transform: rotate(-90deg);
+    }
+    .mobile-factory{
+        background-color: #b890bb;
+        cursor: pointer;
+    }
+    .mobile-factory::before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 14px;
+        background-size: contain;
+        background-image: url(../img/keyboard-right-arrow-button1.png);
+        right: 20px;
+        top: 24px;
+        transform: rotate(-90deg);
     }
     .main-nav{
         background-color: #843f8a;
         border-top: none;
         border-bottom: none;
+        padding: 0 -20px;
+    }
+    .menubutton_main{
+        position: absolute;
+        right: 0px;
+        top: 10px;
     }
     .first{
         width: 100%;
@@ -1205,9 +1246,12 @@ footer{
         top: 0;
         right: 0;
         background: #ffffff;
-        z-index: 9;
+        z-index: 51;
         overflow: auto;
         height: 100%;
+    }
+    .menu{
+        width: 80%;
     }
     .header-about{
         padding-top: 40px;
