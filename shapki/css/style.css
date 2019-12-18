@@ -1085,6 +1085,7 @@ footer{
         background-color: #843f8a;
         height: 65px;
         position: static;
+        padding-left: 20px;
     }
     .mobile-main a{
         font-size: 20px;
@@ -1299,9 +1300,9 @@ footer{
         background-color: #ffffff;
         display: none;
     }
-    .menu li{
-        margin-bottom: 25px;
-        padding: 0 20px;
+    .menu li:not(.mobile-main){
+        height: 40px;
+        padding: 10px 20px 0 20px;
         position: relative;
     }
     .menu li:not(.mobile-main)::before{
@@ -1317,6 +1318,7 @@ footer{
     .mobile-factory{
         background-color: #b890bb;
         cursor: pointer;
+        position: relative;
     }
     .mobile-factory::before{
         content: '';
@@ -1398,12 +1400,14 @@ footer{
     .aside-content a,
     .aside-content p{
         padding-left: 20px;
-        margin-bottom: 25px;
+        height: 40px;
+        padding-top: 7px;
     }
     .aside-content p{
         font-weight: 900;
+        line-height: 25px;
     }
-    .aside-content:nth-child(even){
+    .bg-menu{
         background-color: #f7f7f7;
     }
     .aside-viev{
