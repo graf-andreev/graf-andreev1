@@ -51,6 +51,7 @@ html{
 
 body{
     position: relative;
+    overflow-x: hidden;
 }
 
 .overflow{
@@ -87,7 +88,9 @@ body{
 }
 
 .jc-start{
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .align-cent{
@@ -113,7 +116,6 @@ a{
 
 header{
     width: 100%;
-    overflow: hidden;
 }
 
 .aside-wrapper{
@@ -307,7 +309,6 @@ header{
     left: -15px;
     padding: 0px 5px 15px 5px;
     -webkit-box-shadow: -1px -8px 8px -2px rgba(0,0,0,0.26);
-    -moz-box-shadow: -1px -8px 8px -2px rgba(0,0,0,0.26);
     box-shadow: -1px -8px 8px -2px rgba(0,0,0,0.26);
 }
 
@@ -671,22 +672,22 @@ p span{
 }
 
 .container-green{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(235,253,223,1)), color-stop(51%, rgba(255,255,255,1)));
     background: -o-linear-gradient(top, rgba(235,253,223,1) 0%, rgba(255,255,255,1) 51%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(235,253,223,1)), color-stop(51%, rgba(255,255,255,1)));
     background: linear-gradient(180deg, rgba(235,253,223,1) 0%, rgba(255,255,255,1) 51%);
     border: 5px solid #52bb6a;
 }
 
 .container-yellow{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,190,1)), color-stop(51%, rgba(255,255,255,1)));
     background: -o-linear-gradient(top, rgba(255,255,190,1) 0%, rgba(255,255,255,1) 51%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,190,1)), color-stop(51%, rgba(255,255,255,1)));
     background: linear-gradient(180deg, rgba(255,255,190,1) 0%, rgba(255,255,255,1) 51%);
     border: 5px solid #ffde00;
 }
 
 .container-red{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,204,199,1)), color-stop(51%, rgba(255,255,255,1)));
     background: -o-linear-gradient(top, rgba(255,204,199,1) 0%, rgba(255,255,255,1) 51%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,204,199,1)), color-stop(51%, rgba(255,255,255,1)));
     background: linear-gradient(180deg, rgba(255,204,199,1) 0%, rgba(255,255,255,1) 51%);
     border: 5px solid #ef5647;
 }
@@ -1105,7 +1106,6 @@ footer{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         padding: 0 30px;
-        margin-top: -70px;
     }
     .proizv-button{
         width: 100%;
@@ -1313,7 +1313,9 @@ footer{
         background-size: contain;
         background-image: url(../img/keyboard-right-arrow-button1.png);
         right: 20px;
-        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
     }
     .mobile-factory{
         background-color: #b890bb;
@@ -1329,7 +1331,9 @@ footer{
         background-image: url(../img/keyboard-right-arrow-button1.png);
         right: 20px;
         top: 24px;
-        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
     }
     .main-nav,
     .first,
@@ -1371,7 +1375,9 @@ footer{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         padding: 0 14px;
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         position: relative;
     }
     .header-top ul{
@@ -1508,7 +1514,9 @@ footer{
         height: 55px;
         padding-right: 14px;
         width: 80%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .phone-wrapper{
         width: 80%;
@@ -1517,5 +1525,22 @@ footer{
         width: 100%;
         margin: 0 auto;
         display: block;
+    }
+    .mobile-change{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .factory{
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+    .slider-wrapper{
+        margin: -70px;
     }
 }
