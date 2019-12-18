@@ -1309,7 +1309,7 @@ footer{
         content: '';
         position: absolute;
         width: 20px;
-        height: 14px;
+        height: 13px;
         background-size: contain;
         background-image: url(../img/keyboard-right-arrow-button1.png);
         right: 20px;
@@ -1324,7 +1324,7 @@ footer{
         content: '';
         position: absolute;
         width: 20px;
-        height: 14px;
+        height: 13px;
         background-size: contain;
         background-image: url(../img/keyboard-right-arrow-button1.png);
         right: 20px;
