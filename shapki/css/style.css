@@ -86,6 +86,10 @@ body{
             justify-content: space-between;
 }
 
+.jc-start{
+    justify-content: flex-start;
+}
+
 .align-cent{
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1026,6 +1030,14 @@ footer{
     opacity: 0.7;
 }
 
+.top-mobile{
+    width: 37px;
+    height: 37px;
+    border: 1px solid #939393;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
 @media screen and (min-width: 950px){
     .slide-three .owl-stage-outer{
     overflow: visible;
@@ -1066,6 +1078,9 @@ footer{
                 justify-content: center;
         margin-bottom: 20px;
     }
+    .header-middle div{
+        margin-bottom: 15px;
+    }
     .mobile-main{
         background-color: #843f8a;
         height: 65px;
@@ -1078,11 +1093,9 @@ footer{
         padding-top: 18px;
         display: block;
     }
-    .logo{
-        margin-right: 5px;
-        margin-bottom: 0px;
-        width: 99px;
-        height: 110px;
+    .logo-mobile{
+        width: 37px;
+        height: auto;
     }
     .aside-wrapper{
         display: none;
@@ -1104,6 +1117,7 @@ footer{
     }
     .aside{
         display: none;
+        border: none;
     }
     .main-content,
     .seasons,
@@ -1334,7 +1348,7 @@ footer{
             -ms-flex-pack: start;
                 justify-content: flex-start;
     }
-    .main-nav .flex{
+    .menu.active{
         height: 100vh;
     }
     .main-text{
@@ -1344,6 +1358,10 @@ footer{
         margin: 0px;
         padding: 15px 0 20px 0;
     }
+    .main-text + div{
+        display: none;
+    }
+
     .active{
         display: block !important;
     }
@@ -1351,9 +1369,7 @@ footer{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         padding: 0 14px;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: flex-start;
         position: relative;
     }
     .header-top ul{
@@ -1476,8 +1492,26 @@ footer{
             -ms-transform: rotate(360deg);
                 transform: rotate(360deg);
     }
-    .header-top .flex,
-    .logo{
+    .logo,
+    .header-top ul,
+    .enter{
         display: none;;
+    }
+    .about-item{
+        margin-bottom: 15px;
+    }
+    .header-top .align-cent{
+        height: 55px;
+        padding-right: 14px;
+        width: 80%;
+        justify-content: space-between;
+    }
+    .phone-wrapper{
+        width: 80%;
+    }
+    .button-header{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
     }
 }
