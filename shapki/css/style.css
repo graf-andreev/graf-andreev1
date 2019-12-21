@@ -831,6 +831,11 @@ p span{
     margin-left: auto;
 }
 
+.seasons_catalog{
+    width: 100%;
+    margin: 0 auto;
+}
+
 .seasons-content{
     display: none;
 }
@@ -886,6 +891,10 @@ p span{
     top: 5px;
 }
 
+.seasons-button_catalog{
+    width: 390px;
+}
+
 .seasons-block{
     position: relative;
 }
@@ -918,9 +927,15 @@ p span{
 }
 
 .season-item{
-    width: 440px;
+    width: 100%;
+    max-width: 440px;
     height: 170px;
     margin-bottom: 25px;
+}
+
+.season-item_catalog{
+    max-width: 537px;
+    margin-bottom: 6%;
 }
 
 .purple{
@@ -1486,10 +1501,6 @@ footer{
     .slider-item{
         height: 20vh;
     }
-    .season-item{
-        width: auto;
-        min-width: 85px;
-    }
     .slider-button{
         max-width: 200px;
         width: 25%;
@@ -1542,5 +1553,8 @@ footer{
     }
     .slider-wrapper{
         margin-top: -70px;
+    }
+    .owl-carousel .owl-stage-outer{
+        overflow: visible;
     }
 }
