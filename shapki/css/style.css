@@ -431,20 +431,25 @@ header{
     z-index: 50;
 }
 
-.dropdown-active a{
-    padding-bottom: 15px;
+.dropdown-active{
+    padding: 15px;
+
 }
 
 .dropdown-active:hover .dropdown-menu{
     display: block;
 }
 
+.dropdown-active:hover{
+    box-shadow: 4px 0px 3px 1px rgba(0,0,0,0.19);
+}
+
 .dropdown-menu{
     position: absolute;
     background-color: #ffffff;
     width: 357px;
-    top: 33px;
-    left: 0px;
+    top: 49px;
+    left: -35px;
     display: none;
 }
 
