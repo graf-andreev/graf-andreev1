@@ -212,7 +212,6 @@ header{
     background-color: #843f8a;
     height: 50px;
     padding-right: 15px;
-    margin-right: 18px;
 }
 
 .border{
@@ -441,15 +440,15 @@ header{
 }
 
 .dropdown-active:hover{
-    box-shadow: 4px 0px 3px 1px rgba(0,0,0,0.19);
+    box-shadow: 4px 2px 3px -1px rgba(0,0,0,0.19);
 }
 
 .dropdown-menu{
     position: absolute;
     background-color: #ffffff;
     width: 357px;
-    top: 49px;
-    left: -35px;
+    top: 47px;
+    left: 0px;
     display: none;
 }
 
@@ -1588,5 +1587,8 @@ footer{
     }
     .slide-three .owl-stage-outer{
         overflow: visible;
+    }
+    .main-wrapper{
+        overflow-x: hidden;
     }
 }
