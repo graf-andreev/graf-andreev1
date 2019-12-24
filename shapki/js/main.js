@@ -36,7 +36,7 @@ $(document).ready(function(){
       loop:false,
       nav:true,
       dots: false,
-      items: 8,
+      items: 7,
       mouseDrag: false,
       responsive:{
         0:{
@@ -118,3 +118,12 @@ function toggleAccordion(){
 }
 
 footer.forEach(item => item.addEventListener('click', toggleAccordion));
+
+const menu = document.querySelectorAll(".dropdown-active");
+
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+
+menu.forEach(item => item.addEventListener('click', toggleAccordion));
