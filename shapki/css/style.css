@@ -1278,6 +1278,11 @@ footer{
         top: -90%;
         width: 100%;
     }
+    .slide-three .owl-nav button.owl-next{
+        width: 40px;
+        z-index: 40;
+        background-color: #ffffff;
+    }
     .slide-three .owl-nav .owl-prev{
         right: 101%;
         position: absolute;
@@ -1606,16 +1611,16 @@ footer{
     .dropdown-menu a li:before{
         display: none;
     }
-    .dropdown-active.active:before{
+    .seasons-block .dropdown-active.active:before{
         content: '';
-    position: absolute;
-    width: 20px;
-    height: 13px;
-    background-size: contain;
-    background-image: url(../img/keyboard-right-arrow-button1.png);
-    right: 20px;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+        position: absolute;
+        width: 20px;
+        height: 13px;
+        background-size: contain;
+        background-image: url(../img/keyboard-right-arrow-button1.png);
+        right: 20px;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 }
