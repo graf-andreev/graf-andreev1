@@ -119,11 +119,12 @@ function toggleAccordion(){
 
 footer.forEach(item => item.addEventListener('click', toggleAccordion));
 
-const menu = document.querySelectorAll(".dropdown-active");
+const menuMobile = document.querySelectorAll(".dropdown-active");
 
 function toggleAccordion(){
   this.classList.toggle('active');
   this.nextElementSibling.classList.toggle('active');
 }
 
-menu.forEach(item => item.addEventListener('click', toggleAccordion));
+menuMobile.forEach(item => item.addEventListener('click', toggleAccordion));
+

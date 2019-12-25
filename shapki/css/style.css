@@ -54,10 +54,6 @@ body{
     overflow-x: hidden;
 }
 
-.overflow{
-    overflow: hidden;
-}
-
 .content-wrapper{
     width: 100%;
     max-width: 1200px;
@@ -432,11 +428,6 @@ header{
 
 .dropdown-active{
     padding: 15px;
-
-}
-
-.dropdown-active:hover{
-    box-shadow: 4px 2px 3px -1px rgba(0,0,0,0.19);
 }
 
 .dropdown-menu{
@@ -1101,6 +1092,13 @@ footer{
     .mobile-viev{
         display: none;
     }
+    .dropdown-menu.active{
+        display: block;
+        z-index: 101;
+    }
+    .dropdown-active:hover{
+        box-shadow: 4px 2px 3px -1px rgba(0,0,0,0.19);
+    }
     .dropdown-active:hover .dropdown-menu{
         display: block;
     }
@@ -1600,11 +1598,24 @@ footer{
         overflow-x: hidden;
     }
     .dropdown-menu{
-        left: 50%;
+        left: 0%;
         top: 40px;
         width: 100%;
+        z-index: 100;
     }
-    .dropdown-header a::before{
+    .dropdown-menu a li:before{
         display: none;
+    }
+    .dropdown-active.active:before{
+        content: '';
+    position: absolute;
+    width: 20px;
+    height: 13px;
+    background-size: contain;
+    background-image: url(../img/keyboard-right-arrow-button1.png);
+    right: 20px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
     }
 }
