@@ -1705,4 +1705,8 @@ footer{
     .season-img-wrapper.season-img-wrapper_catalog{
         display: none;
     }
+    .dropdown-menu a li,
+    .dropdown-header{
+        font-size: 14px;
+    }
 }
