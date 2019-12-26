@@ -33,6 +33,20 @@
     font-style: normal;
    }
 
+@font-face {
+    font-family: "gotham-bold";
+    src: url("../fonts/gotham-bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+   }
+
+@font-face {
+    font-family: "gotham-light";
+    src: url("../fonts/gotham-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+   }
+
 *{
     margin: 0;
     padding: 0;
@@ -83,6 +97,10 @@ body{
             justify-content: space-between;
 }
 
+.jc-evenly{
+    justify-content: space-evenly;
+}
+
 .jc-start{
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -112,6 +130,45 @@ a{
 
 header{
     width: 100%;
+}
+
+.main-ad{
+    font-weight: 800;
+    background-color: #ff3e67;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 19px;
+    padding: 10px 0;
+}
+
+.breadcrumbs{
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.breadcrumb_first{
+    font-family: "gotham-light";
+    color: #757575;
+}
+
+.breadcrumb_active{
+    font-family: "gotham-bold";
+    color: #757575;
+}
+
+.breadcrumb_arrow{
+    font-family: "gotham-bold";
+    margin: 0 20px;
+}
+
+.main-title{
+    font-family: "gotham-bold";
+    color: #626262;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .aside-wrapper{
@@ -933,6 +990,16 @@ p span{
     position: relative;
     overflow: hidden;
     height: 186px;
+    width: 101%;
+}
+
+.season-img-wrapper_catalog{
+    margin-left: -10px;
+    height: 245px;
+}
+
+.season-img-wrapper img{
+    width: inherit;
 }
 
 .square{
@@ -984,12 +1051,18 @@ p span{
     margin-left: auto;
     margin-top: 65px;
     margin-bottom: 65px;
-    -webkit-box-shadow: 0px 2px 150px 10px rgba(50, 50, 50, 0.14);
-            box-shadow: 0px 2px 150px 10px rgba(50, 50, 50, 0.14);
+    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.27);
     color: #ffffff;
     font-size: 74px;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.sale_catalog{
+    padding-right: 0px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 .sale span{
@@ -1263,6 +1336,8 @@ footer{
     .seasons-content div{
         margin: 0 auto;
         margin-bottom: 1%;
+        display: flex;
+        justify-content: center;
     }
     .seasons-content .pink,
     .seasons-content .purple,
@@ -1622,5 +1697,8 @@ footer{
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
+    }
+    .season-img-wrapper.season-img-wrapper_catalog{
+        display: none;
     }
 }
