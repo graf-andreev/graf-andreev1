@@ -84,7 +84,7 @@ $('.aside-viev').click(function (){
 $('.menubutton').click(function (){
   $('.menu').toggleClass('active');
   $('.overlay').toggleClass('active');
-  $('body').toggleClass('overflow')
+  $('body').toggleClass('overflow');
 });
 
 $('.overlay').click(function (){

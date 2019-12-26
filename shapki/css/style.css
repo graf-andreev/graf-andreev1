@@ -68,6 +68,10 @@ body{
     overflow-x: hidden;
 }
 
+.overflow{
+    overflow: hidden;
+}
+
 .content-wrapper{
     width: 100%;
     max-width: 1200px;
