@@ -40,7 +40,7 @@ $(document).ready(function(){
       mouseDrag: false,
       responsive:{
         0:{
-          items: 6,
+          items: 7,
           nav: true,
           mouseDrag: true,
           loop: true

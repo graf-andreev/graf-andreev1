@@ -102,7 +102,9 @@ body{
 }
 
 .jc-evenly{
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .jc-start{
@@ -1055,7 +1057,8 @@ p span{
     margin-left: auto;
     margin-top: 65px;
     margin-bottom: 65px;
-    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.27);
+            box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.27);
     color: #ffffff;
     font-size: 74px;
     letter-spacing: 2px;
@@ -1174,7 +1177,8 @@ footer{
         z-index: 101;
     }
     .dropdown-active:hover{
-        box-shadow: 4px 2px 3px -1px rgba(0,0,0,0.19);
+        -webkit-box-shadow: 4px 2px 3px -1px rgba(0,0,0,0.19);
+                box-shadow: 4px 2px 3px -1px rgba(0,0,0,0.19);
     }
     .dropdown-active:hover .dropdown-menu{
         display: block;
@@ -1227,9 +1231,6 @@ footer{
     .logo-mobile{
         width: 37px;
         height: auto;
-    }
-    .aside-wrapper{
-        display: none;
     }
     .factory ul{
         -ms-flex-wrap: wrap;
@@ -1340,8 +1341,12 @@ footer{
     .seasons-content div{
         margin: 0 auto;
         margin-bottom: 1%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .seasons-content .pink,
     .seasons-content .purple,
@@ -1358,9 +1363,10 @@ footer{
         width: 100%;
     }
     .slide-three .owl-nav button.owl-next{
-        width: 40px;
+        width: 47px;
         z-index: 40;
         background-color: #ffffff;
+        text-align: left;
     }
     .slide-three .owl-nav .owl-prev{
         right: 101%;
@@ -1380,10 +1386,6 @@ footer{
         cursor: pointer;
         margin-top: 15px;
         position: relative;
-    }
-    .footer-item div,
-    .header-about{
-        display: none;
     }
     .footer-item p{
         margin-bottom: 0px;
@@ -1500,10 +1502,6 @@ footer{
         margin: 0px;
         padding: 15px 0 20px 0;
     }
-    .main-text + div{
-        display: none;
-    }
-
     .active{
         display: block !important;
     }
@@ -1580,12 +1578,6 @@ footer{
     .mobile-button.blue{
         background-color: #d3f6f8;
     }
-    .mobile-button + div{
-        display: none;
-    }
-    .gallery-container .mobile-button + div{
-        display: none;
-    }
     .red-button.active,
     .yellow-button.active,
     .green-button.active{
@@ -1636,8 +1628,16 @@ footer{
     }
     .logo,
     .header-top ul,
-    .enter{
-        display: none;;
+    .enter,
+    .main-text + div,
+    .dropdown-menu a li:before,
+    .season-img-wrapper.season-img-wrapper_catalog,
+    .gallery-container .mobile-button + div,
+    .mobile-button + div,
+    .footer-item div,
+    .header-about,
+    .aside-wrapper{
+        display: none;
     }
     .about-item{
         margin-bottom: 15px;
@@ -1687,9 +1687,6 @@ footer{
         width: 100%;
         z-index: 100;
     }
-    .dropdown-menu a li:before{
-        display: none;
-    }
     .seasons-block .dropdown-active.active:before{
         content: '';
         position: absolute;
@@ -1701,9 +1698,6 @@ footer{
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
-    }
-    .season-img-wrapper.season-img-wrapper_catalog{
-        display: none;
     }
     .dropdown-menu a li,
     .dropdown-header{
