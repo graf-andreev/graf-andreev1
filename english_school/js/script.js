@@ -308,60 +308,6 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
-	$('.test-result').click(function() {
-		let points = 0;
-		let test1 = $('input[name="radio-group"]:checked').val();
-		let test2 = $('input[name="radio-group1"]:checked').val();
-		let test3 = $('input[name="radio-group2"]:checked').val();
-		let test4 = $('input[name="radio-group3"]:checked').val();
-		let test5 = $('input[name="radio-group4"]:checked').val();
-		let test6 = $('input[name="radio-group5"]:checked').val();
-		let test7 = $('input[name="radio-group6"]:checked').val();
-		let test8 = $('input[name="radio-group7"]:checked').val();
-		let test9 = $('input[name="radio-group8"]:checked').val();
-		let test10 = $('input[name="radio-group9"]:checked').val();
-		let test11 = $('input[name="radio-group10"]:checked').val();
-
-		if(test1 === '3'){
-			points += 10;
-		}
-		if(test2 === '3'){
-			points += 10;
-		}
-		if(test3 === '1'){
-			points += 15;
-		}
-		if(test4 === '3'){
-			points += 10;
-		}
-		if(test5 === '4' ){
-			points += 10;
-		}
-		if(test6 === '1'){
-			points += 5;
-		}
-		if(test7 === '1'){
-			points += 5;
-		}
-		if(test8 === '2'){
-			points += 15;
-		}
-		if(test9 === '3'){
-			points += 10;
-		}
-		if(test10 === '4'){
-			points += 15;
-		}
-		if(test11 === '1'){
-			points += 6;
-		}
-		$('#result-points').text(points);
-		$('input[name="points"]').val(points);
-	});
-});
-
-
 $( document ).ready(function() {
 	$("form #btn").click(function(){
 		let form = $(this).parents('form');
