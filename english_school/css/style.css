@@ -341,10 +341,6 @@ button{
     bottom: 66px;
 }
 
-.timer > div.wrapper-content > div > div:nth-child(4) > div{
-    margin-right: 0px;
-}
-
 .time span{
     font-family: "adineuePROKZ";
     font-size: 80px;
@@ -353,15 +349,8 @@ button{
 
 .under-time{
     font-family: "adineuePROKZ";
-    padding-left: 20%;
     font-size: 25px;
     line-height: 40px;
-}
-
-
-body > section.timer > div.wrapper-content > div > div:nth-child(3) > p,
-body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
-    padding-left: 8%;
 }
 
 .button-timer{
@@ -529,7 +518,7 @@ body > section.timer > div.wrapper-content > div > div:nth-child(4) > p{
             box-shadow: 3px 3px 8px 2px rgba(197, 132, 35, 61);
 }
 
-.video iframe{
+.video img{
     border-radius: 11px;
     width: 100%;
     max-width: 378px;
@@ -743,7 +732,7 @@ svg:hover .fil1{
 }
 
 .feedback-item{
-    width: 100%;
+    width: 95%;
     max-width: 850px;
     border: 1px solid #b8b8b8;
     border-radius: 4px;
@@ -789,6 +778,7 @@ svg:hover .fil1{
             box-shadow: 7px 7px 29px 0px rgba(0, 0, 0, .18);
     margin-bottom: 155px;
     height: 487px;
+    margin: 0 auto;
 }
 
 .choise-item img{
@@ -1049,11 +1039,6 @@ footer{
     padding: 18px 0 17px 45px;
 }
 
-.info{
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-}
-
 .info div{
     height: 213px;
     width: 50%;
@@ -1106,8 +1091,6 @@ footer{
 }
 
 .flex-form{
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-pack: center; 
     -ms-flex-pack: center; 
     justify-content: center;
@@ -1187,8 +1170,6 @@ footer{
         -ms-flex-align: center;
             align-items: center;
     margin-top: 50px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
 }
 
 [type="radio"]:checked,
@@ -1372,8 +1353,7 @@ footer{
 }
 
 @media screen and (max-width: 950px) {
-    .timer,
-    .timer-container{
+    .timer{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     }
@@ -1448,6 +1428,9 @@ footer{
     .under-time{
         padding-left: 0px;
     }
+    h3{
+        padding-left: 10px;
+    }
 }
 
 @media screen and (max-width: 708px) {
@@ -1516,7 +1499,6 @@ footer{
         margin-bottom: 40px;
         font-size: 35px;
     }
-
     .card-next{
         height: 550px;
     }
@@ -1549,25 +1531,7 @@ footer{
     .popup-test .popup-header button{
         right: 88%;
     }
-}
-
-.load-time{
-    margin: 15px 50px 0 50px;
-}
-
-.load{
-    border-top:5px solid #edc22e;
-    border-radius: 3px;
-}
-
-.owl-next{
-    display: none;
-}
-.owl-prev{
-    display: none;
-}
-
-.test-description{
-    margin: 0 auto;
-    margin-top: 105px;
+    .feedback-item img{
+        display: none;
+    }
 }
