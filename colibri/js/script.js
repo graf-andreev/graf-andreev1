@@ -180,7 +180,7 @@ $(document).ready(function(){
               },
               1000:{
                   items:4,
-                  nav:false
+                  nav:true
               }
           }
       });
@@ -306,20 +306,6 @@ $('.tabs-fura').on('click', 'div', function () {
 $('.main-logo').ready(function() {
     var logo = $('.main-logo');
     $(logo).addClass('animate')();
-});
-
-$('.main-logo').delay(7000).hide(400);
-
-$('.little-logo').ready(function() {
-    var litt_logo = $('.little-logo');
-    $(litt_logo).addClass('animate1')();
-});
-
-$(function(){
-    if ( $(window).width() > 1300 ) {
-        $('.overlay-start').show();
-        $('.overlay-start').delay(4000).fadeOut(1000);
-    }
 });
 
 $(document).ready(function(){   
