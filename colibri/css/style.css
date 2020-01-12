@@ -98,6 +98,7 @@ a[name]{
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0,0,0,.1);
     transition: .5s;
+    position: absolute;
 }
 
 .button-header:hover{
@@ -771,11 +772,6 @@ h3{
     transition: 0.5s;
 }
 
-.item:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
 .scheme{
     padding-left: 8.5%;
     padding-right: 8.5%;
@@ -1032,6 +1028,7 @@ footer{
     position: relative;
     padding-left: 8.5%;
     padding-right: 8.5%;
+    text-align: center;
 }
 
 footer img{
@@ -1264,7 +1261,7 @@ input.error:-moz-placeholder{
         width: 100%;
         padding-right: 0px;
     }
-    body > section.why.clip.clip-top > div > div > div.tabs-content.active{
+    .tabs-content.active{
         width: 100%;
     }
     .header-wrapper{
