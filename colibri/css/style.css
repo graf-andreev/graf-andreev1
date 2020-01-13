@@ -81,7 +81,11 @@ a[name]{
     position: absolute;
 }
 
-.button-header{
+.button-popup.popup.button-no-mobile{
+    position: absolute;
+}
+
+.button-popup{
     width:230px;
     height: 45px;
     margin-top: 14px;
@@ -98,10 +102,9 @@ a[name]{
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0,0,0,.1);
     transition: .5s;
-    position: absolute;
 }
 
-.button-header:hover{
+.button-popup:hover{
     background-position: right center;
 }
 
@@ -368,15 +371,15 @@ input[type='number'] {
     -moz-appearance: textfield;
 }
 
-.form-short{
-    width: 260px !important;
+input .form-short{
+    width: 260px;
 }
 
-.top-form.clip > div > input.tnved,
-.tnved2{
-    width: 167px !important;
-    height: 31px !important;
-    border-radius: 5px !important;
+input.tnved,
+input.tnved2{
+    width: 167px;
+    height: 31px;
+    border-radius: 5px;
 }
 
 .tnved,
@@ -654,29 +657,25 @@ h3{
     margin-top: -290px;
 }
 
+.slide-one .owl-nav button{
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 98px;
+    outline: none;
+    position: absolute;
+}
+
 .slide-one .owl-nav button.owl-prev{
     background-image: url(../img/next.png);
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 100px;
-    outline: none;
-    color: transparent;
     left: -55px;
-    position: absolute;
 }
 
 .slide-one .owl-nav button.owl-next{
     background-image: url(../img/next.png);
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 100px;
-    outline: none;
-    color: transparent;
-    position: absolute;
-    right: -15px;
+    right: -55px;
 }
 
 .questions{
@@ -692,26 +691,6 @@ h3{
     width: 350px;
     height: 60px;
     border-radius: 5px;
-}
-
-.questions input::-webkit-input-placeholder{
-    font-size: 24px;
-    letter-spacing: 3px;
-}
-
-.questions input::-moz-placeholder{
-    font-size: 24px;
-    letter-spacing: 3px;
-}
-
-.questions input:-ms-input-placeholder{
-    font-size: 24px;
-    letter-spacing: 3px;
-}
-
-.questions input::-ms-input-placeholder{
-    font-size: 24px;
-    letter-spacing: 3px;
 }
 
 .questions input::placeholder{
@@ -1054,7 +1033,8 @@ footer img{
     color: #ffffff;
 }
 
-.popup-callback, .popup_result{
+.popup-callback,
+.popup_result{
     display: none;
     position: fixed;
     top: 70px;
@@ -1074,7 +1054,7 @@ footer img{
     margin-left: -240px;
 }
 
-.not_me_remove .popup-form{
+input.popup-form{
     width: 100%;
     max-width: 500px;
     height: 60px;
@@ -1082,7 +1062,7 @@ footer img{
     border: 1px solid #b8b8b8;
 }
 
-.not_me_remove button{
+.popup-forms button{
     width: 100%;
     max-width: 320px;
     height: 65px;
@@ -1205,8 +1185,8 @@ input.error:-moz-placeholder{
 }
 
 @media screen and (max-width: 883px){
-    .form-short{
-        width: 350px !important;
+    input .form-short{
+        width: 350px;
     }
     .button-no-mobile{
         display: none;
@@ -1221,8 +1201,8 @@ input.error:-moz-placeholder{
         padding: 160px 0px 150px 0px;
     }
     input:not([type="checkbox"]),
-    .form-short{
-        width: 90% !important;
+    input .form-short{
+        width: 90%;
     }
     h3,
     h1{
