@@ -111,7 +111,7 @@ html{
             align-items: center;
 }
 
-ul{
+.menu{
     list-style: none;
 }
 
@@ -370,9 +370,9 @@ button{
     font-size: 30px;
 }
 
-.discounts-info{
-    font-family: "GothamPro-Light" !important;
-    font-size: 20px !important;
+.discounts-item .discounts-info{
+    font-family: "GothamPro-Light";
+    font-size: 20px;
 }
 
 .red{
@@ -384,9 +384,9 @@ button{
     margin-left: -20px;
 }
 
-.discounts-info span{
+.discounts-item .discounts-info span{
     font-family: "GothamPro-Bold";
-    font-size: 20px !important;
+    font-size: 20px;
 }
 
 .status{
@@ -481,12 +481,6 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
     background-color: #ffffff;
     opacity: 0.5;
     border-radius: 3px;
-}
-
-.normal-text{
-    -webkit-transform: skew(20deg);
-        -ms-transform: skew(20deg);
-            transform: skew(20deg);
 }
 
 .normal-text p{
@@ -590,7 +584,7 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
 .cleaning-girl{
     position: absolute;
     left: 140px;
-    width: auto !important;
+    width: auto;
 }
 
 .owl-nav{
@@ -599,33 +593,26 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
     bottom: 300px;
 }
 
-.owl-prev{
-    border: 20px solid transparent !important; 
-    border-right: 25px solid #fdee87 !important;
+.owl-nav button{
+    border: 20px solid transparent; 
+    border-right: 25px solid #fdee87;
     -webkit-box-shadow: none;
             box-shadow: none;
     outline: none;
     position: absolute;
+}
+
+.owl-prev{
     right: 96%;
 }
 
-.owl-next{
-    border: 20px solid transparent !important; 
-    border-left: 25px solid #fdee87 !important;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    outline: none;
-    position: absolute;
+.owl-nav button.owl-next{
     left: 96%;
+    transform: rotate(180deg);
 }
 
-.owl-prev:hover,
-.owl-next:hover{
-    background: transparent !important;
-}
-
-.owl-prev > span,
-.owl-next > span{
+.owl-prev span,
+.owl-next span{
     display: none;
 }
 
@@ -649,6 +636,7 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
 }
 
 /* checkbox aspect */
+
 [type="checkbox"]:not(:checked) + label:before,
 [type="checkbox"]:checked + label:before {
   content: '';
@@ -663,6 +651,7 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
 
 }
 /* checked mark aspect */
+
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
   content: ')';
@@ -680,6 +669,7 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
   height: 28px;
 }
 /* checked mark aspect changes */
+
 [type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
   -webkit-transform: scale(0);
@@ -883,26 +873,6 @@ footer > div > div:nth-child(3) > p{
     margin-bottom: 30px;
 }
 
-.input-popup::-webkit-input-placeholder{
-    font-family: "FiraSans";
-    color: #fcff00;
-}
-
-.input-popup::-moz-placeholder{
-    font-family: "FiraSans";
-    color: #fcff00;
-}
-
-.input-popup:-ms-input-placeholder{
-    font-family: "FiraSans";
-    color: #fcff00;
-}
-
-.input-popup::-ms-input-placeholder{
-    font-family: "FiraSans";
-    color: #fcff00;
-}
-
 .input-popup::placeholder{
     font-family: "FiraSans";
     color: #fcff00;
@@ -1071,8 +1041,8 @@ footer > div > div:nth-child(3) > p{
     .inputs{
         margin-right: 0px;
     }
-    .cleaning-girl{
-        display: none !important;
+    img.cleaning-girl{
+        display: none;
     }
     .aside-menu ul li{
         font-size: 11px;
