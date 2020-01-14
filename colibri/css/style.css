@@ -227,10 +227,6 @@ a[name]{
     border: none;
 }
 
-.pad-zero{
-    padding-top: 0px !important;
-}
-
 .main-nav li a{
     font-family: "adineuePRO-light";
     font-size: 15px;
