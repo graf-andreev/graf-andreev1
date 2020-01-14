@@ -701,7 +701,7 @@ svg:hover .fil1{
 .feedback-item img{
     border-radius: 50%;
     margin-right: 35px;
-    width: 161px !important;
+    width: 161px;
 }
 
 .feedback-name{
