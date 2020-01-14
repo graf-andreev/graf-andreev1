@@ -328,10 +328,7 @@ header{
 
 form p{
     margin-bottom: 40px;
-}
-
-form > p:nth-child(2) > label{
-    margin-right: 35px;
+    width: 50%;
 }
 
 button{
@@ -405,13 +402,13 @@ button{
     background-position: 100% 150%;
 }
 
-section.discounts > div.content-wrapper.flex > div.work-skew.working > div,
-section.discounts > div.content-wrapper.flex > div:nth-child(3){
+.discounts-item.work-normal{
     margin-left: 50px;
 }
 
-section.discounts > div.content-wrapper.flex > div:nth-child(3){
+.last-item{
     width: 881px;
+    margin-left: 50px;
 }
 
 .golden{
@@ -457,7 +454,7 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
     margin-right: 60px;
 }
 
-.prices > div.content-wrapper.flex{
+.prices .flex{
     margin-top: 60px;
 }
 
@@ -571,11 +568,11 @@ section.discounts > div.content-wrapper.flex > div:nth-child(3){
     font-size: 14px;
 }
 
-.feedback-text > p:nth-child(3){
+.feedback-tarif{
     margin-bottom: 30px;
 }
 
-.feedback-text > p:nth-child(4){
+.feedback-main{
     color: #232323;
     line-height: 23px;
     letter-spacing: -0.5px;
@@ -701,24 +698,24 @@ label{
 }
 
 .forms-info{
-    margin-top: 110px;
+    margin-top: 80px;
 }
 
-.forms-info p:nth-child(1){
+.forms-up{
     font-family: "GothamPro-Black";
     font-size: 24px;
     color: #0d6700;
     line-height: 36px;
 }
 
-.forms-info p:nth-child(2){
+.forms-middle{
     font-family: "GothamPro-Black";
     font-size: 90px;
     color: #0d6700;
     line-height: 39px;
 }
 
-.forms-info p:nth-child(2) > span{
+.sum-discount{
     color: #ffffff;
     font-size: 106px;
     display: block;
@@ -730,11 +727,11 @@ label{
     text-align: center;
 }    
 
-.forms-info > p.flex.align-cent > span > span{
+.sum-discount span{
     font-size: 39px;
 }
 
-.forms-info p:nth-child(3){
+.forms-down{
     font-family: "GothamPro";
     font-size: 20px;
     color: #ff2728;
@@ -860,7 +857,7 @@ footer > div > div:nth-child(3) > p{
     opacity:0.7;
 }
 
-.popup p:nth-child(3){
+.popup-info{
     font-family: "FiraSans";
     font-size: 18px;
     color: #ffffff;
@@ -1029,8 +1026,7 @@ footer > div > div:nth-child(3) > p{
     }
     .work-skew,
     .work-normal,
-    .scew-block,
-    .normal-text{
+    .scew-block{
         -webkit-transform: skew(0deg);
             -ms-transform: skew(0deg);
                 transform: skew(0deg);
@@ -1048,9 +1044,9 @@ footer > div > div:nth-child(3) > p{
         font-size: 11px;
         width: 80px;
     }
-    .owl-next,
-    .owl-prev{
-        display: none !important;
+    .owl-nav button.owl-next,
+    .owl-nav button.owl-prev{
+        display: none;
     }
 }
 
