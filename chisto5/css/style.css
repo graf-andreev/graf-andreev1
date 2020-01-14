@@ -934,10 +934,9 @@ footer > div > div:nth-child(3) > p{
     background-color: #fed536;
 }
 
-@media screen and (max-width: 1245px){
-    .content-wrapper.flex img{
-        width: 38%;
-        height: 100%;
+@media screen and (max-width: 1150px){
+    .order{
+        margin-bottom: 20px;
     }
 }
 
@@ -946,9 +945,6 @@ footer > div > div:nth-child(3) > p{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-    }
-    div.content-wrapper.flex > img{
-        width: 25%;
     }
 }
 
@@ -1064,8 +1060,8 @@ footer > div > div:nth-child(3) > p{
     .forms-middle span{
         margin-top: 20px;
     }
-    header > div.content-wrapper.flex.wrap.jc-between.align-cent > div:nth-child(3){
-        margin-left: auto;
+    .phone{
+        width: 100%;
     }
     .popup{
         padding-left: 1%;
