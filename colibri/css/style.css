@@ -98,9 +98,14 @@ a[name]{
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#9EEFE1), color-stop(51%, #4830F0), to(#9EEFE1));
+    background-image: -o-linear-gradient(left, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
     background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
     background-size: 200% auto;
-    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.1);
+            box-shadow: 0 0 20px rgba(0,0,0,.1);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -116,11 +121,17 @@ a[name]{
     width: 220px;
     font-size: 30px;
     outline: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .tabs-buttons .text-button:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -186,10 +197,6 @@ a[name]{
     
 }
 
-#menu:hover .main-nav{
-    display: block;
-}
-
 .active-menu{
     width: 269px;
     height: 810px;
@@ -204,15 +211,21 @@ a[name]{
     padding-left: 25px;
 }
 
-.dropdown-menu:hover .active-menu{
+.dropdown-menu:hover .active-menu,
+.dropdown-menu:hover .main-nav,
+.active-nav,
+.tabs-content.active,
+#menu:hover .main-nav,
+.active_block{
     display: block;
 }
 
-.dropdown-menu:hover .main-nav{
-    display: block;
-}
-
-.main-nav{
+.main-nav,
+.mobile-why,
+.mobile-content,
+.tnved,
+.tnved2,
+.tabs-content{
     display: none;
 }
 
@@ -223,10 +236,6 @@ a[name]{
     padding-top: 10px;
 }
 
-.main-nav li:last-child{
-    border: none;
-}
-
 .main-nav li a{
     font-family: "adineuePRO-light";
     font-size: 15px;
@@ -234,10 +243,6 @@ a[name]{
     text-decoration: none;
     letter-spacing: 1px;
     padding-top: 6px;
-    display: block;
-}
-
-.active-nav{
     display: block;
 }
 
@@ -342,7 +347,6 @@ input:not([type="checkbox"])::-webkit-input-placeholder{
 input:not([type="checkbox"])::-moz-placeholder{
     font-family: "adineuePRO-light";
     font-size: 16px;
-    color: red;
 }
 
 input:not([type="checkbox"]):-ms-input-placeholder{
@@ -360,15 +364,6 @@ input:not([type="checkbox"])::placeholder{
     font-size: 16px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-input[type='number'] {
-    -moz-appearance: textfield;
-}
-
 input .form-short{
     width: 260px;
 }
@@ -378,11 +373,6 @@ input.tnved2{
     width: 167px;
     height: 31px;
     border-radius: 5px;
-}
-
-.tnved,
-.tnved2{
-    display: none;
 }
 
 .cards{
@@ -538,13 +528,6 @@ input.tnved2{
     width: 6px;
 }
 
-.tabs-content {
-    display: none; 
-}
-  .tabs-content.active {
-    display: block; 
-}
-
 .text-button.active{
     font-family: "adineuePRO-bold";
 }
@@ -562,21 +545,35 @@ input.tnved2{
     max-width: 335px;
     height: 65px;
     font-size: 25px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .consult button:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .questions button:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .actions button:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -691,6 +688,26 @@ h3{
     border-radius: 5px;
 }
 
+.questions input::-webkit-input-placeholder{
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.questions input::-moz-placeholder{
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.questions input:-ms-input-placeholder{
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.questions input::-ms-input-placeholder{
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
 .questions input::placeholder{
     font-size: 24px;
     letter-spacing: 3px;
@@ -702,6 +719,8 @@ h3{
     max-width: 320px;
     height: 60px;
     margin-top: 30px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -746,6 +765,8 @@ h3{
     padding-right: 20px;
     padding-left: 10px;
     margin-bottom: 10px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -1117,15 +1138,6 @@ input.error:-moz-placeholder{
     margin-bottom: 25px;
 }
 
-.mobile-why,
-.mobile-content{
-    display: none;
-}
-
-.active_block{
-    display: block;
-}
-
 @media screen and (max-width: 1450px){
     .slide-one .owl-nav button.owl-next{
         right: -55px;
@@ -1143,7 +1155,9 @@ input.error:-moz-placeholder{
     }
     .mobile-why{
         display: block;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 100%;
     }
     .quote{
