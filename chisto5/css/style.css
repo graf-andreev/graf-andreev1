@@ -934,15 +934,15 @@ footer > div > div:nth-child(3) > p{
     background-color: #fed536;
 }
 
-@media screen and (max-width: 1243px){
-    div.content-wrapper.flex > img{
+@media screen and (max-width: 1245px){
+    .content-wrapper.flex img{
         width: 38%;
         height: 100%;
     }
 }
 
 @media screen and (max-width: 1065px){
-    section.forms > div{
+    section.forms div{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -953,10 +953,10 @@ footer > div > div:nth-child(3) > p{
 }
 
 @media screen and (max-width: 1150px) {
-    section.working > div.content-wrapper.flex,
-    footer > div,
-    div.forms-info > p.flex.align-cent,
-    section.discounts > div.content-wrapper.flex{
+    section.working .content-wrapper.flex,
+    footer div,
+    .forms-info p.flex.align-cent,
+    section.discounts .content-wrapper.flex{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         -webkit-box-pack: center;
@@ -991,7 +991,7 @@ footer > div > div:nth-child(3) > p{
         padding-left: 5%;
     }
     .advantage-wrapper,
-    section.prices > div.content-wrapper.flex{
+    section.prices .content-wrapper.flex{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -1011,14 +1011,15 @@ footer > div > div:nth-child(3) > p{
     form{
         padding: 3%;
     }
-    section.prices > div.content-wrapper.flex > img{
-        display: none;
-    }
     .scew-block{
         width: 100%;
     }
     .scew-block::before,
-    .scew-block::after{
+    .scew-block::after,
+    .prices .content-wrapper.flex img,
+    img.cleaning-girl,
+    .owl-nav button.owl-next,
+    .owl-nav button.owl-prev{
         display: none;
     }
     .normal-text p{
@@ -1031,22 +1032,15 @@ footer > div > div:nth-child(3) > p{
             -ms-transform: skew(0deg);
                 transform: skew(0deg);
     }
-    div.forms-info > p.flex.align-cent{
+    .forms-info p.flex.align-cent{
         font-size: 50px;
     }
     .inputs{
         margin-right: 0px;
     }
-    img.cleaning-girl{
-        display: none;
-    }
     .aside-menu ul li{
         font-size: 11px;
         width: 80px;
-    }
-    .owl-nav button.owl-next,
-    .owl-nav button.owl-prev{
-        display: none;
     }
 }
 
@@ -1061,10 +1055,13 @@ footer > div > div:nth-child(3) > p{
     .feedback{
         padding-bottom: 20px;
     }
+    form p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px){
-    .forms-info p:nth-child(2) > span{
+    .forms-middle span{
         margin-top: 20px;
     }
     header > div.content-wrapper.flex.wrap.jc-between.align-cent > div:nth-child(3){
