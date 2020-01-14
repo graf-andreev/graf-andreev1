@@ -331,6 +331,7 @@ input:not([type="checkbox"]){
     margin-bottom: 25px;
     padding-left: 25px;
     font-family: "adineuePRO-light";
+    outline: transparent;
 }
 
 input:not([type="checkbox"])::-webkit-input-placeholder{
@@ -341,6 +342,7 @@ input:not([type="checkbox"])::-webkit-input-placeholder{
 input:not([type="checkbox"])::-moz-placeholder{
     font-family: "adineuePRO-light";
     font-size: 16px;
+    color: red;
 }
 
 input:not([type="checkbox"]):-ms-input-placeholder{
@@ -926,14 +928,6 @@ h3{
     padding: 25px 50px 50px 25px;
     color: #5d5d5d;
     min-height: 585px;
-}
-
-.feedback-item img{
-    border-radius: 50%;
-    margin-right: 35px;
-    margin-bottom: 35px;
-    width: 85px;
-    height: 85px;
 }
 
 .feedback-name{

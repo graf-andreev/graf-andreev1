@@ -790,26 +790,6 @@ select{
     margin-bottom: 58px;
 }
 
-.name-input::-webkit-input-placeholder{
-    vertical-align: middle;
-}
-
-.name-input::-moz-placeholder{
-    vertical-align: middle;
-}
-
-.name-input:-ms-input-placeholder{
-    vertical-align: middle;
-}
-
-.name-input::-ms-input-placeholder{
-    vertical-align: middle;
-}
-
-.name-input::placeholder{
-    vertical-align: middle;
-}
-
 footer{
     height: 630px;
 }
