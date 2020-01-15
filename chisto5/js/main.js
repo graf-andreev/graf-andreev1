@@ -11,7 +11,7 @@ $('.close').click(function () {
 
 $('#menu-open').click(function() { 
   var menu = $('.aside-menu'); 
-  $(menu).css('left', '60%'); 
+  $(menu).css('left', '40%'); 
 
 $('#menu-close').click(function () {
   var menu = $('.aside-menu'); 

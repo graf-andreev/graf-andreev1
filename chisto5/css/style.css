@@ -130,7 +130,7 @@ a{
 }
 
 header{
-    background-image: url(../img/background.png);
+    background: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -494,6 +494,7 @@ button{
     color: #3b3b3b;
     margin-top: 20px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .order{
@@ -513,7 +514,7 @@ button{
 }
 
 .feedback{
-    background-image: url(../img/s90RVvloRRAx.png);
+    background: url(../img/s90RVvloRRAx.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -808,7 +809,7 @@ footer{
     line-height: 26px;
 }
 
-footer > div > div:nth-child(3) > p{
+.bottom-text{
     font-size: 14px;
 }
 
@@ -1074,6 +1075,12 @@ footer > div > div:nth-child(3) > p{
     }
     .discounts-item{
         margin-left: 50px;
+    }
+    header{
+        background: #fed536;
+    }
+    .feedback{
+        background: #b5ef6e;
     }
 }
 
