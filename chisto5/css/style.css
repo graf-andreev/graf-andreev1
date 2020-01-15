@@ -171,7 +171,8 @@ header{
 
 .burger-active{
     background-color: transparent;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     margin: 40px;
 }
 
@@ -346,8 +347,8 @@ button{
 .discounts{
     background: rgb(254, 217, 89);
     background: -o-linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(254, 217, 89)), color-stop(0%, rgb(255, 255, 255)));
     background: -o-linear-gradient(left, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(254, 217, 89)), color-stop(0%, rgb(255, 255, 255)));
     background: linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(255, 255, 255) 0%);
     overflow: hidden;
 }
@@ -374,11 +375,6 @@ button{
 
 .red{
     color: #cf1d35;
-}
-
-.black{
-    color: #000000;
-    margin-left: -20px;
 }
 
 .discounts-item .discounts-info span{
@@ -605,7 +601,9 @@ button{
 
 .owl-nav button.owl-next{
     left: 96%;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 .owl-prev span,
@@ -870,6 +868,26 @@ footer > div > div:nth-child(3) > p{
     margin-bottom: 30px;
 }
 
+.input-popup::-webkit-input-placeholder{
+    font-family: "FiraSans";
+    color: #fcff00;
+}
+
+.input-popup::-moz-placeholder{
+    font-family: "FiraSans";
+    color: #fcff00;
+}
+
+.input-popup:-ms-input-placeholder{
+    font-family: "FiraSans";
+    color: #fcff00;
+}
+
+.input-popup::-ms-input-placeholder{
+    font-family: "FiraSans";
+    color: #fcff00;
+}
+
 .input-popup::placeholder{
     font-family: "FiraSans";
     color: #fcff00;
@@ -960,8 +978,8 @@ footer > div > div:nth-child(3) > p{
                 justify-content: center;
     }
     .discounts{
-        background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(254, 217, 89)), color-stop(0%, rgb(254, 217, 89)));
         background: -o-linear-gradient(left, rgb(254, 217, 89) 50%, rgb(254, 217, 89) 0%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(254, 217, 89)), color-stop(0%, rgb(254, 217, 89)));
         background: linear-gradient(90deg, rgb(254, 217, 89) 50%, rgb(254, 217, 89) 0%);
     }
     .top-text,
@@ -1000,9 +1018,9 @@ footer > div > div:nth-child(3) > p{
         background-size: cover;
     }
     header,
-    footer{
-        padding-left: 1%;
-        padding-right: 1%;
+    footer,
+    .content-wrapper:not(h3 .content-wrapper){
+        padding: 0 10px;
     }
     form{
         padding: 3%;
@@ -1054,6 +1072,9 @@ footer > div > div:nth-child(3) > p{
     form p{
         width: 100%;
     }
+    .discounts-item{
+        margin-left: 50px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -1065,5 +1086,8 @@ footer > div > div:nth-child(3) > p{
     }
     .popup{
         padding-left: 1%;
+    }
+    .video-feedback{
+        display: none;
     }
 }
