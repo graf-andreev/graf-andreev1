@@ -46,12 +46,6 @@ breakpoints: {
       slidesPerView: 1,
       spaceBetween: 0
     },
-    // when window width is >= 480px
-    // 480: {
-    //   slidesPerView: 1,
-    //   spaceBetween: 15
-    // },
-    // when window width is >= 640px
     640: {
       slidesPerView: 3,
       spaceBetween: 15
@@ -62,4 +56,11 @@ scrollbar: {
 el: '.swiper-scrollbar',
 dynamicBullets: true,
 },
-}})
+}});
+
+let a = document.querySelector('.number-input');
+a.addEventListener("change", function() {
+    if(a.value < 0){
+        alert('Нельзя задать отрицательное значение')
+    }
+});

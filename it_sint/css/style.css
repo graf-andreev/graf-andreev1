@@ -87,7 +87,7 @@
     font-family: "exo2";
     font-size: 40px;
     color: #002476;
-    line-height: 22px;
+    line-height: 30px;
     margin-bottom: 25px;
 }
 
@@ -411,6 +411,7 @@ form p{
 .color-blue {
     color: #002476;
     font-family: 'exo2';
+    margin: 0 20px 20px 0;
 }
 
 .number-input{
@@ -625,12 +626,6 @@ form p{
     .bottom-button{
         width: 100%;
     }
-    .number-input{
-        margin-right: 0px !important;
-    }
-    div:nth-child(1) > div:nth-child(1){
-        width: 100%;
-    }
 }
 @media screen and (max-width: 500px){
     .custom-form input,
@@ -661,7 +656,7 @@ form p{
    .button-load{
         width: 100%;
     }
-    body > section.forms > div > div.flex.wrap > div:nth-child(6),
+    .custom-form.mobile-form + div,
     .top-info__button,
     .custom-file-upload{
         width: 100%;
@@ -669,5 +664,9 @@ form p{
     .gallery{
         padding-left: 10px;
         padding-right: 10px;
+    }
+    #CITY-L, 
+    #PHONE-L{
+        top: 0px;
     }
 }
