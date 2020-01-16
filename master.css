@@ -1,14 +1,16 @@
-html, body {
+html, 
+body{
+      font-family: 'Oswald', sans-serif;
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100vh;
-      background: url(hero.jpg) no-repeat 50% 50%;
+      background: #fff;
       background-size: cover;
       overflow: hidden;
 }
 
-.outline {
+.outline{
       z-index: 1;
       position: absolute;
       top: 50%;
@@ -20,17 +22,16 @@ html, body {
       border: 1px solid rgba(200, 146, 83, 0.4);
 }
 
-.logo {
+.logo{
       position: fixed;
       margin: 2em 2.4em;
       transform: translate(-50%, -50%);
-      font-family: "Great Vibes";
       color: #c89253;
       font-size: 36px;
       z-index: 1;
 }
 
-.menu {
+.menu{
       position: fixed;
       right: 0;
       margin: 3em 2em;
@@ -38,31 +39,53 @@ html, body {
       color: #c89253;
       font-size: 24px;
       z-index: 1;
+      border: 2px solid #000;
+      border-radius: 20px;
+      width: 172px;
 }
 
-.title {
+.menu a{
+      background-image: url(../socials.png);
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: 385px 292px;
+}
+
+.vk{
+      background-position: -187px -4px;
+}
+
+.inst{
+      background-position: -141px -4px;
+}
+
+.github{
+      background-position: 0 -186px;
+}
+
+.title{
       position: absolute;
       top: 38%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-family: "Smythe";
       color: #c89253;
       font-size: 68px;
       z-index: 1;
 }
 
-.tagline {
+.tagline{
       position: absolute;
       top: 46%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-family: "Great Vibes";
       color: #fff;
       font-size: 24px;
       z-index: 1;
 }
 
-.morewine {
+.morewine{
       position: absolute;
       top: 60%;
       left: 50%;
@@ -70,7 +93,7 @@ html, body {
       z-index: 1;
 }
 
-button {
+button{
       background: none;
       padding: 20px 48px;
       color: #c89253;
@@ -80,26 +103,26 @@ button {
       cursor: pointer;
 }
 
-button:focus {
+button:focus{
       outline: none;
       border: none;
 }
 
-button:hover {
+button:hover{
       background: #c89253;
-      color: #110b07;
+      color: #fff;
 }
 
-.site {
+.site{
       position: absolute;
       width: 100%;
       height: 100vh;
-      background: #c5c0bd;
+      background: #ffa56e;
       z-index: 1;
       opacity: 0;
 }
 
-#wrap {
+#wrap{
       position: absolute;
       left: 0%;
       top: -8%;
@@ -109,7 +132,7 @@ button:hover {
       margin: 0 25%;
 }
 
-.block {
+.block{
       position: relative;
       width: 25%;
       z-index: 1;
@@ -119,13 +142,13 @@ button:hover {
       transform: scale(0.97);
 }
 
-.product {
+.product{
       position: relative;
       display: block;
       max-width: 80%;
 }
 
-.product img {
+.product img{
       position: relative;
       display: block;
       width: 80%;
@@ -134,14 +157,13 @@ button:hover {
       z-index: 2;
 }
 
-.txt {
+.txt{
       position: absolute;
       top: 104%;
       left: 2%;
       width: 80%;
       opacity: 0;
       text-align: center;
-      font-family: Helvetica;
       text-transform: uppercase;
       letter-spacing: 4px;
       color: #fff;
@@ -150,48 +172,46 @@ button:hover {
       transition: transform .2s, opacity .5s;
 }
 
-.txt p {
+.txt p{
       margin-bottom: 20px;
 }
 
-.wines button {
+.wines button{
       margin-top: 10px;
       padding: 16px 28px;
 }
 
-h1 {
-      font-family: "Smythe";
-      color: #ecaa5d;
+h1{
+      color: #fff;
       font-size: 1.6rem;
       font-weight: 700;
       text-transform: uppercase;
 }
 
-.block:hover .txt {
+.block:hover .txt{
       opacity: 1;
       transform: scaleY(1) translateY(0);
 }
 
-.close-btn {
+.close-btn{
       position: fixed;
       top: 0;
       right: 0;
       padding: 2.5em;
       letter-spacing: 2px;
       font-size: 0.8em;
-      font-family: Helvetica;
       color: #765936;
       transition: 0.3s;
       z-index: 3;
       cursor: pointer;
 }
 
-.close-btn:hover {
+.close-btn:hover{
       color: #e7ad68;
       transition: 0.3s;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 768px){
       .title {
             font-size: 42px;
       }
