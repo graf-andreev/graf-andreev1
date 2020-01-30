@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title>IT sintez</title>
 </head>
+
 <body class="page-wrapper">
     <div class="wrapper-content">
         <p class="light">Комплексный подход к изготовлению резервуаров и резервуарного оборудования позволяет нам
@@ -111,32 +112,33 @@
             <p class="light">Вы можете задать вопрос или заказать коммерческое предложение на изготовление резервуара,
                 <br>
                 заполнив формы или опросный лист.</p>
-            <div class="flex wrap">
-                <div class="custom-form">
-                    <input id="YNAME" value="" name="NAME" type="text" required>
-                    <label id="NAME-L" for="YNAME"> Имя:<span>*</span></label>
-                </div>
+            <form action="#">
+                <div class="flex wrap">
+                    <div class="custom-form">
+                        <input id="YNAME" value="" name="NAME" type="text" required>
+                        <label id="NAME-L" for="YNAME"> Имя:<span>*</span></label>
+                    </div>
 
-                <div class="custom-form">
-                    <input id="MAIL" value="" name="EMAIL" type="email" required>
-                    <label id="EMAIL-L" for="MAIL">E-mail:<span>*</span></label>
-                </div>
-                <div class="load-desc"><a class="button1 button-load"
-                        href="/upload/medialibrary/Opros_list_kotelnaya.doc">Скачать<br>опросный лист</a></div>
-                <div class="custom-form form-adaptive">
-                    <input id="IPHONE" value="" name="PHONE" type="text" required>
-                    <label id="PHONE-L" for="IPHONE">Контактный телефон: <span>(с указанием кода
-                            города)*</span></label>
-                </div>
-                <div class="custom-form mobile-form">
-                    <input id="TOWN" value="" name="CITY" type="text" required>
-                    <label id="CITY-L" for="TOWN">Город:<span>*</span> </label>
-                </div>
-                <div><label class="custom-file-upload">
-                        <input type="file" />
-                        <div class="top-info__button">Загрузить<br>опросный лист</div>
-                    </label>
-                </div>
+                    <div class="custom-form">
+                        <input id="MAIL" value="" name="EMAIL" type="email" required>
+                        <label id="EMAIL-L" for="MAIL">E-mail:<span>*</span></label>
+                    </div>
+                    <div class="load-desc"><a class="button1 button-load"
+                            href="/upload/medialibrary/Opros_list_kotelnaya.doc">Скачать<br>опросный лист</a></div>
+                    <div class="custom-form form-adaptive">
+                        <input id="IPHONE" value="" name="PHONE" type="text" required>
+                        <label id="PHONE-L" for="IPHONE">Контактный телефон: <span>(с указанием кода
+                                города)*</span></label>
+                    </div>
+                    <div class="custom-form mobile-form">
+                        <input id="TOWN" value="" name="CITY" type="text" required>
+                        <label id="CITY-L" for="TOWN">Город:<span>*</span> </label>
+                    </div>
+                    <div><label class="custom-file-upload">
+                            <input type="file" />
+                            <div class="top-info__button">Загрузить<br>опросный лист</div>
+                        </label>
+                    </div>
 
             </div>
             <h4 class="sub-header-h4">Заполнить характеристики резервуара</h4>
@@ -210,8 +212,10 @@
                 </p>
                 <p class="end-text">Звездочкой <span>*</span> отмечены поля, обязательные для заполнения.</p>
                 <button class="button1 bottom-button" type="submit">Отправить</button>
+                </form>
     </section>
 </body>
+
 </html>
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>

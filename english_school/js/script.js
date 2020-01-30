@@ -125,21 +125,21 @@ $(function() {
 	});
 });
 
-    $('.adress-click').click(function() { // Вызываем функцию по нажатию на кнопку 
-        var popup_id = $('.popup-adress'); // Связываем rel и popup_id 
-        $(popup_id).show(); // Открываем окно
-        $('.overlay_popup').show(); // Открываем блок заднего фона
-    });
-    $('.img-close').click(function() { // Обрабатываем клик по заднему фону
-        $('.overlay_popup, .popup-adress').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
-    });
-    $('.main-button').click(function() { 
-        var popup_id = $('.popup-info'); 
-        $(popup_id).fadeIn(400);
-        $('.overlay_popup').show(); 
+// popups
+
+    $('.adress-click').click(function() { 
+        $('.popup-adress').show();
+		$('.overlay_popup').show(); 
     });
     $('.img-close').click(function() { 
-        $('.overlay_popup, .popup-info').hide();
+		$('.overlay_popup, .popup-adress').hide(); 
+    });
+    $('.main-button').click(function() { 
+        $('.popup-info').fadeIn(400);
+		$('.overlay_popup').show(); 
+    });
+    $('.img-close').click(function() { 
+		$('.overlay_popup, .popup-info').hide();
     });
 		$('.img-close').click(function() {
 			$('.overlay_popup, .popup-complete').hide();

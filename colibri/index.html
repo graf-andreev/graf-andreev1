@@ -49,7 +49,7 @@
                 </ul>
                 <img class="little-logo" src="img/logo.png" alt="">
             </div>
-            <button id="zvonok" class="button-popup popup button-no-mobile">Заказать
+            <button id="call" class="button-popup popup button-no-mobile">Заказать
                 звонок</button>
         </header>
     </div>
@@ -64,13 +64,14 @@
                     <button class="text-button">Экспорт</button>
                 </div>
                 <div class="flex wrap jc-around tabs-content active">
-                    <input value="" name="fields[Товар]" type="text" placeholder="Товар" />
-                    <input value="" name="fields[Стоимость]" type="number" placeholder="Стоимость" />
-                    <input value="" name="fields[Страна происхождения]" type="text"
-                        placeholder="Страна происхождения" />
-                    <input value="" name="fields[Имя]" type="text" placeholder="Имя" required="required" />
-                    <input value="" name="fields[Телефон]" type="tel" placeholder="Телефон" required="required" />
-                    <input value="" name="fields[Email]" type="mail" placeholder="Email" />
+                    <form action="#">
+                        <input value="" name="fields[Товар]" type="text" placeholder="Товар" />
+                        <input value="" name="fields[Стоимость]" type="number" placeholder="Стоимость" />
+                        <input value="" name="fields[Страна происхождения]" type="text"
+                            placeholder="Страна происхождения" />
+                        <input value="" name="fields[Имя]" type="text" placeholder="Имя" required="required" />
+                        <input value="" name="fields[Телефон]" type="tel" placeholder="Телефон" required="required" />
+                        <input value="" name="fields[Email]" type="mail" placeholder="Email" />
                 </div>
                 <div class="flex wrap jc-around tabs-content">
                     <input value="" name="fields[Товар]" class="form-short" type="text" placeholder="Товар" />
@@ -93,6 +94,7 @@
                 <input type="text" name="system_field_2" value="" autocomplete="off" />
             </div>
             <button class="text-button js__send_active_tab">Рассчитать</button>
+            </form>
         </div>
     </section>
     <section class="cards"> <a id="preim"></a>
@@ -568,7 +570,7 @@
     </section>
     <section class="consult clip clip-top"><a id="get"></a>
         <h3>Получить бесплатную консультацию</h3>
-        <button id="zvonok1" class="popup button-popup">Консультация</button>
+        <button id="call-1" class="popup button-popup">Консультация</button>
     </section>
     <section class="items-group"><a id="group"></a>
         <div class="content-wrapper">
@@ -760,17 +762,19 @@
             <h6>Если у вас остались вопросы, <span>заполните форму обратной связи и наш специалист свяжется с
                     вами</span></h6>
             <div class="flex wrap jc-around">
-                <input type="text" value="" name="fields[Имя]" placeholder="Ваше имя" required="required">
-                <input type="phone" value="" name="fields[Телефон]" placeholder="+7 (xxx) xxx xx xx"
-                    required="required">
-                <input type="mail" value="" name="fields[Email]" placeholder="Ваш email">
-                <div class="check_robot_fields">
-                    <input type="text" required="required" name="system_field_1" value="" autocomplete="off"
-                        class="system_field_1" />
-                    <input type="text" name="system_field_2" value="" autocomplete="off" />
-                </div>
+                <form action="#">
+                    <input type="text" value="" name="fields[Имя]" placeholder="Ваше имя" required="required">
+                    <input type="phone" value="" name="fields[Телефон]" placeholder="+7 (xxx) xxx xx xx"
+                        required="required">
+                    <input type="mail" value="" name="fields[Email]" placeholder="Ваш email">
+                    <div class="check_robot_fields">
+                        <input type="text" required="required" name="system_field_1" value="" autocomplete="off"
+                            class="system_field_1" />
+                        <input type="text" name="system_field_2" value="" autocomplete="off" />
+                    </div>
             </div>
             <button class="js__send_question button-popup">Отправить</button>
+            </form>
         </div>
     </section>
     <section class="feedback"><a id="feedback"></a>
@@ -868,12 +872,12 @@
         <p>Комплексное таможенное оформление</p><br>
         <span>за 99 рублей</span><br>
         <p>+ проверка документов в подарок</p><br>
-        <button id="zakazat" class="popup popup-us button-popup">Заказать услугу</button>
+        <button id="order" class="popup popup-us button-popup">Заказать услугу</button>
     </section>
     <section class="timer">
         <div class="content-wrapper">
             <h3>До конца акции осталось:</h3>
-            <div class="timer-1 flex wrap jc-around" data-finish="2019-10-31 00:00:00">
+            <div class="timer-1 flex wrap jc-around" data-finish="2020-03-31 00:00:00">
                 <div>
                     <div class="timer-wrapper flex jc-around">
                         <div class="timer-containter">
@@ -922,43 +926,6 @@
         </div>
     </section>
     <footer class="clip-top"><a id="contact"></a>
-        <div class="content-wrapper">
-            <div class="tabs">
-                <div class="tabs-buttons">
-                    <button class="text-button active">Импорт</button>
-                    <button class="text-button">Экспорт</button>
-                </div>
-                <div class="flex wrap jc-around tabs-content active">
-                    <input value="" name="fields[Товар]" type="text" placeholder="Товар" />
-                    <input value="" name="fields[Стоимость]" type="number" placeholder="Стоимость" />
-                    <input value="" name="fields[Страна происхождения]" type="text"
-                        placeholder="Страна происхождения" />
-                    <input value="" name="fields[Имя]" type="text" placeholder="Имя" required="required" />
-                    <input value="" name="fields[Телефон]" type="tel" placeholder="Телефон" required="required" />
-                    <input value="" name="fields[Email]" type="mail" placeholder="Email" />
-                </div>
-                <div class="flex wrap jc-around tabs-content">
-                    <input value="" name="fields[Товар]" class="form-short" type="text" placeholder="Товар" />
-                    <input value="" name="fields[Стоимость]" class="form-short" type="number" placeholder="Стоимость" />
-                    <input value="" name="fields[Страна происхождения]" class="form-short" type="text"
-                        placeholder="Страна происхождения" />
-                    <input value="" name="fields[Страна назначения]" class="form-short" type="text"
-                        placeholder="Страна назначения" />
-                    <input value="" name="fields[Имя]" type="text" placeholder="Имя" required="required" />
-                    <input value="" name="fields[Телефон]" type="tel" placeholder="Телефон" required="required" />
-                    <input value="" name="fields[Email]" type="mail" placeholder="Email" />
-                </div>
-            </div>
-            <input class="check2" type="checkbox" id="test2" value="да" />
-            <label for="test2">Я знаю код ТНВЭД</label>
-            <input class="tnved2" type="text" placeholder="ТНВЭД">
-            <div class="check_robot_fields">
-                <input type="text" required="required" name="system_field_1" value="" autocomplete="off"
-                    class="system_field_1" />
-                <input type="text" name="system_field_2" value="" autocomplete="off" />
-            </div>
-            <button class="text-button js__send_active_tab">Рассчитать</button>
-        </div>
         <div style="align-items: center;" class="footer-contact flex wrap jc-around">
             <p><b>Адрес:</b> 630008,<br> Россия, г. Новосибирск,<br> ул. Бориса Богаткова 99, <br>офис 415</p>
             <p><b>Телефон:</b><br> <a href="tel:+74995609090">+7 (383) 383-47-18</a></p>
@@ -968,38 +935,41 @@
         </div>
     </footer>
 
-    <div id="zvonok-popup" class="popup-callback">
+    <div id="call-popup" class="popup-callback">
         <button class="img-close"><img src="img/close.png" alt="" width="19" height="19"></button>
         <p>Заказать звонок</p>
         <div class="popup-forms">
-            <input class="popup-form" type="text" value="" name="fields[Имя]" placeholder="Ваше имя"
-                required="required">
-            <input class="popup-form" type="phone" value="" name="fields[Телефон]" placeholder="+7 (xxx) xxx xx xx"
-                required="required">
-            <input class="popup-form" type="mail" value="" name="fields[E-mail]" placeholder="Ваш email">
-            <div class="check_robot_fields">
-                <input type="text" required="required" name="system_field_1" value="" autocomplete="off"
-                    class="system_field_1" />
-                <input type="text" name="system_field_2" value="" autocomplete="off" />
-            </div>
-            <button class="js__send_call_request">Отправить</button>
+            <form action="">
+                <input class="popup-form" type="text" value="" name="fields[Имя]" placeholder="Ваше имя"
+                    required="required">
+                <input class="popup-form" type="phone" value="" name="fields[Телефон]" placeholder="+7 (xxx) xxx xx xx"
+                    required="required">
+                <input class="popup-form" type="mail" value="" name="fields[E-mail]" placeholder="Ваш email">
+                <div class="check_robot_fields">
+                    <input type="text" required="required" name="system_field_1" value="" autocomplete="off"
+                        class="system_field_1" />
+                    <input type="text" name="system_field_2" value="" autocomplete="off" />
+                </div>
+                <button class="js__send_call_request">Отправить</button>
+            </form>
         </div>
     </div>
-    <div class="popup-callback popup-usluga">
+    <div class="popup-callback popup-service">
         <button class="img-close"><img src="img/close.png" alt="" width="19" height="19"></button>
         <p>Заказать услугу</p>
-        <div class="popup-forms"> 
-            <input class="popup-form" type="text" value="" name="fields[Имя]" placeholder="Ваше имя"
-                required="required">
-            <input class="popup-form" type="phone" value="" name="fields[Телефон]" placeholder="+7 (xxx) xxx xx xx"
-                required="required">
-            <input class="popup-form" type="mail" value="" name="fields[E-mail]" placeholder="Ваш email">
-            <div class="check_robot_fields">
-                <input type="text" required="required" name="system_field_1" value="" autocomplete="off"
-                    class="system_field_1" />
-                <input type="text" name="system_field_2" value="" autocomplete="off" />
-            </div>
-            <button class="js__send_call_request">Отправить</button>
+        <div class="popup-forms">
+            <form action="#"> <input class="popup-form" type="text" value="" name="fields[Имя]" placeholder="Ваше имя"
+                    required="required">
+                <input class="popup-form" type="phone" value="" name="fields[Телефон]" placeholder="+7 (xxx) xxx xx xx"
+                    required="required">
+                <input class="popup-form" type="mail" value="" name="fields[E-mail]" placeholder="Ваш email">
+                <div class="check_robot_fields">
+                    <input type="text" required="required" name="system_field_1" value="" autocomplete="off"
+                        class="system_field_1" />
+                    <input type="text" name="system_field_2" value="" autocomplete="off" />
+                </div>
+                <button class="js__send_call_request">Отправить</button>
+            </form>
         </div>
     </div>
     <div class="overlay"></div>

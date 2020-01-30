@@ -620,12 +620,6 @@ form p{
     .custom-form{
         width: 100%;
     }
-    .custom-form input,
-    .custom-form select,
-    .select-custom,
-    .bottom-button{
-        width: 100%;
-    }
 }
 @media screen and (max-width: 500px){
     .custom-form input,

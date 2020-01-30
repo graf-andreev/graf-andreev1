@@ -742,7 +742,11 @@ label{
     margin-right: 100px;
 }
 
-.inputs button{
+.no-scroll {
+    overflow-y: hidden;
+}
+
+form button{
     width: 305px;
     height: 70px;
     background-color: #19b203;

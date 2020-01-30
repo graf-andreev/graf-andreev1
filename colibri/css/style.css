@@ -197,6 +197,10 @@ a[name]{
     
 }
 
+.no-scroll{
+    overflow-y: hidden;
+}
+
 .active-menu{
     width: 269px;
     height: 810px;

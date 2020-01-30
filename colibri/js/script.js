@@ -9,36 +9,37 @@ $(document).ready(function($) {
             .closest('div.tabs').find('div.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
-    // $('#menu').click(function(){
-    //     $('.dropdown-menu').toggleClass('active-menu');
-    //     $('.main-nav').toggleClass('active-nav');
-    // });
-
-    $('#zakazat').click(function () {
-        $('.popup-usluga, .overlay').show();
+    $('#order').click(function () {
+        $('.popup-service, .overlay').show();
+        $('body').addClass('no-scroll');
     });
 
-    $('#zvonok').click(function () {
-        $('#zvonok-popup, .overlay').show();
+    $('#call').click(function () {
+        $('#call-popup, .overlay').show();
+        $('body').addClass('no-scroll');
     });
 
-    $('#zvonok1').click(function () {
-        $('#zvonok-popup, .overlay').show();
+    $('#call-1').click(function () {
+        $('#call-popup, .overlay').show();
+        $('body').addClass('no-scroll');
     });
 
 
     $('.img-close').click(function () {
         $('.overlay, .popup-callback').hide();
+        $('body').removeClass('no-scroll');
     });
 
     $('.overlay').click(function () {
         $('.popup-callback, .overlay').hide();
         $('.popup_result').remove();
+        $('body').removeClass('no-scroll');
     });
 
     $('body').on('click', '.img-result-close',function () {
         $('.overlay').hide();
         $('.popup_result').remove();
+        $('body').removeClass('no-scroll');
     });
 
     $('.js__send_call_request').click(function (e) {
