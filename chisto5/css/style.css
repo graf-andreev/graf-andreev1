@@ -240,6 +240,10 @@ header{
     margin-top: 180px;
 }
 
+footer .bottom-text{
+    margin-top: 0px;
+}
+
 .bottom-text p{
     width: 260px;
 }
@@ -905,6 +909,7 @@ footer{
     text-align: center;
     padding-top: 9px;
     font-size: 20px;
+    user-select: none;
 }
 
 .popup-button{
