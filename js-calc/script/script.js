@@ -47,6 +47,7 @@ endButton.addEventListener('click', function() {
 
 function priceCalculation(elem){
     let result = 0;
+        index = 0;
 
     if(elem.name === 'whichSite'){
     for(const item of formCalculate.elements){
@@ -57,6 +58,13 @@ function priceCalculation(elem){
         }
     }
     totalPriceSum.textContent = result;
+
+    for(const item of formCalculate.elements){
+        if(item.name === 'whichSite' && elem.checked){
+            console.log(DATA.whichSite.indexOf(item.value))
+        }
+    }
+
 }
 
 function handlerCallBackForm(event) {
