@@ -82,6 +82,7 @@ body{
       height: 130px;
       user-select: none;
       white-space: nowrap;
+      background-size: cover;
 }
 
 .tagline{
@@ -250,8 +251,8 @@ h1{
 
       .morewine {
             left: 50%;
-            width: 250px;
-            margin-left: -133px;
+            width: 267px;
+            margin-left: -133.5px;
       }
 
       .product {
