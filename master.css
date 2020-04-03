@@ -81,6 +81,7 @@ body{
       line-height:90px;
       height: 130px;
       user-select: none;
+      white-space: nowrap;
 }
 
 .tagline{
@@ -226,7 +227,7 @@ h1{
 
 @media(max-width: 768px){
       .title {
-            font-size: 42px;
+            font-size: 26px;
       }
 
       .tagline {
@@ -236,4 +237,33 @@ h1{
       .outline {
             width: 92%;
       }
+      
+      .morewine,
+      .menu {
+            transform: initial !important;
+      }
+
+      .menu{
+            left: 50%;
+            margin-left: -85px;
+      }
+
+      .morewine {
+            left: 50%;
+            width: 250px;
+            margin-left: -133px;
+      }
+
+      .product {
+            width: 300px;
+      }
+
+      h1 {
+            font-size: 20px;
+      }
+
+      .product img {
+            width: 100%;
+      }
+
 }
