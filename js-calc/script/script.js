@@ -48,24 +48,31 @@ endButton.addEventListener('click', function() {
 function priceCalculation(elem){
     let result = 0;
         index = 0;
+        option = []
 
     if(elem.name === 'whichSite'){
     for(const item of formCalculate.elements){
         if(item.type === 'checkbox'){
             item.checked = false;
         }
-        hideElem(fastRange);
-        }
     }
-    totalPriceSum.textContent = result;
+        hideElem(fastRange);
+}
 
     for(const item of formCalculate.elements){
-        if(item.name === 'whichSite' && elem.checked){
-            console.log(DATA.whichSite.indexOf(item.value))
-        }
+        if(item.name === 'whichSite' && item.checked){
+            index = DATA.whichSite.indexOf(item.value);
+        } else if(item.classList.contains('calc-handler') && item.checked){
+            console.log(item.value)
+        };
+        
+    }
+    result += DATA.price[index];
+
+    totalPriceSum.textContent = result
+
     }
 
-}
 
 function handlerCallBackForm(event) {
     const target = event.target;
