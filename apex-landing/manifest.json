@@ -6,10 +6,10 @@
     "display": "standalone",
     "start_url": "https://graf-andreev.github.io/apex-landing/",
     "short_name": "PwP",
-    "theme_color": "transparent",
-    "description": "",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34",
+    "description": "Progressive Web App",
     "orientation": "any",
-    "background_color": "transparent",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
