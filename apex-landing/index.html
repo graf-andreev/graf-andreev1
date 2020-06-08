@@ -23,6 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
     <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="manifest.json"></script>
 </head>
 
 <body>
@@ -712,3 +713,11 @@ $("#status").select2({
 </script>
 
 </html>
+
+<script>
+    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+</script>
+<script src="pwabuilder-sw.js"></script>
