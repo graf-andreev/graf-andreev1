@@ -14,101 +14,42 @@
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "/images/d2c381aa-854a-84c7-1b86-ae7fdcf0bb0a.webPlatform.png",
-            "sizes": "44x44",
-            "type": "image/png"
+         "src": "\/android-icon-36x36.png",
+         "sizes": "36x36",
+         "type": "image\/png",
+         "density": "0.75"
         },
         {
-            "src": "/images/fd74611a-8f85-ac76-2ed1-736608d0b925.webPlatform.png",
-            "sizes": "48x48",
-            "type": "image/png"
+         "src": "\/android-icon-48x48.png",
+         "sizes": "48x48",
+         "type": "image\/png",
+         "density": "1.0"
         },
         {
-            "src": "/images/fa5baa46-02f3-efea-1f27-1496a3dbddf8.webPlatform.png",
-            "sizes": "1240x600",
-            "type": "image/png"
+         "src": "\/android-icon-72x72.png",
+         "sizes": "72x72",
+         "type": "image\/png",
+         "density": "1.5"
         },
         {
-            "src": "/images/e0b35043-b667-e157-1f07-0d69c9639e51.webPlatform.png",
-            "sizes": "300x300",
-            "type": "image/png"
+         "src": "\/android-icon-96x96.png",
+         "sizes": "96x96",
+         "type": "image\/png",
+         "density": "2.0"
         },
         {
-            "src": "/images/53a80f1e-5536-c289-a664-9a25156d460a.webPlatform.png",
-            "sizes": "150x150",
-            "type": "image/png"
+         "src": "\/android-icon-144x144.png",
+         "sizes": "144x144",
+         "type": "image\/png",
+         "density": "3.0"
         },
         {
-            "src": "/images/1be0177d-1aa7-f3e0-782c-58f9dbb03353.webPlatform.png",
-            "sizes": "88x88",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/91bb05fc-0517-61f8-9f44-e2d6960a0fab.webPlatform.png",
-            "sizes": "24x24",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/624ac4dd-6ea5-ddb2-7c2d-d7c25e5f2957.webPlatform.png",
-            "sizes": "50x50",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/3e4ff8bb-f56e-ae34-21b2-139e80e64d25.webPlatform.png",
-            "sizes": "620x300",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/441faa71-3f4f-d407-7631-830ebcec44b7.webPlatform.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/3767fd70-1f0a-3d20-cc2c-93f1bcceef55.webPlatform.png",
-            "sizes": "144x144",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/f9661949-ebf5-86a1-54b9-cf1951b71245.webPlatform.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/8ca9a346-dffe-81c6-987a-9c58340412f6.webPlatform.png",
-            "sizes": "72x72",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/db6b9fb5-2636-454b-76e6-ce25b76cdb06.webPlatform.png",
-            "sizes": "36x36",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/cd66482d-e74d-48f9-0537-d386d12819af.webPlatform.png",
-            "sizes": "1024x1024",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/d1de7ea1-7c7e-9ddb-2f52-021bc43aa6ba.webPlatform.png",
-            "sizes": "180x180",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/b14519f2-abb6-6e01-b030-42652be48cf8.webPlatform.png",
-            "sizes": "152x152",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/282df756-09da-d72c-e927-9cd890114a88.webPlatform.png",
-            "sizes": "120x120",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/dcf06b70-5054-9be3-82e6-26364ebef44a.webPlatform.png",
-            "sizes": "76x76",
-            "type": "image/png"
+         "src": "\/android-icon-192x192.png",
+         "sizes": "192x192",
+         "type": "image\/png",
+         "density": "4.0"
         }
-    ],
+       ],
     "url": "https://graf-andreev.github.io/apex-landing/",
     "screenshots": []
 }

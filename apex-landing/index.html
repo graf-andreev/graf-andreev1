@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="mobile-web-app-capable" content="yes">
@@ -24,6 +25,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style-mob.css" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <link rel='manifest' href='manifest.json'>
@@ -32,15 +50,16 @@
 </head>
 <script>
     if (navigator.serviceWorker.controller) {
-  console.log('[PWA Builder] active service worker found, no need to register')
-} else {
-  navigator.serviceWorker.register('pwabuilder-sw.js', {
-    scope: './'
-  }).then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
-  });
-}
+        console.log('[PWA Builder] active service worker found, no need to register')
+    } else {
+        navigator.serviceWorker.register('pwabuilder-sw.js', {
+            scope: './'
+        }).then(function (reg) {
+            console.log('Service worker has been registered for scope:' + reg.scope);
+        });
+    }
 </script>
+
 <body>
     <div id="js-main-menu" class="main-menu">
         <div class="key-indicator">Press "ESC" to close menu.</div>
@@ -555,87 +574,70 @@
                 Read more
             </div>
         </div>
-        </html>
-    </section>
-    <footer>
-        <div class="wrapper-content flex jc-between">
-            <div class="footer-item text">
-                <p>Company</p>
-                <a href="#">Customer support</a>
-                <a href="#">Join us a PRO</a>
-                <a href="#">Become a partner</a>
-                <a href="#">Terms and Conditions</a>
-                <a href="#">Privasy Policy</a>
-                <a href="#">Careers</a>
-                <a href="#">Blog</a>
-            </div>
-            <div class="footer-item text">
-                <p>Games</p>
-                <a href="#">Apex Legends</a>
-                <a class="disabled" href="#">Overwatch</a>
-                <a class="disabled" href="#">PUBG</a>
-                <a class="disabled" href="#">Fortnite</a>
-                <a class="disabled" href="#">League of Legends</a>
-                <a class="disabled" href="#">COD: Modern Warfare 2019</a>
-            </div>
-            <div class="footer-item container">
-                <div class="flex">
-                    <input type="email" placeholder="Type your Email address">
-                    <button>Subscribe</button>
-                </div>
-                <div class="socials flex jc-end">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-twitch"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-reddit-alien"></i></a>
-                </div>
-                <div class="reserved flex jc-end">© 2020 Legionfarm. All rights reserved.</div>
-            </div>
-        </div>
-    </footer>
-    <script src="js/script.js"></script>
-    <!-- popups -->
 
-    <!-- Thank you -->
-    <div style="display: none" class="universal-overlay">
-        <div class="overlay-t">
-            <div class="overlay-c">
-                <div class="popup popup-two">
-                    <p class="popup-header text-center">Great, thank you for the order! 👌🎉</p>
-                    <p class="popup-subheader">You ordered:</p>
-                    <div class="order-info second-popup">
-                        <p class="order-info-header">Apex Legends</p>
-                        <p> 3 hours in Bronze–Platinum with 1SNUKES</p>
-                        <p class="order-info-header"> Play time:</p>
-                        <p>from 6.30pm to 7.30pm (GTM +7)<br>
-                            February 1, 2020</p>
-                    </div>
-                    <p class="description description_popup">5 minutes before that time pro player is going to add you
-                        to party.
-                        Please be online.</p>
-                    <div class="text-center">
-                        <p class="bot">Add our Discord Bot < BOT> to get notifications.</p>
-                        <button class="add-bot">Add Discord bot</button>
-                        <p>If you have any questions, please reach us by the contacts below:</p>
-                        <div class="flex jc-center"><a href="#">Facebook</a> <span>|</span> <a href="#">Discord</a>
-                            <span>|</span> <a href="#">Email</a></div>
-                    </div>
-                </div>
+</html>
+</section>
+<footer>
+    <div class="wrapper-content flex jc-between">
+        <div class="footer-item text">
+            <p>Company</p>
+            <a href="#">Customer support</a>
+            <a href="#">Join us a PRO</a>
+            <a href="#">Become a partner</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privasy Policy</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="footer-item text">
+            <p>Games</p>
+            <a href="#">Apex Legends</a>
+            <a class="disabled" href="#">Overwatch</a>
+            <a class="disabled" href="#">PUBG</a>
+            <a class="disabled" href="#">Fortnite</a>
+            <a class="disabled" href="#">League of Legends</a>
+            <a class="disabled" href="#">COD: Modern Warfare 2019</a>
+        </div>
+        <div class="footer-item container">
+            <div class="flex">
+                <input type="email" placeholder="Type your Email address">
+                <button>Subscribe</button>
             </div>
+            <div class="socials flex jc-end">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-twitch"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-reddit-alien"></i></a>
+            </div>
+            <div class="reserved flex jc-end">© 2020 Legionfarm. All rights reserved.</div>
         </div>
     </div>
+</footer>
+<script src="js/script.js"></script>
+<!-- popups -->
 
-    <!-- Time already booked -->
-    <div style="display: none" class="universal-overlay">
-        <div class="overlay-t">
-            <div class="overlay-c">
-                <div class="popup popup-three text-center">
-                    <p class="sad">😔</p>
-                    <div class="popup-subheader">Somebody already booked the time<br>
-                        you were trying to order. Please try again.</div>
-                    <button class="add-bot">Okay, got it</button>
+<!-- Thank you -->
+<div style="display: none" class="universal-overlay">
+    <div class="overlay-t">
+        <div class="overlay-c">
+            <div class="popup popup-two">
+                <p class="popup-header text-center">Great, thank you for the order! 👌🎉</p>
+                <p class="popup-subheader">You ordered:</p>
+                <div class="order-info second-popup">
+                    <p class="order-info-header">Apex Legends</p>
+                    <p> 3 hours in Bronze–Platinum with 1SNUKES</p>
+                    <p class="order-info-header"> Play time:</p>
+                    <p>from 6.30pm to 7.30pm (GTM +7)<br>
+                        February 1, 2020</p>
+                </div>
+                <p class="description description_popup">5 minutes before that time pro player is going to add you
+                    to party.
+                    Please be online.</p>
+                <div class="text-center">
+                    <p class="bot">Add our Discord Bot < BOT> to get notifications.</p>
+                    <button class="add-bot">Add Discord bot</button>
                     <p>If you have any questions, please reach us by the contacts below:</p>
                     <div class="flex jc-center"><a href="#">Facebook</a> <span>|</span> <a href="#">Discord</a>
                         <span>|</span> <a href="#">Email</a></div>
@@ -643,88 +645,103 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+</div>
+
+<!-- Time already booked -->
+<div style="display: none" class="universal-overlay">
+    <div class="overlay-t">
+        <div class="overlay-c">
+            <div class="popup popup-three text-center">
+                <p class="sad">😔</p>
+                <div class="popup-subheader">Somebody already booked the time<br>
+                    you were trying to order. Please try again.</div>
+                <button class="add-bot">Okay, got it</button>
+                <p>If you have any questions, please reach us by the contacts below:</p>
+                <div class="flex jc-center"><a href="#">Facebook</a> <span>|</span> <a href="#">Discord</a>
+                    <span>|</span> <a href="#">Email</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 
 </body>
 <script>
-        /*Platforms*/
-function formatPlatforms(platform) {
-  if (!platform.id) {
-      return platform.text;
-  }
+    /*Platforms*/
+    function formatPlatforms(platform) {
+        if (!platform.id) {
+            return platform.text;
+        }
 
-  var baseUrl = "img/flags";
-  var $platform = $(
-      '<span><img class="img-flag" /> <span></span></span>'
-  );
+        var baseUrl = "img/flags";
+        var $platform = $(
+            '<span><img class="img-flag" /> <span></span></span>'
+        );
 
-  // Use .text() instead of HTML string concatenation to avoid script injection issues
+        // Use .text() instead of HTML string concatenation to avoid script injection issues
 
-  //Show name if needed.
-  //$platform.find("span").text(platform.text);
-  $platform.find("img").attr("src", baseUrl + "/" + platform.element.value.toLowerCase() + ".svg");
+        //Show name if needed.
+        //$platform.find("span").text(platform.text);
+        $platform.find("img").attr("src", baseUrl + "/" + platform.element.value.toLowerCase() + ".svg");
 
-  return $platform;
-};
+        return $platform;
+    };
 
-$("#platforms").select2({
-  templateSelection: formatPlatforms
-});
+    $("#platforms").select2({
+        templateSelection: formatPlatforms
+    });
 </script>
 <script>
+    // header select2
 
-// header select2
+    function formatHeader(header) {
+        if (!header.id) {
+            return header.text;
+        }
 
-function formatHeader(header) {
-  if (!header.id) {
-      return header.text;
-  }
+        var baseUrl = "img/flags";
+        var $header = $(
+            '<span><img class="img-flags" /> <span></span></span>'
+        );
 
-  var baseUrl = "img/flags";
-  var $header = $(
-      '<span><img class="img-flags" /> <span></span></span>'
-  );
+        // Use .text() instead of HTML string concatenation to avoid script injection issues
 
-  // Use .text() instead of HTML string concatenation to avoid script injection issues
+        //Show name if needed.
+        $header.find("span").text(header.text);
+        $header.find("img").attr("src", baseUrl + "/" + header.element.value.toLowerCase() + ".svg");
 
-  //Show name if needed.
-  $header.find("span").text(header.text);
-  $header.find("img").attr("src", baseUrl + "/" + header.element.value.toLowerCase() + ".svg");
+        return $header;
+    };
 
-  return $header;
-};
-
-$("#header-select").select2({
-  templateSelection: formatHeader
-});
-
-
+    $("#header-select").select2({
+        templateSelection: formatHeader
+    });
 </script>
 <script>
-// select2
+    // select2
 
-function formatPlatforms(platform) {
-  if (!platform.id) {
-      return platform.text;
-  }
+    function formatPlatforms(platform) {
+        if (!platform.id) {
+            return platform.text;
+        }
 
-  var baseUrl = "img/status";
-  var $platform = $(
-      '<span><img class="img-status" /> <span></span></span>'
-  );
+        var baseUrl = "img/status";
+        var $platform = $(
+            '<span><img class="img-status" /> <span></span></span>'
+        );
 
-  // Use .text() instead of HTML string concatenation to avoid script injection issues
+        // Use .text() instead of HTML string concatenation to avoid script injection issues
 
-  //Show name if needed.
-  $platform.find("span").text(platform.text);
-  $platform.find("img").attr("src", baseUrl + "/" + platform.element.value.toLowerCase() + ".png");
+        //Show name if needed.
+        $platform.find("span").text(platform.text);
+        $platform.find("img").attr("src", baseUrl + "/" + platform.element.value.toLowerCase() + ".png");
 
-  return $platform;
-};
+        return $platform;
+    };
 
-$("#status").select2({
-  templateSelection: formatPlatforms
-});
+    $("#status").select2({
+        templateSelection: formatPlatforms
+    });
 </script>
 
 </html>
