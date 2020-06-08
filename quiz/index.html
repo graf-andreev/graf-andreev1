@@ -1,114 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./libs/bootstrap.min.css">
-  <link rel="stylesheet" href="./style/style.css">
-  <title>Quiz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#E6E6FA">
+<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#E6E6FA">
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+
+  <title>Web Community Leads</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="https://use.fontawesome.com/4ca20d00e4.js"></script>
 </head>
-
 <body>
+  <div class="container">
+    <div class="box">
+      <h1>Web Community Leads UK and IE</h1>
+      <br>
+      <p>Web Community Leads UK and IE is a network of people who run meet up groups or similar events focused around web technologies.
+      <br>It exists to help event organisers to share resources and ask for advice when needed.</p>
 
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-between p-1 p-sm-2 p-md-3">
-            <div class="logo d-flex">
-              <div class="logo-img"></div>
-              <span class="logo-text h1">BURGER-QUIZ</span>
-            </div>
-            <h1 class="contacts d-none d-md-block">GLO Academy</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section class="main">
-    <div class="container">
-
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-center p-1 p-sm-2 p-md-3">
-            <div class="content"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="d-flex flex-column align-items-center p-1 p-sm-2 p-md-3">
-            <h2 class="main-title text-center h1">Пройди тест и собери</h2>
-            <h2 class="main-title text-center h1">бургер своей мечты</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-center p-1 p-sm-2 p-md-3">
-            <div class="arrow display-4">&dArr;</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-center p-1 p-sm-2 p-md-3">
-            <button type="button" class="btn btn-outline-danger" id="btnOpenModal">
-              <span class="btnText h1">Пройди тест и получи результат</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="modal" tabindex="-1" role="dialog" id="modalBlock">
-    <div class="modal-dialog  modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Ответь на вопрос:</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeModal">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body  d-flex flex-column align-items-center" id="modalBody">
-          <h5 class="question p-1 p-sm-2 p-md-3 text-center" id="question"></h5>
-          <div class="answers w-100 p-1 p-sm-2 p-md-3" id="answers">
-            <form action="#" id="formAnswers" class="formAnswers d-flex flex-wrap justify-content-around">
-              <!-- <div class="answers-item d-flex flex-column">
-                <input type="radio" id="answerItem1" name="answer" class="d-none">
-                <label for="answerItem1" class="d-flex flex-column justify-content-between">
-                  <img class="answerImg" src="./image/burger.png" alt="burger">
-                  <span>Стандарт</span>
-                </label>
-              </div>
-              <div class="answers-item d-flex justify-content-center">
-                <input type="radio" id="answerItem2" name="answer" class="d-none">
-                <label for="answerItem2" class="d-flex flex-column justify-content-between">
-                  <img class="answerImg" src="./image/burgerBlack.png" alt="burger">
-                  <span>Черный</span>
-                </label>
-              </div> -->
-            </form>
-          </div>
-        </div>
-        <div class="modal-footer" id="modalFooter">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="prev">Prev</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="next">Next</button>
-          <button type="button" class="btn btn-primary sendBtn d-none" id="send">Send</button>
-        </div>
-      </div>
+      <h3>How to get involved</h3>
+      <ol>
+        <li>Read though our <a href="https://github.com/webcommunityukie/Code-of-Conduct"><i class="fa fa-bolt"></i> Code of Conduct</a>.</li>
+        <li>Visit our <a href="https://webcommunityukie.slack.com"><i class="fa fa-slack"></i> Slack</a>, if you can track down someone already involved ask them to invite you and if you can't you are still welcome to join, details of how to can be found <a href="https://docs.google.com/document/d/1-9mtynxQfA445qTM_VRSfMJbkMKsoBKLiIFpTCPK_F4/edit?usp=sharing">here.</a></li>
+        <li>Check out all the <a href="https://drive.google.com/drive/u/1/folders/0B1OSazPpPBanODA3RGIxc0xiQ0k"><i class="fa fa-file-o"></i> Information and Resources</a> our community has compiled on running events.</li>
+        <li>Sign up to our <a href="http://eepurl.com/dAaFmv"><i class="fa fa-envelope"></i> newsletter</a> for updates.</li>
+      </ol>
+      <footer>
+        <a href="https://github.com/webcommunityukie/webcommunityukie.github.io">Code on GitHub</a>
+        <a href="http://goldsmiths.tech">Inspired by Hacksmiths</a>
+      </footer>
     </div>
   </div>
-
-  <script src="script/script.js"></script>
 </body>
-
 </html>
