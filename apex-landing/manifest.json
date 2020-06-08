@@ -3,7 +3,7 @@
     "lang": "English",
     "name": "LFCarry",
     "scope": "/apex-landing/",
-    "display": "standalone",
+    "display": "fulscreen",
     "start_url": "https://graf-andreev.github.io/apex-landing/",
     "short_name": "PwP",
     "theme_color": "#B12A34",
