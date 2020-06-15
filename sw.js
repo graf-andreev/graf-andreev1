@@ -1,6 +1,6 @@
 'use strict';
 
-importScripts('/apex-landing/sw-toolbox.js');
+importScripts('sw-toolbox.js');
 
 toolbox.precache(["index.html","style/style.css"]);
 
