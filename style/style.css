@@ -12,6 +12,16 @@ html{
     -moz-osx-font-smoothing: grayscale;
 }
 
+.add-button {
+    position: absolute;
+    z-index: 5;
+    top: 74px;
+    left: 30px;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: red;
+  }
+
 a{
     display: block;
     text-decoration: none;
