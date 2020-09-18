@@ -1,7 +1,7 @@
 {
-  "name": "Play with Pro",
-    "short_name": "PwP",
-    "description": "Play with Pro gamer",
+  "name": "LFCarry",
+    "short_name": "LFC",
+    "description": "LFCarry PWA app",
     "lang": "en-GB",
     "start_url": "/",
     "display": "standalone",
