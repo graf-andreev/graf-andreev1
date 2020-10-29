@@ -19,7 +19,7 @@ body {
   align-items: center;
 }
 .card {
-  transform-style: preserve-3d;
+
   min-height: 80vh;
   width: 35rem;
   border-radius: 30px;
@@ -28,6 +28,7 @@ body {
 }
 
 .sneaker {
+  transform-style: preserve-3d;
   min-height: 35vh;
   display: flex;
   align-items: center;
