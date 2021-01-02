@@ -397,7 +397,7 @@ footer .wrapper-content{
     .mobile-menu{
         width: 250px;
         background-color: #f7f6f6;
-        padding: 42px 25px 25px;
+        padding: 42px 25px 25px 25px;
         position: fixed;
         top: 0px;
         left: 0px;
