@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) {
             850: {
                 items: 1,
                 mouseDrag: true,
-                dots: false,
+                dots: true,
                 nav: false,
             }
         }

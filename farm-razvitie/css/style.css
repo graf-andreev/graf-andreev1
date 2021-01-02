@@ -125,7 +125,7 @@ button {
 }
 
 .header-top{
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .header-top__tel{
@@ -143,6 +143,7 @@ button {
     font-weight: 400;
     letter-spacing: 3px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .header-top__socials img{
@@ -150,11 +151,20 @@ button {
     height: 30px;
 }
 
+.header-top__socials{
+    width: 167px;
+    text-align: center;
+}
+
 .header-bottom{
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 50%;
+}
+
+.header-top__tel-info{
+    font-size: 13px;
 }
 
 .header-bottom a{
@@ -165,4 +175,77 @@ button {
     font-weight: 400;
     font-weight: 600;
     text-transform: uppercase;
+    transition: .3s;
+}
+
+.header-bottom a:hover{
+    transition: .3s;
+    color: #2f2f2a;
+    text-decoration: underline;
+}
+
+.gallery-top__item,
+.gallery-top__item img{
+    width: 100%;
+    height: 70vh;
+}
+
+.owl-dots{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+}
+
+footer{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #222222;
+}
+
+.footer-item__header{
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+    color: #56574c;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.footer-item ul{
+    list-style: none;
+}
+
+.footer-item__text{
+    display: block;
+    margin-bottom: 10px;
+    color: #b5b5b5;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'FuturaPT';
+    text-decoration: none;
+}
+
+.footer-item{
+    width: 20%;
+    margin-right: 50px;
+}
+
+.main-about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main-header{
+    text-align: center;
+    color: #56574c;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.subheader{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
 }
