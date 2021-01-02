@@ -36,3 +36,13 @@ jQuery(document).ready(function ($) {
         }
     });
 });
+
+$('.burger-menu').click(function(){
+    $('.mobile-menu').addClass('active');
+    $('body').addClass('no-scroll')
+});
+
+$('.close').click(function(){
+    $('.mobile-menu').removeClass('active');
+    $('body').removeClass('no-scroll')
+});
