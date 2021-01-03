@@ -226,6 +226,8 @@ button {
 
 .catalog-item-img{
     background-image: url(../img/3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 300px;
@@ -357,6 +359,48 @@ footer .wrapper-content{
     display: none;
 }
 
+.about-company{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.about-header{
+    color: #56574c;
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.about-text{
+    width: 49%;
+}
+
+.about-text p{
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'FuturaPT';
+    line-height: 1.55;
+}
+
+.about-img{
+    width: 49%;
+    background-image: url(../img/10.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.services-list{
+    list-style: inside;
+}
+
+.about-img.two{
+    background-image: url(../img/9.jpg);
+}
+
 @media screen and (max-width: 850px){
     footer .wrapper-content{
         display: block;
@@ -440,6 +484,10 @@ footer .wrapper-content{
         text-decoration: none;
         text-transform: uppercase;
     }
+    .mobile-nav a.active{
+        font-weight: 800;
+        text-decoration: underline;
+    }
     .mobile-bottom{
         margin-top: auto;
     }
@@ -464,6 +512,19 @@ footer .wrapper-content{
         top: 0px;
         left: 0px;
         z-index: 3;
+        display: none;
+    }
+    .about-company{
+        display: block;
+    }
+    .about-img,
+    .about-text{
+        width: 100%;
+    }
+    .about-img{
+        height: 200px;
+    }
+    .about-img.two{
         display: none;
     }
 }
