@@ -27,6 +27,16 @@ html {
     color: #2E2C31;
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin-bottom: auto;
+}
+
 input:focus {
     outline: none;
 }
@@ -160,7 +170,7 @@ button {
 .header-bottom{
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     width: 50%;
 }
 
