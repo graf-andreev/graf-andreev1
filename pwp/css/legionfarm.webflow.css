@@ -1337,7 +1337,7 @@
    .frame-img2 {
 	 width: 111%;
 	 height: 100%;
-	 background-image: url("https://assets.website-files.com/5fbe6a19e4146e4af7bc00d1/5fbe6a19e4146e8448bc0131_team.jpg");
+	 /* background-image: url("https://assets.website-files.com/5fbe6a19e4146e4af7bc00d1/5fbe6a19e4146e8448bc0131_team.jpg"); */
 	 background-position: 50% 50%;
 	 background-size: cover;
 	 background-repeat: no-repeat;
@@ -1347,6 +1347,11 @@
 	 -webkit-transform-origin: 0% 100%;
 	 -ms-transform-origin: 0% 100%;
 	 transform-origin: 0% 100%;
+   }
+
+   .team-img{
+	   position: absolute;
+	   top: -20%;
    }
    
    .text-block-5 {
