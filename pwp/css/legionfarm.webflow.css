@@ -569,7 +569,7 @@
 	 -webkit-align-items: flex-end;
 	 -ms-flex-align: end;
 	 align-items: flex-end;
-	 background-image: url("https://assets.website-files.com/5fbe6a19e4146e4af7bc00d1/5fe1d2b4e31a751c90df994d_Pasted%20Graphic.png");
+	 background-image: url("/images/pro-player1.jpg");
 	 background-position: 50% 50%;
 	 background-size: 189px;
 	 background-repeat: no-repeat;
@@ -577,7 +577,7 @@
    }
    
    .pro-block._2 {
-	 background-image: url("https://assets.website-files.com/5fbe6a19e4146e4af7bc00d1/5fbe6a19e4146ec3d0bc010f_pro-2.jpg");
+	 background-image: url("/images/pro-player2.jpg");
    }
    
    .pro-block._4 {
@@ -1716,7 +1716,7 @@
    .frame-img3 {
 	 width: 118%;
 	 height: 100%;
-	 background-image: url("https://assets.website-files.com/5fbe6a19e4146e4af7bc00d1/5fbe6a19e4146e018ebc0133_ft-img.jpg");
+	 background-image: url("/images/footer-bg-min.jpg");
 	 background-position: 0% 50%;
 	 background-size: cover;
 	 background-repeat: no-repeat;
