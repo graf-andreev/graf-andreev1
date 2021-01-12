@@ -569,7 +569,7 @@
 	 -webkit-align-items: flex-end;
 	 -ms-flex-align: end;
 	 align-items: flex-end;
-	 background-image: url("/images/pro-player1.jpg");
+	 background-image: url("../images/pro-player1.jpg");
 	 background-position: 50% 50%;
 	 background-size: 189px;
 	 background-repeat: no-repeat;
@@ -577,7 +577,7 @@
    }
    
    .pro-block._2 {
-	 background-image: url("/images/pro-player2.jpg");
+	 background-image: url("../images/pro-player2.jpg");
    }
    
    .pro-block._4 {
