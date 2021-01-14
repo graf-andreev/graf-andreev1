@@ -1350,7 +1350,7 @@
    }
 
    .team-img{
-	   position: absolute;
+	   /* position: absolute; */
 	   top: -30%;
 	   width: 100%;
 	   height: auto;
