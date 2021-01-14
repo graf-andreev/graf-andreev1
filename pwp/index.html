@@ -1753,98 +1753,99 @@ function CheckInput(e) {
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/slick.js"></script>
   <script type="text/javascript">
-$('.slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  speed: 300,
-  prevArrow: $('.prev1'),
-	nextArrow: $('.next1'),
-  focusOnSelect: true,
-  adaptiveHeight: true,
-  variableWidth: true,
-  infinite: false,
-  dots: true,
-  appendDots: $('.my-dots-2'),
-});
-$('.slider2').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  speed: 300,
-  prevArrow: $('.prev2'),
-	nextArrow: $('.next2'),
-  focusOnSelect: true,
-  adaptiveHeight: true,
-  variableWidth: true,
-  infinite: false,
-  dots: true,
-  appendDots: $('.my-dots'),
-});
-$('.ticker._1').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	speed: 8000,
-	autoplay: true,
-	autoplaySpeed: 0,
-	cssEase: 'linear',
-  arrows: false,
-  variableWidth: true,
-  draggable: false,
-});
-$('.ticker._2').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	speed: 8000,
-	autoplay: true,
-	autoplaySpeed: 0,
-	cssEase: 'linear',
-  arrows: false,
-  variableWidth: true,
-  draggable: false,
-});
-$('.ticker._3').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	speed: 8000,
-	autoplay: true,
-	autoplaySpeed: 0,
-	cssEase: 'linear',
-  arrows: false,
-  variableWidth: true,
-  draggable: false,
-});
-$('.ticker._4').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	speed: 8000,
-	autoplay: true,
-	autoplaySpeed: 0,
-	cssEase: 'linear',
-  arrows: false,
-  variableWidth: true,
-  draggable: false,
-});
-$('.ticker._5').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	speed: 8000,
-	autoplay: true,
-	autoplaySpeed: 0,
-	cssEase: 'linear',
-  arrows: false,
-  variableWidth: true,
-  draggable: false,
-});
-$('.ticker._6').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	speed: 8000,
-	autoplay: true,
-	autoplaySpeed: 0,
-	cssEase: 'linear',
-  arrows: false,
-  variableWidth: true,
-  draggable: false,
-});
+ $('.slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 300,
+            prevArrow: $('.prev1'),
+            nextArrow: $('.next1'),
+            focusOnSelect: true,
+            adaptiveHeight: true,
+            variableWidth: true,
+            infinite: false,
+            dots: true,
+            appendDots: $('.my-dots-2'),
+        });
+        $('.slider2').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 300,
+            prevArrow: $('.prev2'),
+            nextArrow: $('.next2'),
+            focusOnSelect: true,
+            adaptiveHeight: true,
+            variableWidth: true,
+            infinite: false,
+            dots: true,
+            appendDots: $('.my-dots'),
+        });
+
+        $('.ticker._1').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 8000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            arrows: false,
+            variableWidth: true,
+            draggable: false,
+        });
+        $('.ticker._2').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 8000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            arrows: false,
+            variableWidth: true,
+            draggable: false,
+        });
+        $('.ticker._3').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 8000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            arrows: false,
+            variableWidth: true,
+            draggable: false,
+        });
+        $('.ticker._4').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 8000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            arrows: false,
+            variableWidth: true,
+            draggable: false,
+        });
+        $('.ticker._5').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 8000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            arrows: false,
+            variableWidth: true,
+            draggable: false,
+        });
+        $('.ticker._6').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 8000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            arrows: false,
+            variableWidth: true,
+            draggable: false,
+        });
 </script>
 </body>
 <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -1901,3 +1902,12 @@ $('.ticker._6').slick({
   }
   }
   </style>
+
+<script>
+  function setBackground() {
+  let a = document.querySelector('.section._1s')
+  a.classList.add('mob-bg')
+}
+
+setTimeout(setBackground, 1000);
+</script>
