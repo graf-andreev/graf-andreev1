@@ -4590,3 +4590,11 @@ a {
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Blinker', sans-serif;
+  src: url('../fonts/Blinker.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
