@@ -42,7 +42,7 @@
 	 bottom: 0px !important;
 	 left: 0px !important;
 	 right: 0px !important;
-	 height: initial !important;
+	 height: auto !important;
    }
 
    .section._1s {
