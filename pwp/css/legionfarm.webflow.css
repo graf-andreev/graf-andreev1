@@ -38,11 +38,11 @@
    }
    
    .w-background-video>video{
-	 top: 0px !important;
-	 bottom: 0px !important;
-	 left: 0px !important;
-	 right: 0px !important;
-	 height: auto !important;
+	 top: initial;
+	 bottom: initial;
+	 left: initial;
+	 right: initial;
+	 height: initial;
    }
 
    .section._1s {
