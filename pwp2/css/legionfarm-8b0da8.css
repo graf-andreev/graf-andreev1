@@ -1214,15 +1214,15 @@ a {
 }
 
 .sticky-block {
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky;
+  position: sticky; */
   top: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  height: 100vh;
+  height: auto;
   padding-right: 40px;
   padding-left: 40px;
 }
@@ -2760,7 +2760,6 @@ a {
   }
 
   .gradient._2.mob {
-    display: inline-block;
     width: 100%;
     margin-bottom: 1240px;
   }
@@ -3179,9 +3178,9 @@ a {
 
   .slider-an-row-2 {
     display: block;
-    height: auto;
-    margin-top: 40vh;
-    margin-bottom: 40vh;
+    height: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .slide2 {
@@ -3248,12 +3247,12 @@ a {
     bottom: 0%;
   }
 
-  .bg1-sticky {
+  /* .bg1-sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
     height: 100vh;
-  }
+  } */
 
   .div-block-3 {
     overflow: visible;
@@ -4588,6 +4587,14 @@ a {
   font-family: 'Druk text wide cyr';
   src: url('../fonts/Druk-Text-Wide-Cyr-Bold.otf') format('opentype');
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blinker', sans-serif;
+  src: url('../fonts/Blinker.woff2') format('woff2');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
