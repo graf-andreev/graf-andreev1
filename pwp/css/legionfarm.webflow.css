@@ -37,8 +37,12 @@
 	 padding: 160px 40px;
    }
    
-   video{
-	 width: 100%;
+   .w-background-video>video{
+	 top: 0px !important;
+	 bottom: 0px !important;
+	 left: 0px !important;
+	 right: 0px !important;
+	 height: initial !important;
    }
 
    .section._1s {
